@@ -14,10 +14,9 @@ export default async function BlogHome({ params }) {
 
     return (
         <>
-            <div className="h-[50vh] min-h-[20rem] bg-[url('/home.jpg')] relative">
+            <div className="h-[50vh] min-h-[20rem] relative">
                 <div className="absolute bg-slate-900 inset-0 z-0 opacity-40"></div>
-
-                <div className="container lg:max-w-4xl mx-auto">
+                <div className="">
                     <SiteHeader className="header-blog-home z-10 relative" />
                 </div>
 
