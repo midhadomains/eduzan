@@ -1,49 +1,38 @@
-import Link from "next/link";
+"use client"
+import Link from 'next/link'
+import React, { useState } from "react";
 import Image from 'next/image'
+import { IoMenu, IoClose } from "react-icons/io5";
 
-// import Image from "next/image";
-
-// export default function SiteHeader({ className }) {
-//     return (
-//         <header className='flex items-center justify-between bg'>
-//             <div className="logo-area">
-//                 <Link href="/" className="flex justify-center">
-//                     <Image width={300} height={150} src="/logo-with-garp.webp" alt="MidhaFin" />
-//                 </Link>
-//             </div>
-//             <nav className="">
-//                 <ul className=" flex justify-center [&>li>a]:px-3 [&>li>a]:py-2 [&>li>a:hover]:text-[#6A1B1B] [&>li>a:hover]:border-b-2  [&>li>a:hover]:border-[#6A1B1B]  [&>li>a]:transition text-xl">
-//                     <li>
-//                         <Link href="/">Home</Link>
-//                     </li>
-//                     <li>
-//                         <Link href="/blog">Blog</Link>
-//                     </li>
-//                     <li>
-//                         <Link href="/about">About</Link>
-//                     </li>
-//                     <li>
-//                         <Link href="/contact">Contact</Link>
-//                     </li>
-//                 </ul>
-//             </nav>
-//         </header>
-//     );
-// }
-import React from 'react';
 
 const Navbar = () => {
-    return (
-        <nav className="p-4 border-[#6A1B1B] border-b-[2px]  shadow-[rgba(0, 0, 0, 0.24) 0px 3px 8px;">
-            <div className="flex items-center justify-between  ">
-                <div className=" font-bold text-lg"><Image alt='MidhaFin' width={300} height={200} src='/Logo-with-garp.webp' /></div>
-                <ul className="flex space-x-12 ">
-                    <NavItem to="/" name="Home" />
-                    <NavItem to="/about" name="About" />
-                    <NavItem to="/blog" name="Blogs" />
-                    <NavItem to="/contact" name="Contact" />
+    const [toggle, setToggle] = useState(false);
 
-                </ul>
+    return (
+        <nav className="sticky top-0 z-10 bg-[#fcefea] backdrop-filter backdrop-blur-lg bg-opacity-40 border-b border-gray-100 firefox:bg-opacity-90">
+            <div className='max-w-full mx-auto '>
+                <div className="flex items-center justify-between lg:w-[80%] h-20 mx-auto pr-4">
+                    {/* <img className="min-w-[150px]" alt='MidhaFin' src={logo} /> */}
+                    <Image width={250} height={150} className='ml-4 lg:ml-0 md:item-left h-auto' src="/Logo-with-garp.webp" alt="MidhaFin Logo" />
+                    {toggle ?
+                        <IoClose onClick={() => setToggle(!toggle)} className="text-2xl sm:hidden block" />
+                        : <IoMenu onClick={() => setToggle(!toggle)} className="text-2xl sm:hidden block" />}
+
+                    <ul className="hidden sm:flex items-right space-x-12 ">
+                        <NavItem to="/" name="Home" />
+                        <NavItem to="/blog" name="Blogs" />
+                        <NavItem to="/courses" name="Courses" />
+                        <NavItem to="/courses" name="Courses" />
+                    </ul>
+                    {/* Responsive */}
+                    <ul className={`sm:hidden w-[50%] h-auto fixed bg-[#faf1ed]  backdrop-filter backdrop-blur-lg bg-opacity-95 top-[80px] 
+                     ${toggle?"left-[0]":"left-[-100%]"}`}>
+                        <NavItem to="/" name="Home" />
+                        <NavItem to="/blog" name="Blogs" />
+                        <NavItem to="/courses" name="Courses" />
+                        <NavItem to="/contact" name="Contact" />
+                    </ul>
+                </div>
             </div>
         </nav>
     );
@@ -51,7 +40,7 @@ const Navbar = () => {
 
 const NavItem = ({ to, name }) => {
     return (
-        <li className="relative group w-[100%]">
+        <li className="relative group w-[100%] hover:text-[#f7a787] p-5 sm:p-0">
             <Link
                 href={to}
                 className="font-semibold text-xl cursor-pointe pb-2 px-1 hover:text-[#6A1C1A] hover:border-b-[4px] border-transparent transition duration-300 group-hover:border-[#6A1B1B]">
@@ -60,5 +49,6 @@ const NavItem = ({ to, name }) => {
         </li>
     );
 };
-
 export default Navbar;
+
+

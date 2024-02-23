@@ -1,0 +1,40 @@
+
+
+
+#smhiddenbutton{
+    display: none;
+}
+#coursediv{
+    margin-left: 300px;
+    margin-top: -260px;
+    display: flex;
+    flex-wrap: wrap;
+}
+@media only screen and (max-width: 600px) {
+
+    #leftnav{
+        display: none;
+    }
+    #smhiddenbutton{
+        display: block;
+        width: 100%;
+    }
+    #smhiddenbutton>button{
+        width:100%;
+        min-width:10em;
+        background-color: aqua;
+        margin:10px 0;
+        padding: 10px;
+    }
+    #coursediv{
+        width: 600px;
+        min-width: 350px;
+        margin-left: 0;
+        margin-top: 0;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+    }
+  }

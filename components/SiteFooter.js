@@ -11,10 +11,10 @@ export default function SiteFooter() {
                         <Link href="/about">About</Link> 
                     </li>
                     <li>
-                        <Link href="/privacy-policy">Privacy Policy</Link>
+                        <Link href='/faq'>FAQ</Link>
                     </li>
-                    <li>
-                        <Link href="/sample-page">Sample Page</Link>
+                     <li>
+                        <Link href='/refund-policy'>Refund Policy</Link>
                     </li>
                 </ul>
             </div>
