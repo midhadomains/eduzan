@@ -1,5 +1,18 @@
+#largescreendiv>ul>li{
+    width:300px;
+    background-color: aquamarine;
+    margin: 10px 0;
+    padding: 5px;
+}
 
-
+#largescreensubbuttondiv{
+    display: flex;
+}
+#largescreensubbuttondiv>button{
+    width: 120px;
+    background-color: aquamarine;
+    margin: 5px 10px;
+}
 
 #smhiddenbutton{
     display: none;
@@ -10,8 +23,19 @@
     display: flex;
     flex-wrap: wrap;
 }
+#coursecardparentdiv{
+    width: 300px;
+    padding: 15px;
+    margin: 15px;
+}
+#smallscreendiv{
+    display: none;
+}
 @media only screen and (max-width: 600px) {
-
+    #smallscreendiv{
+        display: flex;
+        flex-wrap: wrap;
+    }
     #leftnav{
         display: none;
     }

@@ -17,17 +17,17 @@ export default function Home() {
                 {/* <SiteHeader className="z-10 relative" /> */}
                 <main>
                     {/* Hero section */}
-                    <div className='max-w-full sm:flex justify-center bg-[#FAF4F2] p-5 text-center'>
-                        <div className=' sm:w-[50%] sm:ml-[10%] 	'>
-                            <h1 className=' text-[40px] sm:text-[30px]  lg:text-[65px] font-bold shadow-[rgba(0, 0, 0, 0.24) 0px 3px 8px;'><span className='text-[#6A1C1A]'>Boost your career <br /></span> in <span className='text-[#6A1C1A]'>Finance</span> with <br /> mentorship you can <br /> bank on <span className='text-[#6A1C1A]'>!</span></h1>
-                            <p className='text-[#391601]'>Step up your career by acquiring the desirable skills <br /> and leading global certifications in Finance.</p>
+                    <div className='max-w-full sm:flex justify-around bg-[#FAF4F2] p-5 text-center'>
+                        <div className=' sm:w-[40%] '>
+                            <h1 className=' text-[40px] sm:text-[25px] md:text-[30px] lg:text-[40px] xl:text-[50px] font-bold shadow-[rgba(0, 0, 0, 0.24) 0px 3px 8px;'><span className='text-[#6A1C1A]'>Boost your career </span> in <span className='text-[#6A1C1A]'>Finance</span> with  mentorship you can bank on <span className='text-[#6A1C1A]'>!</span></h1>
+                            <p className='text-[#391601] ml-8 text-md sm:text-lg'>Step up your career by acquiring the desirable skills and leading global certifications in Finance.</p>
                             <div className='flex mt-5 justify-center'>
-                                <button className='bg-[#6A1C1A] rounded text-white py-2 px-2 sm:px-4 m-2'>SIGNUP NOW</button>
-                                <button className='bg-[#6A1C1A] rounded text-white py-2 px-2 sm:px-4 m-2'>EXPLORE COURSES</button>
+                                <button className='bg-[#6A1C1A] rounded text-white py-2 px-2 sm:px-4 md:px-3 m-2'>SIGNUP NOW</button>
+                                <button className='bg-[#6A1C1A] rounded text-white py-2 px-2 sm:px-4 md:px-3 m-2'>EXPLORE COURSES</button>
                             </div>
                         </div>
-                        <div className=' sm:w-[50%] my-auto'>
-                            <Image width={500} height={500} className='w-auto p-5 h-auto' src="/Micky-Banner.png" alt="Micky" />
+                        <div className=' sm:w-[40%]'>
+                            <Image width={600} height={600} className='w-auto p-5 h-auto' src="/Micky-Banner.png" alt="Micky Midha" />
                         </div>
                     </div>
                     {/* About section */}
@@ -121,7 +121,7 @@ export default function Home() {
                             </div>
                             <div className='mx-auto items-center flex flex-col justify-around'>
                                 <Image width={150} height={100} className='mx-auto m-4' src="/access-till-you-pass.png" alt="Access Till You P150" />
-                                <h1 className='text-[20px] my-3 font-bold'>Access Till You Pass</h1>
+                                <h1 className='text-[20px] my-3 font-bold'>Access Till You Pass&nbsp;&nbsp;</h1>
                                 <Link href='/'><button className='w-full bg-[#6A1C1A] text-white py-2 px-[10px] sm:px-[30px] lg:px-[40px] xl:px-[50px] rounded'>READ MORE</button></Link>
                             </div>
 

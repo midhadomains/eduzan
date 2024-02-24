@@ -1,5 +1,5 @@
-import React from 'react';
 import Image from 'next/image'
+import React from 'react';
 const MyComponent = () => {
   return (
     <div className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
@@ -22,7 +22,7 @@ const MyComponent = () => {
             <div className="lg:max-w-lg">
               <p className="text-2xl pl-1 font-semibold leading-7 text-[#842020]">Features</p>
               <h1 className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Complete <span style={{ color: '#842021' }}>Study</span> Material</h1>
-              <p className="mt-6 text-xl leading-8 text-gray-700 tracking-wide">Our comprehensive study material for the FRM® curriculum is designed to provide candidates with everything they need for a complete and thorough understanding of the subject. With a range of resources and features, we ensure that our candidates have access to the best tools for their exam preparation.</p>
+              <p className="mt-6 lg:text-xl sm:text-xl md:text-xl leading-8 text-gray-700 tracking-wide">Our comprehensive study material for the FRM® curriculum is designed to provide candidates with everything they need for a complete and thorough understanding of the subject. With a range of resources and features, we ensure that our candidates have access to the best tools for their exam preparation.</p>
             </div>
           </div>
         </div>
@@ -34,13 +34,11 @@ const MyComponent = () => {
             className="w-[20rem] max-w-none rounded-xl shadow-l ring-1 ring-gray-400/10 sm:w-[30rem] mx-auto"
             width={300}
             height={300}
-
           />
-
         </div>
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
-            <div className="max-w-xl text-xl leading-7 text-gray-700 lg:max-w-lg tracking-wide">
+            <div className="max-w-auto text-xl leading-7 text-gray-700 lg:max-w-lg tracking-wide">
               <p>Our study material encompasses various components such as video lectures, lecture PDFs, question banks, mock tests, and past sample paper questions. These resources cover all the essential aspects of the FRM® curriculum, allowing candidates to delve into each topic with confidence.</p>
               <p className="mt-8">The video lectures provide in-depth explanations and visual aids to enhance understanding, while the lecture PDFs serve as comprehensive guides.</p>
               <p className='mt-8'>To ensure clarity and address any doubts, we offer instructor-led doubt sessions, where candidates can interact with experienced instructors and receive personalized guidance. Our unlimited doubt answering feature enables candidates to seek clarification on any topic.</p>
@@ -53,9 +51,3 @@ const MyComponent = () => {
   );
 }
 export default MyComponent;
-
-
-
-
-
-
