@@ -13,7 +13,7 @@ export default function Home() {
         <>
             <div className="min-h-screen  relative">
                 <div className="absolute"></div>
-                <SiteHeader/>
+                <SiteHeader />
                 {/* <SiteHeader className="z-10 relative" /> */}
                 <main>
                     {/* Hero section */}
@@ -63,8 +63,7 @@ export default function Home() {
                         </div>
                     </div>
                     {/* Play Store section */}
-                    <hr />
-                    <div className='sm:flex sm:max-w-[70%] mx-auto p-5'>
+                    <div className='sm:flex sm:max-w-[70%] mx-auto p-5 my-9'>
                         <div className='sm:w-[50%] py-auto'>
                             <Image width={500} height={100} src="https://home.midhafin.com/wp-content/uploads/2024/02/Download-our-app.png" alt="Mobile and Laptop pic" />
                         </div>
@@ -78,52 +77,51 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                    <hr/>
                     {/* Our Platform Features */}
-                    <div className='bg-[#FFF5EE] mt-8 m-5 pb-5  sm:m-1'>
-                        <div className='max-w-[90%] sm:max-w-[70%] lg:max-w-[50%] mx-auto mb-5 text-center '>
-                            <h1 className='text-[50px] font-bold '>Our <span className='text-[#6A1C1A]'>Platform</span> Features</h1>
-                            <p cl>We at MidhaFin, focus on striking a careful balance, between Knowledge and Relevance, between theory and analytics & between pure concepts and practical application.</p>
+                    <div className='bg-[#FFF5EE] mt-8 m-5 pb-5  sm:m-1 text-center'>
+                        <div className='max-w-[90%] sm:max-w-[70%] lg:max-w-[50%] mx-auto mb-5 text-center my-3'>
+                            <h1 className='text-[50px] font-bold my-3'>Our <span className='text-[#6A1C1A]'>Platform</span> Features</h1>
+                            <p className='my-4'>We at MidhaFin, focus on striking a careful balance, between Knowledge and Relevance, between theory and analytics & between pure concepts and practical application.</p>
                         </div>
                         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-w-[80%] mx-auto gap-[50px] item-center'>
-                            <div className='mx-auto items-center'>
-                                <Image width={150} height={150} className='mx-auto' src="https://home.midhafin.com/wp-content/uploads/elementor/thumbs/Study-Planner-Icon-qjjueljfnqxz1ez2l9pzzzgsubyqprfm10m89c9e68.png" alt="Study Planner" />
-                                <h1 className='text-[20px] font-bold'>Study Planner</h1>
+                            <div className='mx-auto items-center flex flex-col justify-around'>
+                                <Image width={150} height={100} className='mx-auto m-2' src="/Study-planner.png" alt="Study Planner" />
+                                <h1 className='text-[20px] font-bold my-3'>Study Planner</h1>
                                 <Link href='/study-planner'><button className='w-full bg-[#6A1C1A] text-white py-2 px-[10px]  sm:px-[30px] lg:px-[40px] xl:px-[50px] rounded'>READ MORE</button></Link>
                             </div>
-                            <div className='mx-auto items-center'>
-                                <Image width={300} height={100} className='mx-auto' src="https://home.midhafin.com/wp-content/uploads/elementor/thumbs/question-bank-icon-qjjuekllgwwopt0fqrbdfhpc8y3di2bvovyqs2ascg.png" alt="Study Planner" />
-                                <h1 className='text-[20px] font-bold'>Questions Bank</h1>
+                            <div className='mx-auto items-center flex flex-col justify-around'>
+                                <Image width={150} height={100} className='mx-auto m-1' src='/question-bank.png' alt="Questions Bank" />
+                                <h1 className='text-[20px] font-bold my-3'>Questions Bank</h1>
                                 <button className='w-full bg-[#6A1C1A] text-white py-2 px-[10px] sm:px-[30px] lg:px-[40px] xl:px-[50px]] rounded'>READ MORE</button>
                             </div>
-                            <div className='mx-auto items-center'>
-                                <Image width={300} height={100} className='mx-auto' src="https://home.midhafin.com/wp-content/uploads/elementor/thumbs/mocktest-qjjueipx38u42l361qi4ai6f26cn2o4f0mnrtidkow.png" alt="Study Planner" />
-                                <h1 className='text-[20px] font-bold'>Mock Tests</h1>
+                            <div className='mx-auto items-center flex flex-col justify-around'>
+                                <Image width={150} height={100} className='mx-auto m-2' src="/mock-test.png" alt="Mock Tests" />
+                                <h1 className='text-[20px] font-bold my-3'>Mock Tests</h1>
                                 <button className='w-full bg-[#6A1C1A] text-white py-2 px-[10px] sm:px-[30px] lg:px-[40px] xl:px-[50px] rounded'>READ MORE</button>
                             </div>
-                            <div className='mx-auto items-center'>
-                                <Image width={300} height={100} className='mx-auto' src="https://home.midhafin.com/wp-content/uploads/elementor/thumbs/lecturevideo-qjjuegu8pkrjfd5wcpov5inhvelwn9wycdcsuygd1c.png" alt="Study Planner" />
-                                <h1 className='text-[20px] font-bold text-center'>Lecture Video</h1>
+                            <div className='mx-auto items-center flex flex-col justify-around'>
+                                <Image width={150} height={100} className='mx-auto m-2' src="/lecture-video.png" alt="Lecture Video" />
+                                <h1 className='text-[20px] font-bold text-center my-3'>Lecture Video</h1>
                                 <button className='w-full bg-[#6A1C1A] text-white py-2 px-[10px] sm:px-[30px] lg:px-[40px] xl:px-[50px] rounded'>READ MORE</button>
                             </div>
-                            <div className='mx-auto items-center'>
-                                <Image width={300} height={100} className='mx-auto' src="https://home.midhafin.com/wp-content/uploads/elementor/thumbs/doubt-clearing-forum-qjjueeykbwoys58mnovm0j4komv67vpho41twej5ds.png" alt="Study Planner" />
-                                <h1 className='text-[20px] font-bold'>Doubt Solving Forum</h1>
+                            <div className='mx-auto items-center flex flex-col justify-around'>
+                                <Image width={150} height={100} className='mx-auto m-1' src="/doubut-solving-forum.png" alt="Doubt Solving Forum" />
+                                <h1 className='text-[20px] my-3 font-bold'>Doubt Solving Forum</h1>
                                 <button className='w-full mx-auto bg-[#6A1C1A] text-white py-2 px-[10px] sm:px-[30px] lg:px-[40px] xl:px-[50px] rounded'>READ MORE</button>
                             </div>
-                            <div className='mx-auto items-center'>
-                                <Image width={300} height={100} className='mx-auto' src="https://home.midhafin.com/wp-content/uploads/elementor/thumbs/industry-exp-faculty-qjjuee0q52nogj9zt6gzg1d438zt06lrbzecf4kjk0.png" alt="Study Planner" />
-                                <h1 className='text-[20px] font-bold'>Industry Expert Faculty</h1>
+                            <div className='mx-auto items-center flex flex-col justify-around'>
+                                <Image width={150} height={100} className='mx-auto m-4' src="/industry-expert-faculty.png" alt="Industry Expert Faculty" />
+                                <h1 className='text-[20px] my-3 font-bold'>Industry Expert Faculty</h1>
                                 <button className='w-full bg-[#6A1C1A] text-white py-2 px-[10px] sm:px-[30px] lg:px-[40px] xl:px-[50px]] rounded'>READ MORE</button>
                             </div>
-                            <div className='mx-auto items-center'>
-                                <Image width={300} height={100} className='mx-auto' src="https://home.midhafin.com/wp-content/uploads/elementor/thumbs/complete-study-material-qjjuec51rel3tbcq45nqb1u6wh92kseanq3dgknbwg.png" alt="Study Planner" />
-                                <h1 className='text-[20px] font-bold text-center'>Complete Study Material</h1>
+                            <div className='mx-auto items-center flex flex-col justify-around '>
+                                <Image width={150} height={100} className='mx-auto m-2' src="/Complete-study-material.png" alt="Complete Study Material" />
+                                <h1 className='text-[20px] my-3 font-bold text-center'>Complete Study Material</h1>
                                 <Link href='/complete-study-material'><button className='w-full bg-[#6A1C1A] text-white py-2 px-[10px] sm:px-[30px] lg:px-[40px] xl:px-[50px] rounded'>READ MORE</button></Link>
                             </div>
-                            <div className='mx-auto items-center'>
-                                <Image width={300} height={100} className='mx-auto' src="https://home.midhafin.com/wp-content/uploads/elementor/thumbs/access-till-you-pass-qjjueb77kkjthpe39n93qk2qb3dpd3akblfvzaoq2o.png" alt="Study Planner" />
-                                <h1 className='text-[20px] font-bold'>Access Till You Pass</h1>
+                            <div className='mx-auto items-center flex flex-col justify-around'>
+                                <Image width={150} height={100} className='mx-auto m-4' src="/access-till-you-pass.png" alt="Access Till You P150" />
+                                <h1 className='text-[20px] my-3 font-bold'>Access Till You Pass</h1>
                                 <Link href='/'><button className='w-full bg-[#6A1C1A] text-white py-2 px-[10px] sm:px-[30px] lg:px-[40px] xl:px-[50px] rounded'>READ MORE</button></Link>
                             </div>
 
