@@ -55,7 +55,8 @@ const MyComponent = () => {
             className="grid grid-cols-1 gap-5 md:grid-cols-2 mt-5"
           >
           <input type="hidden" name="access_key" value="e2deee0c-855f-4ae1-a513-eadd701a4eae" />
-          <input type="hidden" name="redirect" value="http://localhost:3000/contact-us"></input>
+          {/* chnage value to whatever page you want to redirect after submitting the form */}
+          <input type="hidden" name="redirect" value="https://eduzan.vercel.app/contact-us"></input>
             <input
               type="text"
               name="Name"

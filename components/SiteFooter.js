@@ -25,11 +25,11 @@ function Footer() {
                         <p className="font-semibold text-gray-800 dark:text-white">Quick Link</p>
 
                         <div className="flex flex-col items-start mt-5 space-y-2">
-                            <Link href="#" className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-[#6A1C1A] hover:underline hover:text-[#6A1C1A]">Home</Link>
-                            <Link href="#" className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-[#6A1C1A] hover:underline hover:text-[#6A1C1A]">About us</Link>
-                            <Link href="#" className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-[#6A1C1A] hover:underline hover:text-[#6A1C1A]">Courses</Link>
-                            <Link href="#" className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-[#6A1C1A] hover:underline hover:text-[#6A1C1A]">FAQs</Link>
-                            <Link href="#" className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-[#6A1C1A] hover:underline hover:text-[#6A1C1A]">Blogs</Link>
+                            <Link href="/" className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-[#6A1C1A] hover:underline hover:text-[#6A1C1A]">Home</Link>
+                            <Link href="/about-us" className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-[#6A1C1A] hover:underline hover:text-[#6A1C1A]">About us</Link>
+                            <Link href="/courses" className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-[#6A1C1A] hover:underline hover:text-[#6A1C1A]">Courses</Link>
+                            <Link href="/faq" className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-[#6A1C1A] hover:underline hover:text-[#6A1C1A]">FAQs</Link>
+                            <Link href="/blog" className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-[#6A1C1A] hover:underline hover:text-[#6A1C1A]">Blogs</Link>
                         </div>
                     </div>
 
