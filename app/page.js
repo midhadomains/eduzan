@@ -36,6 +36,11 @@ export default function Home() {
                             <Image width={600} height={600} className='w-auto p-5 h-auto' src="/Micky-Banner.png" alt="Micky Midha" />
                         </div>
                     </div>
+                    {/* Review section */}
+                    <div className="w-[95%]">
+                       <h1 className="font-bold text-[40px] text-center">Don&apos;t believe us, Hear from my students</h1>
+
+                    </div> 
                     {/* About section */}
                     <div className='sm:flex mx-auto lg:w-[80%] p-5 '>
                         <div className='sm:w-[40%] my-auto text-left'>
@@ -50,19 +55,19 @@ export default function Home() {
                     {/* Features section */}
                     <div className='grid sm:grid-cols-2 lg:grid-cols-3 mb-4 w-[92%] sm:w-[75%] mx-6 sm:mx-auto gap-[50px] mt-5 text-center'>
                         <div className=' shadow-2xl rounded-xl p-5 bg-[#FFF5EE] hover:bg-[#fffbfb]'>
-                            <Image width={200} height={200} className='mx-auto h-auto ' src="https://home.midhafin.com/wp-content/uploads/elementor/thumbs/Industry-Experienced-Faculty-Graphic-qjjuf83k7rt50cqg3kt9xdovai3nhfwrev0ssglf5s.png" alt="Industry Experienced Faculty" />
+                            <Image width={200} height={200} className='mx-auto w-40 sm:w-[220px] h-auto ' src="https://home.midhafin.com/wp-content/uploads/elementor/thumbs/Industry-Experienced-Faculty-Graphic-qjjuf83k7rt50cqg3kt9xdovai3nhfwrev0ssglf5s.png" alt="Industry Experienced Faculty" />
                             <hr className='my-3' />
                             <h1 className='text-2xl text-bold text-[#6A1C1A] text-center'>Industry Experienced Faculty</h1>
                             <p className=' '>Our faculty is extremely well trained and have real industry experience. They have taught hundreds of students and have prepared thousands of questions over the years. Quality of our faculty is something that we take great pride in and that we are often complimented upon by our students.</p>
                         </div>
                         <div className='shadow-2xl rounded-xl p-5 bg-[#FFF5EE] hover:bg-[#fffbfb]'>
-                            <Image width={170} height={170} className=' mx-auto h-auto' src="https://home.midhafin.com/wp-content/uploads/elementor/thumbs/Systematic-Doubt-Solving-Graphic-qjjuf4c7gfnzpwvwpj6rnen0wym6mnhu2ceuvcqzuo.png" alt="Systematic Doubt Solving" />
+                            <Image width={170} height={170} className=' mx-auto w-30 sm:w-[170px] h-30' src="https://home.midhafin.com/wp-content/uploads/elementor/thumbs/Systematic-Doubt-Solving-Graphic-qjjuf4c7gfnzpwvwpj6rnen0wym6mnhu2ceuvcqzuo.png" alt="Systematic Doubt Solving" />
                             <hr className='my-3' />
                             <h1 className='text-2xl text-bold text-[#6A1C1A]'>Systematic Doubt Solving</h1>
                             <p className=' '>We believe curiosity is the mother of all inventions, and so we ensure every single relevant doubt of every single student is cleared within reasonable time frame. Our faculty encourages students to ask doubts and for them no doubt is small or silly. Relevant doubts from other sources are also answered by our faculty and we provide in depth and easy to understand solutions to our students.</p>
                         </div>
                         <div className='shadow-2xl rounded-xl p-5 bg-[#FFF5EE] hover:bg-[#fffbfb]'>
-                            <Image width={165} height={165} className=' mx-auto h-auto' src="https://home.midhafin.com/wp-content/uploads/elementor/thumbs/End-to-End-Mentorship-Graphic-qjjuetzzd99u67axdwpvdz8ydq159zcscx8ilb6br4.png" alt="End to End Mentorship" />
+                            <Image width={165} height={165} className=' mx-auto w-25 h-auto' src="https://home.midhafin.com/wp-content/uploads/elementor/thumbs/End-to-End-Mentorship-Graphic-qjjuetzzd99u67axdwpvdz8ydq159zcscx8ilb6br4.png" alt="End to End Mentorship" />
                             <hr className='my-3' />
                             <h1 className='text-2xl text-bold text-[#6A1C1A]'>End to End Mentorship</h1>
                             <p className=''>The relationship between our instructors and our students is not just that of instruction and teaching but also of mentorship. We help students throughout the process of learning and even beyond. From study planning, to the exam, to the relevant job interviews, we are there at every step with our students.</p>
@@ -84,14 +89,14 @@ export default function Home() {
                         </div>
                     </div>
                     {/* Our Platform Features */}
-                    <div className='bg-[#FFF5EE] mt-8 m-5 pb-5  sm:m-1 text-center'>
+                    <div className='bg-[#FFF5EE] mt-8 m-1 pb-5 text-center'>
                         <div className='max-w-[90%] sm:max-w-[70%] lg:max-w-[50%] mx-auto mb-5 text-center my-3'>
                             <h1 className='text-[50px] font-bold my-3'>Our <span className='text-[#6A1C1A]'>Platform</span> Features</h1>
                             <p className='my-4'>We at MidhaFin, focus on striking a careful balance, between Knowledge and Relevance, between theory and analytics & between pure concepts and practical application.</p>
                         </div>
-                        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-w-[80%] mx-auto gap-[50px] item-center'>
+                        <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-w-[80%] mx-auto gap-[50px] item-center'>
                             <div className='mx-auto items-center flex flex-col justify-around'>
-                                <Image width={150} height={100} className='mx-auto m-2' src="/Study-planner.png" alt="Study Planner" />
+                                <Image width={150} height={100} className='mx-auto  m-2' src="/Study-planner.png" alt="Study Planner" />
                                 <h1 className='text-[20px] font-bold my-3'>Study Planner</h1>
                                 <Link href='/study-planner'><button className='w-full bg-[#6A1C1A] text-white py-2 px-[10px]  sm:px-[30px] lg:px-[40px] xl:px-[50px] rounded'>READ MORE</button></Link>
                             </div>
