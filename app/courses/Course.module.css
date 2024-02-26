@@ -24,6 +24,8 @@
     flex-wrap: wrap;
 }
 #coursecardparentdiv{
+    border: 1px solid red;
+
     width: 300px;
     padding: 15px;
     margin: 15px;
@@ -31,7 +33,12 @@
 #smallscreendiv{
     display: none;
 }
+
+
 @media only screen and (max-width: 600px) {
+    #largescreendiv{
+        display: none;
+    }
     #smallscreendiv{
         display: flex;
         flex-wrap: wrap;
@@ -46,13 +53,14 @@
     #smhiddenbutton>button{
         width:100%;
         min-width:10em;
-        background-color: aqua;
+        background-color: rgb(184, 181, 181);
+        
         margin:10px 0;
         padding: 10px;
     }
     #coursediv{
-        width: 600px;
-        min-width: 350px;
+        width: 100%;
+        /* min-width: 350px; */
         margin-left: 0;
         margin-top: 0;
         display: flex;

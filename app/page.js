@@ -92,27 +92,27 @@ export default function Home() {
                             <div className='mx-auto items-center flex flex-col justify-around'>
                                 <Image width={150} height={100} className='mx-auto m-1' src='/question-bank.png' alt="Questions Bank" />
                                 <h1 className='text-[20px] font-bold my-3'>Questions Bank</h1>
-                                <button className='w-full bg-[#6A1C1A] text-white py-2 px-[10px] sm:px-[30px] lg:px-[40px] xl:px-[50px]] rounded'>READ MORE</button>
+                                <Link href='/question-bank'><button className='w-full bg-[#6A1C1A] text-white py-2 px-[10px] sm:px-[30px] lg:px-[40px] xl:px-[50px]] rounded'>READ MORE</button></Link>
                             </div>
                             <div className='mx-auto items-center flex flex-col justify-around'>
                                 <Image width={150} height={100} className='mx-auto m-2' src="/mock-test.png" alt="Mock Tests" />
                                 <h1 className='text-[20px] font-bold my-3'>Mock Tests</h1>
-                                <button className='w-full bg-[#6A1C1A] text-white py-2 px-[10px] sm:px-[30px] lg:px-[40px] xl:px-[50px] rounded'>READ MORE</button>
+                                <Link href='/mock-test'><button className='w-full bg-[#6A1C1A] text-white py-2 px-[10px] sm:px-[30px] lg:px-[40px] xl:px-[50px] rounded'>READ MORE</button></Link>
                             </div>
                             <div className='mx-auto items-center flex flex-col justify-around'>
                                 <Image width={150} height={100} className='mx-auto m-2' src="/lecture-video.png" alt="Lecture Video" />
                                 <h1 className='text-[20px] font-bold text-center my-3'>Lecture Video</h1>
-                                <button className='w-full bg-[#6A1C1A] text-white py-2 px-[10px] sm:px-[30px] lg:px-[40px] xl:px-[50px] rounded'>READ MORE</button>
+                                <Link href='/lecture-video'><button className='w-full bg-[#6A1C1A] text-white py-2 px-[10px] sm:px-[30px] lg:px-[40px] xl:px-[50px] rounded'>READ MORE</button></Link>
                             </div>
                             <div className='mx-auto items-center flex flex-col justify-around'>
                                 <Image width={150} height={100} className='mx-auto m-1' src="/doubut-solving-forum.png" alt="Doubt Solving Forum" />
                                 <h1 className='text-[20px] my-3 font-bold'>Doubt Solving Forum</h1>
-                                <button className='w-full mx-auto bg-[#6A1C1A] text-white py-2 px-[10px] sm:px-[30px] lg:px-[40px] xl:px-[50px] rounded'>READ MORE</button>
+                                <Link href='/doubt-solving-forum'><button className='w-full mx-auto bg-[#6A1C1A] text-white py-2 px-[10px] sm:px-[30px] lg:px-[40px] xl:px-[50px] rounded'>READ MORE</button></Link>
                             </div>
                             <div className='mx-auto items-center flex flex-col justify-around'>
                                 <Image width={150} height={100} className='mx-auto m-4' src="/industry-expert-faculty.png" alt="Industry Expert Faculty" />
                                 <h1 className='text-[20px] my-3 font-bold'>Industry Expert Faculty</h1>
-                                <button className='w-full bg-[#6A1C1A] text-white py-2 px-[10px] sm:px-[30px] lg:px-[40px] xl:px-[50px]] rounded'>READ MORE</button>
+                                <Link href='/industry-expert-faculty'><button className='w-full bg-[#6A1C1A] text-white py-2 px-[10px] sm:px-[30px] lg:px-[40px] xl:px-[50px]] rounded'>READ MORE</button></Link>
                             </div>
                             <div className='mx-auto items-center flex flex-col justify-around '>
                                 <Image width={150} height={100} className='mx-auto m-2' src="/Complete-study-material.png" alt="Complete Study Material" />
@@ -122,7 +122,7 @@ export default function Home() {
                             <div className='mx-auto items-center flex flex-col justify-around'>
                                 <Image width={150} height={100} className='mx-auto m-4' src="/access-till-you-pass.png" alt="Access Till You P150" />
                                 <h1 className='text-[20px] my-3 font-bold'>Access Till You Pass&nbsp;&nbsp;</h1>
-                                <Link href='/'><button className='w-full bg-[#6A1C1A] text-white py-2 px-[10px] sm:px-[30px] lg:px-[40px] xl:px-[50px] rounded'>READ MORE</button></Link>
+                                <Link href='/access-till-you-pass'><button className='w-full bg-[#6A1C1A] text-white py-2 px-[10px] sm:px-[30px] lg:px-[40px] xl:px-[50px] rounded'>READ MORE</button></Link>
                             </div>
 
                         </div>

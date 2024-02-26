@@ -1,11 +1,15 @@
 import React from 'react';
 import Image from 'next/image'
+import Footer from '../../components/SiteFooter';
+import Navbar from '../../components/SiteHeader';
 
-const AccessTillYouPass = () => {
+const MyComponents2 = () => {
   return (
+    <>
+    <Navbar/>
     <div className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
       <div className="absolute inset-0 -z-10 overflow-hidden">
-        <svg className="absolute left-[max(50%,25rem)] top-0 h-[94rem] w-[128rem] -translate-x-1/2 stroke-gray-200" aria-hidden="true">
+        <svg className="absolute left-[max(50%,25rem)] top-0 h-[150rem] w-[128rem] -translate-x-1/2 stroke-gray-200" aria-hidden="true">
           <defs>
             <pattern id="e813992c-7d03-4cc4-a2bd-151760b470a0" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
               <path d="M100 200V.5M.5 .5H200" fill="none" />
@@ -21,14 +25,16 @@ const AccessTillYouPass = () => {
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
             <div className="lg:max-w-lg">
-              <h1 className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl"> MIDHAFIN <span style={{ color: '#8B4513' }}>STUDY</span> PLANNER</h1>
-              <p className="mt-6 text-xl leading-8 text-gray-700 tracking-wide">The candidate will have access to all the resources until they pass the exam, provided that they are still preparing for it.</p>
+            <p className="text-2xl pl-1 font-semibold leading-7 text-[#842020]">Features</p>
+              <h1 className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl"> Access  <span style={{ color: '#842021' }}>Till You</span> Pass</h1>
+              <p className="mt-6 text-sm lg:text-xl sm:text-sm md:text-lg leading-6 text-gray-700 tracking-wide">The candidate will have access to all the resources until they pass the exam, provided that they are still preparing for it.</p>
             </div>
           </div>
         </div>
         <div className="-ml-4 sm:ml-0 lg:p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
+        
         <Image
-            src="/Complete-study-material.png"
+            src="/access-till-you-pass.png"
             alt="Study-planner"
             className="w-[20rem] max-w-none rounded-xl shadow-l ring-1 ring-gray-400/10 sm:w-[30rem] mx-auto"
             width={300}
@@ -37,14 +43,16 @@ const AccessTillYouPass = () => {
         </div>
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
-            <div className="max-w-xl text-xl leading-7 text-gray-700 lg:max-w-lg tracking-wide">
-              <p>The best part is that the candidate will always have access to the updated FRM®/CFA/PRM material and resources. The access will not be limited to the FRM®/CFA/PRM resources that the candidate was provided during the time of enrolment</p>
-              <p className="mt-8">We care about our FRM®/CFA/PRM students and we will go out of our way to help them in their journey towards clearing the FRM®/CFA/PRM exams and taking a leap in their career!</p>
+            <div className="max-w-auto text-xl leading-7 text-gray-700 lg:max-w-lg tracking-wide">
+              <p className='text-sm lg:text-xl sm:text-sm md:text-lg leading-6'>The best part is that the candidate will always have access to the updated FRM®/CFA/PRM material and resources. The access will not be limited to the FRM®/CFA/PRM resources that the candidate was provided during the time of enrolment</p>
+              <p className="mt-8 text-sm lg:text-xl sm:text-sm md:text-lg leading-6">We care about our FRM®/CFA/PRM students and we will go out of our way to help them in their journey towards clearing the FRM®/CFA/PRM exams and taking a leap in their career!</p>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <Footer/>
+    </>
   );
 }
-export default AccessTillYouPass;
+export default MyComponents2;

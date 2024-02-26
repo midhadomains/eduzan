@@ -1,31 +1,3 @@
-// import Link from "next/link";
-
-
-// export default function SiteFooter() {
-
-
-//     return (
-//         <>
-//             <footer id="site-footer" className="bg-slate-200">
-//                 <div className="flex justify-between items-center container mx-auto lg:max-w-5xl">
-//                     <div className="py-3">&copy; MidhaFin</div>
-//                     <ul className="flex [&>li>a]:px-2">
-//                         <li>
-//                             <Link href="/about">About</Link>
-//                         </li>
-//                         <li>
-//                             <Link href='/faq'>FAQ</Link>
-//                         </li>
-//                         <li>
-//                             <Link href='/refund-policy'>Refund Policy</Link>
-//                         </li>
-//                     </ul>
-//                 </div>
-
-//             </footer>
-//         </>
-//     )
-// }
 import React from 'react';
 import Image from 'next/image'
 import Link from "next/link"
@@ -41,11 +13,11 @@ function Footer() {
             <div className="container px-6 py-12 mx-auto">
                 <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
                     <div className="sm:col-span-2">
-                        <h1 className="max-w-lg text-xl font-semibold tracking-tight text-gray-800 xl:text-2xl dark:text-white">Subscribe our newsletter to get update.</h1>
+                        <h1 className="max-w-lg text-xl font-semibold tracking-tight text-gray-800 xl:text-2xl dark:text-white">Subscribe To our newsletter to get updates.</h1>
 
                         <div className="flex flex-col mx-auto mt-6 space-y-3 md:space-y-0 md:flex-row">
                             <input id="email" type="text" className="px-4 py-2 text-gray-700 bg-white border rounded-md dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-blue-300" placeholder="Email Address" />
-                            <button className="w-full px-6 py-2.5 text-sm font-medium tracking-wider text-white transition-colors duration-300 transform md:w-auto md:mx-4 focus:outline-none bg-gray-800 rounded-lg hover:bg-gray-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80">Subscribe</button>
+                            <button className="w-full px-6 py-2.5 text-sm font-medium tracking-wider text-white transition-colors duration-300 transform md:w-auto md:mx-4 focus:outline-none bg-[#6A1C1A] rounded-lg hover:bg-gray-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80">Subscribe</button>
                         </div>
                     </div>
 
@@ -53,11 +25,11 @@ function Footer() {
                         <p className="font-semibold text-gray-800 dark:text-white">Quick Link</p>
 
                         <div className="flex flex-col items-start mt-5 space-y-2">
-                            <Link href="#" className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">Home</Link>
-                            <Link href="#" className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">About us</Link>
-                            <Link href="#" className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">Courses</Link>
-                            <Link href="#" className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">FAQs</Link>
-                            <Link href="#" className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">Blogs</Link>
+                            <Link href="#" className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-[#6A1C1A] hover:underline hover:text-[#6A1C1A]">Home</Link>
+                            <Link href="#" className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-[#6A1C1A] hover:underline hover:text-[#6A1C1A]">About us</Link>
+                            <Link href="#" className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-[#6A1C1A] hover:underline hover:text-[#6A1C1A]">Courses</Link>
+                            <Link href="#" className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-[#6A1C1A] hover:underline hover:text-[#6A1C1A]">FAQs</Link>
+                            <Link href="#" className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-[#6A1C1A] hover:underline hover:text-[#6A1C1A]">Blogs</Link>
                         </div>
                     </div>
 
@@ -65,13 +37,13 @@ function Footer() {
                         <p className="font-semibold text-gray-800 dark:text-white uppercase">Contact Us</p>
                         <div className="mt-5">
                             <div className="flex text-gray-800 dark:text-white my-2 ">
-                                <MdOutlinePhoneIphone className="mt-1 mr-1" />
-                                <h1> Call : +91-91551-99555</h1>
+                                <MdOutlinePhoneIphone className="my-auto mr-1" />
+                                <h1 className='text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-[#6A1C1A] hover:underline hover:text-[#6A1C1A] text-lg'> Call : +91-91551-99555</h1>
                             </div>
                             <div className="flex text-gray-800 dark:text-white my-2">
-                                <TiMail className="mt-1 mr-1" />
+                                <TiMail className="my-auto mr-1" />
                                 <Link target="_blank" href="mailto:midhafin@gmail.com" className="hover:text-[#fcefea]">
-                                    <h1 className=' hover:text-[#892121]'>MidhaFin@gmail.com</h1>
+                                    <h1 className='text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-[#6A1C1A] hover:underline hover:text-[#6A1C1A] text-lg'>MidhaFin@gmail.com</h1>
                                 </Link>
                             </div>
                         </div>
@@ -93,23 +65,23 @@ function Footer() {
                     </a>
 
                     <div className="flex -mx-2">
-                        <Link target="_blank" href="https://www.instagram.com/midhafin/" className="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400" aria-label="Reddit">
+                        <Link target="_blank" href="https://www.instagram.com/midhafin/" className="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-[#6A1C1A] dark:hover:text-[#6A1C1A]" aria-label="Reddit">
                             <SlSocialInstagram />
                         </Link>
 
-                        <Link target="_blank" href="https://www.facebook.com/MidhaFin" className="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400" aria-label="Facebook">
+                        <Link target="_blank" href="https://www.facebook.com/MidhaFin" className="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-[#6A1C1A] dark:hover:text-[#6A1C1A]" aria-label="Facebook">
                             <TiSocialFacebook />
                         </Link>
 
-                        <Link target="_blank" href="https://www.linkedin.com/company/midhafin/" className="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400" aria-label="Github">
+                        <Link target="_blank" href="https://www.linkedin.com/company/midhafin/" className="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-[#6A1C1A] dark:hover:text-[#6A1C1A]" aria-label="Github">
                             <SlSocialLinkedin />
                         </Link>
 
-                        <Link target="_blank" href="https://twitter.com/midhafin" className="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400" aria-label="Github">
+                        <Link target="_blank" href="https://twitter.com/midhafin" className="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-[#6A1C1A] dark:hover:text-[#6A1C1A]" aria-label="Github">
                             <SlSocialTwitter />
                         </Link>
 
-                        <Link target="_blank" href="https://www.youtube.com/@MidhaFin" className="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400" aria-label="Github">
+                        <Link target="_blank" href="https://www.youtube.com/@MidhaFin" className="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-[#6A1C1A] dark:hover:text-[#6A1C1A]" aria-label="Github">
                             <SlSocialYoutube />
                         </Link>
                     </div>
