@@ -1,5 +1,23 @@
-#largescreendiv>ul>li{
+#largescreendiv{
+    display: flex;
+    flex-wrap: nowrap;
+}
+#largescreendiv_a{
+    width: 20%;
+}
+#largescreendiv_b{
+    width: 80%;
+    /* border: 1px solid red; */
+}
+
+#largescreencoursecardparentdiv{
     width:300px;
+    margin: 15px;
+    text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+#largescreendiv>ul>li{
+    width:100%;
     background-color: aquamarine;
     margin: 10px 0;
     padding: 5px;
@@ -17,25 +35,31 @@
 #smhiddenbutton{
     display: none;
 }
-#coursediv{
-    margin-left: 300px;
-    margin-top: -260px;
+#largescreencoursediv{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid yellow;
 }
+/* #coursediv{
+    margin-left: 300px;
+    display: flex;
+    flex-wrap: wrap;
+} */
 #coursecardparentdiv{
-    border: 1px solid red;
-
-    width: 300px;
-    padding: 15px;
+    /* border: 1px solid red; */
+    width:300px;
     margin: 15px;
+    text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 #smallscreendiv{
     display: none;
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 710px) {
     #largescreendiv{
         display: none;
     }
@@ -60,9 +84,6 @@
     }
     #coursediv{
         width: 100%;
-        /* min-width: 350px; */
-        margin-left: 0;
-        margin-top: 0;
         display: flex;
         flex-wrap: nowrap;
         overflow-x: auto;

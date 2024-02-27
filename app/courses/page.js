@@ -18,16 +18,25 @@ function Accordion() {
     setSelectedSubButton((prevSelected) => (prevSelected === subButtonIndex ? null : subButtonIndex));
   };
 
-  const Popularcourse = [{ title: "FRM", price: 20000, img: "https://flowbite.com/docs/images/logo.svg", type: "paid" }, { title: "FRM-1", price: 20000, img: "https://flowbite.com/docs/images/logo.svg", type: "paid" }, { title: "FR3", price: 20000, img: "https://flowbite.com/docs/images/logo.svg", type: "paid" }, { title: "FRM", price: 20000, img: "https://flowbite.com/docs/images/logo.svg", type: "paid" }, { title: "FRM-1", price: 20000, img: "https://flowbite.com/docs/images/logo.svg", type: "paid" }, { title: "FR3", price: 20000, img: "https://flowbite.com/docs/images/logo.svg", type: "paid" }]
+  const Popularcourse = [
+  //{ title: "FRM Part-1 Sample Course", price: 20000, img: "https://api.eduzan.com/wp-content/uploads/2024/02/MF_FRM-Part-1-Sample-Course@90x-100.jpg", type: "paid" },
+  //{ title: "FRM Part-2 Sample Course", price: 20000, img: "https://api.eduzan.com/wp-content/uploads/2024/02/MF_FRM-PART-2-Sample-Course@90x-100.jpg", type: "paid" },
+  { title: "FRM Part-1 Self Paced Course", price: 20000, img: "https://api.eduzan.com/wp-content/uploads/2024/02/MF_PRM-Exam-1-Self-paced-course@90x-100.jpg", type: "paid" },
+  { title: "FRM Part-2 Self Paced Course", price: 20000, img: "https://api.eduzan.com/wp-content/uploads/2024/02/MF_FRM-Part-2-Self-paced-course@90x-100.jpg ", type: "paid" },
+  { title: "FRM Part-1 Self Paced Course", price: 20000, img: "https://api.eduzan.com/wp-content/uploads/2024/02/MF_PRM-Exam-1-Self-paced-course@90x-100.jpg", type: "paid" },
+  { title: "FRM Part-2 Self Paced Course", price: 20000, img: "https://api.eduzan.com/wp-content/uploads/2024/02/MF_FRM-Part-2-Self-paced-course@90x-100.jpg ", type: "paid" },
+    //   { title: "FRM-1", price: 20000, img:" ", type: "paid" },
+    //    { title: "FR3", price: 20000, img:" ", type: "paid" }
+  ]
 
   return (
     <div>
       <Navbar />
       <div id={styles.largescreendiv} >
-        <ul>
-          <li>Popularcourse</li>
-          <li onClick={() => handleButtonClick(1)}>FRM
-            {selectedButton === 1 && (
+        <ul id={styles.largescreendiv_a}>
+          <li onClick={() => handleButtonClick(1)}>Popularcourse</li>
+          <li>FRM
+            {selectedButton === 2 && (
               <div id={styles.largescreensubbuttondiv}>
                 <button>Part-1</button>
                 <button>Part-2</button>
@@ -37,8 +46,20 @@ function Accordion() {
           <li>CFA</li>
           <li>PRM</li>
         </ul>
-        <div>
-
+        <div id={styles.largescreendiv_b} >
+          {selectedButton === 1 && (
+            <div id={styles.largescreencoursediv} >
+              {Popularcourse.map((a, index) => (
+                <div key={index} id={styles.largescreencoursecardparentdiv}>
+                  <Image width={600} height={600} src={a.img} alt={a.title} className="w-[100%]" />
+                  <h1 className=' my-1 font-medium'>{a.title}</h1>
+                  <p>{a.type}</p>
+                  <p className='my-1 font-medium'>₹ {a.price}</p>
+                  <p className='w-100% bg-[#FFF5EE] font-medium  text-xl p-2 hover:bg-[#f6d8c2] hover:cursor-pointer'>ENROLL NOW</p>
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       </div>
 
@@ -51,10 +72,11 @@ function Accordion() {
             <div id={styles.coursediv} >
               {Popularcourse.map((a, index) => (
                 <div key={index} id={styles.coursecardparentdiv}>
-                  <h1>{a.title}</h1>
-                  <Image width={200} height={200} src={a.img} alt={a.title} className="w-[150px] min-w-[150px] border p-5 m-4" />
-                  <p>{a.price}</p>
+                  <Image width={600} height={400} src={a.img} alt={a.title} className="w-[100%]" />
+                  <h1 className=' my-1 font-medium'>{a.title}</h1>
                   <p>{a.type}</p>
+                  <p className='my-1 font-medium'>₹ {a.price}</p>
+                  <p className='w-100% bg-[#FFF5EE] font-medium  text-xl p-2 hover:bg-[#f6d8c2] hover:cursor-pointer'>ENROLL NOW</p>
                 </div>
               ))}
             </div>
@@ -75,14 +97,14 @@ function Accordion() {
                   {Popularcourse.map((a, index) => (
                     <div key={index} id={styles.coursecardparentdiv}>
                       <div id={styles.coursecarddiva}>
-                      <h1>{a.title}</h1>
-                      <Image width={200} height={200} src={a.img} alt={a.title} className="w-[150px] min-w-[150px] border p-5 m-4" />
-                      <p>{a.price}</p>
-                      <p>{a.type}</p>
+                        <Image width={600} height={400} src={a.img} alt={a.title} className="w-[100%]" />
+                        <h1 className=' my-1 font-medium'>{a.title}</h1>
+                        <p>{a.type}</p>
+                        <p className='my-1 font-medium'>₹ {a.price}</p>
+                        <p className='w-100% bg-[#FFF5EE] font-medium  text-xl p-2 hover:bg-[#f6d8c2] hover:cursor-pointer'>ENROLL NOW</p>
                       </div>
                       <div id={styles.coursecarddivb}>
-                        Sujal Sahu
-                      </div> 
+                      </div>
                     </div>
                   ))}
                 </div>}

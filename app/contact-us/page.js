@@ -1,5 +1,5 @@
 "use client";
-
+import '@fortawesome/fontawesome-free/css/all.css';
 import React, { useState } from 'react';
 import Navbar from '../../components/SiteHeader';
 import Footer from '../../components/SiteFooter';
@@ -54,7 +54,7 @@ const MyComponent = () => {
             method="POST"
             className="grid grid-cols-1 gap-5 md:grid-cols-2 mt-5"
           >
-          <input type="hidden" name="access_key" value="e2deee0c-855f-4ae1-a513-eadd701a4eae" />
+          <input type="hidden" name="access_key" value="5bf8d2b0-a3ca-48cd-8c64-7aa707f8c751"/>
           {/* chnage value to whatever page you want to redirect after submitting the form */}
           <input type="hidden" name="redirect" value="https://eduzan.vercel.app/contact-us"></input>
             <input
@@ -130,7 +130,7 @@ const MyComponent = () => {
           
           </div>
           <div className="flex  w-2/3 lg:w-1/2">
-          <a href="https://api.whatsapp.com/send?phone=123456789" target="_blank" rel="noreferrer" className="rounded-full bg-white h-8 w-8 inline-block mx-1 text-center pt-1">
+          <a href="https://api.whatsapp.com/send/?phone=919155199555&text&type=phone_number&app_absent=0" target="_blank" rel="noreferrer" className="rounded-full bg-white h-8 w-8 inline-block mx-1 text-center pt-1">
           <i className="fab fa-whatsapp text-[#128C7E]" ></i>
           </a>
           </div>
