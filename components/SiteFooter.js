@@ -33,12 +33,12 @@ function Footer() {
                     <div>
                         <p className="font-semibold text-white">Quick Link</p>
 
-                        <div className="flex flex-col items-start mt-5 space-y-2">
-                            <Link href="/" className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-[#6A1C1A] hover:underline hover:text-[#6A1C1A]">Home</Link>
-                            <Link href="/about-us" className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-[#6A1C1A] hover:underline hover:text-[#6A1C1A]">About us</Link>
-                            <Link href="/courses" className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-[#6A1C1A] hover:underline hover:text-[#6A1C1A]">Courses</Link>
-                            <Link href="/faq" className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-[#6A1C1A] hover:underline hover:text-[#6A1C1A]">FAQs</Link>
-                            <Link href="/blog" className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-[#6A1C1A] hover:underline hover:text-[#6A1C1A]">Blogs</Link>
+                        <div className="flex flex-col items-start text-white mt-5 space-y-2">
+                            <Link href="/" className="transition-colors duration-300 hover:underline hover:text-[#6A1C1A]">Home</Link>
+                            <Link href="/about-us" className="transition-colors duration-300 hover:underline hover:text-[#6A1C1A]">About us</Link>
+                            <Link href="/courses" className="transition-colors duration-300 hover:underline hover:text-[#6A1C1A]">Courses</Link>
+                            <Link href="/faq" className="transition-colors duration-300 hover:underline hover:text-[#6A1C1A]">FAQs</Link>
+                            <Link href="/blog" className="transition-colors duration-300 hover:underline hover:text-[#6A1C1A]">Blogs</Link>
                         </div>
                     </div>
 
