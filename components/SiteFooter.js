@@ -9,7 +9,7 @@ import { TiMail } from "react-icons/ti";
 
 function Footer() {
     return (
-        <footer className="bg-white dark:bg-gray-900">
+        <footer className="bg-gray-900">
             <div className="container px-6 py-12 mx-auto">
                 <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
                     {/* <div className="sm:col-span-2">
@@ -31,7 +31,7 @@ function Footer() {
                     </div>
 
                     <div>
-                        <p className="font-semibold text-gray-800 dark:text-white">Quick Link</p>
+                        <p className="font-semibold text-white">Quick Link</p>
 
                         <div className="flex flex-col items-start mt-5 space-y-2">
                             <Link href="/" className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-[#6A1C1A] hover:underline hover:text-[#6A1C1A]">Home</Link>
@@ -43,16 +43,16 @@ function Footer() {
                     </div>
 
                     <div>
-                        <p className="font-semibold text-gray-800 dark:text-white uppercase">Contact Us</p>
+                        <p className="font-semibold text-white uppercase">Contact Us</p>
                         <div className="mt-5">
-                            <div className="flex text-gray-800 dark:text-white my-2 ">
+                            <div className="flex text-white my-2 ">
                                 <MdOutlinePhoneIphone className="my-auto mr-1" />
-                                <h1 className='text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-[#6A1C1A] hover:underline hover:text-[#6A1C1A] text-lg'> Call : +91-91551-99555</h1>
+                                <h1 className='text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-[#6A1C1A] hover:underline hover:text-[#6A1C1A] text-lg'> Call : +91-91551-99555</h1>
                             </div>
                             <div className="flex text-gray-800 dark:text-white my-2">
                                 <TiMail className="my-auto mr-1" />
                                 <Link target="_blank" href="mailto:midhafin@gmail.com" className="hover:text-[#fcefea]">
-                                    <h1 className='text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-[#6A1C1A] hover:underline hover:text-[#6A1C1A] text-lg'>MidhaFin@gmail.com</h1>
+                                    <h1 className='text-gray-600 transition-colors duration-300 text-gray-300 dark:hover:text-[#6A1C1A] hover:underline hover:text-[#6A1C1A] text-lg'>MidhaFin@gmail.com</h1>
                                 </Link>
                             </div>
                         </div>
@@ -66,7 +66,7 @@ function Footer() {
                     Further, GARP is not responsible for any fees or costs paid by the user to MidhaFin nor is GARP responsible for any fees or costs of any person or entity providing any services to MidhaFin. SCR®, FRM®, GARP® and Global Association of Risk Professionals™ , is standard character and/or stylized
                     form, are trademarks owned by the Global Association of Risk Professionals, Inc.</h1>
 
-                <hr className="my-6 border-gray-200 md:my-8 dark:border-gray-700" />
+                <hr className="my-6  md:my-8 border-gray-700" />
 
                 <div className="flex items-center justify-between">
                     <a href="#">
