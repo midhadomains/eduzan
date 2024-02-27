@@ -12,12 +12,21 @@ function Footer() {
         <footer className="bg-white dark:bg-gray-900">
             <div className="container px-6 py-12 mx-auto">
                 <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
-                    <div className="sm:col-span-2">
+                    {/* <div className="sm:col-span-2">
                         <h1 className="max-w-lg text-xl font-semibold tracking-tight text-gray-800 xl:text-2xl dark:text-white">Subscribe To our newsletter to get updates.</h1>
 
                         <div className="flex flex-col mx-auto mt-6 space-y-3 md:space-y-0 md:flex-row">
                             <input id="email" type="text" className="px-4 py-2 text-gray-700 bg-white border rounded-md dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-blue-300" placeholder="Email Address" />
                             <button className="w-full px-6 py-2.5 text-sm font-medium tracking-wider text-white transition-colors duration-300 transform md:w-auto md:mx-4 focus:outline-none bg-[#6A1C1A] rounded-lg hover:bg-gray-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80">Subscribe</button>
+                        </div>
+                    </div> */}
+                    <div className='w-[100%] my-auto pt-5 text-left  sm:col-span-2' >
+                        <p className='text-white'>iOS & Android</p>
+                        <h1 className='text-[25px] sm:text-[30px] text-white font-bold'>Download the Mobile App</h1>
+                        <p className='text-white mb-5'>MidhaFin is a free to download app</p>
+                        <div className='flex'>
+                            <Link href="https://play.google.com/store/search?q=Midhafin&c=apps&hl=en_IN&gl=US" target="_blank" className="mr-5 w-[200px]"><Image width={300} height={100} src="https://home.midhafin.com/wp-content/uploads/2024/02/Google-Play-Button.png" alt="google play store" /></Link>
+                            <Link href="https://apps.apple.com/in/app/midhafin-cfa-frm-prm/id6463192627" target="_blank" className="mr-5 w-[200px]"><Image width={300} height={100} src="https://home.midhafin.com/wp-content/uploads/2024/02/iOS-download-Button.png" alt="app store" /></Link>
                         </div>
                     </div>
 

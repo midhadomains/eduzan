@@ -10,14 +10,14 @@ const Navbar = () => {
 
     return (
         <nav className="mx-auto  sticky top-0 z-10 bg-[#d8c9c9] backdrop-filter backdrop-blur-[2px] bg-opacity-40 border-b border-gray-100 firefox:bg-opacity-90">
-            <div className='max-w-full mx-3 '>
-                <div className="flex items-center justify-between lg:w-[100%] h-[60px] mx-auto pr-4">
-                    <Link href='/'><Image width={250} height={150} className='ml-4 lg:ml-0 md:item-left h-auto' src="/Logo-with-garp.webp" alt="MidhaFin Logo" /></Link>
+            <div className='max-w-full '>
+                <div className="flex items-center justify-between lg:w-[100%] h-[60px] mx-auto">
+                    <Link href='/'><Image width={250} height={150} className=' ml-4 lg:ml-6  md:item-left' src="/Logo-with-garp.webp" alt="MidhaFin Logo" /></Link>
                     {toggle ?
                         <IoClose onClick={() => setToggle(!toggle)} className="text-2xl sm:hidden block" />
                         : <IoMenu onClick={() => setToggle(!toggle)} className="text-2xl sm:hidden block" />}
 
-                    <ul className="hidden sm:flex items-right space-x-12 ">
+                    <ul className="hidden sm:flex justify-around sm:w-[70%] md:w-[60%] lg:w-[40%] lg:mr-9">
                         <NavItem to="/courses" name="Courses" />
                         <NavItem to="/blog" name="Blogs" />
                         <NavItem to="/reviews" name="Reviews" />
@@ -41,10 +41,10 @@ const Navbar = () => {
 
 const NavItem = ({ to, name }) => {
     return (
-        <li className="relative group  hover:text-[#f7a787] p-4 sm:p-0">
+        <li className="relative group  hover:text-[#f7a787] p-4 sm:p-0 sm:text-lg md:text-xl">
             <Link
                 href={to}
-                className="font-semibold text-xl cursor-pointe pb-2 px-1 hover:text-[#6A1C1A] hover:border-b-[4px] border-transparent transition duration-300 group-hover:border-[#6A1B1B]">
+                className="font-semibold  cursor-pointe pb-2 px-1 hover:text-[#6A1C1A] hover:border-b-[4px] border-transparent transition duration-300 group-hover:border-[#6A1B1B]">
                 {name}
             </Link>
         </li>

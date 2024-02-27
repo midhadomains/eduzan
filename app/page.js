@@ -41,11 +41,12 @@ export default function Home() {
                        <h1 className="font-bold text-[40px] text-center">Don&apos;t believe us, Hear from my students</h1>
 
                     </div> 
+                    <hr className="w-[90%] mx-auto"/> 
                     {/* About section */}
                     <div className='sm:flex mx-auto lg:w-[80%] p-5 '>
                         <div className='sm:w-[40%] my-auto text-left'>
-                            <h1 className='text-[30px] sm:text-[35px] md:text-[40px] text-bold ml-[25%]  md:ml-[10%] lg:ml-[20%] mb-0'>About </h1>
-                            <h1 className='text-[40px] sm:text-[40px] mdtext-[40px] ml-[5%] ml-[15%] md:ml-[10%] lg:ml-[20%] text-[#6A1C1A] font-bold'>MidhaFin</h1>
+                            <h1 className='text-[30px] sm:text-[35px] md:text-[40px] text-bold ml-[5%]  md:ml-[10%] lg:ml-[20%] mb-0'>About </h1>
+                            <h1 className='text-[40px] sm:text-[40px] mdtext-[40px]  ml-[5%] md:ml-[10%] lg:ml-[20%] text-[#6A1C1A] font-bold'>MidhaFin</h1>
                         </div>
                         <div className='sm:w-[60%] pl-4 sm:pl-[10%] ms:pl-[5%] lg:pl-[7%] border-[#6A1C1A] sm:border-l-4'>
                             <h1 className='font-bold text-[20px] sm:text-[30px] text-left'>MidhaFin focuses on <span className='text-[#6A1C1A] '>Personalized</span> Learning,<br /> Expertise and Employability.</h1>
@@ -74,8 +75,8 @@ export default function Home() {
                         </div>
                     </div>
                     {/* Play Store section */}
-                    <div className='sm:flex sm:max-w-[70%] mx-auto p-5 my-9'>
-                        <div className='sm:w-[50%] py-auto'>
+                    <div className=' w-[100%] sm:flex justify-around md:max-w-[90%] lg:max-w-[80%] mx-auto p-5 my-9'>
+                        <div className='sm:w-[50%] py-auto my-auto'>
                             <Image width={500} height={100} src="https://home.midhafin.com/wp-content/uploads/2024/02/Download-our-app.png" alt="Mobile and Laptop pic" />
                         </div>
                         <div className='sm:w-[50%] my-auto pt-5 sm:pt-1 text-center ' >
@@ -91,7 +92,7 @@ export default function Home() {
                     {/* Our Platform Features */}
                     <div className='bg-[#FFF5EE] mt-8 m-1 pb-5 text-center'>
                         <div className='max-w-[90%] sm:max-w-[70%] lg:max-w-[50%] mx-auto mb-5 text-center my-3'>
-                            <h1 className='text-[50px] font-bold my-3'>Our <span className='text-[#6A1C1A]'>Platform</span> Features</h1>
+                            <h1 className='text-[40px] md:text-[50px] font-bold my-3'>Our <span className='text-[#6A1C1A]'>Platform</span> Features</h1>
                             <p className='my-4'>We at MidhaFin, focus on striking a careful balance, between Knowledge and Relevance, between theory and analytics & between pure concepts and practical application.</p>
                         </div>
                         <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-w-[80%] mx-auto gap-[50px] item-center'>
@@ -101,7 +102,7 @@ export default function Home() {
                                 <Link href='/study-planner'><button className='w-full bg-[#6A1C1A] text-white py-2 px-[10px]  sm:px-[30px] lg:px-[40px] xl:px-[50px] rounded'>READ MORE</button></Link>
                             </div>
                             <div className='mx-auto items-center flex flex-col justify-around'>
-                                <Image width={150} height={100} className='mx-auto m-1' src='/question-bank.png' alt="Questions Bank" />
+                                <Image width={150} height={100} className='mx-5 m-1' src='/question-bank.png' alt="Questions Bank" />
                                 <h1 className='text-[20px] font-bold my-3'>Questions Bank</h1>
                                 <Link href='/question-bank'><button className='w-full bg-[#6A1C1A] text-white py-2 px-[10px] sm:px-[30px] lg:px-[40px] xl:px-[50px]] rounded'>READ MORE</button></Link>
                             </div>
@@ -141,7 +142,7 @@ export default function Home() {
                     {/* FAQs  Section */}
                     <div className='max-w-full mx-auto  mt-5 bg-white' >
                         <div>
-                            <h1 className='text-[50px] text-center font-bold text-black m-2'>Frequently <span className='text-[#6A1C1A]'>Asked</span> Questions</h1>
+                            <h1 className='text-[40px] md:text-[50px] text-center font-bold text-black m-2'>Frequently <span className='text-[#6A1C1A]'>Asked</span> Questions</h1>
                         </div>
                         <hr className="max-w-[90%] mx-auto"/>
                         <Accordion />
