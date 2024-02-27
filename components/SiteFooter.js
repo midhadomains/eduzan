@@ -47,12 +47,12 @@ function Footer() {
                         <div className="mt-5">
                             <div className="flex text-white my-2 ">
                                 <MdOutlinePhoneIphone className="my-auto mr-1" />
-                                <h1 className='text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-[#6A1C1A] hover:underline hover:text-[#6A1C1A] text-lg'> Call : +91-91551-99555</h1>
+                                <h1 className=' transition-colors duration-300  hover:underline hover:text-[#6A1C1A] text-lg'> Call : +91-91551-99555</h1>
                             </div>
-                            <div className="flex text-gray-800 dark:text-white my-2">
+                            <div className="flex text-white my-2">
                                 <TiMail className="my-auto mr-1" />
-                                <Link target="_blank" href="mailto:midhafin@gmail.com" className="hover:text-[#fcefea]">
-                                    <h1 className='text-gray-600 transition-colors duration-300 text-gray-300 dark:hover:text-[#6A1C1A] hover:underline hover:text-[#6A1C1A] text-lg'>MidhaFin@gmail.com</h1>
+                                <Link target="_blank" href="mailto:midhafin@gmail.com" >
+                                    <h1 className='transition-colors duration-300  hover:underline hover:text-[#6A1C1A] text-lg'>MidhaFin@gmail.com</h1>
                                 </Link>
                             </div>
                         </div>
@@ -60,7 +60,7 @@ function Footer() {
                     </div>
                 </div>
 
-                <hr className="my-6 border-gray-200 md:my-8 dark:border-gray-700" />
+                <hr className="my-6  md:my-8 border-gray-700" />
 
                 <h1 className="text-center text-md sm:text-md m-2 italic text-white">GARP does not endorse, promote, review or warrant the accuracy of the products or services offered by MIdhaFin of GARP Exam related information, nor does it endorse any pass rates that may be claimed by MidhaFin.
                     Further, GARP is not responsible for any fees or costs paid by the user to MidhaFin nor is GARP responsible for any fees or costs of any person or entity providing any services to MidhaFin. SCR®, FRM®, GARP® and Global Association of Risk Professionals™ , is standard character and/or stylized
@@ -74,23 +74,23 @@ function Footer() {
                     </a>
 
                     <div className="flex -mx-2">
-                        <Link target="_blank" href="https://www.instagram.com/midhafin/" className="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-[#6A1C1A] dark:hover:text-[#6A1C1A]" aria-label="Reddit">
+                        <Link target="_blank" href="https://www.instagram.com/midhafin/" className="mx-2 text-white transition-colors duration-300 hover:text-[#6A1C1A] dark:hover:text-[#6A1C1A]" aria-label="Reddit">
                             <SlSocialInstagram />
                         </Link>
 
-                        <Link target="_blank" href="https://www.facebook.com/MidhaFin" className="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-[#6A1C1A] dark:hover:text-[#6A1C1A]" aria-label="Facebook">
+                        <Link target="_blank" href="https://www.facebook.com/MidhaFin" className="mx-2 text-white transition-colors duration-300 hover:text-[#6A1C1A] dark:hover:text-[#6A1C1A]" aria-label="Facebook">
                             <TiSocialFacebook />
                         </Link>
 
-                        <Link target="_blank" href="https://www.linkedin.com/company/midhafin/" className="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-[#6A1C1A] dark:hover:text-[#6A1C1A]" aria-label="Github">
+                        <Link target="_blank" href="https://www.linkedin.com/company/midhafin/" className="mx-2 text-white transition-colors duration-300 hover:text-[#6A1C1A] dark:hover:text-[#6A1C1A]" aria-label="Github">
                             <SlSocialLinkedin />
                         </Link>
 
-                        <Link target="_blank" href="https://twitter.com/midhafin" className="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-[#6A1C1A] dark:hover:text-[#6A1C1A]" aria-label="Github">
+                        <Link target="_blank" href="https://twitter.com/midhafin" className="mx-2 text-white transition-colors duration-300 hover:text-[#6A1C1A] dark:hover:text-[#6A1C1A]" aria-label="Github">
                             <SlSocialTwitter />
                         </Link>
 
-                        <Link target="_blank" href="https://www.youtube.com/@MidhaFin" className="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-[#6A1C1A] dark:hover:text-[#6A1C1A]" aria-label="Github">
+                        <Link target="_blank" href="https://www.youtube.com/@MidhaFin" className="mx-2 text-white transition-colors duration-300 hover:text-[#6A1C1A] dark:hover:text-[#6A1C1A]" aria-label="Github">
                             <SlSocialYoutube />
                         </Link>
                     </div>
