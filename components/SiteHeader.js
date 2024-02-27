@@ -17,7 +17,7 @@ const Navbar = () => {
                         <IoClose onClick={() => setToggle(!toggle)} className="text-2xl sm:hidden block" />
                         : <IoMenu onClick={() => setToggle(!toggle)} className="text-2xl sm:hidden block" />}
 
-                    <ul className="hidden sm:flex justify-around sm:w-[70%] md:w-[60%] lg:w-[40%] lg:mr-9">
+                    <ul className="hidden sm:flex justify-around sm:w-[70%] md:w-[60%] lg:w-[40%] lg:mr-[5%]">
                         <NavItem to="/courses" name="Courses" />
                         <NavItem to="/blog" name="Blogs" />
                         <NavItem to="/reviews" name="Reviews" />
@@ -44,7 +44,7 @@ const NavItem = ({ to, name }) => {
         <li className="relative group  hover:text-[#f7a787] p-4 sm:p-0 sm:text-lg md:text-xl">
             <Link
                 href={to}
-                className="font-semibold  cursor-pointe pb-2 px-1 hover:text-[#6A1C1A] hover:border-b-[4px] border-transparent transition duration-300 group-hover:border-[#6A1B1B]">
+                className="cursor-pointe pb-2 px-1 hover:text-[#6A1C1A] hover:border-b-[4px] border-transparent transition duration-300 group-hover:border-[#6A1B1B]">
                 {name}
             </Link>
         </li>
