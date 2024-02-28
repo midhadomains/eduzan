@@ -31,20 +31,30 @@ function Footer() {
                     </div>
 
                     <div>
-                        <p className="font-semibold text-white">Quick Link</p>
-
-                        <div className="flex flex-col items-start text-white mt-5 space-y-2">
-                            <Link href="/" className="transition-colors duration-300 hover:underline hover:text-[#6A1C1A]">Home</Link>
-                            <Link href="/about-us" className="transition-colors duration-300 hover:underline hover:text-[#6A1C1A]">About us</Link>
-                            <Link href="/courses" className="transition-colors duration-300 hover:underline hover:text-[#6A1C1A]">Courses</Link>
-                            <Link href="/faq" className="transition-colors duration-300 hover:underline hover:text-[#6A1C1A]">FAQs</Link>
-                            <Link href="/blog" className="transition-colors duration-300 hover:underline hover:text-[#6A1C1A]">Blogs</Link>
+                        <p className="font-semibold text-white text-center w-[87%] mb-1 uppercase">Quick Links</p>
+                        {/* <hr/> */}
+                        <div className="flex justify-between m-8 sm:m-4 mt-0 md:m-0">
+                            <div className="flex flex-col items-start text-white mt-5 space-y-2">
+                                <Link href="/" className="transition-colors duration-300 hover:underline hover:text-[#6A1C1A]">Home</Link>
+                                <Link href="/about-us" className="transition-colors duration-300 hover:underline hover:text-[#6A1C1A]">About us</Link>
+                                <Link href="/courses" className="transition-colors duration-300 hover:underline hover:text-[#6A1C1A]">Courses</Link>
+                                <Link href="/faq" className="transition-colors duration-300 hover:underline hover:text-[#6A1C1A]">FAQs</Link>
+                                <Link href="/blog" className="transition-colors duration-300 hover:underline hover:text-[#6A1C1A]">Blogs</Link>
+                            </div>
+                            <div className="flex flex-col items-start text-white mt-5 space-y-2">
+                                <Link href="/privacy-policy" className="transition-colors duration-300 hover:underline hover:text-[#6A1C1A]">Privacy Policy</Link>
+                                <Link href="/refund-policy" className="transition-colors duration-300 hover:underline hover:text-[#6A1C1A]">Refund Policy</Link>
+                                <Link href="/contact-us" className="transition-colors duration-300 hover:underline hover:text-[#6A1C1A]">Contact Us</Link>
+                                <Link href="/terms-of-use" className="transition-colors duration-300 hover:underline hover:text-[#6A1C1A]">Terms of Use</Link>
+                                <Link href="https://www.midha.in/" className="transition-colors duration-300 hover:underline hover:text-[#6A1C1A]">Midha Education</Link>
+                            </div>
                         </div>
+
                     </div>
 
-                    <div>
-                        <p className="font-semibold text-white uppercase">Contact Us</p>
-                        <div className="mt-5">
+                    <div className=''>
+                        <p className="font-semibold text-white ml-8 uppercase">Contact Us</p>
+                        <div className="mt-5 ml-3">
                             <div className="flex text-white my-2 ">
                                 <MdOutlinePhoneIphone className="my-auto mr-1" />
                                 <h1 className=' transition-colors duration-300  hover:underline hover:text-[#6A1C1A] text-lg'> Call : +91-91551-99555</h1>
