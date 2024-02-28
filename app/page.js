@@ -1,14 +1,14 @@
-"use client"
+
 import SiteHeader from "../components/SiteHeader";
 import SiteFooter from "../components/SiteFooter";
 import Link from "next/link";
 import Image from 'next/image'
 import Accordion from "../components/Accordian";
 
-// export const metadata = {
-//     title: "Welcome to MidhFin",
-//     description: "MidhaFin Home , Explore our Wide Range of Courses "
-// }
+export const metadata = {
+    title: "Welcome to MidhFin",
+    description: "MidhaFin Home , Explore our Wide Range of Courses "
+}
 
 export default function Home() {
     return (
@@ -38,10 +38,10 @@ export default function Home() {
                     </div>
                     {/* Review section */}
                     <div className="w-[95%]">
-                       <h1 className="font-bold text-[40px] text-center">Don&apos;t believe us, Hear from my students</h1>
+                        <h1 className="font-bold text-[40px] text-center">Don&apos;t believe us, Hear from my students</h1>
 
-                    </div> 
-                    <hr className="w-[90%] mx-auto"/> 
+                    </div>
+                    <hr className="w-[90%] mx-auto" />
                     {/* About section */}
                     <div className='sm:flex mx-auto lg:w-[80%] p-5 '>
                         <div className='sm:w-[40%] my-auto text-left'>
@@ -145,7 +145,9 @@ export default function Home() {
                             <h1 className='text-[40px] md:text-[50px] text-center font-bold text-black m-2'>Frequently <span className='text-[#6A1C1A]'>Asked</span> Questions</h1>
                         </div>
                         {/* <hr className="max-w-[90%] mx-auto"/> */}
-                        <Accordion />
+                        <div>
+                            <Accordion />
+                        </div>
                     </div>
                 </main>
             </div>
