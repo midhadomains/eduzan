@@ -115,7 +115,6 @@ const PrivacyPolicy = () => {
                     <p className="pl-[5%] pr-[7%] mt-10 text-xl">f. <b>Inferences:</b> We may make inferences based upon the Personal Information collected (such as likelihood of retention or attrition). We use Inference information as set forth in the “How We Use and Share the Information Collected” section of this Policy.</p>
                     <p className="pl-[5%] pr-[7%] mt-10 text-xl">2. <b>CCPA DATA PRACTICES DURING THE LAST 12 MONTHS:</b></p>
                     <p className="pl-[5%] pr-[7%] mt-10 text-xl">a. <b>Personal Information collected:</b> As described in this Policy, we have collected the categories of Personal Information listed below during the preceding 12 months:</p>
-                    <p>
                         <ul className="list-disc">
                             <li className="ml-20 text-xl">Identifiers</li>
                             <li className="ml-20 text-xl">Characteristics of Personal Information described in the California Customer Records statute</li>
@@ -125,10 +124,10 @@ const PrivacyPolicy = () => {
                             <li className="ml-20 text-xl">Audio, electronic, visual, thermal, olfactory, or similar information Inferences</li>
 
                         </ul>
-                    </p>
+                   
                     <p className="pl-[5%] pr-[7%] mt-10 text-xl">b. <b>Categories of sources:</b> We have collected the Personal Information identified in this Policy from you and our payment processors.</p>
                     <p className="pl-[5%] pr-[7%] mt-10 text-xl">c. <b>Business and commercial purposes for collecting:</b> We have collected the categories of Personal Information listed above for the following purposes:</p>
-                    <p>
+                   
                         <ul className="list-disc">
                             <li className="ml-20 text-xl">Operate the Platform;</li>
                             <li className="ml-20 text-xl">Provide our Services to you;</li>
@@ -143,10 +142,10 @@ const PrivacyPolicy = () => {
                             <li className="ml-20 text-xl">Usage analytics purposes.</li>
 
                         </ul>
-                    </p>
+                   
                     <p className="pl-[5%] pr-[7%] mt-10 text-xl">d. <b>Personal Information sold:</b> We have not sold categories of Personal Information during the preceding 12 months.</p>
                     <p className="pl-[5%] pr-[7%] mt-10 text-xl">e. <b>Personal Information disclosed for a business purpose:</b> We have disclosed for a business purpose the categories of Personal Information listed below during the preceding 12 months:</p>
-                    <p>
+                    
                         <ul className="list-disc">
                             <li className="ml-20 text-xl">Identifiers</li>
                             <li className="ml-20 text-xl">Characteristics of Personal Information described in the California Customer Records statute</li>
@@ -156,7 +155,7 @@ const PrivacyPolicy = () => {
                             <li className="ml-20 text-xl">Audio, electronic, visual, thermal, olfactory, or similar information Inferences</li>
                         
                         </ul>
-                    </p>
+                    
                     <p className="pl-[5%] pr-[7%] mt-10 text-xl">We have disclosed each category of Personal Information to the following categories of third parties: (1) corporate parents, subsidiaries, and affiliates; (2) advisors (accountants, attorneys); (3) service providers (data analytics, data storage, mailing, marketing, website and platform administration, technical support); and (4) operating systems and platforms.</p>
                     <p className="pl-[5%] pr-[7%] mt-10 text-xl">3. <b>CONSUMER RIGHTS AND REQUESTS UNDER THE CCPA</b></p>
                     <p className="pl-[5%] pr-[7%] mt-10 text-xl">The CCPA gives consumers the right to request that we (1) disclose what Personal Information we collect, use, disclose, and sell, and (2) delete certain Personal Information that we have collected or maintained. you may submit these requests to us as described below, and we honor these rights where they apply.</p>
