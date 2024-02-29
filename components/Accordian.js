@@ -1,6 +1,6 @@
+
 import React, { useState } from 'react'
 import { IoIosArrowDropdownCircle, IoIosArrowDropupCircle } from 'react-icons/io';
-
 
 const Accordion = () => {
     const [selectedButton, setSelectedButton] = useState(null);

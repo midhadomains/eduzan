@@ -49,8 +49,7 @@ export default async function Post({ params }) {
     const {comments, commentCount} = await getComments(params.postSlug);
     // const seoData = await getSeo('post', params.postSlug);
 
-    let featuredImageUrl = "https://wp.abhinavr.com/wp-content/uploads/2022/12/travel_icy-polar_022K.jpg";
-
+    let featuredImageUrl = "https://eduzan.vercel.app/_next/image?url=https%3A%2F%2Fapi.eduzan.com%2Fwp-content%2Fuploads%2F2024%2F02%2F1000_F_139351526_v7tjTuoD8dOK54NLPbtrfqb1RmhsbJgM-300x169.jpg&w=640&q=75";
     if(postData?.featuredImage) {
         featuredImageUrl = "url(" + postData.featuredImage.node.mediaDetails.sizes[0].sourceUrl + ")";
     }
@@ -75,7 +74,7 @@ export default async function Post({ params }) {
                     <h1 className={`${roboto_slab.className} text-6xl font-normal text-slate-100 relative z-10 py-8 mt-12`}>{postData.title}</h1>
 
                     <div className="pb-4 text-slate-100 z-10">
-                        Posted by Abhinav, last updated on <Date dateString={postData.modified} />
+                        Posted by Micky , last updated on <Date dateString={postData.modified} />
                     </div>
 
                     <div dangerouslySetInnerHTML={{ __html: postData.excerpt }} className="relative z-10 text-left text-slate-200 text-2xl pl-4 border-l-4 border-lime-200"/>

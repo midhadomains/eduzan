@@ -26,7 +26,7 @@ const MyComponent = () => {
                             <div className="lg:max-w-xl">
                                 <p className="text-xl  font-semibold leading-7 text-[#842020]">Features</p>
                                 <h1 className="mt-2 text-4xl font-bold  text-gray-900 sm:text-5xl tracking-wide">MidhaFin<span className="text-[#842020]">&nbsp;Study</span>  Planner</h1>
-                                <p className="mt-6 text-xl leading-8 text-gray-700 tracking-wide">We at MidhaFin are a strong proponent of smart work. Many FRM®, CFA, and PRM students, whom we have taught over the years, have had to juggle their exam preparations with either job or college, which inevitably brought time management and exam strategy to the forefront of their FRM®/CFA/PRM preparation.</p>
+                                <p className="mt-6 text-lg leading-8 text-gray-700 tracking-wide">We at MidhaFin are a strong proponent of smart work. Many FRM®, CFA, and PRM students, whom we have taught over the years, have had to juggle their exam preparations with either job or college, which inevitably brought time management and exam strategy to the forefront of their FRM®/CFA/PRM preparation.</p>
                             </div>
                         </div>
                     </div>
