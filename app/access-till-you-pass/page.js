@@ -27,7 +27,7 @@ const MyComponents2 = () => {
             <div className="lg:max-w-lg">
             <p className="text-2xl pl-1 font-semibold leading-7 text-[#842020]">Features</p>
               <h1 className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl"> Access  <span style={{ color: '#842021' }}>Till You</span> Pass</h1>
-              <p className="mt-6 text-lg lg:text-xl sm:text-[1rem] md:text-lg leading-6 text-gray-700 tracking-wide">The candidate will have access to all the resources until they pass the exam, provided that they are still preparing for it.</p>
+              <p className="mt-6  text-[1rem] lg:text-xl sm:text-[1rem] md:text-lg leading-6 text-gray-700 tracking-wide">The candidate will have access to all the resources until they pass the exam, provided that they are still preparing for it.</p>
             </div>
           </div>
         </div>
@@ -44,8 +44,8 @@ const MyComponents2 = () => {
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
             <div className="max-w-auto text-xl leading-7 text-gray-700 lg:max-w-lg tracking-wide">
-              <p className='text-lg lg:text-xl sm:text-[1rem] md:text-lg leading-6'>The best part is that the candidate will always have access to the updated FRM®/CFA/PRM material and resources. The access will not be limited to the FRM®/CFA/PRM resources that the candidate was provided during the time of enrolment</p>
-              <p className="mt-8 text-lg lg:text-xl sm:text-[1rem] md:text-lg leading-6">We care about our FRM®/CFA/PRM students and we will go out of our way to help them in their journey towards clearing the FRM®/CFA/PRM exams and taking a leap in their career!</p>
+              <p className=' text-[1rem] lg:text-xl sm:text-[1rem] md:text-lg leading-6'>The best part is that the candidate will always have access to the updated FRM®/CFA/PRM material and resources. The access will not be limited to the FRM®/CFA/PRM resources that the candidate was provided during the time of enrolment</p>
+              <p className="mt-8  text-[1rem] lg:text-xl sm:text-[1rem] md:text-lg leading-6">We care about our FRM®/CFA/PRM students and we will go out of our way to help them in their journey towards clearing the FRM®/CFA/PRM exams and taking a leap in their career!</p>
             </div>
           </div>
         </div>
