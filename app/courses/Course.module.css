@@ -1,28 +1,42 @@
 #largescreendiv{
     display: flex;
     flex-wrap: nowrap;
+    width: 95%;
+    margin: 0 auto;
 }
 #largescreendiv_a{
+    margin: 20px 0;
+    height: 100%;
     width: 20%;
-}
-#largescreendiv_b{
-    width: 80%;
-    /* border: 1px solid red; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: fixed;
+    text-align: start;
 }
 
+#largescreendiv_b{
+    margin-top: 20px;
+    margin-left: auto;
+    width: auto;
+    padding:10px;
+    /* border: 1px solid red; */
+}
 #largescreencoursecardparentdiv{
+    height: auto;
     width:300px;
     margin: 15px;
     text-align: center;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-}
-#largescreendiv>ul>li{
+}#largescreendiv>ul>li{
     width:100%;
-    background-color: aquamarine;
-    margin: 10px 0;
+    font-size: large;
+    padding: 7px 0px;
+    padding-left: 15px;
+} 
+/* #largescreendiv>ul>li>p{
+    width: 90%;
     padding: 5px;
-}
-
+    border-radius: 6px;
+}   */
 #largescreensubbuttondiv{
     display: flex;
 }
@@ -36,11 +50,14 @@
     display: none;
 }
 #largescreencoursediv{
+    background-color: white;
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    border: 1px solid yellow;
+    display: grid;
+    column-gap: 30px;
+    row-gap: 30px;
+    grid-template-columns: auto auto auto;
+
+    /* border: 1px solid yellow; */
 }
 /* #coursediv{
     margin-left: 300px;
@@ -50,6 +67,7 @@
 #coursecardparentdiv{
     /* border: 1px solid red; */
     width:300px;
+    height: auto;
     margin: 15px;
     text-align: center;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;

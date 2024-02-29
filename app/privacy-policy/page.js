@@ -1,6 +1,8 @@
+
 import React from 'react'
 import Navbar from '../../components/SiteHeader';
 import Footer from '../../components/SiteFooter';
+
 
 const PrivacyPolicy = () => {
 
@@ -10,11 +12,13 @@ const PrivacyPolicy = () => {
       <Navbar />
       <div className="h-40 relative bg-red-950">
         <h1 className="text-4xl font-style:normal font-bold text-white pt-6 pl-4 md:pl-28">Privacy Policy</h1>
+
         <p className='text-white pt-6 pl-4 md:pl-28'>
           <a href="https://www.midhafin.com/courses/FRM-Part-1-Self-Paced-Course-6284dad90cf2f73fd7f6034f">Home</a> /
           <a href="https://www.midhafin.com/aboutus"> Privacy policy
           </a>
         </p>
+
 
 
         <div className="align-left">
@@ -180,8 +184,6 @@ const PrivacyPolicy = () => {
     </>
 
   );
-
-
 }
 
 export default PrivacyPolicy;
