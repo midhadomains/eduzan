@@ -28,7 +28,7 @@ const MyComponents6 = () => {
                 <p className="text-2xl pl-1 font-semibold leading-7 text-[#842020]">Features</p>
                 <h1 className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl"> Midhafin <span style={{ color: '#842021' }}>Doubt-Solving</span> Forum</h1>
                 <p className="text-xl mt-12 pl-1 font-bold leading-7"> &quot; Curiosity is the Mother of Invention &quot;</p>
-                <p className="mt-6 text-lg lg:text-xl sm:text-[1rem] md:text-lg leading-6 text-gray-700 tracking-wide">We at MidhaFin strongly believe that conceptual clarity is the key to doing well in the FRM®/CFA/PRM exam. We also greatly emphasize the importance of developing the relevant knowledge related to the FRM®/CFA/PRM course. Thus, in line with our students-first approach, we take FRM®/CFA/PRM doubts very seriously.</p>
+                <p className="mt-6  text-[1rem] lg:text-xl sm:text-[1rem] md:text-lg leading-6 text-gray-700 tracking-wide">We at MidhaFin strongly believe that conceptual clarity is the key to doing well in the FRM®/CFA/PRM exam. We also greatly emphasize the importance of developing the relevant knowledge related to the FRM®/CFA/PRM course. Thus, in line with our students-first approach, we take FRM®/CFA/PRM doubts very seriously.</p>
               </div>
             </div>
           </div>
@@ -44,10 +44,10 @@ const MyComponents6 = () => {
           <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
             <div className="lg:pr-4">
               <div className="max-w-auto text-xl leading-7 text-gray-700 lg:max-w-lg tracking-wide">
-                <p className='text-lg lg:text-xl sm:text-[1rem] md:text-lg leading-6'>We have an active and extremely user-friendly FRM®/CFA/PRM doubt-solving forum. Every single doubt which is relevant to the curriculum will be solved there. Further, we do not limit ourselves to our own FRM®/CFA/PRM study material, doubts from any other source (provided it is relevant to the exam) would be solved.</p>
-                <p className="mt-8 text-lg lg:text-xl sm:text-[1rem] md:text-lg leading-6">We have a dedicated Q&A sections against each chapter on the Forum where students can post their FRM®/CFA/PRM doubts by posting a picture of typing it.</p>
-                <p className="mt-8 text-lg lg:text-xl sm:text-[1rem] md:text-lg leading-6">Even when students want to revisit the doubts and the solutions, they can do so by simply typing in the keyword, or going to the corresponding chapter, and checking it out. Further, students can find all FRM®/CFA/PRM questions asked by other students in that section along with their solution indexed in a very systematic manner.</p>
-                <p className="mt-8 text-lg lg:text-xl sm:text-[1rem] md:text-lg leading-6">Also, students can interact with other FRM®/CFA/PRM candidates in the forum and give/receive useful insights.</p>
+                <p className=' text-[1rem] lg:text-xl sm:text-[1rem] md:text-lg leading-6'>We have an active and extremely user-friendly FRM®/CFA/PRM doubt-solving forum. Every single doubt which is relevant to the curriculum will be solved there. Further, we do not limit ourselves to our own FRM®/CFA/PRM study material, doubts from any other source (provided it is relevant to the exam) would be solved.</p>
+                <p className="mt-8  text-[1rem] lg:text-xl sm:text-[1rem] md:text-lg leading-6">We have a dedicated Q&A sections against each chapter on the Forum where students can post their FRM®/CFA/PRM doubts by posting a picture of typing it.</p>
+                <p className="mt-8  text-[1rem] lg:text-xl sm:text-[1rem] md:text-lg leading-6">Even when students want to revisit the doubts and the solutions, they can do so by simply typing in the keyword, or going to the corresponding chapter, and checking it out. Further, students can find all FRM®/CFA/PRM questions asked by other students in that section along with their solution indexed in a very systematic manner.</p>
+                <p className="mt-8  text-[1rem] lg:text-xl sm:text-[1rem] md:text-lg leading-6">Also, students can interact with other FRM®/CFA/PRM candidates in the forum and give/receive useful insights.</p>
               </div>
             </div>
           </div>

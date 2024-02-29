@@ -20,13 +20,13 @@ const MyComponent = () => {
                         <rect width="100%" height="100%" strokeWidth="0" fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)" />
                     </svg>
                 </div>
-                <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-8 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
+                <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-8 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
                     <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
                         <div className="lg:pr-4">
                             <div className="lg:max-w-xl">
                                 <p className="text-xl  font-semibold leading-7 text-[#842020]">Features</p>
                                 <h1 className="mt-2 text-4xl font-bold  text-gray-900 sm:text-5xl tracking-wide">MidhaFin<span className="text-[#842020]">&nbsp;Study</span>  Planner</h1>
-                                <p className="mt-6 text-lg lg:text-xl sm:text-[1rem] md:text-lg leading-6 text-gray-700 tracking-wide">We at MidhaFin are a strong proponent of smart work. Many FRM®, CFA, and PRM students, whom we have taught over the years, have had to juggle their exam preparations with either job or college, which inevitably brought time management and exam strategy to the forefront of their FRM®/CFA/PRM preparation.</p>
+                                <p className="mt-6  text-[1rem] lg:text-xl sm:text-[1rem] md:text-lg leading-6 text-gray-700 tracking-wide">We at MidhaFin are a strong proponent of smart work. Many FRM®, CFA, and PRM students, whom we have taught over the years, have had to juggle their exam preparations with either job or college, which inevitably brought time management and exam strategy to the forefront of their FRM®/CFA/PRM preparation.</p>
                             </div>
                         </div>
                     </div>
@@ -36,8 +36,8 @@ const MyComponent = () => {
                     <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
                         <div className="lg:pr-4">
                             <div className="max-w-xl text-xl leading-7 text-gray-700 lg:max-w-lg tracking-wide">
-                                <p className='text-lg lg:text-xl sm:text-[1rem] md:text-lg leading-6'>After years of successfully guiding students in their FRM®/CFA/PRM study planning, our team has not only been able to identify certain approaches to the FRM®/CFA/PRM preparation but have also learnt to customize the FRM®/CFA/PRM study plans for individual students, based on their time commitments and goals.</p>
-                                <p className="mt-8 text-lg lg:text-xl sm:text-[1rem] md:text-lg leading-6">The relationship between our instructors and our students is not just that of FRM®/CFA/PRM instruction and teaching but also of mentorship. When a FRM®/CFA/PRM student joins, we have a session with him or her, wherein, our instructors understand the student’s goals and the amount of time they have to prepare for the FRM®/CFA/PRM exam. Based on the student’s prior knowledge, his or her strengths & weaknesses and the amount of time they can commit every week, we prepare a customized FRM®/CFA/PRM study plan for the student.</p>
+                                <p className=' text-[1rem] lg:text-xl sm:text-[1rem] md:text-lg leading-6'>After years of successfully guiding students in their FRM®/CFA/PRM study planning, our team has not only been able to identify certain approaches to the FRM®/CFA/PRM preparation but have also learnt to customize the FRM®/CFA/PRM study plans for individual students, based on their time commitments and goals.</p>
+                                <p className="mt-8  text-[1rem] lg:text-xl sm:text-[1rem] md:text-lg leading-6">The relationship between our instructors and our students is not just that of FRM®/CFA/PRM instruction and teaching but also of mentorship. When a FRM®/CFA/PRM student joins, we have a session with him or her, wherein, our instructors understand the student’s goals and the amount of time they have to prepare for the FRM®/CFA/PRM exam. Based on the student’s prior knowledge, his or her strengths & weaknesses and the amount of time they can commit every week, we prepare a customized FRM®/CFA/PRM study plan for the student.</p>
                             </div>
                         </div>
                     </div>

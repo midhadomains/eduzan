@@ -26,7 +26,7 @@ const MyComponents4 = () => {
                             <div className="lg:max-w-lg">
                                 <p className="text-2xl pl-1 font-semibold leading-7 text-[#842020]">Features</p>
                                 <h1 className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl"> Mock <span style={{ color: '#842021' }}>Tests</span></h1>
-                                <p className="mt-6 text-lg lg:text-xl sm:text-[1rem] md:text-lg leading-6 text-gray-700 tracking-wide">Our philosophy involves learning through application. Mock tests, both sectional and full-length, are important components of the FRM®/CFA/PRM study process at MidhaFin.</p>
+                                <p className="mt-6  text-[1rem] lg:text-xl sm:text-[1rem] md:text-lg leading-6 text-gray-700 tracking-wide">Our philosophy involves learning through application. Mock tests, both sectional and full-length, are important components of the FRM®/CFA/PRM study process at MidhaFin.</p>
                             </div>
                         </div>
                     </div>
@@ -42,9 +42,9 @@ const MyComponents4 = () => {
                     <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
                         <div className="lg:pr-4">
                             <div className="max-w-auto text-xl leading-7 text-gray-700 lg:max-w-lg tracking-wide">
-                                <p className='text-lg lg:text-xl sm:text-[1rem] md:text-lg leading-6'>During the FRM®/CFA/PRM preparations, we conduct frequent sectional mock papers which ensures that any new information acquired by the student is adequately tested as the FRM®/CFA/PRM course.</p>
-                                <p className="mt-8 text-lg lg:text-xl sm:text-[1rem] md:text-lg leading-6">Starting three weeks before the FRM®/CFA/PRM exam, we conduct weekly full-length mock exams which are based on the pattern seen in actual previous FRM®/CFA/PRM exams.</p>
-                                <p className='mt-8 text-lg lg:text-xl sm:text-[1rem] md:text-lg leading-6'>Further, we also provide quartiles for our students to help them understand their strengths and weaknesses in comparison to other FRM®/CFA/PRM students.</p>
+                                <p className=' text-[1rem] lg:text-xl sm:text-[1rem] md:text-lg leading-6'>During the FRM®/CFA/PRM preparations, we conduct frequent sectional mock papers which ensures that any new information acquired by the student is adequately tested as the FRM®/CFA/PRM course.</p>
+                                <p className="mt-8  text-[1rem] lg:text-xl sm:text-[1rem] md:text-lg leading-6">Starting three weeks before the FRM®/CFA/PRM exam, we conduct weekly full-length mock exams which are based on the pattern seen in actual previous FRM®/CFA/PRM exams.</p>
+                                <p className='mt-8  text-[1rem] lg:text-xl sm:text-[1rem] md:text-lg leading-6'>Further, we also provide quartiles for our students to help them understand their strengths and weaknesses in comparison to other FRM®/CFA/PRM students.</p>
                             </div>
                         </div>
                     </div>
