@@ -1,3 +1,9 @@
+import Carousel from "../../components/Carousel";
+import CourseCard from "../../components/CourseCard"
+import dynamic from 'next/dynamic';
+
+const DynamicComponent = dynamic(() => import('../../components/CourseCard'), { ssr: false });
+
 export default function Page() {
     const reviews=[
         {
@@ -8,6 +14,8 @@ export default function Page() {
     ]
     
     return (
-        <p>reviews</p>
+        // <p><DynamicComponent/></p>
+        <Carousel/>
+
     )
 }
