@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Image from 'next/image'
 import Footer from '../../components/SiteFooter';
@@ -56,4 +57,5 @@ const MyComponents6 = () => {
     </>
   );
 }
+
 export default MyComponents6;
