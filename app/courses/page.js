@@ -6,6 +6,7 @@ import Footer from "../../components/SiteFooter";
 import Navbar from "../../components/SiteHeader";
 import CourseCard from "../../components/CourseCard";
 import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
+import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 
 
 function Courses() {
@@ -257,7 +258,7 @@ function Courses() {
                 ))}
               </div>
             )}
-            {selectedButton === "PRM_Part-1" && (
+            {selectedButton === "PRM_Exam-1" && (
               <div id={styles.largescreencoursediv} >
                 {Popularcourse.map((a, index) => (
                   <CourseCard a={a} key={index} />
@@ -266,13 +267,64 @@ function Courses() {
             )}
           </div>
         </div>
-
-        <div>
-          <div id={styles.smallscreendiv}>
-            <div id={styles.smhiddenbutton}>
-              <button className='w-[300px] min-w-[150px] bg-white border my-2 p-4' onClick={() => handleButtonClick(1)}>Popular courses</button>
+      </div>
+      <div id={styles.smallscreendiv}>
+        <ul>
+          <hr className='w-[90%] mx-auto my-2' />
+          <li onClick={() => handleButtonClick(1)} className={selectedButton === 1 ? styles.activee : ''}>
+            <p>Popular Courses {selectedButton === 1 ? <IoIosArrowDown className="text-2xl" /> : <IoIosArrowUp className="text-2xl" />}</p>
+          </li>
+          {selectedButton === 1 && (
+            <div id={styles.coursediv} >
+              {Popularcourse.map((a, index) => (
+                <CourseCard a={a} key={index} />
+              ))}
             </div>
-            {selectedButton === 1 && (
+          )}
+          <hr className='w-[90%] mx-auto my-2' />
+          <li onClick={() => handleButtonClick("Packages")} className={selectedButton === "Packages" ? styles.activee : ''}>
+            <p>Packages{selectedButton === "Packages" ? <IoIosArrowDown className="text-2xl" /> : < IoIosArrowUp className="text-2xl" />}</p>
+          </li>
+          {selectedButton === "Packages" && (
+            <div id={styles.coursediv} >
+              {Popularcourse.map((a, index) => (
+                <CourseCard a={a} key={index} />
+              ))}
+            </div>
+          )}
+          <hr className='w-[90%] mx-auto my-2' />
+          <h1 className='text-[1.1rem] font-[600] my-[10px]' >FRM<sup>®</sup></h1>
+          <hr className='w-[30%] mx-auto mb-1' />
+          <div id={styles.subdiv}>
+            <li onClick={() => handleButtonClick("FRM_Part-1")} className={selectedButton === "FRM_Part-1" ? styles.activee : ''}>
+              <p>Part-1{selectedButton === "FRM_Part-1" ? <IoIosArrowDown className="text-2xl" /> : < IoIosArrowUp className="text-2xl" />}</p>
+            </li>
+            <li onClick={() => handleButtonClick("FRM_Part-2")} className={selectedButton === "FRM_Part-2" ? styles.activee : ''}>
+              <p>Part-2 {selectedButton === "FRM_Part-2" ? <IoIosArrowDown className="text-2xl" /> : < IoIosArrowUp className="text-2xl" />}</p>
+            </li>
+          </div>
+          {selectedButton === "FRM_Part-1" && (
+            <div id={styles.coursediv} >
+              {Popularcourse.map((a, index) => (
+                <CourseCard a={a} key={index} />
+              ))}
+            </div>
+          )}
+          {selectedButton === "FRM_Part-2" && (
+            <div id={styles.coursediv} >
+              {Popularcourse.map((a, index) => (
+                <CourseCard a={a} key={index} />
+              ))}
+            </div>
+          )}
+          <hr className='w-[90%] mx-auto my-2' />
+          <h1 className='text-[1.1rem] font-[600] my-[10px]' >PRM</h1>
+          <hr className='w-[30%] mx-auto mb-1' />
+          <li onClick={() => handleButtonClick("PRM_Exam-1")} className={selectedButton === "PRM_Exam-1" ? styles.activee : ''}>
+            <p>Exam-1 {selectedButton === "PRM_Exam-1" ? <IoIosArrowDown className="text-2xl" /> : < IoIosArrowUp className="text-2xl" />}</p>
+          </li>
+          <div id={styles.subdiv}>
+            {selectedButton === "PRM_Exam-1" && (
               <div id={styles.coursediv} >
                 {Popularcourse.map((a, index) => (
                   <CourseCard a={a} key={index} />
@@ -280,84 +332,8 @@ function Courses() {
               </div>
             )}
           </div>
-          <div>
-            <div id={styles.smhiddenbutton}>
-              <button className='w-[300px] min-w-[150px] bg-white my-2 p-4' onClick={() => handleButtonClick("FRM")}>FRM</button>
-            </div>
-            {selectedButton === "FRM" && (
-              <div>
-                <div className='flex justify-between'>
-                  <button className='w-[150px] bg-white border my-2 p-4' onClick={() => handleSubButtonClick("FRM_Part-1")}>Part-1</button>
-                  <button className='w-[150px] bg-white border my-2 p-4' onClick={() => handleSubButtonClick("FRM_Part-2")}>Part-2</button>
-                </div>
-                <div>
-                  {selectedSubButton === "FRM_Part-1" && <div id={styles.coursediv} >
-                    {Popularcourse.map((a, index) => (
-                      <CourseCard a={a} key={index} />
-                    ))}
-                  </div>}
-                </div>
-                <div>
-                  {selectedSubButton === "FRM_Part-2" && <div id={styles.coursediv} >
-                    {Popularcourse.map((a, index) => (
-                      <CourseCard a={a} key={index} />
-                    ))}
-                  </div>}
-                </div>
-              </div>
-            )}
-          </div>
-          <div>
-            <div id={styles.smhiddenbutton}>
-              <button id={styles.buttonsmall} onClick={() => handleButtonClick("PRM")}>PRM</button>
-            </div>
-            {selectedButton === "PRM" && (
-              <div>
-                <div className='flex justify-between'>
-                  <button className='w-[150px] bg-white border my-1 p-3' onClick={() => handleSubButtonClick("PRM_Exam-1" )}>Part-1</button>
-                </div>
-                <div>
-                  {selectedSubButton === "PRM_Exam-1" &&
-                    <div id={styles.coursediv} >
-                      {Popularcourse.map((a, index) => (
-                        <CourseCard a={a} key={index} />
-                      ))}
-                    </div>}
-                </div>
-              </div>
-            )}
-          </div>
-          {/* <div>
-            <div id={styles.smhiddenbutton}>
-              <button className='w-[300px] min-w-[150px] bg-white border my-2 p-4' onClick={() => handleButtonClick("CFA")}>CFA</button>
-
-            </div>
-            {selectedButton === 3 && (
-              <div>
-                <div className='flex justify-between'>
-                  <button className='w-[150px] bg-white border my-2 p-4' onClick={() => handleSubButtonClick('E')}>Part-1</button>
-                  <button className='w-[150px] bg-white border my-2 p-4' onClick={() => handleSubButtonClick('F')}>Part-2</button>
-                </div>
-                <div>
-                  {selectedSubButton === 'E' &&
-                    <div id={styles.coursediv} >
-                      {Popularcourse.map((a, index) => (
-                        <CourseCard a={a} key={index} />
-                      ))}
-                    </div>}
-                </div>
-                <div>
-                  {selectedSubButton === 'F' &&
-                    <div id={styles.coursediv} >
-                      {Popularcourse.map((a, index) => (
-                        <CourseCard a={a} key={index} />
-                      ))}
-                    </div>}
-                </div>
-              </div>
-            )}
-          </div> */}
-        </div>
+          <hr className='w-[90%] mx-auto my-2' />
+        </ul>
       </div>
       <div>
         <Footer />

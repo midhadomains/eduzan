@@ -23,26 +23,29 @@ const Accordion = () => {
         { id: 13, text: 'Are the prices of different packages inclusive of all taxes?', data: 'The prices do not include the taxes (if any) and these are automatically added at the time of checkout.' },
     ];
     return (
-        <div className="accordion-container w-[95%] md:w-[90%] lg:w-[80%] mx-auto pt-12 ">
+        <div className="accordion-container pt-12 sm:pl-4 sm:pr-4 md:pl-8 md:pr-8 lg:pl-20 lg:pr-20">
             {buttonsData.map((button) => (
-                <div key={button.id} className="accordion-item ">
+                <div key={button.id} className="accordion-item">
                     <button
-                        className={`accordion flex items-center pl-4 pr-4 mt-1 shadow-inner sm:h-16 lg:h-14 p-4 text-left w-full bg-white text-black hover:bg-[#FFF5EE]  ${selectedButton === button.id ? 'bg-gray-700' : ''
+                        className={`accordion flex items-center pl-4 pr-4 mt-1 shadow-inner sm:h-16 lg:h-14 p-4 text-left w-full bg-white text-black hover:bg-[#FFF5EE] transition-all duration-300 ease-in-out ${selectedButton === button.id ? 'bg-gray-700' : ''
                             }`}
                         onClick={() => toggleAccordion(button.id)}
                     >
-                        <h1 className="flex-grow pr-2 text-lg font-semibold">{button.text}</h1>
-                        <h1>{selectedButton === button.id ? <IoIosArrowDropupCircle className="text-2xl" /> : <IoIosArrowDropdownCircle className="text-2xl" />}</h1>
+                        <h1 className="flex-grow pr-2 text-lg font-semibold duration-500">{button.text}</h1>
+                        <h1>{selectedButton === button.id ? <IoIosArrowDropupCircle className="text-2xl transition-transform transform rotate-180 delay-75	" /> : <IoIosArrowDropdownCircle className="text-2xl" />}</h1>
                     </button>
                     {selectedButton === button.id && (
-                        <div className="accordion-content pb-6 bg-white p-4 border rounded-b-xl mb-2 ">
-                            <p className="accordion-text-with-border text-sm lg:text-base text-gray-700">{button.data}</p>
+                        <div
+                            className={`accordion-content pb-6 bg-white p-4 border rounded-b-xl mb-2 transition-all duration-1000 delay-75	 ease-in-out max-h-96 overflow-y-hidden`}
+                        >
+                            <p className="accordion-text-with-border text-sm lg:text-base transition-all duration-1000 delay-75	 ease-in-out max-h-96 text-gray-700">{button.data}</p>
                         </div>
                     )}
                 </div>
             ))}
         </div>
     );
-};
+}
+
 
 export default Accordion;
