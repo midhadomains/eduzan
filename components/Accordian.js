@@ -1,3 +1,6 @@
+=======
+
+
 "use client"
 import React, { useState } from 'react'
 import { IoIosArrowDropdownCircle, IoIosArrowDropupCircle } from 'react-icons/io';
@@ -27,15 +30,15 @@ const Accordion = () => {
             {buttonsData.map((button) => (
                 <div key={button.id} className="accordion-item ">
                     <button
-                        className={`accordion rounded-2xl flex items-center pl-4 pr-4 mb-4 sm:h-16 lg:h-14 p-4 text-left w-full bg-white text-black hover:bg-[#FFF5EE]  ${selectedButton === button.id ? 'bg-gray-700' : ''
+                        className={`accordion flex items-center pl-4 pr-4 mt-1 shadow-inner sm:h-16 lg:h-14 p-4 text-left w-full bg-white text-black hover:bg-[#FFF5EE]  ${selectedButton === button.id ? 'bg-gray-700' : ''
                             }`}
                         onClick={() => toggleAccordion(button.id)}
                     >
                         <h1 className="flex-grow pr-2 text-lg font-semibold">{button.text}</h1>
-                        <h1>{selectedButton === button.id ? <IoIosArrowDropdownCircle className="text-2xl" /> : <IoIosArrowDropupCircle className="text-2xl" />}</h1>
+                        <h1>{selectedButton === button.id ? <IoIosArrowDropupCircle className="text-2xl" /> : <IoIosArrowDropdownCircle className="text-2xl" />}</h1>
                     </button>
                     {selectedButton === button.id && (
-                        <div className="accordion-content mb-4 pb-6 bg-white p-4  ">
+                        <div className="accordion-content pb-6 bg-white p-4 border rounded-b-xl mb-2 ">
                             <p className="accordion-text-with-border text-sm lg:text-base text-gray-700">{button.data}</p>
                         </div>
                     )}

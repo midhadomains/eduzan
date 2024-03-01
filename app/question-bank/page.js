@@ -20,13 +20,13 @@ const MyComponents3 = () => {
                         <rect width="100%" height="100%" strokeWidth="0" fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)" />
                     </svg>
                 </div>
-                <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
+                <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-8 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
                     <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
                         <div className="lg:pr-4">
                             <div className="lg:max-w-lg">
                                 <p className="text-2xl pl-1 font-semibold leading-7 text-[#842020]">Features</p>
                                 <h1 className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl"> Question <span style={{ color: '#842021' }}>Banks</span></h1>
-                                <p className="mt-12 text-sm lg:text-xl sm:text-sm md:text-lg leading-6 text-gray-700 tracking-wide">Our team has prepared thousands of FRM®/CFA/PRM practice questions which would allow students to test their knowledge. These questions are updated based on the current FRM®/CFA/PRM trends and are a good mixture of easy, medium, and difficult questions. An easy to comprehend solution for every single question is provided along with the questions.</p>
+                                <p className="mt-12  text-[1rem] lg:text-xl sm:text-[1rem] md:text-lg leading-6 text-gray-700 tracking-wide">Our team has prepared thousands of FRM®/CFA/PRM practice questions which would allow students to test their knowledge. These questions are updated based on the current FRM®/CFA/PRM trends and are a good mixture of easy, medium, and difficult questions. An easy to comprehend solution for every single question is provided along with the questions.</p>
                             </div>
                         </div>
                     </div>
@@ -35,7 +35,7 @@ const MyComponents3 = () => {
                         <Image
                             src="/question-bank.png"
                             alt="question-bank"
-                            className="w-[20rem] max-w-none rounded-xl shadow-l ring-1 ring-gray-400/10 sm:w-[30rem] mx-auto"
+                            className="w-[15rem] max-w-none rounded-xl shadow-l ring-1 ring-gray-400/10 sm:w-[30rem] mx-auto"
                             width={300}
                             height={300}
                         />
@@ -43,8 +43,8 @@ const MyComponents3 = () => {
                     <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
                         <div className="lg:pr-4">
                             <div className="max-w-auto text-xl leading-7 text-gray-700 lg:max-w-lg tracking-wide">
-                                <p className='mt-[-8%] text-sm lg:text-xl sm:text-sm md:text-lg leading-6'>Our questions are mapped with the FRM®/CFA/PRM exam&apos;s latest curriculum.</p>
-                                <p className="mt-8 text-sm lg:text-xl sm:text-sm md:text-lg leading-6">Further, the organization structure of the FRM®/CFA/PRM questions is extremely user-friendly. The questions are sequenced according to our student study plan.</p>
+                                <p className='mt-8 text-[1rem] lg:text-xl sm:text-[1rem] md:text-lg leading-6'>Our questions are mapped with the FRM®/CFA/PRM exam&apos;s latest curriculum.</p>
+                                <p className="mt-8  text-[1rem] lg:text-xl sm:text-[1rem] md:text-lg leading-6">Further, the organization structure of the FRM®/CFA/PRM questions is extremely user-friendly. The questions are sequenced according to our student study plan.</p>
                             </div>
                         </div>
                     </div>
