@@ -40,11 +40,11 @@ export default function CourseCard({a},{index}) {
             <h1 id={styles.card__priceb}>{checkOther(a.other)}</h1>
           </div>
           <ul id={styles.card__description}>
-            <li><FaRegClock className='my-auto mr-3' /><p>{a.details[0]}</p></li>
-            <li><TbDevices className='my-auto mr-3' /><p>{a.details[1]}</p></li>
-            <li><PiMedal className='my-auto mr-3'/><p>{a.details[2]}</p></li>
-            <li><LuBookOpenCheck className='my-auto mr-3'/><p>{a.details[3]}</p></li>
-            <li><LuPencilLine className='my-auto mr-3'/><p>{a.details[4]}</p></li>
+            <li><FaRegClock className='mb-auto mr-2 mt-1 sm:mt-[6px]  ' /><p>{a.details[0]}</p></li>
+            <li><TbDevices className='mb-auto mr-2 mt-1 sm:mt-[6px]  ' /><p>{a.details[1]}</p></li>
+            <li><PiMedal className='mb-auto mr-2 mt-1 sm:mt-[6px] '/><p>{a.details[2]}</p></li>
+            <li><LuBookOpenCheck className='mb-auto mr-2 mt-1 sm:mt-[6px] '/><p>{a.details[3]}</p></li>
+            <li><LuPencilLine className='mb-auto mr-2 mt-1  sm:mt-[6px] '/><p>{a.details[4]}</p></li>
           </ul>
         </div>
         <div id={styles.card__footer}>

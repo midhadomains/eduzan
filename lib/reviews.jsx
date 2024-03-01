@@ -50,7 +50,7 @@ function Reviews() {
                 {data ? (
                     <ul className='grid grid-cols-3 gap-9 w-[90%] mx-auto '>
                         {data.map((review, index) => (
-                            <li key={index} className='border border-[3px] border-[#f4eeeb] rounded-2xl p-4 bg-white backdrop-filter backdrop-blur-[2px] bg-opacity-20'>
+                            <li key={index} className='border-[3px] border-[#f4eeeb] rounded-2xl p-4 bg-white backdrop-filter backdrop-blur-[2px] bg-opacity-20'>
                                 <div className='bg-grey-900'>
                                     <div className=''>
                                         <Image width={100} height={100} src={review.image} alt={review.name} className='w-[100px] mx-auto rounded-[50%] border t-[40px]' />
