@@ -23,7 +23,7 @@ const Accordion = () => {
         { id: 13, text: 'Are the prices of different packages inclusive of all taxes?', data: 'The prices do not include the taxes (if any) and these are automatically added at the time of checkout.' },
     ];
     return (
-        <div className="accordion-container pt-12 sm:pl-4 sm:pr-4 md:pl-8 md:pr-8 lg:pl-20 lg:pr-20">
+        <div className="accordion-container w-[95%] md:w-[90%] lg:w-[80%] mx-auto pt-12 ">
             {buttonsData.map((button) => (
                 <div key={button.id} className="accordion-item ">
                     <button

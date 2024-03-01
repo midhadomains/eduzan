@@ -25,7 +25,7 @@ export default function Home() {
                             <p className='text-[#391601] ml-8 text-md sm:text-lg'>Step up your career by acquiring the desirable skills and leading global certifications in Finance.</p>
                             <div className='flex mt-5 justify-center'>
                                 <Link href="https://www.midhafin.com/s/authenicate" >
-                                    <button className='bg-[#6A1C1A] rounded text-white hover:bg-black py-2 px-2 sm:px-4 md:px-3 lg:px-4 m-2'>SIGNUP NOW</button>
+                                    <button className='bg-[#6A1C1A] rounded text-white hover:bg-black py-2 px-2 sm:px-4 md:px-3 lg:px-4 m-2 ease-in duration-300'>SIGNUP NOW</button>
                                 </Link>
                                 <Link href="/courses">
                                     <button className='bg-[#6A1C1A] rounded text-white hover:bg-black py-2 px-2 sm:px-4 md:px-3 lg:px-4 m-2'>EXPLORE COURSES</button>
@@ -37,11 +37,11 @@ export default function Home() {
                         </div>
                     </div>
                     {/* Review section */}
-                    <div className="w-[95%]">
+                    <div className="w-[80%] mx-auto">
                         <h1 className="font-bold text-[40px] text-center">Don&apos;t believe us, Hear from my students</h1>
 
                     </div>
-                    <hr className="w-[90%] mx-auto" />
+                    <hr className="w-[80%] mx-auto" />
                     {/* About section */}
                     <div className='sm:flex mx-auto lg:w-[80%] p-5 '>
                         <div className='sm:w-[40%] my-auto text-left'>
@@ -55,7 +55,7 @@ export default function Home() {
                     </div>
                     {/* Features section */}
                     <div className='grid sm:grid-cols-2 lg:grid-cols-3 mb-4 w-[92%] sm:w-[75%] mx-auto gap-[50px] mt-5 text-center'>
-                        <div className=' shadow-2xl rounded-xl p-5 bg-[#FFF5EE] hover:bg-[#fffbfb]'>
+                        <div className=' shadow-2xl rounded-xl p-5 transition ease-in-out delay-150 bg-[#FFF5EE] hover:-translate-y-1 hover:scale-110 hover:bg-[#fffbfb] duration-300'>
                             <Image width={200} height={200} className='mx-auto w-40 sm:w-[220px] h-auto ' src="https://home.midhafin.com/wp-content/uploads/elementor/thumbs/Industry-Experienced-Faculty-Graphic-qjjuf83k7rt50cqg3kt9xdovai3nhfwrev0ssglf5s.png" alt="Industry Experienced Faculty" />
                             <hr className='my-3' />
                             <h1 className='text-2xl text-bold text-[#6A1C1A] text-center'>Industry Experienced Faculty</h1>
@@ -140,7 +140,7 @@ export default function Home() {
                         </div>
                     </div>
                     {/* FAQs  Section */}
-                    <div className='max-w-full mx-auto  mt-5 bg-white' >
+                    <div className='max-w-[100%] mx-auto  mt-5 bg-white' >
                         <div>
                             <h1 className='text-[40px] md:text-[50px] text-center font-bold text-black m-2'>Frequently <span className='text-[#6A1C1A]'>Asked</span> Questions</h1>
                         </div>
