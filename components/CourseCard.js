@@ -32,18 +32,19 @@ export default function CourseCard({a},{index}) {
         <div id={styles.card__body}>
         <div id={styles.card__category}><a href="#">{a.tp}</a></div>
           <h2 id={styles.card__title}>
-            <a className='flex' target="_blank" href="https://www.linkedin.com/in/midhamicky/?originalSubdomain=in">By : {a.instructor}<FaLinkedin  className='my-auto mx-2'/></a>
+            By : {a.instructor}
+            {/* <a className='flex' target="_blank" href="https://www.linkedin.com/in/midhamicky/?originalSubdomain=in">By : {a.instructor}<FaLinkedin  className='my-auto mx-2'/></a> */}
           </h2>
           <div id={styles.cardpricediv}>
             <h1 id={styles.card__pricea}>{a.price}</h1>
             <h1 id={styles.card__priceb}>{checkOther(a.other)}</h1>
           </div>
           <ul id={styles.card__description}>
-            <li><FaRegClock className='my-auto mr-2' /><p>{a.details[0]}</p></li>
-            <li><TbDevices className='my-auto mr-2' /><p>{a.details[1]}</p></li>
-            <li><PiMedal className='my-auto mr-2'/><p>{a.details[2]}</p></li>
-            <li><LuBookOpenCheck className='my-auto mr-2'/><p>{a.details[3]}</p></li>
-            <li><LuPencilLine className='my-auto mr-2'/><p>{a.details[4]}</p></li>
+            <li><FaRegClock className='my-auto mr-3' /><p>{a.details[0]}</p></li>
+            <li><TbDevices className='my-auto mr-3' /><p>{a.details[1]}</p></li>
+            <li><PiMedal className='my-auto mr-3'/><p>{a.details[2]}</p></li>
+            <li><LuBookOpenCheck className='my-auto mr-3'/><p>{a.details[3]}</p></li>
+            <li><LuPencilLine className='my-auto mr-3'/><p>{a.details[4]}</p></li>
           </ul>
         </div>
         <div id={styles.card__footer}>

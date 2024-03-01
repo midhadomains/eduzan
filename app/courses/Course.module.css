@@ -1,64 +1,140 @@
 #largescreendiv{
     display: flex;
     flex-wrap: nowrap;
-    width: 95%;
-    margin: 0 auto;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
 }
-#largescreendiv_a{
-    margin: 20px 0;
-    height: 100%;
-    width: 20%;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    position: fixed;
-    text-align: start;
+#largescreencoursediv{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
+    grid-template-columns: auto auto auto auto;
+    justify-items: start;
+    /* border: 1px solid yellow; */
 }
-
 #largescreendiv_b{
     margin-top: 20px;
-    margin-left: auto;
-    width: auto;
+    /* margin-left: auto; */
+    /* width: auto; */
     padding:10px;
+    margin-left:50px ;
     /* border: 1px solid red; */
 }
+#largescreendiv_a{
+    padding-bottom: 20px;
+    margin: 20px 0;
+    height: 100%;
+    width: 300px;
+    /* margin-right: 100px; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 8px;
+    position: sticky;
+    top: 70px;
+    text-align: start;
+}
+@media only screen and (min-width:300px){
+    #largescreendiv_a{
+        width: 250px;
+    }
+    #largescreendiv_b{
+        width: 350px;
+    }
+}
+@media only screen and (min-width:700px) {
+    #largescreendiv_a{
+        width: 250px;
+    }
+    #largescreendiv_b{
+        padding:0;
+        margin-left:20px ;
+        width: 350px;
+    }
+    #largescreendiv{
+        width: 100%;
+    }
+}
+@media only screen and (min-width:1100px) {
+    #largescreendiv_b{
+        margin-left: 50px;
+        width:800px ;
+    }
+    #largescreendiv_a{
+        width:300px ;
+    }
+}
+@media only screen and (min-width:1600px) {
+    #largescreendiv_b{
+        width:1100px ;
+    }
+}
+@media only screen and (min-width:2000px) {
+    #largescreendiv_b{
+        width:1450px ;
+    }
+    
+}
+#largescreendiv_a li:hover{
+    background-color:#efeaea9f;
+}
+#largescreendiv>#largescreendiv_a>li{
+    width: 95%;
+    margin: auto;
+}
+
+#largescreendiv>#largescreendiv_a>#largescreendiv_a_title{
+    font-weight: bold;
+    color: #6A1B1B;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid  #6A1B1B;;
+}
+
+#largescreendiv_a .activee {
+    background-color:#ede5e5;
+
+  }
+
+
 #largescreencoursecardparentdiv{
     height: auto;
     width:300px;
     margin: 15px;
     text-align: center;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-}#largescreendiv>ul>li{
+}
+#largescreendiv_a li{
     width:100%;
     font-size: large;
     padding: 7px 0px;
     padding-left: 15px;
 } 
-/* #largescreendiv>ul>li>p{
-    width: 90%;
-    padding: 5px;
-    border-radius: 6px;
-}   */
+#largescreendiv_a li >p{
+   display: flex;
+   justify-content: space-between;
+   border-left: 2.5px solid #6A1B1B;
+   padding-left: 5px;
+} 
+#largescreendiv ul li:hover{
+    cursor: pointer;
+}  
 #largescreensubbuttondiv{
     display: flex;
 }
-#largescreensubbuttondiv>button{
-    width: 120px;
-    background-color: aquamarine;
+#largescreensubbuttondiv>li{
     margin: 5px 10px;
 }
 
 #smhiddenbutton{
     display: none;
 }
-#largescreencoursediv{
-    background-color: white;
-    width: 100%;
-    display: grid;
-    column-gap: 30px;
-    row-gap: 30px;
-    grid-template-columns: auto auto auto;
 
-    /* border: 1px solid yellow; */
-}
 /* #coursediv{
     margin-left: 300px;
     display: flex;
@@ -76,6 +152,25 @@
     display: none;
 }
 
+.active {
+    opacity: 1;
+    position: relative;
+  }
+  
+  .active::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #fff; /* Adjust color as needed */
+  }
+  
+  
 
 @media only screen and (max-width: 710px) {
     #largescreendiv{
