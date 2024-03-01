@@ -6,7 +6,7 @@ import { getComments } from "../../../lib/comments";
 import Date from "../../../components/Date";
 import { Rubik, Roboto_Slab } from 'next/font/google';
 // import { getSeo } from "../../../lib/seo";
-
+import Image from 'next/image'
 const rubik = Rubik({ subsets: ['latin'], display: 'swap' });
 const roboto_slab = Roboto_Slab({ subsets: ['latin'], display: 'swap' });
 
@@ -98,7 +98,7 @@ export default async function Post({ params }) {
                             <li key={comment.id} className="pb-4 border-b">
                                 <div className="comment-header flex justify-start items-center">
                                     <div className="py-4">
-                                        <img src={comment.author.node.avatar.url} width={comment.author.node.avatar.width} height={comment.author.node.avatar.height} className="rounded-full max-w-[50px] mr-4" />
+                                        <Image  alt="image" src={comment.author.node.avatar.url} width={comment.author.node.avatar.width} height={comment.author.node.avatar.height} className="rounded-full max-w-[50px] mr-4" />
                                     </div>
                                     <div>
                                         <div className="font-bold">

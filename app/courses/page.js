@@ -1,52 +1,12 @@
 "use client"
-// import Image from "next/image"
-// import styles from "./Course.module.css"
-// import React, { useState } from 'react';
-// import Footer from "../../components/SiteFooter";
-// import Navbar from "../../components/SiteHeader";
-// import CourseCard from "../../components/CourseCard";
-
-// function Accordion() {
-//   const [selectedButton, setSelectedButton] = useState(1);
-//   const handleButtonClick = (buttonIndex) => {
-//     setSelectedButton((prevSelected) => (prevSelected === buttonIndex ? null : buttonIndex));
-//   };
-
-//   const [selectedSubButton, setSelectedSubButton] = useState(null);
-
-//   const handleSubButtonClick = (subButtonIndex) => {
-//     setSelectedSubButton((prevSelected) => (prevSelected === subButtonIndex ? null : subButtonIndex));
-//   };
-
-
-
-//   return (
-//     <div>
-//       <Navbar />
-//       <div id={styles.largescreendiv}>
-//         <ul id={styles.largescreendiv_a}>
-//           <li >Categories</li>
-//           <hr/>
-//           <li onClick={() => handleButtonClick(1)}><p>Popular Courses</p></li>
-//           <li>FRM
-//             {selectedButton === 2 && (
-//               <div id={styles.largescreensubbuttondiv}>
-//                 <button>Part-1</button>
-//                 <button>Part-2</button>
-//               </div>
-//             )}
-//           </li>
-//           <li>CFA</li>
-//           <li>PRM</li>
-//         </ul>
-
-
 import Image from "next/image"
 import styles from "./Course.module.css"
 import React, { useState } from 'react';
 import Footer from "../../components/SiteFooter";
 import Navbar from "../../components/SiteHeader";
 import CourseCard from "../../components/CourseCard";
+import { MdArrowBackIos,MdArrowForwardIos } from "react-icons/md";
+
 
 function Accordion() {
   const Popularcourse = [
@@ -136,7 +96,7 @@ function Accordion() {
   const [selectedSubButton, setSelectedSubButton] = useState(null);
 
   const handleButtonClick = (buttonIndex) => {
-    setSelectedButton((prevSelected) => (prevSelected === buttonIndex ? null : buttonIndex));
+    setSelectedButton((prevSelected) => (prevSelected === buttonIndex ? null : buttonIndex)); //change null to 1 if you dont want space to be empty
     setSelectedCategory(null); // Reset selected category when Popular Courses is clicked
     setSelectedSubButton(null); // Reset selected subcategory when Popular Courses is clicked
   };
@@ -153,30 +113,82 @@ function Accordion() {
 
   return (
     <div>
-      <div >
+      <div>
         <Navbar />
         <div id={styles.largescreendiv}>
+
           <ul id={styles.largescreendiv_a}>
-            <li onClick={() => handleButtonClick(1)} style={{ background: selectedButton === 1 ? 'pink' : '' }}>
-              <p>Popular Courses</p>
+            <p id={styles.largescreendiv_a_title}>Courses</p>
+            <li onClick={() => handleButtonClick(1)} className={selectedButton === 1 ? styles.activee : ''}>
+              <p>Popular Courses {selectedButton === 1 ? <MdArrowBackIos className="text-2xl" /> : <MdArrowForwardIos className="text-2xl" />}</p>
             </li>
-            <li onClick={() => handleCategoryClick("FRM")} style={{ background: selectedCategory === "FRM" ? 'pink' : '' }}>
-              FRM
-              {selectedCategory === "FRM" && (
-                <div id={styles.largescreensubbuttondiv}>
-                  <button onClick={() => handleSubButtonClick("Part-1")} style={{ background: selectedSubButton === "Part-1" ? 'pink' : '' }}>Part-1</button>
-                  <button onClick={() => handleSubButtonClick("Part-2")} style={{ background: selectedSubButton === "Part-2" ? 'pink' : '' }}>Part-2</button>
-                </div>
-              )}
+              <hr className='w-[90%] mx-auto my-1' />
+            <li onClick={() => handleButtonClick("Packages")} className={selectedButton === "Packages" ? styles.activee : ''}>
+            <p>Packages{selectedButton === "Packages" ? <MdArrowBackIos className="text-2xl" /> : < MdArrowForwardIos className="text-2xl" />}</p>
             </li>
-            <li onClick={() => handleButtonClick("CFA")} style={{ background: selectedButton === "CFA" ? 'pink' : '' }}>CFA</li>
-            <li onClick={() => handleButtonClick("PRM")} style={{ background: selectedButton === "PRM" ? 'pink' : '' }}>PRM</li>
+            <hr className='w-[90%] mx-auto my-1' />
+            <p className='text-lg m-2 mb-0 mx-3 pl-1 font-semibold text-center'>FRM<sup>®</sup></p>
+            <hr className='w-[30%] mx-auto mb-1' />
+            <div className='mx-3'>
+              <li onClick={() => handleButtonClick("FRM_Part-1")} className={selectedButton === "FRM_Part-1" ? styles.activee : ''}>
+              <p>Part-1{selectedButton === "FRM_Part-1" ? <MdArrowBackIos className="text-2xl" /> : < MdArrowForwardIos className="text-2xl" />}</p>
+              </li>
+              <li onClick={() => handleButtonClick("FRM_Part-2")} className={selectedButton === "FRM_Part-2" ? styles.activee : ''}>
+              <p>Part-2 {selectedButton === "FRM_Part-2" ? <MdArrowBackIos className="text-2xl" /> : < MdArrowForwardIos className="text-2xl" />}</p>
+              </li>
+            </div>
+            <hr className='w-[90%] mx-auto my-1' />
+            <p className='text-lg m-2 mb-0 mx-3 font-semibold text-center'>PRM</p>
+            <hr className='w-[30%] mx-auto mb-1' />
+            <div className='mx-3 '>
+              <li onClick={() => handleButtonClick("PRM_Exam-1")} className={selectedButton === "PRM_Exam-1" ? styles.activee : ''}>
+              <p>Exam-1 {selectedButton === "PRM_Exam-1" ? <MdArrowBackIos className="text-2xl" /> : < MdArrowForwardIos className="text-2xl" />}</p>
+              </li>
+            </div>
+            <hr className='w-[90%] mx-auto my-1' />
             {/* Add similar onClick and background styling for other categories */}
           </ul>
+          {/* <li onClick={() => handleCategoryClick("CFA")} className={selectedButton === "CFA" ? styles.active : ''}>
+                CFA
+                {selectedCategory === "CFA" && (
+                  <div id={styles.largescreensubbuttondiv}>
+                    <li onClick={() => handleButtonClick("CFA_Part-1")} className={selectedButton === "FRM_Part-1" ? styles.active : ''}>Part-1</li>
+                    <li onClick={() => handleButtonClick("FRM_Part-2")} className={selectedButton === "FRM_Part-2" ? styles.active : ''}>Part-2</li>
+                  </div>
+                )}
+                </li> */}
 
           {/* remove */}
           <div id={styles.largescreendiv_b} >
             {selectedButton === 1 && (
+              <div id={styles.largescreencoursediv} >
+                {Popularcourse.map((a, index) => (
+                  <CourseCard a={a} key={index} />
+                ))}
+              </div>
+            )}
+            {selectedButton === "Packages" && (
+              <div id={styles.largescreencoursediv} >
+                {Popularcourse.map((a, index) => (
+                  <CourseCard a={a} key={index} />
+                ))}
+              </div>
+            )}
+            {selectedButton === "FRM_Part-1" && (
+              <div id={styles.largescreencoursediv} >
+                {Popularcourse.map((a, index) => (
+                  <CourseCard a={a} key={index} />
+                ))}
+              </div>
+            )}
+            {selectedButton === "FRM_Part-2" && (
+              <div id={styles.largescreencoursediv} >
+                {Popularcourse.map((a, index) => (
+                  <CourseCard a={a} key={index} />
+                ))}
+              </div>
+            )}
+            {selectedButton === "PRM_Part-1" && (
               <div id={styles.largescreencoursediv} >
                 {Popularcourse.map((a, index) => (
                   <CourseCard a={a} key={index} />
@@ -328,7 +340,9 @@ function Accordion() {
           </div>
         </div>
       </div>
-      <Footer />
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 }
