@@ -32,7 +32,6 @@ const MyComponent = () => {
             </div>
           </div>
           <div className="-ml-4 sm:ml-0 lg:p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-
             <Image
               src="/Complete-study-material.png"
               alt="Study-planner"
