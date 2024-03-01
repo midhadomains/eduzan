@@ -25,10 +25,10 @@ export default function Home() {
                             <p className='text-[#391601] ml-8 text-md sm:text-lg'>Step up your career by acquiring the desirable skills and leading global certifications in Finance.</p>
                             <div className='flex mt-5 justify-center'>
                                 <Link href="https://www.midhafin.com/s/authenicate" >
-                                    <button className='bg-[#6A1C1A] rounded text-white py-2 px-2 sm:px-4 md:px-3 lg:px-4 m-2'>SIGNUP NOW</button>
+                                    <button className='bg-[#6A1C1A] rounded text-white hover:bg-black py-2 px-2 sm:px-4 md:px-3 lg:px-4 m-2'>SIGNUP NOW</button>
                                 </Link>
                                 <Link href="/courses">
-                                    <button className='bg-[#6A1C1A] rounded text-white py-2 px-2 sm:px-4 md:px-3 lg:px-4 m-2'>EXPLORE COURSES</button>
+                                    <button className='bg-[#6A1C1A] rounded text-white hover:bg-black py-2 px-2 sm:px-4 md:px-3 lg:px-4 m-2'>EXPLORE COURSES</button>
                                 </Link>
                             </div>
                         </div>
