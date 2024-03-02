@@ -84,7 +84,7 @@ function Footer() {
                     </a>
 
                     <div className="flex -mx-2">
-                        <Link target="_blank" href="https://www.instagram.com/midhafin/" className="mx-2 text-white transition-colors duration-300 hover:text-[#6A1C1A] dark:hover:text-[#6A1C1A]" aria-label="Reddit">
+                        <Link target="_blank" href="https://www.instagram.com/midhafin/" className="mx-2 text-white transition-colors duration-300 hover:text-[#6A1C1A] dark:hover:text-[#6A1C1A]" aria-label="Instagram">
                             <SlSocialInstagram />
                         </Link>
 
@@ -92,15 +92,15 @@ function Footer() {
                             <TiSocialFacebook />
                         </Link>
 
-                        <Link target="_blank" href="https://www.linkedin.com/company/midhafin/" className="mx-2 text-white transition-colors duration-300 hover:text-[#6A1C1A] dark:hover:text-[#6A1C1A]" aria-label="Github">
+                        <Link target="_blank" href="https://www.linkedin.com/company/midhafin/" className="mx-2 text-white transition-colors duration-300 hover:text-[#6A1C1A] dark:hover:text-[#6A1C1A]" aria-label="Linkedin">
                             <SlSocialLinkedin />
                         </Link>
 
-                        <Link target="_blank" href="https://twitter.com/midhafin" className="mx-2 text-white transition-colors duration-300 hover:text-[#6A1C1A] dark:hover:text-[#6A1C1A]" aria-label="Github">
+                        <Link target="_blank" href="https://twitter.com/midhafin" className="mx-2 text-white transition-colors duration-300 hover:text-[#6A1C1A] dark:hover:text-[#6A1C1A]" aria-label="Twitter">
                             <SlSocialTwitter />
                         </Link>
 
-                        <Link target="_blank" href="https://www.youtube.com/@MidhaFin" className="mx-2 text-white transition-colors duration-300 hover:text-[#6A1C1A] dark:hover:text-[#6A1C1A]" aria-label="Github">
+                        <Link target="_blank" href="https://www.youtube.com/@MidhaFin" className="mx-2 text-white transition-colors duration-300 hover:text-[#6A1C1A] dark:hover:text-[#6A1C1A]" aria-label="You Tube">
                             <SlSocialYoutube />
                         </Link>
                     </div>

@@ -5,7 +5,11 @@
     width: 90%;
     margin: auto;
 }
-
+.activee {
+    background-color: #EFEAEA;
+    padding: 2px 0;
+    margin-bottom: 5px;
+}
 #largescreencoursediv {
     background-color: white;
     width: 100%;
@@ -135,7 +139,7 @@
     /* Adjust color as needed */
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 780px) {
     #smallscreendiv {
         width: 100%;
         display: block;
@@ -150,7 +154,7 @@
     #smallscreendiv>ul>li>p{
         font-size:1.1rem;
         font-weight:600;
-        margin: 10px auto;
+        margin: 2px auto;
         text-align: center;
         width: 80%;
         display: flex;
@@ -160,22 +164,25 @@
         display: none;
     }
     #subdiv{
-        width: 100%;
+        margin: 4px auto;
+        width: 90%;
         display: flex;
+        flex-wrap: nowrap;
         justify-content: center;
     }
     #subdiv>li{
-        margin: 10px 0;
-        width: 100%;
+        margin: 5px 0;
+        width: 50%;
     }
-    #subdiv>li>p{
+    #subdiv>li>p {
+        margin:0 auto;
+        width: 60%;
         font-size: 1.1rem;
-        font-weight: 500;
+        font-weight: 600;
         display: flex;
         flex-wrap: nowrap;
-        justify-content: space-around;
+        justify-content: center;
     }
-
     #leftnav {
         display: none;
     }
@@ -206,6 +213,7 @@
         display: grid;
         grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
         overflow-x: scroll;
+        column-gap: 15px;
         overflow-y: hidden;
         white-space: nowrap;
     }
@@ -214,12 +222,12 @@
 @media only screen and (min-width:700px) {
     #largescreendiv_a {
         width: 220px;
-        margin-left: 10px;
+        margin-left: 15px;
     }
 
     #largescreendiv_b {
         padding: 0;
-        margin-left: 10px;
+        margin-left: 15px;
         margin-right: 10px;
         width: 590px;
     }
@@ -229,8 +237,8 @@
     }
 
     #largescreencoursediv {
-        column-gap: 10px;
-        row-gap: 10px;
+        column-gap: 15px;
+        row-gap: 15px;
     }
 }
 
