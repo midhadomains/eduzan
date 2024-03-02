@@ -3,6 +3,7 @@ import SiteFooter from "../components/SiteFooter";
 import Link from "next/link";
 import Image from 'next/image'
 import Accordion from "../components/Accordian";
+import CarouselHome from "../components/CarouselHome";
 export const metadata = {
     title: "Welcome to MidhFin",
     description: "MidhaFin Home , Explore our Wide Range of Courses "
@@ -35,11 +36,12 @@ export default function Home(){
                         </div>
                     </div>
                     {/* Review section */}
-                    <div className="w-[80%] mx-auto">
+                    <div className="w-[100%] mx-auto">
                         <h1 className="font-bold text-[40px] text-center">Don&apos;t believe us, Hear from Our students</h1>
+                        <CarouselHome/>
 
                     </div>
-                    <hr className="w-[80%] mx-auto" />
+                    <hr className="w-[80%] mx-auto my-2" />
                     {/* About section */}
                     <div className='sm:flex mx-auto lg:w-[80%] p-5 '>
                         <div className='sm:w-[40%] my-auto text-left'>
