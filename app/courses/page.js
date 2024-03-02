@@ -293,14 +293,14 @@ function Courses() {
             </div>
           )}
           <hr className='w-[90%] mx-auto my-2' />
-          <h1 className='text-[1.1rem] font-[600] my-[10px]' >FRM<sup>®</sup></h1>
+          <h1 className='text-[1.15rem] font-[700] my-[10px]' >FRM<sup>®</sup></h1>
           <hr className='w-[30%] mx-auto mb-1' />
           <div id={styles.subdiv}>
             <li onClick={() => handleButtonClick("FRM_Part-1")} className={selectedButton === "FRM_Part-1" ? styles.activee : ''}>
-              <p>Part-1{selectedButton === "FRM_Part-1" ? <IoIosArrowDown className="text-2xl" /> : < IoIosArrowUp className="text-2xl" />}</p>
+              <p>Part-1{selectedButton === "FRM_Part-1" ? <IoIosArrowDown className="text-2xl ml-4" /> : < IoIosArrowUp className="text-2xl  ml-4" />}</p>
             </li>
             <li onClick={() => handleButtonClick("FRM_Part-2")} className={selectedButton === "FRM_Part-2" ? styles.activee : ''}>
-              <p>Part-2 {selectedButton === "FRM_Part-2" ? <IoIosArrowDown className="text-2xl" /> : < IoIosArrowUp className="text-2xl" />}</p>
+              <p>Part-2 {selectedButton === "FRM_Part-2" ? <IoIosArrowDown className="text-2xl ml-4" /> : < IoIosArrowUp className="text-2xl ml-4" />}</p>
             </li>
           </div>
           {selectedButton === "FRM_Part-1" && (
@@ -318,20 +318,20 @@ function Courses() {
             </div>
           )}
           <hr className='w-[90%] mx-auto my-2' />
-          <h1 className='text-[1.1rem] font-[600] my-[10px]' >PRM</h1>
+          <h1 className='text-[1.15rem] font-[700] my-[10px]' >PRM</h1>
           <hr className='w-[30%] mx-auto mb-1' />
-          <li onClick={() => handleButtonClick("PRM_Exam-1")} className={selectedButton === "PRM_Exam-1" ? styles.activee : ''}>
-            <p>Exam-1 {selectedButton === "PRM_Exam-1" ? <IoIosArrowDown className="text-2xl" /> : < IoIosArrowUp className="text-2xl" />}</p>
-          </li>
           <div id={styles.subdiv}>
-            {selectedButton === "PRM_Exam-1" && (
-              <div id={styles.coursediv} >
-                {Popularcourse.map((a, index) => (
-                  <CourseCard a={a} key={index} />
-                ))}
-              </div>
-            )}
+            <li onClick={() => handleButtonClick("PRM_Exam-1")} className={selectedButton === "PRM_Exam-1" ? styles.activee : ''}>
+              <p>Exam-1 {selectedButton === "PRM_Exam-1" ? <IoIosArrowDown className="text-2xl ml-5" /> : < IoIosArrowUp className="text-2xl ml-5" />}</p>
+            </li>
           </div>
+          {selectedButton === "PRM_Exam-1" && (
+            <div id={styles.coursediv} >
+              {Popularcourse.map((a, index) => (
+                <CourseCard a={a} key={index} />
+              ))}
+            </div>
+          )}
           <hr className='w-[90%] mx-auto my-2' />
         </ul>
       </div>
