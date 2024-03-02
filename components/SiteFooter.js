@@ -39,7 +39,7 @@ function Footer() {
                                 <Link href="/about-us" className="transition-colors duration-300 hover:underline hover:text-[#6A1C1A]">About us</Link>
                                 <Link href="/courses" className="transition-colors duration-300 hover:underline hover:text-[#6A1C1A]">Courses</Link>
                                 <Link href="/faq" className="transition-colors duration-300 hover:underline hover:text-[#6A1C1A]">FAQs</Link>
-                                <Link href="/blog" className="transition-colors duration-300 hover:underline hover:text-[#6A1C1A]">Blogs</Link>
+                                <Link href="/career" className="transition-colors duration-300 hover:underline hover:text-[#6A1C1A]">Career</Link>
                             </div>
                             <div className="flex flex-col items-start text-white mt-5 space-y-2">
                                 <Link href="/privacy-policy" className="transition-colors duration-300 hover:underline hover:text-[#6A1C1A]">Privacy Policy</Link>
@@ -57,12 +57,14 @@ function Footer() {
                         <div className="mt-5 ml-3">
                             <div className="flex text-white my-2 ">
                                 <MdOutlinePhoneIphone className="my-auto mr-1" />
-                                <h1 className=' transition-colors duration-300  hover:underline hover:text-[#6A1C1A] text-lg'> Call : +91-91551-99555</h1>
+                                <Link href="tel:+91 91551 99555">
+                                    <h1 className=' transition-colors duration-300  hover:underline hover:text-[#6A1C1A] text-lg'> Call : +91-91551-99555</h1>
+                                </Link>
                             </div>
                             <div className="flex text-white my-2">
                                 <TiMail className="my-auto mr-1" />
                                 <Link target="_blank" href="mailto:midhafin@gmail.com" >
-                                    <h1 className='transition-colors duration-300  hover:underline hover:text-[#6A1C1A] text-lg'>MidhaFin@gmail.com</h1>
+                                    <h1 className='transition-colors duration-300  hover:underline hover:text-[#6A1C1A] text-lg tracking-wider	'>MidhaFin@gmail.com</h1>
                                 </Link>
                             </div>
                         </div>
