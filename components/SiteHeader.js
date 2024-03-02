@@ -81,7 +81,7 @@ const Navbar = () => {
                     </ul>
                     {/* Responsive */}
                     <ul className={`md:hidden w-[50%] sm:w-[40%] md-[30%] h-auto fixed bg-[#ecebea]  backdrop-filter backdrop-blur-lg bg-opacity-95 top-[60px] 
-                     ${toggle ? "right-[0]" : "top-[-500%]"}`}>
+                     ${toggle ? "right-[0]" : "hidden"}`}>
                         <NavItem to="/courses" name="Courses" />
                         <NavItem to="/blog" name="Blogs" />
                         <NavItem to="/reviews" name="Reviews" />
