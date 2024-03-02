@@ -5,8 +5,10 @@
   box-sizing: 330px;
   height: auto;
   margin: 0;
+  margin-right: 15px;
   padding: 0;
   border-radius: 8px;
+
 }
 
 /**
@@ -135,6 +137,7 @@
 }
 
 #card__title {
+  text-align: start;
   border-left: 3px solid #842021;
   margin: 7px 10px;
   padding-left: 6px;
