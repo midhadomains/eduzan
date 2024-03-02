@@ -42,20 +42,19 @@ function Reviews() {
     return (
         <>
             <Navbar />
-            <div className='p-5 bg-[#f6dfd4] mb-5 '>
+            <div className='p-5 bg-gradient-to-b from-[#e9e5e3] to-red-100 mb-5 '>
                 <div className="w-[95%]">
                     <h1 className="font-bold text-[40px] text-center">Don&apos;t believe us, Hear from my students</h1>
-
                 </div>
                 {data ? (
-                    <ul className='grid grid-cols-3 gap-9 w-[90%] mx-auto '>
+                    <ul className='grid sm:grid-cols-2 lg:grid-cols-3 gap-9 w-[90%] mx-auto'>
                         {data.map((review, index) => (
-                            <li key={index} className='border-[3px] border-[#f4eeeb] rounded-2xl p-4 bg-white backdrop-filter backdrop-blur-[2px] bg-opacity-20'>
+                            <li key={index} className='border-[3px] border-[#faf4f1] mt-[60px] pt-[60px] rounded-2xl p-4 bg-white relative backdrop-filter backdrop-blur-[2px] bg-opacity-20'>
                                 <div className='bg-grey-900'>
                                     <div className=''>
-                                        <Image width={100} height={100} src={review.image} alt={review.name} className='w-[100px] mx-auto rounded-[50%] border t-[40px]' />
+                                        <Image width={120} height={120} src={review.image} alt={review.name} className='w-[100px] absolute left-[40%] border-[3px] border-[#b3b1b1] -top-[65px] mx-auto rounded-[50%] border t-[40px]' />
                                         <div>
-                                            <h1 className='text-center'>&quot; {`${review.excerpt}`}...<Link href="#" className=''>Read More</Link> &quot;</h1>
+                                            <h1 className='text-center'>&quot; {`${review.excerpt}`}...<Link href={review.p_link} className='underline'>Read More</Link> &quot;</h1>
                                         </div>
 
                                         <h1 className='text-amber-700 text-center'>{capitalizeWords(review.name)}</h1>
