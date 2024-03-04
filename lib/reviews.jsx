@@ -46,21 +46,24 @@ function Reviews() {
             <Navbar />
             <div className='p-5 bg-gradient-to-b from-[#e9e5e3] to-red-100 mb-5 '>
                 <div className="w-[95%]">
-                    <h1 className="font-bold text-[40px] text-center">Don&apos;t believe us, Hear from my students</h1>
+                    <h1 className="font-bold text-[40px] text-center">Don&apos;t believe us, Hear from our students</h1>
                 </div>
                 {data ? (
                     <ul className='grid sm:grid-cols-2 lg:grid-cols-3 gap-9 w-[90%] mx-auto'>
                         {data.map((review, index) => (
                             <li key={index} className='border-[3px] border-[#faf4f1] mt-[60px] pt-[60px] rounded-2xl p-4 bg-white relative backdrop-filter backdrop-blur-[2px] bg-opacity-20'>
-                                <div className='bg-grey-900'>
-                                    <div className=''>
-                                        <Image width={120} height={120} src={review.image} alt={review.name} className='w-[100px] absolute left-[40%] border-[3px] border-[#b3b1b1] -top-[65px] mx-auto rounded-[50%] border t-[40px]' />
-                                        <div>
-                                            <h1 className='text-center'>&quot; {`${review.excerpt}`}...<Link href={review.p_link} className='underline'>Read More</Link> &quot;</h1>
+                                <div className='bg-grey-900 '>
+                                    <div className='items-center flex flex-col justify-around'>
+                                        <Image width={120} height={120} src={review.image} alt={review.name} className='w-[100px] absolute mx-auto border-[3px] border-[#f9f6f6] -top-[65px] mx-auto rounded-[50%] border t-[40px]' />
+                                        <div >
+                                            <div>
+                                                <h1 className='text-center'>&quot; {`${review.excerpt}`}...<Link href={review.p_link} className='underline'>Read More</Link> &quot;</h1>
+                                            </div>
+                                            <div className='mt-2'>
+                                                <h1 className='text-amber-700 text-center'>{capitalizeWords(review.name)}</h1>
+                                                <h1 className='text-amber-700 text-center'>{review.course}</h1>
+                                            </div>
                                         </div>
-
-                                        <h1 className='text-amber-700 text-center'>{capitalizeWords(review.name)}</h1>
-                                        <h1 className='text-amber-700 text-center'>{review.course}</h1>
                                         {/* <p>{review.country}</p> */}
                                     </div>
                                 </div>
