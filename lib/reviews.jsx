@@ -12,7 +12,9 @@ function Reviews() {
     useEffect(() => {
         async function fetchData() {
             try {
-                const res = await fetch('https://midhareviewapi.vercel.app/reviews');
+                
+                // const res = await fetch('https://midhareviewapi.vercel.app/reviews');
+                const res = await fetch('https://midhareviewapi-577q.vercel.app/reviews');
                 if (!res.ok) {
                     throw new Error('Failed to fetch data');
                 }
