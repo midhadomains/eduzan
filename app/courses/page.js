@@ -1,5 +1,4 @@
 "use client"
-import Image from "next/image"
 import styles from "./Course.module.css"
 import React, { useState } from 'react';
 import Footer from "../../components/SiteFooter";
@@ -202,10 +201,10 @@ function Courses() {
             <li onClick={() => handleButtonClick(1)} className={selectedButton === 1 ? styles.activee : ''}>
               <p>Popular Courses {selectedButton === 1 ? <MdArrowForwardIos className="text-2xl" /> : <MdArrowBackIos className="text-2xl" />}</p>
             </li>
-            <hr className='w-[90%] mx-auto my-1' />
+            {/* <hr className='w-[90%] mx-auto my-1' />
             <li onClick={() => handleButtonClick("Packages")} className={selectedButton === "Packages" ? styles.activee : ''}>
               <p>Packages{selectedButton === "Packages" ? <MdArrowForwardIos className="text-2xl" /> : < MdArrowBackIos className="text-2xl" />}</p>
-            </li>
+            </li> */}
             <hr className='w-[90%] mx-auto my-1' />
             <p className='text-lg m-2 mb-0 mx-3 pl-1 font-semibold text-center'>FRM<sup>®</sup></p>
             <hr className='w-[30%] mx-auto mb-1' />
@@ -225,7 +224,7 @@ function Courses() {
                 <p>Exam-1 {selectedButton === "PRM_Exam-1" ? <MdArrowForwardIos className="text-2xl" /> : < MdArrowBackIos className="text-2xl" />}</p>
               </li>
             </div>
-            <hr className='w-[90%] mx-auto my-1' />
+            <hr className='w-[90%] mx-auto my-1'/>
             {/* Add similar onClick and background styling for other categories */}
           </ul>
           {/* remove */}
@@ -237,13 +236,13 @@ function Courses() {
                 ))}
               </div>
             )}
-            {selectedButton === "Packages" && (
+            {/* {selectedButton === "Packages" && (
               <div id={styles.largescreencoursediv} >
                 {Popularcourse.map((a, index) => (
                   <CourseCard a={a} key={index} />
                 ))}
               </div>
-            )}
+            )} */}
             {selectedButton === "FRM_Part-1" && (
               <div id={styles.largescreencoursediv} >
                 {Popularcourse.map((a, index) => (

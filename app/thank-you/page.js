@@ -30,7 +30,7 @@ const RedirectPage = () => {
                 <div className="text-center text-[1.2rem] my-2 font-semibold p-2 tracking-wide">
                     Redirecting To Homepage in {timer} seconds ...
                 </div>
-                <Image className='mx-auto mt-[60px]' alt="check" width={300} height={300} src='/bigcheck.png' />
+                <Image className='mx-auto mt-[60px]' alt="check" width={300} height={300} src='/bigcheck.png' priority/>
                 <h1 className="text-center text-[2rem] lg:text-[2.5rem] my-2 font-semibold p-2 tracking-wide">Thank you <span className='text-[#6A1C1A]'>!</span></h1>
                 <hr className='w-[30%] mx-auto'/>
                 <h1 className="text-center text-lg lg:text-2xl my-1 font-semibold p-2 tracking-wide	">Your Query was successfully submitted. </h1>
