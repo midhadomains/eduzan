@@ -10,7 +10,7 @@ export default function CarouselHome() {
                     </div>
                     <div>
                         <h1>Sujal</h1>
-                        <iframe width="300" height="201" src="https://www.youtube.com/embed/AV-wHboWyHM?si=6wWqhy3qGbZEIyP6" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen='true'></iframe>
+                        <iframe width="300" height="201" src="https://www.youtube.com/embed/AV-wHboWyHM?si=6wWqhy3qGbZEIyP6" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen={true}></iframe>
                     </div>
                 </div>
                 <div className='bg-white rounded-xl mx-9'>
@@ -19,7 +19,7 @@ export default function CarouselHome() {
                     </div>
                     <div>
                         <h1>Sujal</h1>
-                        <iframe width="300" height="201" src="https://www.youtube.com/embed/AV-wHboWyHM?si=6wWqhy3qGbZEIyP6" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen='true'></iframe>
+                        <iframe width="300" height="201" src="https://www.youtube.com/embed/AV-wHboWyHM?si=6wWqhy3qGbZEIyP6" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowFullScreen={true}></iframe>
                     </div>
                 </div>
                 <div className='bg-white rounded-xl mx-9'>
@@ -28,7 +28,7 @@ export default function CarouselHome() {
                     </div>
                     <div>
                         <h1>Sujal</h1>
-                        <iframe width="300" height="201" src="https://www.youtube.com/embed/AV-wHboWyHM?si=6wWqhy3qGbZEIyP6" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen='true'></iframe>
+                        <iframe width="300" height="201" src="https://www.youtube.com/embed/AV-wHboWyHM?si=6wWqhy3qGbZEIyP6" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowFullScreen={true}></iframe>
                     </div>
                 </div>
                 <div className='bg-white rounded-xl mx-9'>
@@ -37,7 +37,7 @@ export default function CarouselHome() {
                     </div>
                     <div>
                         <h1>Sujal</h1>
-                        <iframe width="300" height="201" src="https://www.youtube.com/embed/AV-wHboWyHM?si=6wWqhy3qGbZEIyP6" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen='true'></iframe>
+                        <iframe width="300" height="201" src="https://www.youtube.com/embed/AV-wHboWyHM?si=6wWqhy3qGbZEIyP6" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen={true}></iframe>
                     </div>
                 </div>
             </div>
