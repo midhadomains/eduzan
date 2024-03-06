@@ -280,7 +280,7 @@ function Courses() {
               ))}
             </div>
           )}
-          <hr className='w-[90%] mx-auto my-2' />
+          {/* <hr className='w-[90%] mx-auto my-2' />
           <li onClick={() => handleButtonClick("Packages")} className={selectedButton === "Packages" ? styles.activee : ''}>
             <p>Packages{selectedButton === "Packages" ? <IoIosArrowDown className="text-2xl" /> : < IoIosArrowUp className="text-2xl" />}</p>
           </li>
@@ -290,7 +290,7 @@ function Courses() {
                 <CourseCard a={a} key={index} />
               ))}
             </div>
-          )}
+          )} */}
           <hr className='w-[90%] mx-auto my-2' />
           <h1 className='text-[1.15rem] font-[700] my-[10px]' >FRM<sup>®</sup></h1>
           <hr className='w-[30%] mx-auto mb-1' />

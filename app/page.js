@@ -38,9 +38,7 @@ export default function Home(){
                     {/* Review section */}
                     <div className="w-[100%] mx-auto">
                         <h1 className="font-bold text-[40px] text-center">Don&apos;t believe us, Hear from Our students</h1>
-                        <div className='w-[1100px] mx-auto'>
-                            <CarouselHome />
-                        </div>
+                        <CarouselHome />
                     </div>
                     <hr className="w-[80%] mx-auto my-2" />
                     {/* About section */}
