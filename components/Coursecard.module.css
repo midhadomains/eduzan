@@ -112,7 +112,7 @@
 #card__body {
   position: relative;
   /* change to change height of content body  */
-  height: 140px;
+  height: 135px;
   padding: 10px;
   -webkit-transition: height 0.5s;
   transition: height 0.5s;
@@ -120,7 +120,7 @@
 
 #card:hover #card__body {
   /* change to change height of content body when hovered */
-  height: 300px;
+  height: 315px;
 }
 
 #card__category {

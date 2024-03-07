@@ -45,7 +45,7 @@ export default function Home(){
                     <div className='sm:flex mx-auto lg:w-[80%] p-5 '>
                         <div className='sm:w-[40%] my-auto text-left'>
                             <h1 className='text-[30px] sm:text-[35px] md:text-[40px] text-bold ml-[5%]  md:ml-[10%] lg:ml-[20%] mb-0'>About </h1>
-                            <h1 className='text-[40px] sm:text-[40px] mdtext-[40px]  ml-[5%] md:ml-[10%] lg:ml-[20%] text-[#6A1C1A] font-bold'>MidhaFin</h1>
+                            <h1 className='text-[40px] sm:text-[40px] md:text-[40px]  ml-[5%] md:ml-[10%] lg:ml-[20%] text-[#6A1C1A] font-bold'>MidhaFin</h1>
 
                         </div>
                         <div className='sm:w-[60%] pl-4 sm:pl-[10%] ms:pl-[5%] lg:pl-[7%] border-[#6A1C1A] sm:border-l-4'>
@@ -117,7 +117,7 @@ export default function Home(){
                                 <Link href='/lecture-video'><button className='w-full bg-[#6A1C1A] text-white py-2 px-[10px] sm:px-[30px] lg:px-[40px] xl:px-[50px] rounded'>READ MORE</button></Link>
                             </div>
                             <div className='mx-auto items-center flex flex-col justify-around'>
-                                <Image width={150} height={100} className='mx-auto m-1' src="/doubut-solving-forum.png" alt="Doubt Solving Forum" />
+                                <Image width={150} height={100} className='mx-auto m-1' src="/doubt-solving-forum.png" alt="Doubt Solving Forum" />
                                 <h1 className='text-[20px] my-3 font-bold'>Doubt Solving Forum</h1>
                                 <Link href='/doubt-solving-forum'><button className='w-full mx-auto bg-[#6A1C1A] text-white py-2 px-[10px] sm:px-[30px] lg:px-[40px] xl:px-[50px] rounded'>READ MORE</button></Link>
                             </div>
