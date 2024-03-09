@@ -34,7 +34,7 @@ function Courses() {
       "_id": "65deec862a8308b4a242d3ce",
       "name": "FRM® Part-1 Self Paced Course",
       "image": "https://api.eduzan.com/wp-content/uploads/2024/02/MF_FRM-Part-1-Self-paced-course.png",
-      "price": "14850",
+      "price": "₹ 14,850",
       "other": "₹ 19,800",
       "instructor": "Micky Midha",
       "details": [
@@ -76,8 +76,8 @@ function Courses() {
       "_id": "65dee4781c34e4d5d691626d",
       "name": "FRM® Part-1 Sample Course",
       "image": "https://api.eduzan.com/wp-content/uploads/2024/02/MF_FRM-Part-1-Sample-Course.png",
-      "price": "Free",
-      "other": "",
+      "price": "",
+      "other": "free",
       "instructor": "Micky Midha",
       "details": [
         "12 Hrs of Videos",
@@ -96,7 +96,7 @@ function Courses() {
       "_id": "65deec862a8308b4a242d3ce",
       "name": "FRM® Part-1 Self Paced Course",
       "image": "https://api.eduzan.com/wp-content/uploads/2024/02/MF_FRM-Part-1-Self-paced-course.png",
-      "price": "14850",
+      "price": "₹ 14,850",
       "other": "₹ 19,800",
       "instructor": "Micky Midha",
       "details": [
@@ -137,8 +137,8 @@ function Courses() {
     {
       "name": "FRM® Part-2 Sample Course",
       "image": "https://api.eduzan.com/wp-content/uploads/2024/02/MF_FRM-PART-2-Sample-Course.png",
-      "price": "Free",
-      "other": "",
+      "price": "",
+      "other": "free",
       "instructor": "Micky Midha",
       "details": [
         "12 Hrs of Videos",
