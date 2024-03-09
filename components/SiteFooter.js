@@ -25,8 +25,8 @@ function Footer() {
                         <h1 className='text-[25px] sm:text-[30px] text-white font-bold'>Download the Mobile App</h1>
                         <p className='text-white mb-5'>MidhaFin is a free to download app</p>
                         <div className='flex'>
-                            <Link href="https://play.google.com/store/search?q=Midhafin&c=apps&hl=en_IN&gl=US" target="_blank" className="mr-5 w-[200px]"><Image width={300} height={100} src="https://home.midhafin.com/wp-content/uploads/2024/02/Google-Play-Button.png" alt="google play store" /></Link>
-                            <Link href="https://apps.apple.com/in/app/midhafin-cfa-frm-prm/id6463192627" target="_blank" className="mr-5 w-[200px]"><Image width={300} height={100} src="https://home.midhafin.com/wp-content/uploads/2024/02/iOS-download-Button.png" alt="app store" /></Link>
+                            <Link href="https://play.google.com/store/search?q=Midhafin&c=apps&hl=en_IN&gl=US" target="_blank" className="mr-5 w-[200px] hover:opacity-[0.75]"><Image width={300} height={100} src="https://home.midhafin.com/wp-content/uploads/2024/02/Google-Play-Button.png" alt="google play store" /></Link>
+                            <Link href="https://apps.apple.com/in/app/midhafin-cfa-frm-prm/id6463192627" target="_blank" className="mr-5 w-[200px] hover:opacity-[0.75]"><Image width={300} height={100} src="https://home.midhafin.com/wp-content/uploads/2024/02/iOS-download-Button.png" alt="app store" /></Link>
                         </div>
                     </div>
 

@@ -9,7 +9,7 @@ export const metadata = {
     description: "MidhaFin Home , Explore our Wide Range of Courses "
 }
 
-export default function Home(){
+export default function Home() {
     return (
         <>
             <div className="min-h-screen  relative">
@@ -21,13 +21,13 @@ export default function Home(){
                     <div className='max-w-full sm:flex justify-center bg-[#FAF4F2] p-5 text-center'>
                         <div className='flex flex-col item-center m-5 justify-around sm:w-[60%] lg:w-[45%] w-[100%]  mx-auto '>
                             <h1 className=' text-[27px] sm:text-[28px] md:text-[30px] lg:text-[40px] xl:text-[50px] font-bold shadow-[rgba(0, 0, 0, 0.24) 0px 3px 8px;'><span className='text-[#6A1C1A]'>Boost your career </span> in <span className='text-[#6A1C1A]'>Finance</span> with  mentorship you can bank on <span className='text-[#6A1C1A]'>!</span></h1>
-                            <p className=' w-[100%] text-[#391601] text-[1rem] sm:text-lg  mx-auto '>Step up your career by acquiring the desirable skills and leading global certifications in Finance.</p>
+                            <p className=' w-[100%] lg:w-[100%] xl:w-[60%] text-[#391601] text-[1rem] sm:text-lg  mx-auto '>Step up your career by acquiring the desirable skills and leading global certifications in Finance.</p>
                             <div className='flex mt-5 justify-center'>
-                                <Link href="https://www.midhafin.com/s/authenicate" >
-                                    <button className='text-sm sm:text-md lg:text:xl bg-[#6A1C1A] rounded text-white hover:bg-black py-2 px-2 sm:px-4 md:px-3 lg:px-4 m-2 ease-in duration-300'>SIGNUP NOW</button>
+                                <Link href="https://app.midhafin.com/s/authenicate" >
+                                    <button className='text-sm sm:text-md lg:text:xl bg-[#6A1C1A] rounded text-white hover:bg-black py-3 px-2 sm:px-4 md:px-3 lg:px-4 m-2 ease-in duration-300'>SIGNUP NOW</button>
                                 </Link>
-                                <Link href="/courses">
-                                    <button className='text-sm sm:text-md lg:text:xl bg-[#6A1C1A] rounded text-white hover:bg-black py-2 px-2 sm:px-4 md:px-3 lg:px-4 m-2'>EXPLORE COURSES</button>
+                                <Link href="https://app.midhafin.com/s/store">
+                                    <button className='text-sm sm:text-md lg:text:xl bg-[#6A1C1A] rounded text-white hover:bg-black py-3 px-2 sm:px-4 md:px-3 lg:px-4 m-2'>EXPLORE COURSES</button>
                                 </Link>
                             </div>
                         </div>
@@ -36,11 +36,11 @@ export default function Home(){
                         </div>
                     </div>
                     {/* Review section */}
-                    <div className="w-[100%] mx-auto">
+                    {/* <div className="w-[100%] mx-auto">
                         <h1 className="font-bold text-[40px] text-center">Don&apos;t believe us, Hear from Our students</h1>
-                        {/* <CarouselHome /> */}
-                    </div>
-                    <hr className="w-[80%] mx-auto my-2" />
+                        <CarouselHome />
+                    </div> */}
+                    {/* <hr className="w-[80%] mx-auto my-2" /> */}
                     {/* About section */}
                     <div className='sm:flex mx-auto lg:w-[80%] p-5 '>
                         <div className='sm:w-[40%] my-auto text-left'>
@@ -84,8 +84,8 @@ export default function Home(){
                             <h1 className='text-[30px] text-[#391701] font-bold'>Download the Mobile App</h1>
                             <p className='text-[#6A1C1A]'>MidhaFin is a free to download app</p>
                             <div className='flex'>
-                                <Link href="https://play.google.com/store/search?q=Midhafin&c=apps&hl=en_IN&gl=US" target="_blank" className="m-5"><Image width={300} height={100} src="https://home.midhafin.com/wp-content/uploads/2024/02/Google-Play-Button.png" alt="google play store" /></Link>
-                                <Link href="https://apps.apple.com/in/app/midhafin-cfa-frm-prm/id6463192627" target="_blank" className="m-5"><Image width={300} height={100} src="https://home.midhafin.com/wp-content/uploads/2024/02/iOS-download-Button.png" alt="app store" /></Link>
+                                <Link href="https://play.google.com/store/search?q=Midhafin&c=apps&hl=en_IN&gl=US" target="_blank" className="m-5 hover:opacity-[0.75]"><Image width={300} height={100} src="https://home.midhafin.com/wp-content/uploads/2024/02/Google-Play-Button.png" alt="google play store" /></Link>
+                                <Link href="https://apps.apple.com/in/app/midhafin-cfa-frm-prm/id6463192627" target="_blank" className="m-5 hover:opacity-[0.75]"><Image width={300} height={100} src="https://home.midhafin.com/wp-content/uploads/2024/02/iOS-download-Button.png" alt="app store" /></Link>
                             </div>
                         </div>
                     </div>
@@ -99,42 +99,42 @@ export default function Home(){
                             <div className='mx-auto items-center flex flex-col justify-around'>
                                 <Image width={150} height={100} className='mx-auto  m-2' src="/Study-planner.png" alt="Study Planner" />
                                 <h1 className='text-[20px] font-bold my-3'>Study Planner</h1>
-                                <Link href='/study-planner'><button className='w-full bg-[#6A1C1A] text-white py-2 px-[10px]  sm:px-[30px] lg:px-[40px] xl:px-[50px] rounded'>READ MORE</button></Link>
+                                <Link href='/study-planner'><button className='w-full bg-[#6A1C1A] text-white py-2 px-[10px]  sm:px-[30px] lg:px-[40px] xl:px-[50px] rounded  hover:bg-black'>READ MORE</button></Link>
                             </div>
                             <div className='mx-auto items-center flex flex-col justify-around'>
                                 <Image width={150} height={100} className='mx-5 m-1' src='/question-bank.png' alt="Questions Bank" />
                                 <h1 className='text-[20px] font-bold my-3'>Questions Bank</h1>
-                                <Link href='/question-bank'><button className='w-full bg-[#6A1C1A] text-white py-2 px-[10px] sm:px-[30px] lg:px-[40px] xl:px-[50px]] rounded'>READ MORE</button></Link>
+                                <Link href='/question-bank'><button className='w-full bg-[#6A1C1A] text-white py-2 px-[10px] sm:px-[30px] lg:px-[40px] xl:px-[50px]] rounded  hover:bg-black'>READ MORE</button></Link>
                             </div>
                             <div className='mx-auto items-center flex flex-col justify-around'>
                                 <Image width={150} height={100} className='mx-auto m-2' src="/mock-test.png" alt="Mock Tests" />
                                 <h1 className='text-[20px] font-bold my-3'>Mock Tests</h1>
-                                <Link href='/mock-test'><button className='w-full bg-[#6A1C1A] text-white py-2 px-[10px] sm:px-[30px] lg:px-[40px] xl:px-[50px] rounded'>READ MORE</button></Link>
+                                <Link href='/mock-test'><button className='w-full bg-[#6A1C1A] text-white py-2 px-[10px] sm:px-[30px] lg:px-[40px] xl:px-[50px] rounded  hover:bg-black'>READ MORE</button></Link>
                             </div>
                             <div className='mx-auto items-center flex flex-col justify-around'>
                                 <Image width={150} height={100} className='mx-auto m-2' src="/lecture-video.png" alt="Lecture Video" />
                                 <h1 className='text-[20px] font-bold text-center my-3'>Lecture Video</h1>
-                                <Link href='/lecture-video'><button className='w-full bg-[#6A1C1A] text-white py-2 px-[10px] sm:px-[30px] lg:px-[40px] xl:px-[50px] rounded'>READ MORE</button></Link>
+                                <Link href='/lecture-video'><button className='w-full bg-[#6A1C1A] text-white py-2 px-[10px] sm:px-[30px] lg:px-[40px] xl:px-[50px] rounded  hover:bg-black'>READ MORE</button></Link>
                             </div>
                             <div className='mx-auto items-center flex flex-col justify-around'>
                                 <Image width={150} height={100} className='mx-auto m-1' src="/doubt-solving-forum.png" alt="Doubt Solving Forum" />
                                 <h1 className='text-[20px] my-3 font-bold'>Doubt Solving Forum</h1>
-                                <Link href='/doubt-solving-forum'><button className='w-full mx-auto bg-[#6A1C1A] text-white py-2 px-[10px] sm:px-[30px] lg:px-[40px] xl:px-[50px] rounded'>READ MORE</button></Link>
+                                <Link href='/doubt-solving-forum'><button className='w-full mx-auto bg-[#6A1C1A] text-white py-2 px-[10px] sm:px-[30px] lg:px-[40px] xl:px-[50px] rounded  hover:bg-black'>READ MORE</button></Link>
                             </div>
                             <div className='mx-auto items-center flex flex-col justify-around'>
                                 <Image width={150} height={100} className='mx-auto m-4' src="/industry-expert-faculty.png" alt="Industry Expert Faculty" />
                                 <h1 className='text-[20px] my-3 font-bold'>Industry Expert Faculty</h1>
-                                <Link href='/industry-expert-faculty'><button className='w-full bg-[#6A1C1A] text-white py-2 px-[10px] sm:px-[30px] lg:px-[40px] xl:px-[50px]] rounded'>READ MORE</button></Link>
+                                <Link href='/industry-expert-faculty'><button className='w-full bg-[#6A1C1A] text-white py-2 px-[10px] sm:px-[30px] lg:px-[40px] xl:px-[50px]] rounded  hover:bg-black'>READ MORE</button></Link>
                             </div>
                             <div className='mx-auto items-center flex flex-col justify-around '>
                                 <Image width={150} height={100} className='mx-auto m-2' src="/Complete-study-material.png" alt="Complete Study Material" />
                                 <h1 className='text-[20px] my-3 font-bold text-center'>Complete Study Material</h1>
-                                <Link href='/complete-study-material'><button className='w-full bg-[#6A1C1A] text-white py-2 px-[10px] sm:px-[30px] lg:px-[40px] xl:px-[50px] rounded'>READ MORE</button></Link>
+                                <Link href='/complete-study-material'><button className='w-full bg-[#6A1C1A] text-white py-2 px-[10px] sm:px-[30px] lg:px-[40px] xl:px-[50px] rounded  hover:bg-black'>READ MORE</button></Link>
                             </div>
                             <div className='mx-auto items-center flex flex-col justify-around'>
                                 <Image width={150} height={100} className='mx-auto m-4' src="/access-till-you-pass.png" alt="Access Till You P150" />
                                 <h1 className='text-[20px] my-3 font-bold'>Access Till You Pass&nbsp;&nbsp;</h1>
-                                <Link href='/access-till-you-pass'><button className='w-full bg-[#6A1C1A] text-white py-2 px-[10px] sm:px-[30px] lg:px-[40px] xl:px-[50px] rounded'>READ MORE</button></Link>
+                                <Link href='/access-till-you-pass'><button className='w-full bg-[#6A1C1A] text-white py-2 px-[10px] sm:px-[30px] lg:px-[40px] xl:px-[50px] rounded hover:bg-black'>READ MORE</button></Link>
                             </div>
 
                         </div>
