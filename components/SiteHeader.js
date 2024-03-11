@@ -25,7 +25,7 @@ const Navbar = () => {
                         : <IoMenu onClick={() => setToggle(!toggle)} className="text-2xl md:hidden block" />}
 
                     <ul className="hidden md:flex  justify-around flex-nowrap w-[70%] lg:w-[60%] xl:w-[50%] ">
-                        <NavItem to='https://midhafin.ongraphy.com/s/mycourses' name='Student Portal' />
+                        <NavItem to='https://edu.midhafin.com/s/mycourses' name='Student Portal' />
                         {/* <NavItem to="/blog" name="Blogs" /> */}
                         <NavItem to="https://edu.midhafin.com/s/store" name="Courses" />
                         <NavItem to="/reviews" name="Reviews" />
