@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from 'next/image'
 import Accordion from "../components/Accordian";
 import HomeCarousel from "../components/ReviewCarousel";
+import Whatsapp from "../components/Whatsapp";
 export const metadata = {
     title: "Welcome to MidhFin",
     description: "MidhaFin Home , Explore our Wide Range of Courses "
@@ -15,6 +16,7 @@ export default function Home() {
             <div className="min-h-screen  relative">
                 <div className="absolute"></div>
                 <SiteHeader />
+                <Whatsapp className="" />
                 {/* <SiteHeader className="z-10 relative" /> */}
                 <main>
                     {/* Hero section */}
