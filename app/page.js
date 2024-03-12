@@ -11,7 +11,7 @@ import HeroSection from "../components/HeroSection";
 
 
 export const metadata = {
-    title: "Welcome to MidhFin",
+    title: "Welcome to MidhaFin",
     description: "MidhaFin Home , Explore our Wide Range of Courses "
 }
 
