@@ -10,13 +10,6 @@ const Navbar = () => {
 
     return (
         <nav className="mx-auto  sticky top-0 z-10 bg-[#d8c9c9] backdrop-filter backdrop-blur-[2px] bg-opacity-40 border-b border-gray-100 firefox:bg-opacity-90">
-            {/* <div className='text-[#FF0000]  text-[1.5rem] text-center font-bold  bg-white flex flex-col '>
-                <Image src='/image.png' alt='Image' width={200} height={200} className='mx-auto' />
-                <div className='my-3 mx-auto' >
-                    <h1>THE SITE IS UNDER MAINTENANCE FOR ONE HOUR , SORRY FOR THE INCONVENIENCE CAUSED !!!!!!! </h1>
-                    <Link href='https://edu.midhafin.com/s/mycourses'><h1 className='underline' >MEANWHILE PLEASE VISIT THIS LINK FOR ACCESSING COURSES !!!!!</h1></Link>
-                </div>
-            </div> */}
             <div className='max-w-full mx-3 '>
                 <div className="flex items-center justify-between lg:w-[100%] h-[60px] mx-auto pr-4">
                     <Link href='/'><Image width={250} height={40} className='ml-4 lg:ml-0 md:item-left w-[200px] h-[30px] lg:w-auto lg:h-[40px] ' src="/Logo-with-garp.webp" alt="MidhaFin Logo" /></Link>
