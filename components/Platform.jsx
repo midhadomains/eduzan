@@ -24,7 +24,7 @@ function Platform() {
                             <p className='my-4'>We at MidhaFin, focus on striking a careful balance, between Knowledge and Relevance, between theory and analytics & between pure concepts and practical application.</p>
                         </div>
                         <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-w-[80%] mx-auto gap-[50px] item-center'>
-                            <div data-aos="fade-up" className='mx-auto items-center flex flex-col justify-around'>
+                            <div data-aos="fade-up" className='mx-auto transition duration items-center flex flex-col justify-around'>
                                 <Image width={150} height={100} className='mx-auto  m-2' src="/Study-planner.png" alt="Study Planner" />
                                 <h1 className='text-[20px] font-bold my-3'>Study Planner</h1>
                                 <Link href='/study-planner'><button className='w-full bg-[#6A1C1A] text-white py-2 px-[10px]  sm:px-[30px] lg:px-[40px] xl:px-[50px] rounded  hover:bg-black'>READ MORE</button></Link>
