@@ -5,10 +5,10 @@ import Footer from '../../components/SiteFooter';
 const Page = () => {
     return (
         <>
-        <Navbar />
-        <div>
+            <Navbar />
+            <div>
 
-        
+
                 <div className="h-40 relative bg-red-950">
                     <h1 className="text-4xl font-style:normal font-bold text-white pt-6 pl-4 md:pl-28">About Us</h1>
                     <p className='text-white pt-6 pl-4 md:pl-28'>
@@ -30,7 +30,7 @@ const Page = () => {
                         <div className="ml-1 lg:mt-20 sm:ml-0 lg:p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden ">
 
                             <Image
-                            src='/about-us.png'
+                                src='/about-us.png'
                                 alt="about us"
                                 className="w-[20rem] max-w-none rounded-xl shadow-l ring-1 ring-gray-400/10 sm:w-[35rem] mx-auto"
                                 width={500}
@@ -53,10 +53,10 @@ const Page = () => {
 
                     </div>
 
+                    <Footer />
                 </div>
-                </div>
-                {/* <Footer className="fixed bottom-0 w-full" /> */}
-            </>
+            </div>
+        </>
 
     );
 }
