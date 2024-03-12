@@ -1,15 +1,18 @@
 "use client"
 import React, { useState } from 'react';
 import Accordion from '../../components/Accordian';
+import Navbar from '../../components/SiteHeader';
+import Footer from '../../components/SiteFooter';
 
 
 export default function Page() {
     return (
         <>
+            <Navbar />
             <div className="h-40 bg-red-950">
                 <h1 className="text-4xl font-style:normal font-bold text-white pt-6 pl-28">FAQs</h1>
                 <p className="text-white pt-6 pl-28">
-                    <a href="https://www.midhafin.com/courses/FRM-Part-1-Self-Paced-Course-6284dad90cf2f73fd7f6034f">Home</a> / 
+                    <a href="https://www.midhafin.com/courses/FRM-Part-1-Self-Paced-Course-6284dad90cf2f73fd7f6034f">Home</a> /
                     <a href="https://www.midhafin.com/faqs">
                         &nbsp; Frequently Asked Questions
                     </a>
@@ -26,6 +29,7 @@ export default function Page() {
                 </p>
                 <Accordion />
             </div>
+            <Footer />
         </>
     );
 }
