@@ -30,7 +30,7 @@ const Navbar = () => {
                         <NavItem to="https://midhafin.ongraphy.com/s/store" name="Courses" />
                         <NavItem to="/reviews" name="Reviews" />
                         <NavItem to="/contact-us" name="Contact Us" />
-                        <NavItem to="https://midhafin.ongraphy.com/s/authenicate" name="Login" />
+                        <NavItem to="https://midhafin.ongraphy.com/s/authenticate" name="Login" />
                     </ul>
                     {/* Responsive */}
                     <ul className={`md:hidden w-[50%] sm:w-[40%] md-[30%] h-auto fixed bg-[#ecebea]  backdrop-filter backdrop-blur-lg bg-opacity-95 top-[60px] 
@@ -40,7 +40,7 @@ const Navbar = () => {
                         <NavItem to="https://midhafin.ongraphy.com/s/store" name="Courses" />
                         <NavItem to="/reviews" name="Reviews" />
                         <NavItem to="/contact-us" name="Contact Us" />
-                        <NavItem to="https://midhafin.ongraphy.com/s/authenicate" name="Login" />
+                        <NavItem to="https://midhafin.ongraphy.com/s/authenticate" name="Login" />
                     </ul>
                 </div>
             </div>
