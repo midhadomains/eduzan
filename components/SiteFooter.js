@@ -9,7 +9,7 @@ import { TiMail } from "react-icons/ti";
 
 function Footer() {
     return (
-        <footer className="bg-gray-900 mt-5">
+        <footer className="bg-gray-900">
             <div className="container px-6 py-12 mx-auto">
                 <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
                     {/* <div className="sm:col-span-2">
@@ -29,7 +29,6 @@ function Footer() {
                             <Link href="https://apps.apple.com/in/app/midhafin-cfa-frm-prm/id6463192627" target="_blank" className="mr-5 w-[200px] hover:opacity-[0.75]"><Image width={300} height={100} src="https://home.midhafin.com/wp-content/uploads/2024/02/iOS-download-Button.png" alt="app store" /></Link>
                         </div>
                     </div>
-
                     <div>
                         <p className="font-semibold text-white text-center w-[87%] mb-1 uppercase">Quick Links</p>
                         {/* <hr/> */}
