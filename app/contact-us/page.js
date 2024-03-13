@@ -10,7 +10,7 @@ const MyComponent = () => {
   return (
     <>
       <Navbar />
-      <div className="flex justify-center items-center w-screen  bg-white select-none">
+      <div className="flex justify-center items-center  bg-white select-none">
         <div className="container sm:mt-3 mx-auto my-3 px-4 lg:px-20">
           <div className="w-full p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl">
             <div className="flex">
@@ -21,9 +21,9 @@ const MyComponent = () => {
               method="POST"
               className="grid grid-cols-1 gap-5 md:grid-cols-2 mt-5"
             >
-              <input type="hidden" name="access_key" value="e2deee0c-855f-4ae1-a513-eadd701a4eae" /> 
-              {/* chnage value to whatever page you want to redirect after submitting the form */}
-              <input type="hidden" name="redirect" value="https://eduzan.vercel.app/thank-you"></input>
+              <input type="hidden" name="access_key" value="e2deee0c-855f-4ae1-a513-eadd701a4eae" />
+              {/* change value to whatever page you want to redirect after submitting the form */}
+              <input type="hidden" name="redirect" value="https://www.midhafin.com/thank-you"></input>
               <input
                 type="text"
                 name="Name"
@@ -52,7 +52,7 @@ const MyComponent = () => {
                 required
               ></textarea>
               <div className="my-3 ">
-                <button  type="submit" className="uppercase text-sm font-bold tracking-wide bg-[#8e1c1c] hover:bg-[#6a1c1a] text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline">
+                <button type="submit" className="uppercase text-sm font-bold tracking-wide bg-[#8e1c1c] hover:bg-[#6a1c1a] text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline">
                   Submit
                 </button>
               </div>
