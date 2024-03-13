@@ -4,13 +4,12 @@ export const metadata = {
   title: 'MidhaFin',
   description: 'Boost Your Career In Finance',
 }
- 
+
 export default function RootLayout({ children }) {
- return (
+  return (
     <html lang="en">
-      
       <body>
-      <SpeedInsights/>
+        <SpeedInsights />
         {children}</body>
     </html>
   )
