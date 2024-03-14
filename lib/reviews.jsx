@@ -7,6 +7,9 @@ import Navbar from '../components/SiteHeader';
 import Footer from '../components/SiteFooter';
 import { FaLinkedin } from "react-icons/fa";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 function Reviews() {
     const [data, setData] = useState(null);
 
@@ -26,6 +29,14 @@ function Reviews() {
 
         fetchData();
     }, []);
+
+    useEffect(() => {
+        AOS.init({
+          disable: "phone",
+          duration: 700,
+          easing: "ease-out-cubic",
+        });
+      }, []);
     return (
         <>
             <Navbar />
@@ -36,7 +47,7 @@ function Reviews() {
                 {data ? (
                     <ul className='grid sm:grid-cols-2 lg:grid-cols-3 gap-9 w-[90%] mx-auto'>
                         {data.map((review, index) => (
-                            <li key={index} className='border-[3px] border-[#faf4f1] mt-[60px] rounded-2xl p-4 pt-9 bg-white relative backdrop-filter backdrop-blur-[1px] bg-opacity-[50px] shadow-inner'>
+                            <li key={index} data-aos="zoom-in-up" className='border-[3px] border-[#faf4f1] mt-[60px] rounded-2xl p-4 pt-9 bg-white relative backdrop-filter backdrop-blur-[1px] bg-opacity-[50px] shadow-inner'>
                                 {/* <Image width={90} height={30} alt='image' src='/MidhaFin-logo.webp' className='fixed bottom-1 right-1' /> */}
                                 <h1 className='text-amber-700  fixed top-2 right-3'>{review.course}</h1>
 
