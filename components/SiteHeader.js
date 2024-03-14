@@ -18,22 +18,22 @@ const Navbar = () => {
                         : <IoMenu onClick={() => setToggle(!toggle)} className="text-2xl md:hidden block" />}
 
                     <ul className="hidden md:flex  justify-around flex-nowrap w-[70%] lg:w-[60%] xl:w-[50%] ">
-                        <NavItem to='https://midhafin.ongraphy.com/s/mycourses' name='Student Portal' />
+                        <NavItem to='https://edu.midhafin.com/s/mycourses' name='Student Portal' />
                         {/* <NavItem to="/blog" name="Blogs" /> */}
-                        <NavItem to="https://midhafin.ongraphy.com/s/store" name="Courses" />
+                        <NavItem to="https://edu.midhafin.com/s/store" name="Courses" />
                         <NavItem to="/reviews" name="Reviews" />
                         <NavItem to="/contact-us" name="Contact Us" />
-                        <NavItem to="https://midhafin.ongraphy.com/s/authenticate" name="Login" />
+                        <NavItem to="https://edu.midhafin.com/s/authenticate" name="Login" />
                     </ul>
                     {/* Responsive */}
                     <ul className={`md:hidden w-[50%] sm:w-[40%] md-[30%] h-auto fixed bg-[#ecebea]  backdrop-filter backdrop-blur-lg bg-opacity-95 top-[60px] 
                      ${toggle ? "right-[0]" : "hidden"}`}>
-                        <NavItem to='https://midhafin.ongraphy.com/s/mycourses' name='Student Portal' />
+                        <NavItem to='https://edu.midhafin.com/s/mycourses' name='Student Portal' />
                         {/* <NavItem to="/blog" name="Blogs" /> */}
-                        <NavItem to="https://midhafin.ongraphy.com/s/store" name="Courses" />
+                        <NavItem to="https://edu.midhafin.com/s/store" name="Courses" />
                         <NavItem to="/reviews" name="Reviews" />
                         <NavItem to="/contact-us" name="Contact Us" />
-                        <NavItem to="https://midhafin.ongraphy.com/s/authenticate" name="Login" />
+                        <NavItem to="https://edu.midhafin.com/s/authenticate" name="Login" />
                     </ul>
                 </div>
             </div>
