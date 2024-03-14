@@ -29,7 +29,7 @@ function Reviews() {
     return (
         <>
             <Navbar />
-            <div className='p-5 bg-gradient-to-b from-[#e9e5e3] to-red-100 mb-5 '>
+            <div className='p-5 bg-gradient-to-b from-[#e9e5e3] to-red-100 '>
                 <div className="w-[95%]">
                     <h1 className="font-bold text-[40px] text-center my-4 ">Don&apos;t believe us, Hear from our students</h1>
                 </div>
