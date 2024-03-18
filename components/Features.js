@@ -57,22 +57,22 @@ export default function Features() {
   return (
     <div className='overflow-x-scroll w-[100%] flex space-x-5 sm:px-[50px] sm:py-9'>
       <div data-aos="fade-right" className='w-[300px] sm:w-[400px]  my-3  flex-shrink-0 text-center shadow-2xl rounded-xl p-5 transition ease-in-out delay-150 bg-[#FFF5EE] hover:-translate-y-1 hover:scale-110 hover:bg-[#fffbfb] duration-300'>
-        <Image width={200} height={200} className='mb-3 mx-auto w-40 sm:w-[220px] h-auto ' src="https://home.midhafin.com/wp-content/uploads/elementor/thumbs/Industry-Experienced-Faculty-Graphic-qjjuf83k7rt50cqg3kt9xdovai3nhfwrev0ssglf5s.png" alt="Industry Experienced Faculty" />
+        <Image width={220} height={170} className='mb-3 mx-auto' src="https://home.midhafin.com/wp-content/uploads/elementor/thumbs/Industry-Experienced-Faculty-Graphic-qjjuf83k7rt50cqg3kt9xdovai3nhfwrev0ssglf5s.png" alt="Industry Experienced Faculty" />
         <h1 className='text-2xl text-bold  text-white bg-[#6A1C1A] rounded text-center p-1'>Industry Experienced Faculty</h1>
         <p className='my-3 '>Our faculty is extremely well trained and have real industry experience. They have taught hundreds of students and have prepared thousands of questions over the years. Quality of our faculty is something that we take great pride in and that we are often complimented upon by our students.</p>
       </div>
       <div data-aos="fade-up" className='flex-shrink-0 w-[300px] sm:w-[400px]  my-3 text-center  shadow-2xl rounded-xl p-5 transition ease-in-out delay-150 bg-[#FFF5E] hover:-translate-y-1 hover:scale-110 hover:bg-[#fffbfb] duration-300'>
-        <Image width={170} height={170} className='mb-3 mx-auto w-30 sm:w-[170px] h-30' src="https://home.midhafin.com/wp-content/uploads/elementor/thumbs/Systematic-Doubt-Solving-Graphic-qjjuf4c7gfnzpwvwpj6rnen0wym6mnhu2ceuvcqzuo.png" alt="Systematic Doubt Solving" />
+        <Image width={170} height={170} className='mb-3 mx-auto' src="https://home.midhafin.com/wp-content/uploads/elementor/thumbs/Systematic-Doubt-Solving-Graphic-qjjuf4c7gfnzpwvwpj6rnen0wym6mnhu2ceuvcqzuo.png" alt="Systematic Doubt Solving" />
         <h1 className='text-2xl text-bold  text-white bg-[#6A1C1A] rounded text-center p-1'>Systematic Doubt Solving</h1>
         <p className='my-3 '>We believe curiosity is the mother of all inventions, and so we ensure every single relevant doubt of every single student is cleared within reasonable time frame. Our faculty encourages students to ask doubts and for them no doubt is small or silly. Relevant doubts from other sources are also answered by our faculty and we provide in depth and easy to understand solutions to our students.</p>
       </div>
       <div data-aos="fade-left" className='flex-shrink-0 w-[300px] sm:w-[400px] text-center  my-3  shadow-2xl rounded-xl p-5 transition ease-in-out delay-150 bg-[#FFF5EE] hover:-translate-y-1 hover:scale-110 hover:bg-[#fffbfb] duration-300'>
-        <Image width={165} height={165} className='mb-3 mx-auto w-25 h-auto' src="https://home.midhafin.com/wp-content/uploads/elementor/thumbs/End-to-End-Mentorship-Graphic-qjjuetzzd99u67axdwpvdz8ydq159zcscx8ilb6br4.png" alt="End to End Mentorship" />
-        <h1 className='text-2xl text-bold  text-center  text-white bg-[#6A1C1A] rounded p-1'>End to End Mentorship</h1>
+        <Image width={160} height={170} className='sm:my-2 mb-3 mx-auto ' src="https://home.midhafin.com/wp-content/uploads/elementor/thumbs/End-to-End-Mentorship-Graphic-qjjuetzzd99u67axdwpvdz8ydq159zcscx8ilb6br4.png" alt="End to End Mentorship" />
+        <h1 className='text-2xl text-bold  text-white bg-[#6A1C1A] rounded text-center p-1'>&nbsp;End to End&nbsp; &nbsp;Mentorship&nbsp;</h1>
         <p className='my-3'>The relationship between our instructors and our students is not just that of instruction and teaching but also of mentorship. We help students throughout the process of learning and even beyond. From study planning, to the exam, to the relevant job interviews, we are there at every step with our students.</p>
       </div>
       <div data-aos="fade-right" className='w-[300px] sm:w-[400px]  flex-shrink-0 my-3 shadow-2xl rounded-xl p-5 transition ease-in-out delay-150 bg-[#FFF5E] hover:-translate-y-1 hover:scale-110 hover:bg-[#fffbfb] duration-300'>
-        <Image width={200} height={200} className='mb-3 my-3 mx-auto w-40 sm:w-[220px] h-auto ' src="/performance-highlights.png" alt="" />
+        <Image width={200} height={200} className='my-5 sm:my-5 mx-auto ' src="/performance-highlights.png" alt="" />
         <h1 className='text-2xl text-bold text-white text-center bg-[#6A1C1A] rounded p-1'>Recent Performance Highlights</h1>
         <ul className='p-2 text-left' >
           <p className='text-xl text-bold text-[#6A1C1A] text-center mt-1'>Nov 2022</p>
