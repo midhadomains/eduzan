@@ -6,7 +6,11 @@ module.exports = {
     "./lib/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'bgfrm': "url('/bgfrm.svg')",
+      },
+    },
   },
   plugins: [],
 }
