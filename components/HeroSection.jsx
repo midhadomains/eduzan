@@ -41,13 +41,13 @@
 // }
 
 // export default HeroSection
-
 'use client'
-import React from 'react'
+import React, { useEffect } from 'react'
 import Link from "next/link";
 import Image from 'next/image'
 import { useTypewriter } from "react-simple-typewriter";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function HeroSection() {
     const [typeEffect] = useTypewriter({
@@ -57,6 +57,14 @@ function HeroSection() {
         deleteSpeed: 50,
     })
 
+    useEffect(() => {
+        AOS.init({
+          disable: "phone",
+          duration: 700,
+          easing: "ease-out-cubic",
+        });
+      }, []);
+
     return (
         <div>
             <div className='max-w-full sm:flex justify-center bg-[#FAF4F2] p-5 text-center'>
@@ -65,16 +73,16 @@ function HeroSection() {
                     <h1 className=' text-[27px] sm:text-[28px] text-center md:text-[30px] lg:text-[40px] xl:text-[50px] font-bold shadow-[rgba(0, 0, 0, 0.24) 0px 3px 8px;'><span className='text-[#6A1C1A]'>Boost your career </span> in  <span className='text-[#6A1C1A]'>Finance</span>  with  mentorship you can bank on <span className='text-[#6A1C1A]'>!</span></h1>
                     <p className=' w-[100%] lg:w-[95%]  xl:w-[70%] text-[#391601] text-[1rem] sm:text-lg  lg:text-xl mx-auto '>Step up your career by acquiring the desirable skills and leading global certifications in Finance.</p>
                     <div className='flex mt-5 justify-center'>
-                        <Link href="https://edu.midhafin.com/s/authenticate" >
+                        <Link data-aos="zoom-out-right" href="https://edu.midhafin.com/s/authenticate" >
                             <button className='text-sm sm:text-md lg:text-xl bg-[#6A1C1A] rounded text-white hover:bg-black py-3 px-2 sm:px-4 md:px-3 lg:px-4 m-2 ease-in duration-300  '>SIGNUP NOW</button>
                         </Link>
-                        <Link href="https://edu.midhafin.com/s/store">
+                        <Link data-aos="zoom-out-left" href="https://edu.midhafin.com/s/store">
                             <button className='text-sm sm:text-md lg:text-xl bg-[#6A1C1A] rounded text-white hover:bg-black py-3 px-2 sm:px-4 md:px-3 lg:px-4 m-2'>EXPLORE COURSES</button>
                         </Link>
                     </div>
                 </div>
                 <div className='sm:w-[40%] my-auto'>
-                    <Image width={500} height={300} className='p-5 h-auto my-auto' src="/Micky-Banner.png" alt="Micky Midha" priority />
+                    <Image data-aos="zoom-in" width={500} height={300} className='p-5 h-auto my-auto' src="/Micky-Banner.png" alt="Micky Midha" priority />
                 </div>
             </div>
         </div>
