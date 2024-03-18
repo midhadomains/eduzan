@@ -38,9 +38,14 @@ const nextConfig = {
         hostname:'media.licdn.com',
         port:'',
         pathname:'/**'
+      },
+      {
+        protocol:'https',
+        hostname:'i0.wp.com',
+        port:'',
+        pathname:'/**'
       }
     ]
   }
 }
-
 module.exports = nextConfig

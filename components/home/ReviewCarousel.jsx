@@ -1,33 +1,27 @@
 "use client";
 import React, { useState, useEffect } from 'react';
-import ReviewCarousel from './card';
+import ReviewCarousel from '../card';
 
 export default function HomeCarousel() {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [visibleComponents, setVisibleComponents] = useState(1);
 
     const images = [
-        '/image1.jpg',
-        '/image2.jpg',
-        '/image3.jpg',
-        '/image4.jpg',
-        '/image5.jpg',
-        '/image6.jpg',
-        '/image7.png',
-        '/image8.jpg',
-        '/image9.jpg'
+        'https://media.licdn.com/dms/image/D4D03AQG6SllSmP2sXA/profile-displayphoto-shrink_800_800/0/1685780083008?e=1715817600&v=beta&t=LGPXgxm1D_Frq7xgTwL8lqpMcSwsyRBkg6ELs0R91HA',
+        'https://media.licdn.com/dms/image/C5103AQHdWGTlHapZyQ/profile-displayphoto-shrink_400_400/0/1551029564102?e=1715817600&v=beta&t=wODqN_KLcNFHen8tNynWc2NEGhWYWIv3atcG-77hbo4',
+        'https://media.licdn.com/dms/image/C4E03AQFvsW00Hunz8A/profile-displayphoto-shrink_200_200/0/1639501049540?e=2147483647&v=beta&t=2eF_uOPx2JrPGBkiQRahIwKPvT6VE9WF-aoEouwRUDI',
+        'https://media.licdn.com/dms/image/C4D03AQGpBZfOtNAjWg/profile-displayphoto-shrink_200_200/0/1642014785390?e=2147483647&v=beta&t=eT0mMwTRZFAClTBg2tFpyjpsdTHkmwbmL39hEBP8-r0',
+        'https://media.licdn.com/dms/image/D5603AQGCzrGRhM1XmQ/profile-displayphoto-shrink_400_400/0/1706592492700?e=1715817600&v=beta&t=FEwoSIA7kv_rpLrA1h9TqQtjAZf6ndW_U9VttNHvTRg',
+        'https://media.licdn.com/dms/image/D4D03AQFbDumjKWFn_w/profile-displayphoto-shrink_200_200/0/1710131301464?e=2147483647&v=beta&t=KlcbZabUZZ0C_-Ix6hoBL6LFBWPt1FxBMbyjpV4NidQ'
     ];
 
     const titles = [
-        'Title 1-1',
-        'Title 1-2',
-        'Title 1-3',
-        'Title 2-1',
-        'Title 2-2',
-        'Title 2-3',
-        'Title 3-1',
-        'Title 3-2',
-        'Title 3-3'
+        'Angella Arora',
+        'Sripriya Iyer',
+        'Aminoritse Adedayo',
+        'Kanika Sikka',
+        'Savleen Kaur',
+        'Namir Younes'
     ];
 
     const videos = [
@@ -35,18 +29,16 @@ export default function HomeCarousel() {
         'https://www.youtube.com/embed/ueE9clrM3HU?si=lX3mFVIosywPxjVh',
         'https://www.youtube.com/embed/vDCpsAzageA?si=COu-GZEGkIp-6z9b',
         'https://www.youtube.com/embed/0QWffj9FvrE?si=FoZXDm54Qd6Y3pGH',
-        'https://www.youtube.com/embed/6sTEUkR40uI?si=YLMhaTS5zv1SSF5d',
-        'https://www.youtube.com/embed/eQLTzPO1Jt8?si=JzoDgngL26WM6Rd1',
-        'https://www.youtube.com/embed/8J6h-J6qNPQ?si=wP-KZN-WBNqNwBFx',
         'https://www.youtube.com/embed/5ILRag3jCp8?si=Bt6BlpjJDsv-8JLH',
         'https://www.youtube.com/embed/iJpSH94_Z7Q?si=CRbX0B0pIXNBeHXk'
     ];
 
     const handleResize = () => {
         const screenWidth = window.innerWidth;
+        console.log(screenWidth)
         if (screenWidth < 640) {
             setVisibleComponents(1);
-        } else if (screenWidth < 1024) {
+        } else if (screenWidth < 1100) {
             setVisibleComponents(2);
         } else {
             setVisibleComponents(3);
@@ -88,8 +80,8 @@ export default function HomeCarousel() {
     
 
     return (
-        <div className="bg-custom-background bg-repeat min-w-screen min-h-screen flex items-center justify-center px-5 py-5 relative">
-            {renderCarousels()}
+        <div className="bg-custom-background bg-repeat  flex items-center justify-center  p-5 relative transition-transform duration-300">
+            {renderCarousels()} 
             <button
                 type="button"
                 className="absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
@@ -111,7 +103,7 @@ export default function HomeCarousel() {
             </button>
             <button
                 type="button"
-                className="absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                className="absolute top-0  right-0 sm:right-2 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
                 data-carousel-next
                 onClick={nextSlide}
             >

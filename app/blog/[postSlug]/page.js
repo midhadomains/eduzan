@@ -10,7 +10,6 @@ import Image from 'next/image'
 const rubik = Rubik({ subsets: ['latin'], display: 'swap' });
 const roboto_slab = Roboto_Slab({ subsets: ['latin'], display: 'swap' });
 
-console.log(roboto_slab);
 
 export async function generateStaticParams() {
     const postSlugs = await getPostSlugs();
@@ -25,9 +24,7 @@ export async function generateStaticParams() {
 }
 
 // export async function generateMetadata({ params }) {
-
-//     const seoData = await getSeo('post', params.postSlug);
-
+//     const seoData = await getSeo('post', params.postSlug) ;
 //     return {
 //         title: seoData.title,
 //         description: seoData.metaDesc,
@@ -44,7 +41,6 @@ export async function generateStaticParams() {
 // }
 
 export default async function Post({ params }) {
-
     const postData = await getSinglePost(params.postSlug);
     const { comments, commentCount } = await getComments(params.postSlug);
     // const seoData = await getSeo('post', params.postSlug);
@@ -54,14 +50,13 @@ export default async function Post({ params }) {
         featuredImageUrl = "url(" + postData.featuredImage.node.mediaDetails.sizes[0].sourceUrl + ")";
     }
 
-    console.log(comments);
+    // console.log(comments);
 
-    // let jsonSchema = seoData.schema.raw.replace(/https:\/\/wp.abhinavr.com(?!\/wp-content\/uploads)/g, 'https://coolnomad.abhinavr.com/blog')
+    // let jsonSchema = seoData.schema.raw.replace(/https:\/\/www.midhafin.com(?!\/wp-content\/uploads)/g, 'https://www.midhafin.com/blog') 
 
     return (
         <>
             {/* <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonSchema }}></script> */}
-
 
             <section className="bg-slate-700 bg-opacity-70 absolute w-full z-20">
                 <SiteHeader className="header-single-post z-10 relative" />
@@ -78,6 +73,7 @@ export default async function Post({ params }) {
                         </div>
 
                         <div dangerouslySetInnerHTML={{ __html: postData.excerpt }} className="relative z-10 text-left text-slate-200 text-2xl pl-4 border-l-4 border-lime-200" />
+
                     </div>
                 </section>
                 <section className="content-area py-8">

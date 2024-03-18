@@ -1,5 +1,4 @@
 'use client';
-
 import Link from "next/link";
 import FeaturedImage from "./FeaturedImage";
 import Date from "./Date";
@@ -7,9 +6,7 @@ import LoadMore from "./LoadMore";
 import { useState } from "react";
 
 export default function PostList({ initialPosts }) {
-
     const [posts, setPosts] = useState(initialPosts);
-
     return (
         <main>
             <section className="container mx-auto lg:max-w-5xl post-list mt-4">
