@@ -3,11 +3,11 @@ import SiteFooter from "../components/SiteFooter";
 import Link from "next/link";
 import Image from 'next/image'
 import Accordion from "../components/Accordian";
-import HomeCarousel from "../components/ReviewCarousel";
 import Whatsapp from "../components/Whatsapp";
 import Platform from "../components/Platform";
-import Features from "../components/Features";
 import HeroSection from "../components/HeroSection";
+import HomeCarousel from "../components/home/ReviewCarousel";
+import Features from "../components/Features";
 
 
 export const metadata = {
@@ -24,22 +24,20 @@ export default function Home() {
                 <SiteHeader />
                 <Whatsapp className="" />
                 {/* <SiteHeader className="z-10 relative" /> */}
-
                 <main>
                     {/* Hero section */}
                     <HeroSection/>
                     {/* Review section */}
-                    {/* <div className="w-[100%] mx-auto">
-                        <h1 className="font-bold text-[40px] text-center">Don&apos;t believe us, Hear from Our students</h1>
+                    <div className="mx-auto my-5">
+                        <h1 className="font-bold text-[40px] text-center my-4"><span className=" border-[#6A1C1A] border-l-[5px] pr-4"></span>Don&apos;t Believe <span className="text-[#6A1C1A]">Us</span> , Hear From Our <span className="text-[#6A1C1A]">Students</span>  </h1>
+                        {/* <hr className="w-[60%] mx-auto "/> */}
                         <HomeCarousel/>
-                    </div> */}
-                    {/* <hr className="w-[80%] mx-auto my-2" /> */}
+                    </div>
                     {/* About section */}
-                    <div className='sm:flex mx-auto lg:w-[80%] p-5 '>
+                    <div className='sm:flex mx-auto lg:w-[100%] lg:px-[130px] p-5 py-[50px]  bg-[#FAF4F2]'>
                         <div className='sm:w-[40%] my-auto text-left'>
                             <h1 className='text-[30px] sm:text-[35px] md:text-[40px] text-bold ml-[5%]  md:ml-[10%] lg:ml-[20%] mb-0'>About </h1>
                             <h1 className='text-[40px] sm:text-[40px] md:text-[40px]  ml-[5%] md:ml-[10%] lg:ml-[20%] text-[#6A1C1A] font-bold'>MidhaFin</h1>
-
                         </div>
                         <div className='sm:w-[60%] pl-4 sm:pl-[10%] ms:pl-[5%] lg:pl-[7%] border-[#6A1C1A] sm:border-l-4'>
                             <h1 className='font-bold text-[20px] sm:text-[30px] text-left'>MidhaFin focuses on <span className='text-[#6A1C1A] '>Personalized</span> Learning,<br /> Expertise and Employability.</h1>
@@ -47,7 +45,7 @@ export default function Home() {
                         </div>
                     </div>
                     {/* Features section */}
-                    <Features />
+                    <Features/>
                     {/* Play Store section */}
                     <div className=' w-[100%] sm:flex justify-around md:max-w-[90%] lg:max-w-[80%] mx-auto p-5 my-9'>
                         <div className='sm:w-[50%] py-auto my-auto'>

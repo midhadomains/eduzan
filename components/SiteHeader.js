@@ -3,11 +3,8 @@ import Link from 'next/link'
 import React, { useState } from "react";
 import Image from 'next/image'
 import { IoMenu, IoClose } from "react-icons/io5";
-
-
 const Navbar = () => {
     const [toggle, setToggle] = useState(false);
-
     return (
         <nav className="mx-auto  sticky top-0 z-10 bg-[#d8c9c9] backdrop-filter backdrop-blur-[2px] bg-opacity-40 border-b border-gray-100 firefox:bg-opacity-90">
             <div className='max-w-full mx-3 '>

@@ -19,11 +19,8 @@ export default async function BlogHome({ params }) {
                 <div className="">
                     <SiteHeader className="header-blog-home z-10 relative" />
                 </div>
-
                 <h1 className="text-6xl text-center text-slate-100 relative z-10 py-8">BLOG</h1>
-
                 <p className="relative z-10 text-center text-slate-200 text-2xl">Read our latest articles</p>
-
             </div>
             <PostList initialPosts={initialPosts} />
             <SiteFooter />
