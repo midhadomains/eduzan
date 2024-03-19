@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from 'react';
 import Accordion from '../../components/Accordian';
 import Navbar from '../../components/SiteHeader';
