@@ -16,7 +16,7 @@ function Features() {
       easing: "ease-out-cubic",
     });
   }, []);
-
+// *TODO Sujal sahu
   return (
     <>
       <div className='grid sm:grid-cols-2 lg:grid-cols-3 mb-4 w-[92%] sm:w-[75%] mx-auto gap-[50px] mt-5 text-center'>
