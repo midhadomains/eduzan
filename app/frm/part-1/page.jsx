@@ -266,7 +266,7 @@ export default function page() {
       </div>
       <div>
       <h2 class="text-center font-semibold">
-        <span class="text-white text-2xl p-2 bg-red-950 font-bold">
+        <span class="text-white text-2xl p-2cd bg-red-950 font-bold">
           Frequently Asked Queries
         </span>
       </h2>
