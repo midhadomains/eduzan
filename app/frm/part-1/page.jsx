@@ -36,18 +36,18 @@ export default function page() {
     <>
 
     <Navbar/>
-      <div class=" bg-[#8e381c] ">
-        <h1 class="text-[24px] md:text-[32px] font-[40px]  text-white text-center py-2">
+      <div className=" bg-[#8e381c] ">
+        <h1 className="text-[24px] md:text-[32px] font-[40px]  text-white text-center py-2">
           Financial Risk Management [FRM] Part-1
         </h1>
       </div>
 
-      <div className="w-[90%] sm:w-[80%]  sm:text-left mx-auto">
-        <div class="my-6">
-          <span class="text-[18px] md:text-[22px] text-[#6A1C1A] font-bold border-[#6A1C1A] border-l-4 pl-2 mb-4">
+      <div className="w-[90%] sm:w-[80%] sm:text-left mx-auto">
+        <div className="my-6">
+          <span className="text-[18px] md:text-[22px] text-[#6A1C1A] font-bold border-[#6A1C1A] border-l-4 pl-2 mb-4">
             Eligibility and/or Pre-Requisites
           </span>
-          <p class="text-[16px] sm:text-[20px] pb-5">
+          <p className="text-[16px] sm:text-[20px] pb-5">
             The FRM course welcomes candidates from various academic
             backgrounds, without any specific educational field prerequisites.
             There are NO ELIGLIBILITY CRITERIA for potential candidates; even
@@ -56,11 +56,11 @@ export default function page() {
           </p>
         </div>
 
-        <div class=" pt-2">
-          <span class="text-[18px] md:text-[22px] text-[#6A1C1A] font-bold border-[#6A1C1A] border-l-4 pl-2 mb-4">
+        <div className=" pt-2">
+          <span className="text-[18px] md:text-[22px] text-[#6A1C1A] font-bold border-[#6A1C1A] border-l-4 pl-2 mb-4">
             About the Exam - FRM Part 1
           </span>
-          <p class="text-[16px] sm:text-[20px] pb-5">
+          <p className="text-[16px] sm:text-[20px] pb-5">
             FRM Part 1 is the first level of the Financial Risk Manager (FRM)
             certification offered by the Global Association of Risk
             Professionals (GARP). It involves an examination that assesses
@@ -76,24 +76,24 @@ export default function page() {
             score is required in each module. The specific weightage for each
             module in the exam is as follows:
           </p>
-          <ol class=" list-inside list-decimal  mx-2">
-            <li class="text-[16px] md:text-[20px]">
+          <ol className=" list-inside list-decimal  mx-2">
+            <li className="text-[16px] md:text-[20px]">
               <b>Foundations of Risk Management (20%):</b> This module lays the
               groundwork for understanding key concepts and principles in risk
               management.
             </li>
-            <li class="text-[16px] md:text-[20px]">
+            <li className="text-[16px] md:text-[20px]">
               <b>Quantitative Analysis (20%):</b> Focusing on quantitative
               techniques, this module assesses candidates&apos; ability to
               analyze and interpret data for risk management purposes.
             </li>
-            <li class="text-[16px] md:text-[20px]">
+            <li className="text-[16px] md:text-[20px]">
               <b>Financial Markets and Products (30%): </b>Exploring the
               intricacies of financial markets and various financial
               instruments, this module evaluates candidates&apos; knowledge of
               market structures and products.
             </li>
-            <li class="text-[16px] md:text-[20px] mb-4">
+            <li className="text-[16px] md:text-[20px] mb-4">
               <b>Valuation and Risk Models (30%):</b> This module delves into
               the valuation of financial instruments and the application of risk
               models in assessing and managing risk.
@@ -101,11 +101,11 @@ export default function page() {
           </ol>
 
           <h2>
-            <span class="text-[18px] md:text-[22px] text-[#6A1C1A] font-bold border-[#6A1C1A] border-l-4 pl-2  mb-4">
+            <span className="text-[18px] md:text-[22px] text-[#6A1C1A] font-bold border-[#6A1C1A] border-l-4 pl-2  mb-4">
               1. Foundations of Risk Management
             </span>
           </h2>
-          <p class="text-left text-[16px] md:text-[20px] mb-5">
+          <p className="text-left text-[16px] md:text-[20px] mb-5">
             This module is designed to impart fundamental knowledge of the basis
             of risk management. It introduces the principles and process of risk
             management. It also provides a primer for risk governance, risk
@@ -116,11 +116,11 @@ export default function page() {
             risk management.
           </p>
           <h2>
-            <span class="text-[18px] md:text-[22px] text-[#6A1C1A] font-bold border-[#6A1C1A] border-l-4 pl-2  mb-4">
+            <span className="text-[18px] md:text-[22px] text-[#6A1C1A] font-bold border-[#6A1C1A] border-l-4 pl-2  mb-4">
               2. Quantitative Analysis
             </span>
           </h2>
-          <p class="text-left text-[16px] md:text-[20px] mb-5">
+          <p className="text-left text-[16px] md:text-[20px] mb-5">
             The main focus of this module is to impart and equip candidates with
             crucial quantitative tools and techniques necessary for risk
             assessment and measurement. It deeply covers topics like probability
@@ -130,11 +130,11 @@ export default function page() {
             machine learning and artificial intelligence.
           </p>
           <h2>
-            <span class="text-[18px] md:text-[22px] text-[#6A1C1A] font-bold border-[#6A1C1A] border-l-4 pl-2  mb-4">
+            <span className="text-[18px] md:text-[22px] text-[#6A1C1A] font-bold border-[#6A1C1A] border-l-4 pl-2  mb-4">
               3. Financial Markets and Products
             </span>
           </h2>
-          <p class="text-left text-[16px] md:text-[20px] mb-5">
+          <p className="text-left text-[16px] md:text-[20px] mb-5">
             This module attempts to provide a detailed overview of various
             financial instruments including derivatives, securities, and
             structured products. The module aims to provide a sound
@@ -145,12 +145,12 @@ export default function page() {
             of hedging as an important tool of risk management.
           </p>
           <h2>
-            <span class="text-[18px] md:text-[22px] text-[#6A1C1A] font-bold border-[#6A1C1A] border-l-4 pl-2  mb-4">
+            <span className="text-[18px] md:text-[22px] text-[#6A1C1A] font-bold border-[#6A1C1A] border-l-4 pl-2  mb-4">
               4. Valuation and Risk Models
             </span>
           </h2>
-          <p class="text-left text-[16px] md:text-[20px] mb-5">
-            This module is essential for understanding the valuation of various
+          <p className="text-left text-[16px] md:text-[20px] mb-5">
+            This module is essential for understanding the valuation of various 
             financial instruments including fixed income, equity, and
             derivatives (Swaps, Options, Eurodollars, dollar roll, etc.)
             valuation. It also provides a basic understanding of risk modelling,
@@ -161,10 +161,10 @@ export default function page() {
         </div>
 
         <div>
-          <h2 class="text-[18px] md:text-[22px] text-[#6A1C1A] font-bold border-[#6A1C1A] border-l-4 pl-2  mb-4">
+          <h2 className="text-[18px] md:text-[22px] text-[#6A1C1A] font-bold border-[#6A1C1A] border-l-4 pl-2  mb-4">
             Composition and Exam Structure
           </h2>
-          <p class="text-left text-[16px] md:text-[20px] mb-5">
+          <p className="text-left text-[16px] md:text-[20px] mb-5">
             FRM Part 1 comprises 100 equally weighted questions presented in a
             multiple-choice format on a computer-based test (CBT). In this
             modern and efficient testing experience, you have four hours to
@@ -175,10 +175,10 @@ export default function page() {
             Candidates do not face penalties for providing incorrect answers.
           </p>
           
-          <h2 class="text-[18px] md:text-[22px] text-[#6A1C1A] font-bold border-[#6A1C1A] border-l-4 pl-2 mb-4">
+          <h2 className="text-[18px] md:text-[22px] text-[#6A1C1A] font-bold border-[#6A1C1A] border-l-4 pl-2 mb-4">
             Study Plan
           </h2>
-          <p class="text-left text-[16px] md:text-[20px] mb-5">
+          <p className="text-left text-[16px] md:text-[20px] mb-5">
             Ideally, a candidate preparing for the FRM Part 1 exam should
             complete the whole curriculum in 16 weeks with 30-35 hours of study
             every week. This study plan provides a 16-week road map with
@@ -187,71 +187,71 @@ export default function page() {
             ensure maximum understanding of the FRM Part 1 curriculum.{" "}
             <Link
               href="https://frm.midhafin.com/part-1/study-plan/"
-              class="text-blue-500 hover:text-blue-700"
+              className="text-blue-500 hover:text-blue-700"
             >
               Read more…
             </Link>
           </p>
         </div>
 
-        <div class="my-8" style={{ width: "100%", maxWidth: "1200px" }}>
+        <div className="my-8" style={{ width: "100%", maxWidth: "1200px" }}>
         <div style={{ position: "relative", paddingBottom: "62.5%", height: "0", overflow: "hidden", maxWidth: "100%" }}>
           <iframe
             src="https://www.youtube.com/embed/6sTEUkR40uI?si=sDonMG5jq4orT3Ue"
             title="YouTube video player"
             style={{ position: "absolute", top: "0", left: "0", width: "100%", height: "100%" }}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen="true"
+            allowFullScreen={true}
           ></iframe>
         </div>
       </div>
       
 
-        <div>
+        <div className="mb-9">
           <h2>
-            <span class="text-[18px] md:text-[22px] text-[#6A1C1A] font-bold border-[#6A1C1A] border-l-4 pl-2  mb-4">
+            <span className="text-[18px] md:text-[22px] text-[#6A1C1A] font-bold border-[#6A1C1A] border-l-4 pl-2  mb-4">
               Preparation Tips
             </span>
           </h2>
-          <p class="text-left text-[16px] md:text-[20px] mb-5">
+          <p className="text-left text-[16px] md:text-[20px] mb-5">
             Preparing for FRM Part 1 involves careful consideration of several
             crucial aspects. The effective selection and management of these
             factors play a pivotal role in ensuring a robust preparation:
           </p>
 
-          <ol class=" list-inside list-decimal my-5 mx-2">
-            <li class="text-[16px] md:text-[20px] mb-4">
+          <ol className=" list-inside list-decimal my-5 mx-2">
+            <li className="text-[16px] md:text-[20px] mb-4">
               <b>Preparation Window: </b>Allocating a preparation window of at
               least 5 months for FRM Part 1 is advisable.
             </li>
-            <li class="text-[16px] md:text-[20px] mb-4">
+            <li className="text-[16px] md:text-[20px] mb-4">
               <b>Time Required:</b> To achieve thorough preparation, it is
               recommended to dedicate around 600 hours to FRM Part 1. Avoiding
               shortcuts is emphasized to ensure a deep understanding of risk
               management concepts and tools, facilitating ease in answering
               interview questions.
             </li>
-            <li class="text-[16px] md:text-[20px] mb-4">
+            <li className="text-[16px] md:text-[20px] mb-4">
               <b>Material:</b> Choosing the right study material is paramount.
               MidhaFin, as one of the first GARP Authorized Prep Providers for
               FRM, offers comprehensive study material, including over 200 hours
               of content videos, 85 plus hours of question-solving videos, and
               100 plus hours of revision videos.
             </li>
-            <li class="text-[16px] md:text-[20px] mb-4">
+            <li className="text-[16px] md:text-[20px] mb-4">
               <b>Questions:</b> Solving a substantial number of questions is key
               to preparation success. MidhaFin provides question banks with over
               3000 questions, closely aligned with recent exam trends. GARP
               sample paper questions from the past 15 years are also included.
             </li>
-            <li class="text-[16px] md:text-[20px] mb-4">
+            <li className="text-[16px] md:text-[20px] mb-4">
               <b>Periodic Tests:</b> Implementing regular quizzes is integral to
               the active learning philosophy at MidhaFin. Four monthly tests are
               conducted, focusing on the curriculum taught during the respective
               month. Graded tests enable students to monitor their performance
               consistently.
             </li>
-            <li class="text-[16px] md:text-[20px] mb-4">
+            <li className="text-[16px] md:text-[20px] mb-4">
               <b>Mock Tests:</b> MidhaFin conducts 5 mock tests towards the end
               of the preparation period, starting approximately a month before
               the exam. These full-length mock tests cover the entire syllabus
@@ -264,9 +264,9 @@ export default function page() {
       
        
       </div>
-      <div>
-      <h2 class="text-center font-semibold">
-        <span class="text-white text-2xl p-2cd bg-red-950 font-bold">
+      <div className="mb-5">
+      <h2 className="text-center font-semibold">
+        <span className="text-white text-2xl p-2 bg-red-950 font-bold">
           Frequently Asked Queries
         </span>
       </h2>
