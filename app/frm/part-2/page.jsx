@@ -47,7 +47,7 @@ export default function page() {
           Financial Risk Management [FRM] Part - 2
         </h1>
       </div>
-      <div className=" w-[90%] lg:w-[70%] mx-auto">
+      <div className=" w-[90%] lg:w-[80%] mx-auto">
         <div>
           <div className="my-3">
             <span className="text-[18px] md:text-[22px] text-[#6A1C1A] font-bold border-[#6A1C1A] border-l-4 pl-2 mb-4">
@@ -306,9 +306,8 @@ export default function page() {
           </div>
         </div>
       </div>
-      <h2 class="text-center font-semibold"></h2>
-      <div className="w-[100%] text-center mt-6 md:w-[80%] mx-auto mb-5">
-        <span class="text-white text-2xl p-2 bg-red-950 font-bold">
+      <div className=" text-center mt-6 md:w-[100%] mx-auto mb-5">
+        <span className="text-white text-2xl p-2 bg-red-950 font-bold">
           Frequently Asked Queries
         </span>
         <Accordion buttonsData={buttonsData} />
