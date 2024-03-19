@@ -43,7 +43,7 @@ function Footer() {
                             <div className="flex flex-col items-start text-white mt-5 space-y-2">
                                 <Link href="/privacy-policy" className="transition-colors duration-300 hover:underline hover:text-[#6A1C1A]">Privacy Policy</Link>
                                 <Link href="/refund-policy" className="transition-colors duration-300 hover:underline hover:text-[#6A1C1A]">Refund Policy</Link>
-                                <Link href="/contact-us" className="transition-colors duration-300 hover:underline hover:text-[#6A1C1A]">Contact Us</Link>
+                                <Link href="/contactus" className="transition-colors duration-300 hover:underline hover:text-[#6A1C1A]">Contact Us</Link>
                                 <Link href="/terms-of-use" className="transition-colors duration-300 hover:underline hover:text-[#6A1C1A]">Terms of Use</Link>
                                 <Link href="https://www.midha.in/" className="transition-colors duration-300 hover:underline hover:text-[#6A1C1A]">Midha Education</Link>
                             </div>
