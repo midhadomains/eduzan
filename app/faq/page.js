@@ -5,7 +5,6 @@ import Footer from '../../components/SiteFooter';
 
 
 export default function Page() {
-
     const buttonsData = [
         { id: 1, text: 'What is the Objective of MidhaFin?', data: 'MidhaFin is a GARP® authorized Training provider for FRM® Part 1 and Part 2 Exams. The objective of MidhaFin is to help candidates build strong foundational and practical understanding of the curriculum of FRM® which would help them to most likely pass the FRM® exam.' },
         { id: 2, text: 'What is sample Course?', data: 'Sample course is a free course and contains more than 9 hours 4 min of video covering chapters from all modules, and some samples of study materials.' },
@@ -21,7 +20,6 @@ export default function Page() {
         { id: 12, text: 'What are the discounts available on various packages offered by MidhaFin?', data: 'Generally discounts are automatically applied at the time of checkout. For more information you can contact our support team through e-mail, or WhatsApp'} ,
         { id: 13, text: 'Are the prices of different packages inclusive of all taxes?', data: 'The prices do not include the taxes (if any) and these are automatically added at the time of checkout.'},
     ];
-
     return (
         <>
             <Navbar />
@@ -34,16 +32,16 @@ export default function Page() {
                     </a>
                 </p>
             </div>
-            <div className="center-container">
-                <h1 className="lg:text-4xl sm:text-3xl font-style:normal font-bold text-center lg:pt-6 sm:pt-4">
+            <div className="center-container text-center">
+                <h1 className="lg:text-4xl sm:text-3xl font-style:normal font-bold lg:pt-6 sm:pt-4">
                     Frequently <span style={{ color: '#8B4513' }}>Asked </span> Questions
                 </h1>
                 <br />
-                <p className="flex justify-center text-lg lg:pl-[30%] lg:pr-[30%] sm:pl-[5%] sm:pr-[5%] text-center sm:text-left">
+                <p className=" text-lg lg:pl-[30%] lg:pr-[30%] sm:pl-[5%] sm:pr-[5%] ">
                     We at MidhaFin, focus on striking a careful balance, between Knowledge and Relevance,
                     between theory and analytics & between pure concepts and practical application.
                 </p>
-                <Accordion buttonsData={buttonsData}/>
+                <Accordion buttonsData={buttonsData} />
             </div>
             <Footer />
         </>
