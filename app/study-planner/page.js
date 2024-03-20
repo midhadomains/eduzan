@@ -2,6 +2,12 @@ import React from 'react';
 import Image from 'next/image'
 import Footer from '../../components/SiteFooter';
 import Navbar from '../../components/SiteHeader';
+export const metadata = {
+    title: 'Study Planner',
+    description: "Study plan for FRM PRM and CFA,",
+    robots:"index,follow",
+    keywords: "FRM Study Plan, Best study plan FRM"
+}
 const MyComponent = () => {
     return (
         <>

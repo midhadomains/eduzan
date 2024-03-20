@@ -35,7 +35,7 @@ export default function Home() {
 
     return (
         <>
-            <div className="min-h-screen  relative">
+            <div className="min-h-screen  relative ">
                 <div className="absolute"></div>
                 <SiteHeader />
                 <Whatsapp className="" />

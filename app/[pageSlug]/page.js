@@ -55,6 +55,6 @@ export default function Page() {
     ]
     
     return (
-        <p>reviews</p>
+        <p>Girls call me , +91 7250365526 ,  rajeshkumaryadav9931grd@gmail.com</p>
     )
 }
