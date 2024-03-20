@@ -7,7 +7,7 @@ export default function Home() {
         <div>
             <Navbar />
             {/* hero section */}
-            <div className='flex justify-center	w-[100%] p-5 bg-bgfrm bg-no-repeat bg-cover bg-center'>
+            <div className='flex justify-center	w-[100%] p-5 bg-no-repeat bg-cover bg-center'>
                 <div className='w-[50%] p-3'>
                     <h1>MIDHAFIN</h1>
                     <h2>One Stop Destination For Your FRM Exams</h2>
