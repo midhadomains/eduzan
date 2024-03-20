@@ -19,7 +19,7 @@ const Navbar = () => {
                         {/* <NavItem to="/blog" name="Blogs" /> */}
                         <NavItem to="https://edu.midhafin.com/s/store" name="Courses" />
                         <NavItem to="/reviews" name="Reviews" />
-                        <NavItem to="/contactus" name="Contact Us" />
+                        <NavItem to="/contact-us" name="Contact Us" />
                         <NavItem to="https://edu.midhafin.com/s/authenticate" name="Login" />
                     </ul>
                     {/* Responsive */}
@@ -29,7 +29,7 @@ const Navbar = () => {
                         {/* <NavItem to="/blog" name="Blogs" /> */}
                         <NavItem to="https://edu.midhafin.com/s/store" name="Courses" />
                         <NavItem to="/reviews" name="Reviews" />
-                        <NavItem to="/contactus" name="Contact Us" />
+                        <NavItem to="/contact-us" name="Contact Us" />
                         <NavItem to="https://edu.midhafin.com/s/authenticate" name="Login" />
                     </ul>
                 </div>
