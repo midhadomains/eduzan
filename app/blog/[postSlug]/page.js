@@ -23,7 +23,7 @@ export async function generateStaticParams() {
     return paths
 }
 
-// export async function generateMetadata({ params }) {
+// export async function generateMetadata({ params }) 
 //     const seoData = await getSeo('post', params.postSlug) ;
 //     return {
 //         title: seoData.title,

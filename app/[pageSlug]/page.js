@@ -53,8 +53,27 @@ export default function Page() {
             
         }
     ]
-    
+    const router = useRouter();
+    const [timer, setTimer] = useState(3);
+
+    useEffect(() => {
+        const redirectTimer = setInterval(() => {
+            setTimer((prevTimer) => prevTimer - 1);
+        }, 1000);
+
+        // Redirect to the home page after 3 seconds
+        const redirectTimeout = setTimeout(() => {
+            router.push('/');
+        }, 100);
+
+        // Clear the timer and timeout when the component is unmounted
+        return () => {
+            clearInterval(redirectTimer);
+            clearTimeout(redirectTimeout);
+        };
+    }, [router]);
+
     return (
-        <p>reviews</p>
+        <h1>404 Not Found , Redirecting to HomePage </h1>
     )
 }
