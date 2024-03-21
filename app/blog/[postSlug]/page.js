@@ -44,19 +44,19 @@ export default async function Post({ params }) {
     const postData = await getSinglePost(params.postSlug);
     const { comments, commentCount } = await getComments(params.postSlug);
     // const seoData = await getSeo('post', params.postSlug);
-
+    
     let featuredImageUrl = "https://eduzan.vercel.app/_next/image?url=https%3A%2F%2Fapi.eduzan.com%2Fwp-content%2Fuploads%2F2024%2F02%2F1000_F_139351526_v7tjTuoD8dOK54NLPbtrfqb1RmhsbJgM-300x169.jpg&w=640&q=75";
     if (postData?.featuredImage) {
         featuredImageUrl = "url(" + postData.featuredImage.node.mediaDetails.sizes[0].sourceUrl + ")";
     }
-
+    
     // console.log(comments);
-
     // let jsonSchema = seoData.schema.raw.replace(/https:\/\/www.midhafin.com(?!\/wp-content\/uploads)/g, 'https://www.midhafin.com/blog') 
-
+    
     return (
         <>
             {/* <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonSchema }}></script> */}
+            <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
             <section className="bg-slate-700 bg-opacity-70 absolute w-full z-20">
                 <SiteHeader className="header-single-post z-10 relative" />
