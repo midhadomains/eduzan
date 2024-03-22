@@ -1,66 +1,13 @@
-// import SiteHeader from "../../components/SiteHeader";
-// import SiteFooter from "../../components/SiteFooter";
-// import { getPageSlugs, getSinglePage } from "../../lib/pages";
+"use client"
+import { useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
+import Image from 'next/image';
 
-// export async function generateStaticParams() {
-//     const pageSlugs = await getPageSlugs();
-
-//     const paths = pageSlugs.map((s) => (
-//         {
-//             pageSlug: s.slug,
-//         }
-//     ));
-
-//     return paths;
-
-// }
-
-// export async function generateMetadata({ params }) {
-
-//     const pageData = await getSinglePage(params.pageSlug);
-
-//     return {
-//         title: "MidhaFin",
-//     }
-// }
-// export default async function Page({ params }) {
-
-//     const pageData = await getSinglePage(params.pageSlug);
-
-//     return (
-//         <>
-//             <section className="bg-slate-700">
-//                 <SiteHeader className="header-page z-10 relative" />
-//             </section>
-//             <section className="content-area py-8">
-//                 <article>
-//                     <h1 className="text-6xl text-center text-slate-700 relative py-8">
-//                         MidhaFin
-//                     </h1>
-//                     <div dangerouslySetInnerHTML={{ __html: pageData.content }} className="post-content container mx-auto lg:max-w-4xl" />
-//                 {/* </article> */}
-//             </section>
-//             <SiteFooter />
-//         </>
-        
-//     );
-// }
-export default function Page() {
-    const reviews=[
-        {
-            name:"Karan Vansani",
-            image:"https://d502jbuhuh9wk.cloudfront.net/orgData/62826abf0cf2991cddb22ac6/pages/assets/images/Subhadev%20Pal.png",
-            
-        }
-    ]
+const RedirectPage = () => {
     const router = useRouter();
     const [timer, setTimer] = useState(3);
 
     useEffect(() => {
-        const redirectTimer = setInterval(() => {
-            setTimer((prevTimer) => prevTimer - 1);
-        }, 1000);
-
         // Redirect to the home page after 3 seconds
         const redirectTimeout = setTimeout(() => {
             router.push('/');
@@ -68,12 +15,19 @@ export default function Page() {
 
         // Clear the timer and timeout when the component is unmounted
         return () => {
-            clearInterval(redirectTimer);
             clearTimeout(redirectTimeout);
         };
     }, [router]);
 
     return (
-        <h1>404 Not Found , Redirecting to HomePage </h1>
-    )
-}
+        <div className='w-[100%]'>
+            <div>
+                <div className="text-center text-[1.2rem] my-2 font-semibold p-2 tracking-wide">
+                    404 Bad Request , Redirecting To Homepage  ...
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default RedirectPage;

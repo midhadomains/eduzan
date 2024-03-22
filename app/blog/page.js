@@ -1,3 +1,4 @@
+import Script from 'next/script'
 import { getPostList } from "../../lib/posts";
 import SiteHeader from "../../components/SiteHeader";
 import SiteFooter from "../../components/SiteFooter";
@@ -10,7 +11,7 @@ export const metadata = {
 
 export default async function BlogHome({ params }) {
     const initialPosts = await getPostList();
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <Script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></Script>
     return (
         <>
             <div className="h-[50vh] min-h-[20rem] relative">
