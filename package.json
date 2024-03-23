@@ -20,10 +20,12 @@
     "mathjax": "^3.2.2",
     "next": "^14.1.0",
     "react": "^18.2.0",
+    "react-countup": "^6.5.3",
     "react-dom": "^18.2.0",
     "react-icons": "^5.0.1",
     "react-latex": "^2.0.0",
     "react-latex-next": "^2.3.0",
+    "react-scroll-trigger": "^0.6.14",
     "react-simple-typewriter": "^5.0.1"
   },
   "devDependencies": {
