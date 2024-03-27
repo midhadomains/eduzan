@@ -8,7 +8,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'bgfrm': "url('/pattern-randomized.svg')",
+        'bgfrm': "url('/Vector.png')",
+        'featuresbg':"url('/bghomefeatures.svg')",
       },
     },
   },

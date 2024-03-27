@@ -6,7 +6,7 @@ import { IoMenu, IoClose } from "react-icons/io5";
 const Navbar = () => {
     const [toggle, setToggle] = useState(false);
     return (
-        <nav className="mx-auto  sticky top-0 z-10 bg-[#d8c9c9] backdrop-filter backdrop-blur-[2px] bg-opacity-40 border-b border-gray-100 firefox:bg-opacity-90">
+        <nav className="mx-auto  sticky top-0 z-10 bg-[#ffffff]  border-b border-gray-100 firefox:bg-opacity-90">
             <div className='max-w-full mx-3 '>
                 <div className="flex items-center justify-between lg:w-[100%] h-[60px] mx-auto pr-4">
                     <Link href='/'><Image width={250} height={40} className='ml-4 lg:ml-0 md:item-left w-[200px] h-[30px] lg:w-auto lg:h-[40px] ' src="/Logo-with-garp.webp" alt="MidhaFin Logo" /></Link>
