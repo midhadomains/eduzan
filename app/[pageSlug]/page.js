@@ -2,6 +2,8 @@
 // import SiteFooter from "../../components/SiteFooter";
 // import { getPageSlugs, getSinglePage } from "../../lib/pages";
 
+// import { useRouter } from "next/router";
+
 // export async function generateStaticParams() {
 //     const pageSlugs = await getPageSlugs();
 
@@ -45,22 +47,17 @@
         
 //     );
 // }
-export default function Page() {
-    const reviews=[
-        {
-            name:"Karan Vansani",
-            image:"https://d502jbuhuh9wk.cloudfront.net/orgData/62826abf0cf2991cddb22ac6/pages/assets/images/Subhadev%20Pal.png",
-            
-        }
-    ]
+
+"use client"
+import { useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
+import Image from 'next/image';
+
+const RedirectPage = () => {
     const router = useRouter();
     const [timer, setTimer] = useState(3);
 
     useEffect(() => {
-        const redirectTimer = setInterval(() => {
-            setTimer((prevTimer) => prevTimer - 1);
-        }, 1000);
-
         // Redirect to the home page after 3 seconds
         const redirectTimeout = setTimeout(() => {
             router.push('/');
@@ -68,12 +65,19 @@ export default function Page() {
 
         // Clear the timer and timeout when the component is unmounted
         return () => {
-            clearInterval(redirectTimer);
             clearTimeout(redirectTimeout);
         };
     }, [router]);
 
     return (
-        <h1>404 Not Found , Redirecting to HomePage </h1>
-    )
-}
+        <div className='w-[100%]'>
+            <div>
+                <div className="text-center text-[1.2rem] my-2 font-semibold p-2 tracking-wide">
+                    404 Bad Request , Redirecting To Homepage  ...
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default RedirectPage;

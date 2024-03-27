@@ -65,15 +65,15 @@ export default function Home() {
                     {/* Play Store section */}
                     <div className=' w-[100%] sm:flex justify-around md:max-w-[90%] lg:max-w-[80%] mx-auto p-5 my-9'>
                         <div className='sm:w-[50%] py-auto my-auto'>
-                            <Image width={500} height={100} src="https://home.midhafin.com/wp-content/uploads/2024/02/Download-our-app.png" alt="Mobile and Laptop pic" />
+                            <Image width={500} height={100} src="/downloadapp.png" alt="Mobile and Laptop pic" />
                         </div>
                         <div className='sm:w-[50%] my-auto pt-5 sm:pt-1 text-center ' >
                             <p className='text-[#6A1C1A]'>iOS & Android</p>
                             <h1 className='text-[30px] text-[#391701] font-bold'>Download the Mobile App</h1>
                             <p className='text-[#6A1C1A]'>MidhaFin is a free to download app</p>
                             <div className='flex'>
-                                <Link href="https://play.google.com/store/search?q=Midhafin&c=apps&hl=en_IN&gl=US" target="_blank" className="m-5 hover:opacity-[0.75]"><Image width={300} height={100} src="https://home.midhafin.com/wp-content/uploads/2024/02/Google-Play-Button.png" alt="google play store" /></Link>
-                                <Link href="https://apps.apple.com/in/app/midhafin-cfa-frm-prm/id6463192627" target="_blank" className="m-5 hover:opacity-[0.75]"><Image width={300} height={100} src="https://home.midhafin.com/wp-content/uploads/2024/02/iOS-download-Button.png" alt="app store" /></Link>
+                                <Link href="https://play.google.com/store/search?q=Midhafin&c=apps&hl=en_IN&gl=US" target="_blank" className="m-5 hover:opacity-[0.75]"><Image width={300} height={100} src="/play-store.webp" alt="google play store" /></Link>
+                                <Link href="https://apps.apple.com/in/app/midhafin-cfa-frm-prm/id6463192627" target="_blank" className="m-5 hover:opacity-[0.75]"><Image width={300} height={100} src="/app-store.webp" alt="app store" /></Link>
                             </div>
                         </div>
                     </div>
