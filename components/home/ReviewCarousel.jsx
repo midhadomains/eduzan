@@ -97,7 +97,7 @@ export default function HomeCarousel() {
             </div>
             <div className='ml-[60px] mt-[3rem]'>
                 <h1 className='text-[3rem] font-semibold leading-tight	'>Don&apos;t  Believe <span className='text-[#BE4E1E]'> Us</span>, Hear From Our <span className='text-[#BE4E1E]'>Students</span></h1>
-                <hr className='border-4 rounded-3xl my-5 w-[10%]  border-[#6A1C1A]' />
+                <hr className='border-4 rounded-3xl my-5 w-[10%]  border-[#9A391D]' />
             </div>
             <div className="bg-custom-background bg-repeat  flex items-center justify-center  p-5 relative transition-transform duration-300">
                 {renderCarousels()}

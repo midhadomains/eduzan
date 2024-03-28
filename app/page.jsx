@@ -8,6 +8,8 @@ import { FaChevronRight } from "react-icons/fa";
 import HeroSection from "../components/home/HeroSection";
 import HomeCarousel from "../components/home/ReviewCarousel";
 import FeaturesSection from "../components/home/FeaturesSection";
+import PlatformFeatures from "../components/home/PlatformFeatures";
+import Accordion from "../components/Accordian";
 
 
 
@@ -55,9 +57,11 @@ export default function Home() {
                         </div>
                     </div>
                     {/* Features section */}
-                    <div className="h-[600px]">
-                        <FeaturesSection />
-                    </div>
+                    <FeaturesSection />
+                    {/* Platform Features section */}
+                    <PlatformFeatures />
+                    {/* faqs Section */}
+                    <Accordion buttonsData={buttonsData}/>
                 </main>
             </div>
             <SiteFooter />
