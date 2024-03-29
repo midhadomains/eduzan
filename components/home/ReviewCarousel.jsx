@@ -37,7 +37,7 @@ export default function HomeCarousel() {
 
     const handleResize = () => {
         const screenWidth = window.innerWidth;
-        console.log(screenWidth)
+        // console.log(screenWidth)
         if (screenWidth < 640) {
             setVisibleComponents(1);
         } else if (screenWidth < 1100) {

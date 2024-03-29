@@ -1,4 +1,6 @@
-import Reviews from "../../lib/reviews";
+import Reviews from "../../components/Reviews";
+
+// import Reviews from "../../lib/reviews";
 export const metadata = {
     title: 'Reviews',
     description: " Don't believe us, Hear from our students ",
@@ -10,7 +12,8 @@ export default function Page() {
 
         <>
             <div>
-                <Reviews />
+                {/* <Reviews /> */}
+                <Reviews/>
             </div>
         </>
     );

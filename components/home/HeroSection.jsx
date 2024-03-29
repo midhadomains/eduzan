@@ -1,9 +1,8 @@
 "use client"
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import 'react-slideshow-image/dist/styles.css'
 import { Fade, Zoom, Slide } from 'react-slideshow-image'
 import Image from 'next/image'
-import Link from "next/link";
 function HeroSection() {
 
 
