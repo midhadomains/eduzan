@@ -3,10 +3,22 @@ import React, { useState, useEffect } from 'react';
 import ReviewCarousel from '../card';
 import { FaCircle } from "react-icons/fa6";
 
+export default function Home() {
+    const [colorIndex, setColorIndex] = useState(0);
+    const colors = ['#BE4E1E', '#C7C7C7'];
 
-export default function HomeCarousel() {
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setColorIndex((prevIndex) => (prevIndex === 0 ? 1 : 0));
+        }, 5500);
+
+        return () => clearInterval(interval);
+    }, []);
+    
     const [currentIndex, setCurrentIndex] = useState(0);
     const [visibleComponents, setVisibleComponents] = useState(1);
+    const [dotCount, setDotCount] = useState(6);
+    const [dotColors, setDotColors] = useState(['bg-[#BE4E1E]', 'bg-gray-200']);
 
     const images = [
         'https://media.licdn.com/dms/image/D4D03AQG6SllSmP2sXA/profile-displayphoto-shrink_800_800/0/1685780083008?e=1715817600&v=beta&t=LGPXgxm1D_Frq7xgTwL8lqpMcSwsyRBkg6ELs0R91HA',
@@ -35,19 +47,24 @@ export default function HomeCarousel() {
         'https://www.youtube.com/embed/iJpSH94_Z7Q?si=CRbX0B0pIXNBeHXk'
     ];
 
-    const handleResize = () => {
-        const screenWidth = window.innerWidth;
-        // console.log(screenWidth)
-        if (screenWidth < 640) {
-            setVisibleComponents(1);
-        } else if (screenWidth < 1100) {
-            setVisibleComponents(2);
-        } else {
-            setVisibleComponents(3);
-        }
-    };
+
+
 
     useEffect(() => {
+        const handleResize = () => {
+            const screenWidth = window.innerWidth;
+            if (screenWidth < 640) {
+                setVisibleComponents(1);
+                setDotCount(6);
+            } else if (screenWidth < 1024) {
+                setVisibleComponents(2);
+                setDotCount(3);
+            } else {
+                setVisibleComponents(3);
+                setDotCount(2);
+            }
+        };
+
         handleResize();
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
@@ -59,6 +76,10 @@ export default function HomeCarousel() {
 
     const prevSlide = () => {
         setCurrentIndex((currentIndex - 1 + images.length) % images.length);
+    };
+
+    const handleDotClick = (index) => {
+        setCurrentIndex(index);
     };
 
     const renderCarousels = () => {
@@ -79,27 +100,18 @@ export default function HomeCarousel() {
         }
         return carousels;
     };
-    const [colorIndex, setColorIndex] = useState(0);
-    const colors = ['#BE4E1E', '#C7C7C7'];
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setColorIndex((prevIndex) => (prevIndex === 0 ? 1 : 0));
-        }, 5500);
-
-        return () => clearInterval(interval);
-    }, []);
     return (
-        <div className='max-w-[1300px] mx-auto'>
-            <div className="flex justify-center mx-auto my-2">
+        <div className='max-w-[1300px] mx-auto mb-[80px]'>
+            <div className="flex justify-center mx-auto my-2 ">
                 <FaCircle className="m-2 w-3 " style={{ color: colors[colorIndex] }} />
                 <FaCircle className="m-2 w-3 " style={{ color: colors[1 - colorIndex] }} />
             </div>
-            <div className='ml-[60px] mt-[3rem]'>
+            <div className='ml-[60px] my-[3rem]'>
                 <h1 className='text-[3rem] font-semibold leading-tight	'>Don&apos;t  Believe <span className='text-[#BE4E1E]'> Us</span>, Hear From Our <span className='text-[#BE4E1E]'>Students</span></h1>
                 <hr className='border-4 rounded-3xl my-5 w-[10%]  border-[#9A391D]' />
             </div>
-            <div className="bg-custom-background bg-repeat  flex items-center justify-center  p-5 relative transition-transform duration-300">
+            <div className="bg-custom-background bg-repeat flex items-center justify-center px-5  relative">
                 {renderCarousels()}
                 <button
                     type="button"
@@ -120,9 +132,10 @@ export default function HomeCarousel() {
                         <span className="hidden">Previous</span>
                     </span>
                 </button>
+
                 <button
                     type="button"
-                    className="absolute top-0  right-0 sm:right-2 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                    className="absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
                     data-carousel-next
                     onClick={nextSlide}
                 >
@@ -139,7 +152,23 @@ export default function HomeCarousel() {
                         <span className="hidden">Next</span>
                     </span>
                 </button>
+                <div className="flex justify-center gap-0 absolute -bottom-8 w-[350px] ">
+                    {[...Array(dotCount)].map((_, index) => (
+                        <span
+                            key={index}
+                            className={`w-3 h-3 rounded-full mx-3 cursor-pointer ${dotCount === 2
+                                ? index % 2 === currentIndex % 2 ? dotColors[0] : dotColors[1]
+                                : dotCount === 3
+                                    ? index % 3 === currentIndex % 3 ? dotColors[0] : dotColors[1]
+                                    : index === currentIndex ? dotColors[0] : dotColors[1]
+                                }`}
+
+                            onClick={() => handleDotClick(index)}
+                        ></span>
+                    ))}
+                </div>
             </div>
         </div>
+
     );
 }

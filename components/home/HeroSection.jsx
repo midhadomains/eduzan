@@ -15,7 +15,7 @@ function HeroSection() {
                         <p className="text-[1.75rem] my-7 font-light tracking-wide">Step up your career by acquiring the desirable<br /> skills and <span className='text-[#BE4E1E]'>leading global certifications in Finance.</span></p>
                         <button className="bg-[#6A1C1A] transition-colors duration-150 hover:bg-[#BE4E1E] py-5 px-10 text-3xl my-3 rounded-[54px] font-semibold tracking-wide text-[#F9F2DF] w-fit">SIGNUP NOW</button>
                     </div >
-                    <Image src="/hero-section-001.svg" alt="image" className="w-[500px] mx-5 max-w-[500px]  -ml-[80px]" width={500} height={500} />
+                    <Image src="/hero-section-001.svg" alt="image" className="w-[500px] mx-5 max-w-[500px]  -ml-[80px]" width={500} height={500}  priority={true} />
                 </div>
                 <div key={2} className=" h-[500px] tracking-wider bg-bgfrm bg-no-repeat bg-cover bg-center bg-fixed ">
                     <div className=" bg-gradient-to-r from-[#6A1C1A] w-[100%] h-[100%]">

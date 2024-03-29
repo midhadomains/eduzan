@@ -1,15 +1,14 @@
 import SiteHeader from "../components/SiteHeader";
 import SiteFooter from "../components/SiteFooter";
 import Link from "next/link";
-import Image from 'next/image'
 import Whatsapp from "../components/Whatsapp";
 import { FaChevronRight } from "react-icons/fa";
-
 import HeroSection from "../components/home/HeroSection";
 import HomeCarousel from "../components/home/ReviewCarousel";
 import FeaturesSection from "../components/home/FeaturesSection";
 import PlatformFeatures from "../components/home/PlatformFeatures";
 import Accordion from "../components/Accordian";
+import ResponsiveCarousel from "../components/common/ResponsiveCarousel";
 
 
 
@@ -18,7 +17,7 @@ export const metadata = {
     description: "MidhaFin Home , Explore our Wide Range of Courses "
 }
 
-export default function Home() {
+export default async function Home() {
 
     const buttonsData = [
         { id: 1, text: 'What is the Objective of MidhaFin?', data: 'MidhaFin is a GARP® authorized Training provider for FRM® Part 1 and Part 2 Exams. The objective of MidhaFin is to help candidates build strong foundational and practical understanding of the curriculum of FRM® which would help them to most likely pass the FRM® exam.' },
@@ -61,9 +60,10 @@ export default function Home() {
                     {/* Platform Features section */}
                     <PlatformFeatures />
                     {/* faqs Section */}
-                    <Accordion buttonsData={buttonsData}/>
+                    <Accordion buttonsData={buttonsData} />
                 </main>
             </div>
+            <ResponsiveCarousel/>
             <SiteFooter />
         </>
     )
