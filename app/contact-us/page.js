@@ -77,7 +77,7 @@ const MyComponent = () => {
                   </Link>
                   <Link target="_blank" href="mailto:midhafin@gmail.com">
                     <p className=" flex  text-gray-700 hover:text-[#6A1C1A] "><CiMail className='mt-1 mr-1' />
-                      MidhaFin@gmail.com</p>
+                      midhafin@gmail.com</p>
                   </Link>
                 </div>
               </div>
