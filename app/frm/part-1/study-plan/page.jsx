@@ -8,19 +8,19 @@ export default function page() {
             <div className='bg-[#6A1C1A] p-7 '>
                 <h1 className='text-[40px] text-white text-center'>FRM Part 1 - <span className='font-semibold'>STUDY PLAN 2024</span></h1>
             </div>
-            <div className='max-w-[1300px] mx-auto text-left my-[50px] p-2 sm:p-5'>
+            <div className='max-w-[1300px] mx-auto text-left my-[50px] p-4 sm:p-5'>
                 <h1 className='text-[#6A1C1A] text-2xl mb-3'>Overview</h1>
-                <p className='text-[14px] sm:text-[16px]'>The study plan has been structured after very careful analysis & the topics have been sequenced in such a way so as to systematically link one topic after the other.</p>
+                <p className='text-[16px] '>The study plan has been structured after very careful analysis & the topics have been sequenced in such a way so as to systematically link one topic after the other.</p>
                 <h2 className='text-[#BF4E1E] text-xl mt-9 mb-2'>According to the Instructor – </h2>
-                <p className='font-[500] text-[14px] sm:text-[16px]'>“It’s not a wise strategy to prepare for the exam on a module by module basis. There are some concepts which are used in an earlier topic but discussed in detail in a later topic in another module. For example – Beta is introduced in CAPM in the Foundations of Risk Management Module, but the quantitative aspect of beta is discussed in Linear Regression in the Quantitative Methods Module. Hence, the sequence of topics to prepare for the exams becomes very important.”</p>
-                <p className='my-4 text-[14px] sm:text-[16px]'>The study plan has taken care of the sequence in the best possible way. Also, unrelated theory portions have been scattered in the timeline so as to get a good blend of theoretical and numerical based topics.We strongly advice to follow this sequence and the schedule.</p>
+                <p className='font-[500] text-[16px]'>“It’s not a wise strategy to prepare for the exam on a module by module basis. There are some concepts which are used in an earlier topic but discussed in detail in a later topic in another module. For example – Beta is introduced in CAPM in the Foundations of Risk Management Module, but the quantitative aspect of beta is discussed in Linear Regression in the Quantitative Methods Module. Hence, the sequence of topics to prepare for the exams becomes very important.”</p>
+                <p className='my-4 text-[16px]'>The study plan has taken care of the sequence in the best possible way. Also, unrelated theory portions have been scattered in the timeline so as to get a good blend of theoretical and numerical based topics.We strongly advice to follow this sequence and the schedule.</p>
                 <div className='flex justify-flex-start flex-wrap '>
                     <h2 className='text-2xl text-[#6A1C1A]'>KEY used to represent the four modules :</h2>
                     <div className='mx-5 my-3'>
-                        <p className='text-[#6A1C1A] text-xl  sm:text-2xl '>FRM -<span className='text-black font-light sm:text-xl'> Foundations of Risk Management</span></p>
-                        <p className='text-[#6A1C1A] text-xl sm:text-2xl'>QTA -<span className='text-black font-light sm:text-xl'> Quantitative Analysis</span></p>
-                        <p className='text-[#6A1C1A] text-xl sm:text-2xl'>FMP -<span className='text-black font-light sm:text-xl'> Financial Markets and Products</span></p>
-                        <p className='text-[#6A1C1A] text-xl sm:text-2xl'>VRM -<span className='text-black font-light sm:text-xl'> Valuations and Risk Models</span></p>
+                        <p className='text-[#6A1C1A] text-xl sm:text-2xl'>FRM -<span className='text-black font-[400] sm:text-xl'> Foundations of Risk Management</span></p>
+                        <p className='text-[#6A1C1A] text-xl sm:text-2xl'>QTA -<span className='text-black font-[400] sm:text-xl'> Quantitative Analysis</span></p>
+                        <p className='text-[#6A1C1A] text-xl sm:text-2xl'>FMP -<span className='text-black font-[400] sm:text-xl'> Financial Markets and Products</span></p>
+                        <p className='text-[#6A1C1A] text-xl sm:text-2xl'>VRM -<span className='text-black font-[400] sm:text-xl'> Valuations and Risk Models</span></p>
                     </div>
                 </div>
                 <h1 className='text-[#6A1C1A] text-2xl mt-8'>Schedule</h1>
