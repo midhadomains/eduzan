@@ -187,7 +187,7 @@ export default function page() {
             a carefully researched chapter sequence that can be followed to
             ensure maximum understanding of the FRM Part 1 curriculum.{" "}
             <Link
-              href="https://frm.midhafin.com/part-1/study-plan/"
+              href="/frm/part-1/study-plan/"
               className="text-blue-500 hover:text-blue-700"
             >
               Read more…
