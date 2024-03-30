@@ -85,13 +85,13 @@ export default function Home() {
                     <div className='w-[95%] mx-auto sm:w-[65%] lg:w-[60%]  flex flex-col justify-around'>
                         <h1 className='text-[30px] sm:text-[40px] lg:text-[60px] text-center sm:text-left mt-5 font-bold'>One Stop Destination For Your FRM Exams.</h1>
                         <div className='flex justify-around m-5 lg:m-9'>
-                            <Image className='lg:ml-[20px] ml-5 sm:ml-0' width={100} height={100} src="/frm/Garp.svg" alt="Garp svg" />
+                            <Image className='lg:ml-[20px] ml-5 sm:ml-0' width={100} height={100} src="/frm/Garp.svg" alt="Garp svg" priority />
                             <h1 className='text-[20px] sm:text-[25px] lg:text-[40px] border-l-[3px] px-[20px] lg:px-[40px] sm:ml-9'>We&apos;re a <span className='font-bold'>GARP approved</span> exam prep provider</h1>
                         </div>
                         <button className="border mx-auto sm:mx-0 rounded-[54px] hover:bg-[#BE4E1E] w-fit px-[70px] m-5 sm:text-[20px] lg:text-[30px] font-semibold py-6">SIGNUP NOW</button>
                     </div>
                     <div className='w-[70%] sm:w-[35%] flex mx-auto lg:w-[40%] justify-end'>
-                        <Image width={550} height={550} src="/frm/HeroImg.png" alt='Micky Midha' />
+                        <Image width={550} height={550} src="/frm/HeroImg.png" alt='Micky Midha' priority />
                     </div>
                 </div>
             </div>
@@ -100,12 +100,12 @@ export default function Home() {
                 <div className='sm:flex justify-between mx-auto'>
                     <div className='w-[300px] lg:w-[500px]  mx-auto'>
                         <Link href="https://www.midhafin.com/frm/part-1" className='w-[100%]'>
-                            <Image width={500} height={500} src="/frm/Part-1.svg" alt='part-1' />
+                            <Image width={500} height={500} src="/frm/Part-1.svg" alt='part-1' priority />
                         </Link>
                     </div>
                     <div className='w-[300px] lg:w-[500px]  mx-auto'>
                         <Link href="https://www.midhafin.com/frm/part-2" className='w-[100%]'>
-                            <Image width={500} height={500} src="/frm/Part-2.svg" alt='part-2' />
+                            <Image width={500} height={500} src="/frm/Part-2.svg" alt='part-2' priority />
                         </Link>
                     </div>
                 </div>
