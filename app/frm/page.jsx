@@ -115,8 +115,8 @@ export default function Home() {
                 <h1 className='text-center text-[40px] md:text-[50px] font-bold '>What sets us <span className='text-[#9A381D]'>apart</span>?</h1>
                 <div className='grid grid-cols-1 gap-9 sm:gap-[60px] mx-4 sm:mx-1 sm:grid-cols-3  justify-around mt-9'>
                     <div className='text-center w-auto'>
-                        <Image className='mx-auto' src={Img_1} alt="Heghly Costomized" />
-                        <h1 className='text-[30px] font-bold'>Highly Costomized</h1>
+                        <Image className='mx-auto' src={Img_1} alt="Highly Customized" />
+                        <h1 className='text-[30px] font-bold'>Highly Customized</h1>
                         <ul className='list-disc list-inside' >
                             <p className='text-[20px]'>Access to 1-to-1 Doubt Session.</p>
                             <li className='text-[#BE4E1E] text-[20px] text-center font-bold'></li>
@@ -129,7 +129,7 @@ export default function Home() {
                     </div>
 
                     <div className='text-center w-auto'>
-                        <Image className='mx-auto' src={Img_2} alt="Heghly Costomized" />
+                        <Image className='mx-auto' src={Img_2} alt="Quality Content" />
                         <h1 className='text-[30px] font-bold'>Quality Content</h1>
                         <ul className='list-disc list-inside' >
                             <p className='text-[20px]'>Usage of Graphs, Tables, and charts to illustrate the concept.</p>
@@ -143,7 +143,7 @@ export default function Home() {
                     </div>
 
                     <div className='text-center w-auto'>
-                        <Image className='mx-auto' src={Img_3} alt="Heghly Costomized" />
+                        <Image className='mx-auto' src={Img_3} alt="GARP Related" />
                         <h1 className='text-[30px] font-bold'>GARP Related</h1>
                         <ul className='list-disc list-inside' >
                             <p className='text-[20px]'>Resolving and addressing GARP-related queries. </p>
@@ -164,7 +164,7 @@ export default function Home() {
                 <div className='grid grid-cols-1 sm:grid-cols-2'>
                     <div className=' text-left sm:p-[40px]'>
                         <h1 className='text-[40px] md:text-[50px] px-5 font-bold'>Recent <span className='text-[#BE4E1E]'>Performance</span> <br /> Highlights</h1>
-                        <p className='text-[20px] px-5 sm:px-6'>Through strategy, hardwork, and planning, we have achieved the success rate which stands second to none!</p>
+                        <p className='text-[20px] px-5 sm:px-6'>Through strategy, hard work, and planning, we have achieved the success rate which stands second to none!</p>
                     </div>
                     <div className=' mx-auto mt-5 sm:mt-9'>
                         <CounterUpPage />

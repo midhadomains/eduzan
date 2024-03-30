@@ -23,7 +23,7 @@ const Navbar = () => {
 
                     <ul className="hidden md:flex  justify-around flex-nowrap  max-w-[1000px] w-[100%]">
                         <NavItem to='/' name='Home' />
-                        <li>
+                        {/* <li>
                             <div className="relative inline-block group py-[0.6rem] text-center">
                                 <button className="text-[1.1rem] font-[500] h-[100%] cursor-pointe  px-1 hover:text-[#BE4E1E] my-auto  transition duration-300 ">
                                     <span className=' '>Study Materials</span>
@@ -34,7 +34,7 @@ const Navbar = () => {
                                     </ul>
                                 </div>
                             </div>
-                        </li>
+                        </li> */}
                         {/* <NavItem to="/blog" name="Blogs" /> */}
                         <NavItem to="https://edu.midhafin.com/s/store" name="Courses" />
                         <NavItem to="/reviews" name="Reviews" />
