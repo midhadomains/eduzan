@@ -21,7 +21,7 @@ const MyComponent = () => {
               method="POST"
               className="grid grid-cols-1 gap-5 md:grid-cols-2 mt-5"
             >
-              <input type="hidden" name="access_key" value="e2deee0c-855f-4ae1-a513-eadd701a4eae" />
+              <input type="hidden" name="access_key" value="5bf8d2b0-a3ca-48cd-8c64-7aa707f8c751" />
               {/* change value to whatever page you want to redirect after submitting the form */}
               <input type="hidden" name="redirect" value="https://www.midhafin.com/thank-you"></input>
               <input
