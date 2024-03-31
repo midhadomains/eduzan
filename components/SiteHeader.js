@@ -23,18 +23,6 @@ const Navbar = () => {
 
                     <ul className="hidden md:flex  justify-around flex-nowrap  max-w-[1000px] w-[100%]">
                         <NavItem to='/' name='Home' />
-                        {/* <li>
-                            <div className="relative inline-block group py-[0.6rem] text-center">
-                                <button className="text-[1.1rem] font-[500] h-[100%] cursor-pointe  px-1 hover:text-[#BE4E1E] my-auto  transition duration-300 ">
-                                    <span className=' '>Study Materials</span>
-                                </button>
-                                <div className="absolute -right-4 w-48 bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300 delay-50">
-                                    <ul>
-                                        <Link href='/frm'><li className="py-2 px-4 hover:bg-gray-100 cursor-pointer">FRM<sup>®</sup> </li></Link>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li> */}
                         {/* <NavItem to="/blog" name="Blogs" /> */}
                         <NavItem to="https://edu.midhafin.com/s/store" name="Courses" />
                         <NavItem to="/reviews" name="Reviews" />
