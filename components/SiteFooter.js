@@ -37,7 +37,7 @@ function Footer() {
                                 <Link href="/" className="transition-colors duration-300 hover:underline hover:text-[#6A1C1A]">Home</Link>
                                 <Link href="/about-us" className="transition-colors duration-300 hover:underline hover:text-[#6A1C1A]">About us</Link>
                                 <Link href="https://edu.midhafin.com/s/store" className="transition-colors duration-300 hover:underline hover:text-[#6A1C1A]">Courses</Link>
-                                <Link href="/faq" className="transition-colors duration-300 hover:underline hover:text-[#6A1C1A]">FAQs</Link>
+                                <Link href="/faqs" className="transition-colors duration-300 hover:underline hover:text-[#6A1C1A]">FAQs</Link>
                                 <Link href="https://edu.midhafin.com/s/mycourses" className="transition-colors duration-300 hover:underline hover:text-[#6A1C1A]">Student Portal</Link>
                             </div>
                             <div className="flex flex-col items-start text-white mt-5 space-y-2">
@@ -46,7 +46,8 @@ function Footer() {
                                 <Link href="/contact-us" className="transition-colors duration-300 hover:underline hover:text-[#6A1C1A]">Contact Us</Link>
                                 <Link href="/terms-of-use" className="transition-colors duration-300 hover:underline hover:text-[#6A1C1A]">Terms of Use</Link>
                                 <Link href="https://www.midha.in/" className="transition-colors duration-300 hover:underline hover:text-[#6A1C1A]">Midha Education</Link>
-                            </div>
+                            </div> 
+                            
                         </div>
 
                     </div>

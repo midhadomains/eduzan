@@ -10,7 +10,6 @@ import { FaLinkedin } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-
 function Reviews() {
     const [data, setData] = useState(null);
     useEffect(() => {

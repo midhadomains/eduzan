@@ -5,13 +5,6 @@ import Image from 'next/image'
 import { IoMenu, IoClose } from "react-icons/io5";
 const Navbar = () => {
     const [toggle, setToggle] = useState(false);
-    const [isOpen, setIsOpen] = useState(false);
-    const handleMouseEnter = () => {
-        setIsOpen(true);
-    };
-    const handleMouseLeave = () => {
-        setIsOpen(false);
-    };
     return (
         <nav className="mx-auto sticky top-0 z-10 bg-[#FFFDF6] shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]">
             <div className='max-w-full '>
