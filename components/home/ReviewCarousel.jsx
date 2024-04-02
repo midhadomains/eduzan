@@ -1,10 +1,24 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import ReviewCarousel from '../card';
+import { FaCircle } from "react-icons/fa6";
 
-export default function HomeCarousel() {
+export default function Home() {
+    const [colorIndex, setColorIndex] = useState(0);
+    const colors = ['#BE4E1E', '#C7C7C7'];
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setColorIndex((prevIndex) => (prevIndex === 0 ? 1 : 0));
+        }, 5500);
+
+        return () => clearInterval(interval);
+    }, []);
+
     const [currentIndex, setCurrentIndex] = useState(0);
     const [visibleComponents, setVisibleComponents] = useState(1);
+    const [dotCount, setDotCount] = useState(6);
+    const [dotColors, setDotColors] = useState(['bg-[#BE4E1E]', 'bg-gray-200']);
 
     const images = [
         'https://media.licdn.com/dms/image/D4D03AQG6SllSmP2sXA/profile-displayphoto-shrink_800_800/0/1685780083008?e=1715817600&v=beta&t=LGPXgxm1D_Frq7xgTwL8lqpMcSwsyRBkg6ELs0R91HA',
@@ -33,19 +47,24 @@ export default function HomeCarousel() {
         'https://www.youtube.com/embed/iJpSH94_Z7Q?si=CRbX0B0pIXNBeHXk'
     ];
 
-    const handleResize = () => {
-        const screenWidth = window.innerWidth;
-        console.log(screenWidth)
-        if (screenWidth < 640) {
-            setVisibleComponents(1);
-        } else if (screenWidth < 1100) {
-            setVisibleComponents(2);
-        } else {
-            setVisibleComponents(3);
-        }
-    };
+
+
 
     useEffect(() => {
+        const handleResize = () => {
+            const screenWidth = window.innerWidth;
+            if (screenWidth < 780) {
+                setVisibleComponents(1);
+                setDotCount(6);
+            } else if (screenWidth < 1250) {
+                setVisibleComponents(2);
+                setDotCount(3);
+            } else {
+                setVisibleComponents(3);
+                setDotCount(2);
+            }
+        };
+
         handleResize();
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
@@ -57,6 +76,10 @@ export default function HomeCarousel() {
 
     const prevSlide = () => {
         setCurrentIndex((currentIndex - 1 + images.length) % images.length);
+    };
+
+    const handleDotClick = (index) => {
+        setCurrentIndex(index);
     };
 
     const renderCarousels = () => {
@@ -77,49 +100,75 @@ export default function HomeCarousel() {
         }
         return carousels;
     };
-    
 
     return (
-        <div className="bg-custom-background bg-repeat  flex items-center justify-center  p-5 relative transition-transform duration-300">
-            {renderCarousels()} 
-            <button
-                type="button"
-                className="absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
-                data-carousel-prev
-                onClick={prevSlide}
-            >
-                <span className="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                    <svg
-                        className="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-400"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
-                    </svg>
-                    <span className="hidden">Previous</span>
-                </span>
-            </button>
-            <button
-                type="button"
-                className="absolute top-0  right-0 sm:right-2 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
-                data-carousel-next
-                onClick={nextSlide}
-            >
-                <span className="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                    <svg
-                        className="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-400"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-                    </svg>
-                    <span className="hidden">Next</span>
-                </span>
-            </button>
+        <div className='max-w-[1300px] mx-auto mb-[80px]'>
+            <div className="flex justify-center mx-auto my-2 ">
+                <FaCircle className="m-2 md:w-3  w-2  " style={{ color: colors[colorIndex] }} />
+                <FaCircle className="m-2 md:w-3 w-2" style={{ color: colors[1 - colorIndex] }} />
+            </div>
+            <div className=' md:my-[3rem] mt-8 px-2'>
+                <h2 className='lg:text-[3rem] md:text-[2.5rem]  sm:text-[2rem] text-[1.6rem] font-semibold leading-tight mx-3'>Don&apos;t  Believe <span className='text-[#BE4E1E]'> Us</span>, Hear From Our <span className='text-[#BE4E1E]'>Students</span></h2>
+                <hr className='lg:border-4 border-[3px] rounded-3xl border-[#9A391D]  md:w-[150px] w-[100px] my-3 mx-3 mb-7 md:mb-0' />
+            </div>
+            <div className="bg-custom-background bg-repeat flex items-center justify-around px-5  relative mx-auto">
+                {renderCarousels()}
+                <button
+                    type="button"
+                    className="absolute -top-9 left-0 z-30 justify-center items-center px-1 h-full cursor-pointer group focus:outline-none"
+                    data-carousel-prev
+                    onClick={prevSlide}
+                >
+                    <span className="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 ">
+                        <svg
+                            className="w-5 h-5 text-black sm:w-6 sm:h-6 dark:text-black"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
+                        </svg>
+                        <span className="hidden">Previous</span>
+                    </span>
+                </button>
+
+                <button
+                    type="button"
+                    className="absolute -top-9 right-0 z-30 justify-center items-center px-1 h-full cursor-pointer group focus:outline-none"
+                    data-carousel-next
+                    onClick={nextSlide}
+                >
+                    <span className="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 ">
+                        <svg
+                            className="w-5 h-5 text-black sm:w-6 sm:h-6 dark:text-black"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                        <span className="hidden">Next</span>
+                    </span>
+                </button>
+                <div className="flex justify-center gap-0 absolute -bottom-8 w-[350px] ">
+                    {[...Array(dotCount)].map((_, index) => (
+                        <span
+                            key={index}
+                            className={`md:w-3 md:h-3 w-2 h-2 rounded-full mx-3 cursor-pointer ${dotCount === 2
+                                ? index % 2 === currentIndex % 2 ? dotColors[0] : dotColors[1]
+                                : dotCount === 3
+                                    ? index % 3 === currentIndex % 3 ? dotColors[0] : dotColors[1]
+                                    : index === currentIndex ? dotColors[0] : dotColors[1]
+                                }`}
+
+                            onClick={() => handleDotClick(index)}
+                        ></span>
+                    ))}
+                </div>
+            </div>
         </div>
+
     );
 }

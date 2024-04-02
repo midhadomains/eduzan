@@ -1,3 +1,4 @@
+import Script from 'next/script'
 import SiteHeader from "../../../components/SiteHeader";
 import SiteFooter from "../../../components/SiteFooter";
 import CommentForm from "../../../components/CommentForm";
@@ -47,22 +48,24 @@ export default async function Post({ params }) {
     
     let featuredImageUrl = "https://eduzan.vercel.app/_next/image?url=https%3A%2F%2Fapi.eduzan.com%2Fwp-content%2Fuploads%2F2024%2F02%2F1000_F_139351526_v7tjTuoD8dOK54NLPbtrfqb1RmhsbJgM-300x169.jpg&w=640&q=75";
     if (postData?.featuredImage) {
-        featuredImageUrl = "url(" + postData.featuredImage.node.mediaDetails.sizes[0].sourceUrl + ")";
+        featuredImageUrl = "url(" + postData.featuredImage.node.mediaDetails.sizes[1].sourceUrl + ")";
     }
-    
+    // console.log(postData.featuredImage.node.mediaDetails.sizes)
     // console.log(comments);
     // let jsonSchema = seoData.schema.raw.replace(/https:\/\/www.midhafin.com(?!\/wp-content\/uploads)/g, 'https://www.midhafin.com/blog') 
     
     return (
         <>
             {/* <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonSchema }}></script> */}
+            <Script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></Script>
             <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 
             <section className="bg-slate-700 bg-opacity-70 absolute w-full z-20">
                 <SiteHeader className="header-single-post z-10 relative" />
             </section>
             <article className={`${rubik.className} font-light`}>
-                <section className="hero-area h-[60vh] min-h-[30rem] bg-no-repeat bg-cover bg-center relative" style={{ backgroundImage: featuredImageUrl }}>
+                <section className="hero-area h-[70vh] min-h-[30rem] bg-no-repeat bg-cover bg-center relative" style={{ backgroundImage: featuredImageUrl }}>
                     <div className="absolute inset-0 bg-slate-900 opacity-40"></div>
 
                     <div className="container mx-auto h-full flex flex-col justify-center lg:max-w-4xl">
@@ -77,7 +80,7 @@ export default async function Post({ params }) {
                     </div>
                 </section>
                 <section className="content-area py-8">
-                    <div dangerouslySetInnerHTML={{ __html: postData.content }} className="post-content container lg:max-w-4xl mx-auto" />
+                    <div dangerouslySetInnerHTML={{ __html: postData.content }} className="post-content container lg:w-[80%] mx-auto" />
                 </section>
             </article>
             <div className="container mx-auto lg:max-w-4xl">

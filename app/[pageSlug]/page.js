@@ -1,7 +1,10 @@
-// import SiteHeader from "../../components/SiteHeader";
-// import SiteFooter from "../../components/SiteFooter";
-// import { getPageSlugs, getSinglePage } from "../../lib/pages";
+"use client"
+import { useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
+import Image from 'next/image';
 
+<<<<<<< HEAD
+=======
 // import { useRouter } from "next/router";
 
 // export async function generateStaticParams() {
@@ -53,6 +56,7 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 
+>>>>>>> main
 const RedirectPage = () => {
     const router = useRouter();
     const [timer, setTimer] = useState(3);
@@ -80,4 +84,8 @@ const RedirectPage = () => {
     );
 };
 
+<<<<<<< HEAD
 export default RedirectPage;
+=======
+export default RedirectPage;
+>>>>>>> main

@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image'
 import Navbar from '../../components/SiteHeader';
 import Footer from '../../components/SiteFooter';
-const Page = () => {
+export default async function Page(){
     return (
         <>
             <Navbar />
@@ -60,5 +60,3 @@ const Page = () => {
 
     );
 }
-
-export default Page;

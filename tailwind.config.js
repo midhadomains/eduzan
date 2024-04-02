@@ -7,8 +7,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      aspectRatio: {
+        '4/3': '4 / 3',
+      },
       backgroundImage: {
-        'bgfrm': "url('/pattern-randomized.svg')",
+        'bgfrm': "url('/Vector.png')",
+        'featuresbg':"url('/bghomefeatures.svg')",
       },
     },
   },
