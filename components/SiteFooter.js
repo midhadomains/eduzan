@@ -63,7 +63,7 @@ function Footer() {
                             <div className="flex text-white my-2">
                                 <TiMail className="my-auto mr-1" />
                                 <Link target="_blank" href="mailto:midhafin@gmail.com" >
-                                    <h1 className='transition-colors duration-300  hover:underline hover:text-[#6A1C1A] text-lg tracking-wider	'>MidhaFin@gmail.com</h1>
+                                    <h1 className='transition-colors duration-300  hover:underline hover:text-[#6A1C1A] text-lg tracking-wider	'>midhafin@gmail.com</h1>
                                 </Link>
                             </div>
                         </div>

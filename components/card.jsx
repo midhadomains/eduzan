@@ -3,12 +3,13 @@ import Image from 'next/image'
 
 function ReviewCarousel({ images, titles, videos, currentIndex }) {
     return (
-        <div className="mx-3 max-w-2xl sm:mx-4 lg:mx-8   transition-transform	duration-300 ">
+        <div className=" max-w-[320px]   transition-transform	duration-300 ">
             <div>
                 <iframe
+                    style={{borderRadius:"10px"}}
                     title="false"
                     showinfo="false"
-                    width="350px"
+                    width="320px"
                     height="190px"
                     src={videos[currentIndex]}
                     frameBorder="0"

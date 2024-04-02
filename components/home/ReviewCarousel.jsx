@@ -14,7 +14,7 @@ export default function Home() {
 
         return () => clearInterval(interval);
     }, []);
-    
+
     const [currentIndex, setCurrentIndex] = useState(0);
     const [visibleComponents, setVisibleComponents] = useState(1);
     const [dotCount, setDotCount] = useState(6);
@@ -53,10 +53,10 @@ export default function Home() {
     useEffect(() => {
         const handleResize = () => {
             const screenWidth = window.innerWidth;
-            if (screenWidth < 640) {
+            if (screenWidth < 780) {
                 setVisibleComponents(1);
                 setDotCount(6);
-            } else if (screenWidth < 1024) {
+            } else if (screenWidth < 1250) {
                 setVisibleComponents(2);
                 setDotCount(3);
             } else {
@@ -104,24 +104,24 @@ export default function Home() {
     return (
         <div className='max-w-[1300px] mx-auto mb-[80px]'>
             <div className="flex justify-center mx-auto my-2 ">
-                <FaCircle className="m-2 w-3 " style={{ color: colors[colorIndex] }} />
-                <FaCircle className="m-2 w-3 " style={{ color: colors[1 - colorIndex] }} />
+                <FaCircle className="m-2 md:w-3  w-2  " style={{ color: colors[colorIndex] }} />
+                <FaCircle className="m-2 md:w-3 w-2" style={{ color: colors[1 - colorIndex] }} />
             </div>
-            <div className='ml-[60px] my-[3rem]'>
-                <h1 className='text-[3rem] font-semibold leading-tight	'>Don&apos;t  Believe <span className='text-[#BE4E1E]'> Us</span>, Hear From Our <span className='text-[#BE4E1E]'>Students</span></h1>
-                <hr className='border-4 rounded-3xl my-5 w-[10%]  border-[#9A391D]' />
+            <div className=' md:my-[3rem] mt-8 px-2'>
+                <h2 className='lg:text-[3rem] md:text-[2.5rem]  sm:text-[2rem] text-[1.6rem] font-semibold leading-tight mx-3'>Don&apos;t  Believe <span className='text-[#BE4E1E]'> Us</span>, Hear From Our <span className='text-[#BE4E1E]'>Students</span></h2>
+                <hr className='lg:border-4 border-[3px] rounded-3xl border-[#9A391D]  md:w-[150px] w-[100px] my-3 mx-3 mb-7 md:mb-0' />
             </div>
-            <div className="bg-custom-background bg-repeat flex items-center justify-center px-5  relative">
+            <div className="bg-custom-background bg-repeat flex items-center justify-around px-5  relative mx-auto">
                 {renderCarousels()}
                 <button
                     type="button"
-                    className="absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                    className="absolute -top-9 left-0 z-30 justify-center items-center px-1 h-full cursor-pointer group focus:outline-none"
                     data-carousel-prev
                     onClick={prevSlide}
                 >
-                    <span className="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <span className="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 ">
                         <svg
-                            className="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-400"
+                            className="w-5 h-5 text-black sm:w-6 sm:h-6 dark:text-black"
                             fill="none"
                             stroke="currentColor"
                             viewBox="0 0 24 24"
@@ -135,13 +135,13 @@ export default function Home() {
 
                 <button
                     type="button"
-                    className="absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                    className="absolute -top-9 right-0 z-30 justify-center items-center px-1 h-full cursor-pointer group focus:outline-none"
                     data-carousel-next
                     onClick={nextSlide}
                 >
-                    <span className="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <span className="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 ">
                         <svg
-                            className="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-400"
+                            className="w-5 h-5 text-black sm:w-6 sm:h-6 dark:text-black"
                             fill="none"
                             stroke="currentColor"
                             viewBox="0 0 24 24"
@@ -156,7 +156,7 @@ export default function Home() {
                     {[...Array(dotCount)].map((_, index) => (
                         <span
                             key={index}
-                            className={`w-3 h-3 rounded-full mx-3 cursor-pointer ${dotCount === 2
+                            className={`md:w-3 md:h-3 w-2 h-2 rounded-full mx-3 cursor-pointer ${dotCount === 2
                                 ? index % 2 === currentIndex % 2 ? dotColors[0] : dotColors[1]
                                 : dotCount === 3
                                     ? index % 3 === currentIndex % 3 ? dotColors[0] : dotColors[1]

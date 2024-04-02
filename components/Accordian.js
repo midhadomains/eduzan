@@ -11,15 +11,12 @@ const Accordion = ({ buttonsData }) => {
     };
 
     return (
-        <div className="accordion-container max-w-[1200px] mx-auto my-[4rem]">
-            <div className='mx-5 mb-9 text-left my-3'>
-                <h1 className='text-[40px] md:text-[50px] font-bold my-3'>Frequently Asked <span className='text-[#BE4E1E]'> Questions</span> </h1>
-                <hr className='border-4 rounded-3xl my-5 w-[10%]  border-[#9A391D]' />
-            </div>
+        <div className="accordion-container max-w-[1300px] mx-auto mb-[2rem] p-2">
+           
             {buttonsData.map((button) => (
                 <div key={button.id} className="accordion-item">
                     <button
-                        className={`accordion flex items-center pl-4 pr-4 mt-1  sm:h-16 lg:h-14 p-4 text-left w-full bg-white text-black hover:bg-[#FFF5EE] transition-all duration-300 ease-in-out ${selectedButton === button.id ? 'bg-gray-700' : ''
+                        className={`accordion flex items-center  mt-1  sm:h-16 lg:h-14 py-4 text-left w-full bg-white text-black hover:bg-[#FFF5EE] transition-all duration-300 ease-in-out ${selectedButton === button.id ? 'bg-gray-700' : ''
                             }`}
                         onClick={() => toggleAccordion(button.id)}
                     >

@@ -46,13 +46,16 @@ export default async function Home() {
                     {/* Reviews section  */}
                     <HomeCarousel />
                     {/* About section */}
-                    <div className="flex justify-around max-w-[1250px] h-[300px] w-[100%] mx-auto mt-9">
-                        <h1 className="text-[3rem] font-semibold leading-tight	my-auto ">About <span className="text-[#6A1C1A]"> <br />MidhaFin</span></h1>
-                        <div className="border border-[#BE4E1E] border-t-0 border-l-[5px] border-r-0 border-b-0 mx-4 rounded-3xl my-6"></div>
-                        <div className=" max-w-[800px] my-auto flex flex-col justify-around h-[70%]">
-                            <h2 className="text-[1.75rem] font-semibold leading-tight	 ">MidhaFin focuses on <span className="text-[#BE4E1E]">Personalized Learning,</span> <br /> Expertise and Employability.</h2>
-                            <p>In finance, desired skills are rare but not jobs! Become employable by pursuing the most reputed and admired courses in the industry, under the expert guidance of MidhaFin.</p>
-                            <Link href='about-us'><h2 className="text-[1.75rem] font-semibold leading-tight	text-[#BE4E1E] flex ">More About Us <FaChevronRight className="my-auto ml-2 " /></h2></Link>
+                    <div className="flex flex-wrap justify-start  lg:justify-between max-w-[1250px] h-auto md:h-[300px]  w-[100%] mx-auto mt-9 px-[14px] sm ">
+                        <div className="h-[70px] lg:h-[190px] mb-2 my-auto ">
+                            <h1 className="lg:text-[3rem] md:text-[2.5rem]  sm:text-[2rem] text-[1.6rem] font-semibold lg:h-[130px]  leading-tight max-w-[100%] lg:max-w-[200px]  mx-2 lg:px-0  text-center md:text-left my-auto ">About <span className="text-[#6A1C1A]">MidhaFin</span></h1>
+                            <hr className='block lg:hidden lg:border-4 border-[3px] rounded-3xl border-[#9A391D]  md:w-[150px] w-[100px] my-3  mb-7 md:mb-0 mx-2' />
+                        </div>
+                        <div className=" hidden lg:block border border-[#BE4E1E] border-t-0 border-l-[8px] border-r-0 border-b-0 mx-4 rounded-3xl my-6"></div>
+                        <div className=" max-w-[700px] my-auto  flex flex-col ny-6 justify-around h-[70%]  mx-2">
+                            <h2 className="md:text-[1.75rem] text-[1.2rem] font-semibold leading-tight	 ">MidhaFin focuses on <span className="text-[#BE4E1E]">Personalized Learning,</span> Expertise and Employability.</h2>
+                            <p className="my-4">In finance, desired skills are rare but not jobs! Become employable by pursuing the most reputed and admired courses in the industry, under the expert guidance of MidhaFin.</p>
+                            <Link href='about-us'><h2 className="md:text-[1.75rem] text-[1.5rem] font-semibold leading-tight	text-[#BE4E1E] flex ">More About Us <FaChevronRight className="my-auto ml-2 " /></h2></Link>
                         </div>
                     </div>
                     {/* Features section */}
@@ -60,10 +63,14 @@ export default async function Home() {
                     {/* Platform Features section */}
                     <PlatformFeatures />
                     {/* faqs Section */}
-                    <Accordion buttonsData={buttonsData} />
+                    <div className='mx-auto mb-9 text-left my-3 max-w-[1300px] px-2 md:mt-[50px] mt-8'>
+                        <h2 className='lg:text-[3rem] md:text-[2.5rem]  sm:text-[2rem] text-[1.4rem] font-semibold leading-tight mx-3'>Frequently Asked <span className='text-[#BE4E1E]'> Questions</span> </h2>
+                        <hr className='lg:border-4 border-[3px] rounded-3xl border-[#9A391D]  md:w-[150px] w-[100px] sm:my-8 mt-3 mx-3 ' />
+                        <Accordion buttonsData={buttonsData} />
+                    </div>
                 </main>
             </div>
-            <ResponsiveCarousel/>
+            <ResponsiveCarousel />
             <SiteFooter />
         </>
     )

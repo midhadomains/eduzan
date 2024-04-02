@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      aspectRatio: {
+        '4/3': '4 / 3',
+      },
       backgroundImage: {
         'bgfrm': "url('/Vector.png')",
         'featuresbg':"url('/bghomefeatures.svg')",
