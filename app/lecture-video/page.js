@@ -34,7 +34,7 @@ const MyComponents5 = () => {
 
 
             <Image
-              src="/lecture-video.png"
+              src="/lecture-video.svg"
               alt="lecture-video"
               className="w-[15rem] max-w-none rounded-xl shadow-l ring-1 ring-gray-400/10 sm:w-[30rem] mx-auto"
               width={300}

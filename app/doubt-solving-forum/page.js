@@ -34,8 +34,8 @@ const MyComponents6 = () => {
           </div>
           <div className="ml-4 sm:ml-0 lg:p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
             <Image
-              src="/doubut-solving-forum.png"
-              alt="doubut-solving-forum"
+              src="/doubt-solving-forum.svg"
+              alt="doubt-solving-forum"
               className="w-[15rem] max-w-none rounded-xl shadow-l ring-1 ring-gray-400/10 sm:w-[30rem] mx-auto"
               width={300}
               height={300}
