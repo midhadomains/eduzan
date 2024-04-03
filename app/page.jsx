@@ -59,7 +59,6 @@ export default async function Home() {
                         </div>
                     </div>
                     {/* Features section */}
-<<<<<<< HEAD:app/page.jsx
                     <FeaturesSection />
                     {/* Platform Features section */}
                     <PlatformFeatures />
@@ -68,39 +67,9 @@ export default async function Home() {
                         <h2 className='lg:text-[3rem] md:text-[2.5rem]  sm:text-[2rem] text-[1.4rem] font-semibold leading-tight mx-3'>Frequently Asked <span className='text-[#BE4E1E]'> Questions</span> </h2>
                         <hr className='lg:border-4 border-[3px] rounded-3xl border-[#9A391D]  md:w-[150px] w-[100px] sm:my-8 mt-3 mx-3 ' />
                         <Accordion buttonsData={buttonsData} />
-=======
-                    <Features/>
-                    {/* Play Store section */}
-                    <div className=' w-[100%] sm:flex justify-around md:max-w-[90%] lg:max-w-[80%] mx-auto p-5 my-9'>
-                        <div className='sm:w-[50%] py-auto my-auto'>
-                            <Image width={500} height={100} src="/downloadapp.png" alt="Mobile and Laptop pic" />
-                        </div>
-                        <div className='sm:w-[50%] my-auto pt-5 sm:pt-1 text-center ' >
-                            <p className='text-[#6A1C1A]'>iOS & Android</p>
-                            <h1 className='text-[30px] text-[#391701] font-bold'>Download the Mobile App</h1>
-                            <p className='text-[#6A1C1A]'>MidhaFin is a free to download app</p>
-                            <div className='flex'>
-                                <Link href="https://play.google.com/store/search?q=Midhafin&c=apps&hl=en_IN&gl=US" target="_blank" className="m-5 hover:opacity-[0.75]"><Image width={300} height={100} src="/play-store.webp" alt="google play store" /></Link>
-                                <Link href="https://apps.apple.com/in/app/midhafin-cfa-frm-prm/id6463192627" target="_blank" className="m-5 hover:opacity-[0.75]"><Image width={300} height={100} src="/app-store.webp" alt="app store" /></Link>
-                            </div>
-                        </div>
-                    </div>
-                    {/* Our Platform Features */}
-                    <Platform />
-                    {/* FAQs  Section */}
-                    <div className='max-w-[100%] mx-auto  mt-5 bg-white' >
-                        <div>
-                            <h1 className='text-[40px] md:text-[50px] text-center font-bold text-black m-2'>Frequently <span className='text-[#6A1C1A]'>Asked</span> Questions</h1>
-                        </div>
-                        {/* <hr className="max-w-[90%] mx-auto"/> */}
-                        <div>
-                            <Accordion buttonsData={buttonsData} />
-                        </div>
->>>>>>> main:app/page.js
                     </div>
                 </main>
             </div>
-            <ResponsiveCarousel />
             <SiteFooter />
         </>
     )
