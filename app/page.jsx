@@ -44,7 +44,7 @@ export default async function Home() {
                     {/* Hero section */}
                     <HeroSection />
                     {/* Reviews section  */}
-                    <HomeCarousel />
+                    {/* <HomeCarousel /> */}
                     {/* About section */}
                     <div className="flex flex-wrap justify-start  lg:justify-between max-w-[1250px] h-auto md:h-[300px]  w-[100%] mx-auto mt-9 px-[14px] sm ">
                         <div className="h-[70px] lg:h-[190px] mb-2 my-auto ">
