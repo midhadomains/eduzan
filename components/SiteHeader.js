@@ -33,9 +33,11 @@ const Navbar = () => {
                         <NavItem to="https://edu.midhafin.com/s/store" name="Courses" />
                         <NavItem to="/reviews" name="Reviews" />
                         <NavItem to="/contact-us" name="Contact Us" />
-                        <li className="relative group bg-[#6A1C1A] hover:bg-[#BE4E1E] rounded-3xl py-2 px-9 text-white text-[20px] transition duration-300 flex-shrink-0">
-                            <Link href='https://edu.midhafin.com/s/authenticate' className="text-[1.2rem] font-[500] cursor-pointe">Log in</Link>
-                        </li>
+                        <Link href='https://edu.midhafin.com/s/authenticate' className="text-[1.2rem] font-[500] cursor-pointe">
+                            <li className="relative group bg-[#6A1C1A] hover:bg-[#BE4E1E] rounded-3xl py-2 px-9 text-white text-[20px] transition duration-300 flex-shrink-0">
+                                Log In
+                            </li>
+                        </Link>
                     </ul>
                     {/* Responsive */}
                     <ul className={`md:hidden w-[50%] sm:w-[40%] md-[30%] h-auto fixed bg-[#ecebea]  backdrop-filter backdrop-blur-lg bg-opacity-95 top-[60px] 
