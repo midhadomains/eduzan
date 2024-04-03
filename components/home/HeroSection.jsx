@@ -23,7 +23,7 @@ function HeroSection() {
                         <p className="lg:text-[1.75rem] md:text-[1.5rem] sm:text-[1.2rem] text-[1.1rem] md:my-7  my-3 font-[400] tracking-wide">Choose from <span className='text-[#BE4E1E]'> GARP-approved courses </span> offered by Midha FIN to chart your path towards a promising career in finance.</p>
                         <Link href='https://edu.midhafin.com/s/store'><button className="bg-[#6A1C1A] transition-colors duration-150 hover:bg-[#BE4E1E] md:py-5 py-[.7rem] px-10 md:text-3xl text-[1.1rem] mt-3 rounded-[54px] font-semibold tracking-wide text-[#F9F2DF] w-fit mb-4">EXPLORE COURSES</button></Link>
                     </div >
-                    <Image src="/Banner2.png" alt="image" className="min-w-[340px] my-auto max-w-[600px] w-[100%]  sm:flex-shrink-0 max-h-[450px] aspect-[4/3] " width={500} height={500} />
+                    <Image src="/banner2.png" alt="image" className="min-w-[340px] my-auto max-w-[600px] w-[100%]  sm:flex-shrink-0 max-h-[450px] aspect-[4/3] " width={500} height={500} />
                 </div>
             </Slide>
         </div>

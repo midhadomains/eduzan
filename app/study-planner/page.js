@@ -37,7 +37,7 @@ const MyComponent = () => {
                         </div>
                     </div>
                     <div className="-ml-12 sm:p-12 lg:sticky lg:top-4  lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-                        <Image width={400} height={400} className="w-[15rem] max-w-none rounded-xl  shadow-l ring-1 ring-gray-400/10 sm:w-[30rem] mx-auto" src='/Study-planner.png' alt="Study-planner" />
+                        <Image width={400} height={400} className="w-[15rem] max-w-none rounded-xl  shadow-l ring-1 ring-gray-400/10 sm:w-[30rem] mx-auto" src='/Study-planner.svg' alt="Study-planner" />
                     </div>
                     <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
                         <div className="lg:pr-4">
