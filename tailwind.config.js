@@ -13,6 +13,7 @@ module.exports = {
       backgroundImage: {
         'bgfrm': "url('/Vector.png')",
         'featuresbg':"url('/bghomefeatures.svg')",
+        "contactbgimage": "url('/Vector 10.svg')",
       },
     },
   },
