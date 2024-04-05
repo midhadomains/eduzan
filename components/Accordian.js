@@ -20,7 +20,7 @@ const Accordion = ({ buttonsData }) => {
                             }`}
                         onClick={() => toggleAccordion(button.id)}
                     >
-                        <h1 className="flex-grow pr-2 text-lg font-[400] duration-500">{button.text}</h1>
+                        <h1 className="flex-grow px-2 text-lg font-[400] duration-500">{button.text}</h1>
                         <h1>{selectedButton === button.id ? <IoIosArrowDropupCircle className="text-2xl text-[#6A1C1A]" /> : <IoIosArrowDropdownCircle className="text-2xl text-[#6A1C1A]" />}</h1>
                     </button>
                     {selectedButton === button.id && (
