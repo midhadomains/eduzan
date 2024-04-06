@@ -1,24 +1,58 @@
 "use client"
-import Link from 'next/link'
-import React, { useState } from "react";
-import Image from 'next/image'
-import { IoMenu, IoClose } from "react-icons/io5";
-import { CgMenuLeftAlt } from "react-icons/cg";
-import { MdCall } from "react-icons/md";
+import Link from 'next/link';
+import React, { useState, useEffect, useRef } from 'react';
+import Image from 'next/image';
+import { IoClose } from 'react-icons/io5';
+import { CgMenuLeftAlt } from 'react-icons/cg';
+import { MdCall } from 'react-icons/md';
 
 const Navbar = () => {
     const [toggle, setToggle] = useState(false);
+    const navbarRef = useRef(null);
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+                setToggle(false);
+            }
+        };
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
+
     return (
-        <nav className="mx-auto sticky top-0 z-10 bg-[#FFFDF6] shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]">
+        <nav
+            ref={navbarRef}
+            className="mx-auto sticky top-0 z-10 bg-[#FFFDF6] shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]">
             <div className='max-w-full '>
                 <div className="flex items-center justify-between w-[100%] h-[55px] md:h-[70px] max-w-[2500px] mx-auto">
-                    <Link href='/'><Image width={250} height={40} className='ml-1 sm:ml-4 md:item-left w-[200px] h-[30px] lg:w-fit lg:h-[40px] ' src="/Logo-with-garp.svg" alt="MidhaFin Logo" /></Link>
+                    <Link href='/'>
+                        <Image
+                            width={250}
+                            height={40}
+                            className='ml-1 sm:ml-4 md:item-left w-[200px] h-[30px] lg:w-fit lg:h-[40px] '
+                            src="/Logo-with-garp.svg"
+                            alt="MidhaFin Logo"
+                        />
+                    </Link>
                     <div className='flex'>
-                        <Link href="tel:+91 91551 99555" className='m-auto w-fit'><MdCall className='block md:hidden m-auto text-[#6A1C1A] text-[25px] ' /></Link>
+                        <Link href="tel:+91 91551 99555" className='m-auto w-fit'>
+                            <MdCall className='block md:hidden m-auto text-[#6A1C1A] text-[25px] ' />
+                        </Link>
                         <Link href='https://edu.midhafin.com/s/authenticate' className='block md:hidden bg-[#6A1C1A] py-1 px-5 rounded-3xl text-[#F9ECC7] mx-4 max-w-[100px] w-fit'>Login</Link>
-                        {toggle ?
-                            <IoClose onClick={() => setToggle(!toggle)} className="text-3xl md:hidden block mr-2 text-[#9A391D]" />
-                            : <CgMenuLeftAlt onClick={() => setToggle(!toggle)} className="text-3xl md:hidden block mr-2 text-[#9A391D]" />}
+                        {toggle ? (
+                            <IoClose
+                                onClick={() => setToggle(!toggle)}
+                                className="text-3xl md:hidden block mr-2 text-[#9A391D]"
+                            />
+                        ) : (
+                            <CgMenuLeftAlt
+                                onClick={() => setToggle(!toggle)}
+                                className="text-3xl md:hidden block mr-2 text-[#9A391D]"
+                            />
+                        )}
                     </div>
 
                     <ul className="hidden md:flex  justify-around flex-nowrap  max-w-[1000px] w-[100%]">
@@ -47,8 +81,10 @@ const Navbar = () => {
                         </Link>
                     </ul>
                     {/* Responsive */}
-                    <ul className={`md:hidden w-[50%] sm:w-[40%] md-[30%] h-auto fixed bg-white top-[60px]  shadow-2xl
-                     ${toggle ? "right-[0]" : "hidden"}`}>
+                    <ul
+                        className={`md:hidden w-[50%] sm:w-[40%] md-[30%] h-auto fixed bg-white top-[60px]  shadow-2xl
+                     ${toggle ? 'right-[0]' : 'hidden'}`}
+                    >
                         <SmNavItem to='/' name='Home' />
                         <hr />
                         {/* <NavItem to="/blog" name="Blogs" /> */}
@@ -91,5 +127,3 @@ const SmNavItem = ({ to, name }) => {
     );
 };
 export default Navbar;
-
-
