@@ -5,6 +5,7 @@ import { MdOutlinePhoneIphone } from "react-icons/md";
 import { SlSocialInstagram, SlSocialLinkedin, SlSocialTwitter, SlSocialYoutube } from "react-icons/sl";
 import { TiSocialFacebook } from "react-icons/ti";
 import { TiMail } from "react-icons/ti";
+import { FaWhatsapp } from "react-icons/fa";
 
 
 function Footer() {
@@ -65,6 +66,12 @@ function Footer() {
                                 <TiMail className="my-auto mr-1" />
                                 <Link target="_blank" href="mailto:midhafin@gmail.com" >
                                     <h1 className='transition-colors duration-300  hover:underline hover:text-[#6A1C1A] text-lg tracking-wider	'>midhafin@gmail.com</h1>
+                                </Link>
+                            </div>
+                            <div className="flex text-white my-2">
+                                <FaWhatsapp className="my-auto mr-1" />
+                                <Link href="https://api.whatsapp.com/send?phone=%2B919155199555&text=Hi%2C%20I%20have%20a%20query%20regarding%20your.%20Courses" >
+                                    <h1 className='transition-colors duration-300  hover:underline hover:text-[#6A1C1A] text-lg tracking-wider'>Whatsapp : MidhaFin </h1>
                                 </Link>
                             </div>
                         </div>
