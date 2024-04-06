@@ -8,7 +8,6 @@ import HomeCarousel from "../components/home/ReviewCarousel";
 import FeaturesSection from "../components/home/FeaturesSection";
 import PlatformFeatures from "../components/home/PlatformFeatures";
 import Accordion from "../components/Accordian";
-import ResponsiveCarousel from "../components/common/ResponsiveCarousel";
 
 
 
@@ -18,7 +17,6 @@ export const metadata = {
 }
 
 export default async function Home() {
-
     const buttonsData = [
         { id: 1, text: 'What is the Objective of MidhaFin?', data: 'MidhaFin is a GARP® authorized Training provider for FRM® Part 1 and Part 2 Exams. The objective of MidhaFin is to help candidates build strong foundational and practical understanding of the curriculum of FRM® which would help them to most likely pass the FRM® exam.' },
         { id: 2, text: 'What is sample Course?', data: 'Sample course is a free course and contains more than 9 hours 4 min of video covering chapters from all modules, and some samples of study materials.' },
@@ -39,7 +37,6 @@ export default async function Home() {
         <>
             <SiteHeader />
             <div className="">
-                <Whatsapp className="" />
                 <main >
                     {/* Hero section */}
                     <HeroSection />
