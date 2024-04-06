@@ -119,7 +119,7 @@ export default function Home() {
                     data-carousel-prev
                     onClick={prevSlide}
                 >
-                    <span className="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 ">
+                    <span className="inline-flex justify-start items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 ">
                         <svg
                             className="w-5 h-5 text-black sm:w-6 sm:h-6 dark:text-black"
                             fill="none"
@@ -139,7 +139,7 @@ export default function Home() {
                     data-carousel-next
                     onClick={nextSlide}
                 >
-                    <span className="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 ">
+                    <span className="inline-flex justify-end items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 ">
                         <svg
                             className="w-5 h-5 text-black sm:w-6 sm:h-6 dark:text-black"
                             fill="none"
