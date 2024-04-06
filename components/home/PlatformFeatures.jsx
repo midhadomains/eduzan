@@ -28,7 +28,7 @@ function PlatformFeatures() {
         },
         {
             title: "Mock Tests",
-            imageSrc: "/mock-test.svg",
+            imageSrc: "/mock-test.png",
             link: "/mock-test"
         },
         {
@@ -48,7 +48,7 @@ function PlatformFeatures() {
         },
         {
             title: "Complete Study Material",
-            imageSrc: "/Complete-study-material.svg",
+            imageSrc: "/Complete-study-material.png",
             link: "/complete-study-material"
         },
         {
@@ -67,7 +67,7 @@ function PlatformFeatures() {
             <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-auto col-auto row-[20px] item-center'>
                 {features.map((feature, index) => (
                     <div key={index} data-aos="fade-up" className='h-[285px] transition duration items-center flex flex-col justify-end mx-[10px] my-[20px]'>
-                        <Image width={150} height={100} className='mx-auto m-2' src={feature.imageSrc} alt={feature.title} />
+                        <Image width={150} height={100} className='mx-auto m-2' src={feature.imageSrc} alt={feature.title} priority={true}  />
                         <div>
                             <h1 className='text-[20px] font-bold my-3'>{feature.title}</h1>
                             <Link href={feature.link}><button className='w-[150px] sm:w-[200px] text-[1.2rem] font-light transition-colors duration-150 bg-[#6A1C1A] text-white py-2 px-[10px] sm:px-[30px] lg:px-[40px] xl:px-[50px] rounded-3xl hover:bg-[#BE4E1E]'>Read More</button></Link>
