@@ -6,7 +6,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 function HeroSection() {
     return (
-        <div className="slider-container min-h-[644px] sm:min-h-[500px] w-[100vw]">
+        <div className="slider-container min-h-[644px] sm:min-h-[500px] w-[100%]">
             <Slide >
                 <div key={1} className="flex justify-center flex-wrap lg:flex-nowrap bg-[#F9F2DF] overflow-hidden min-h-[500px] h-[100%]   px-2  sm:px-5 sm:pt-8 pt-2 w-[100vw]">
                     <div className="max-w-[800px] my-auto flex flex-col justify-around items-center lg:items-start text-center lg:text-left  p-4">
