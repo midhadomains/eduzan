@@ -117,13 +117,12 @@ const NavItem = ({ to, name }) => {
 };
 const SmNavItem = ({ to, name }) => {
     return (
-        <li className="relative group  p-4 md:p-0 my-auto text-[#6A1C1A]">
-            <Link
-                href={to}
-                className="text-[1.1rem] font-[500] cursor-pointer pb-2 px-1 hover:text-[#BE4E1E]  transition duration-300 ">
+        <Link href={to}
+            className="text-[1.1rem] font-[500] cursor-pointer pb-2 px-1 hover:text-[#BE4E1E]  transition duration-300 ">
+            <li className="relative group pl-2 md:p-0 my-auto text-[#6A1C1A]">
                 {name}
-            </Link>
-        </li>
+            </li>
+        </Link>
     );
 };
 export default Navbar;
