@@ -117,11 +117,8 @@ const NavItem = ({ to, name }) => {
 };
 const SmNavItem = ({ to, name }) => {
     return (
-        <Link href={to}
-            className="text-[1.1rem] font-[500] cursor-pointer pb-2 px-1 hover:text-[#BE4E1E]  transition duration-300 ">
-            <li className="relative group pl-2 md:p-0 my-auto text-[#6A1C1A]">
-                {name}
-            </li>
+        <Link href={to}>
+            <li className='text-[1.1rem] font-[500] p-4  px-5 hover:text-[#BE4E1E]  '>{name}</li>
         </Link>
     );
 };
