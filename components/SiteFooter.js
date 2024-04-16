@@ -70,7 +70,7 @@ function Footer() {
                             </div>
                             <div className="flex text-white my-2">
                                 <FaWhatsapp className="my-auto mr-1" />
-                                <Link href="https://api.whatsapp.com/send?phone=%2B919155199555&text=Hi%2C%20I%20have%20a%20query%20regarding%20your.%20Courses" >
+                                <Link target='_blank' href="https://api.whatsapp.com/send/?phone=919155199555&text=Hello+Team+MidhaFin+%2C%0AI+am+interested+in+learning+more+about+your+courses.+Could+you+provide+me+with+some+information%3F&type=phone_number&app_absent=0" >
                                     <h1 className='transition-colors duration-300  hover:underline hover:text-[#6A1C1A] text-lg tracking-wider'>Whatsapp : MidhaFin </h1>
                                 </Link>
                             </div>
