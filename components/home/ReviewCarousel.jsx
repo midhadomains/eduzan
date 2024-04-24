@@ -4,7 +4,8 @@ import ReviewCarousel from '../card';
 import { FaCircle } from "react-icons/fa6";
 
 export default function Home() {
-    const [colorIndex, setColorIndex] = useState(0);
+    
+const [colorIndex, setColorIndex] = useState(0);
     const colors = ['#BE4E1E', '#C7C7C7'];
 
     useEffect(() => {
@@ -14,7 +15,6 @@ export default function Home() {
 
         return () => clearInterval(interval);
     }, []);
-
     const [currentIndex, setCurrentIndex] = useState(0);
     const [visibleComponents, setVisibleComponents] = useState(1);
     const [dotCount, setDotCount] = useState(6);

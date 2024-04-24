@@ -4,10 +4,11 @@ import Link from "next/link";
 import Whatsapp from "../components/Whatsapp";
 import { FaChevronRight } from "react-icons/fa";
 import HeroSection from "../components/home/HeroSection";
-import HomeCarousel from "../components/home/ReviewCarousel";
 import FeaturesSection from "../components/home/FeaturesSection";
 import PlatformFeatures from "../components/home/PlatformFeatures";
 import Accordion from "../components/Accordian";
+import ReviewCarousel from "../components/card";
+import ReviewSection from "../components/home/ReviewSection";
 
 
 
@@ -41,7 +42,7 @@ export default async function Home() {
                     {/* Hero section */}
                     <HeroSection />
                     {/* Reviews section  */}
-                    <HomeCarousel />
+                    <ReviewSection/>
                     {/* About section */}
                     <div className="flex flex-wrap justify-start  lg:justify-between max-w-[1250px] h-auto md:h-[300px]  w-[100%] mx-auto mt-9 px-[14px] sm ">
                         <div className="h-[70px] lg:h-[190px] mb-2 my-auto ">
