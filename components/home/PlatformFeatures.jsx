@@ -27,7 +27,7 @@ function PlatformFeatures() {
             link: "/question-bank"
         },
         {
-            title: "Mock Tests",
+            title: "Mock Test",
             imageSrc: "/mock-test.png",
             link: "/mock-test"
         },

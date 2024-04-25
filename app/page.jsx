@@ -7,7 +7,6 @@ import HeroSection from "../components/home/HeroSection";
 import FeaturesSection from "../components/home/FeaturesSection";
 import PlatformFeatures from "../components/home/PlatformFeatures";
 import Accordion from "../components/Accordian";
-import ReviewCarousel from "../components/card";
 import ReviewSection from "../components/home/ReviewSection";
 
 
