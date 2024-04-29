@@ -2,6 +2,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 import '../styles/main.css';
 import Head from "next/head";
 import Script from 'next/script'
+import Whatsapp from "../components/Whatsapp";
 
 export const metadata = {
   title: 'MidhaFin',
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PSL6VDFP"
           height="0" width="0" style={{display:"none" , visibility:"hidden"}}></iframe></noscript>
         <SpeedInsights />
+        <Whatsapp/>
         {children}
         </body>
     </html>
