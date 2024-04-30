@@ -37,7 +37,7 @@ const MyComponents4 = () => {
                         <div className="lg:pr-4">
                             <div className="lg:max-w-lg">
                                 <p className="text-2xl pl-1 font-semibold leading-7 text-[#842020]">Features</p>
-                                <h1 className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl"> Mock <span style={{ color: '#842021' }}>Test</span></h1>
+                                <h1 className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl"> Mock <span style={{ color: '#842021' }}> Tests</span></h1>
                                 <p className="mt-6  text-[1rem] lg:text-xl sm:text-[1rem] md:text-lg leading-6 text-gray-700 tracking-wide">Our philosophy involves learning through application. Mock test, both sectional and full-length, are important components of the FRM®/CFA/PRM study process at MidhaFin.</p>
                             </div>
                         </div>

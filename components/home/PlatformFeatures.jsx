@@ -22,19 +22,19 @@ function PlatformFeatures() {
             link: "/study-planner"
         },
         {
-            title: "Questions Bank",
+            title: "Question Banks",
             imageSrc: "/question-bank.svg",
-            link: "/question-bank"
+            link: "/question-banks"
         },
         {
-            title: "Mock Test",
+            title: "Mock Tests",
             imageSrc: "/mock-test.png",
-            link: "/mock-test"
+            link: "/mock-tests"
         },
         {
-            title: "Lecture Video",
+            title: "Lecture Videos",
             imageSrc: "/lecture-video.svg",
-            link: "/lecture-video"
+            link: "/lecture-videos"
         },
         {
             title: "Doubt Solving Forum",
