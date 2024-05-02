@@ -50,7 +50,7 @@ export default async function Reviews() {
             ))}
           </ul>
         ) : (
-          <p className='text-center text-xl my-3'>Loading...</p>
+          <p className='text-center text-2xl my-3'>Loading...</p>
         )}
       </div>
       <Footer/>
