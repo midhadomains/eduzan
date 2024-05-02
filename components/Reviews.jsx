@@ -21,8 +21,8 @@ function capitalizeWords(str) {
   return str.replace(/\b\w/g, match => match.toUpperCase());
 }
 
-// export default  function Reviews() {
-  export default async function Reviews() {
+export default  function Reviews() {
+  // export default async function Reviews() {
 
   // const data = await getData()
   const data = [
