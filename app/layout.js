@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
           height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
         <SpeedInsights />
         <Whatsapp />
-        <GoogleAnalytics gaId="G-8LQ8G3GWXJ" />
+        <GoogleAnalytics gaId="G-ZZCZJ53RDR" />
         {children}
       </body>
     </html>
