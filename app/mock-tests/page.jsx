@@ -112,7 +112,7 @@ const MyComponents4 = () => {
                 our course also includes detailed performance comparison
                 metrics.{" "}
               </span>
-              These insights reveal each candidate's strengths and weaknesses
+              These insights reveal each candidate&apos;s strengths and weaknesses
               compared to their peers, directing their focus to areas that need
               strengthening. This strategic guidance is crucial for optimizing
               study efforts and boosting confidence.
