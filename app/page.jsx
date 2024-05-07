@@ -36,7 +36,7 @@ export default async function Home() {
     return (
         <>
             <SiteHeader />
-            <div className="">
+            <div className="select-none">
                 <main >
                     {/* Hero section */}
                     <HeroSection />

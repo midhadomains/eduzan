@@ -4,7 +4,7 @@ import Footer from '../../components/SiteFooter';
 
 function Terms() {
   return (
-    <div className='w-[100%]'>
+    <div className='w-[100%] select-none'>
       <Navbar />
       <div className="h-40 bg-red-950 px-4 text-align-left ">
         <h1 className="text-4xl font-bold text-white pt-6 pl-4 md:pl-28">Terms of Use</h1>

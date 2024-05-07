@@ -14,7 +14,7 @@ export default async function BlogHome({ params }) {
     <Script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></Script>
     return (
         <>
-            <div className="h-[50vh] min-h-[20rem] relative">
+            <div className="h-[50vh] min-h-[20rem] relative select-none">
                 <div className="absolute bg-slate-900 inset-0 z-0 opacity-40"></div>
                 <div className="">
                     <SiteHeader className="header-blog-home z-10 relative" />

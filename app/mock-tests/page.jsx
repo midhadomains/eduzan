@@ -7,31 +7,31 @@ import { RiArrowDownSFill } from "react-icons/ri";
 
 const MyComponents4 = () => {
   return (
-    <div >
+    <div className="select-none">
       <Navbar />
       <div className="max-w-[1400px] px-[25px] lg:px-[50px] mx-auto ">
-        <p className="font-medium text-[16px] md:text-[20px] lg:text-[24px] text-center sm:text-left mt-[16px] sm:mt-[40px]">
+        <p className=" font-medium text-[16px] md:text-[20px] lg:text-[24px] text-center sm:text-left mt-[16px] sm:mt-[40px] ">
           Features
         </p>
-        <h1 className="font-bold text-[24px]  md:text-[38px] lg:text-[45px] text-[#691D1C] text-center sm:text-left mb-[23px] md:mb-[33px] lg:mb-[46px]">
+        <h1 className="pointer-events-none select-none font-bold text-[24px]  md:text-[38px] lg:text-[45px] text-[#691D1C] text-center sm:text-left mb-[23px] md:mb-[33px] lg:mb-[46px]">
           Mock <span className="text-[#BE4E1E]">Tests</span>{" "}
         </h1>
         <div className="md:flex justify-around  shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-xl">
           <div className="md:w-[50%] bg-[#F9F6EB] flex rounded-t-xl  sm:rounded-none sm:rounded-l-xl  p-5 ">
             <Image
               src="/mocktest_thumbnail.png"
-              className="m-auto block w-full max-w-[450px] md:max-w-[700px]"
+              className="m-auto block w-full max-w-[450px] md:max-w-[700px] pointer-events-none select-none"
               width={550}
               height={360}
             />
           </div>
           <div className="md:w-[50%] p-[16px] sm:p-[25px] md:p-[20px] xl:p-[65px] ">
-            <div className="max-w-[520px]  w-fit mx-auto h-auto">
+            <div className="max-w-[520px]  w-fit mx-auto h-auto pointer-events-none select-none">
               <div>
-                <h1 className="font-bold text-[16px] sm:text-[20px] lg:text-[24px] text-[#BE4E1E]">
+                <h1 className="font-bold text-[16px] sm:text-[20px] lg:text-[24px] text-[#BE4E1E] pointer-events-none select-none">
                   Exclusive to MidhaFin Candidates:
                 </h1>
-                <p className="lg:text-[20px] sm:text-[16px] text-[14px]">
+                <p className="lg:text-[20px] sm:text-[16px] text-[14px] pointer-events-none select-none">
                   {" "}
                   Our mock tests are an integral part of the training package,
                   provided at no extra cost to ensure seamless preparation.
@@ -51,7 +51,7 @@ const MyComponents4 = () => {
 
             <h1 className="mx-auto flex justify-center  md:block w-auto">
               <Link href="https://edu.midhafin.com/courses/FRM-Part-1-Mock-Tests-6353e9d2e4b0f18ec4f5f154">
-                <button className="mt-[18px] md:[30px] text-center lg:mt-[65px] h-[40.92px] md:h-[54px] lg:h-[68px]  w-[201px] md:w-[280px] lg:w-[334px] mx-auto rounded-[112px] bg-gradient-to-r from-orange-500 to-yellow-400">
+                <button className="select-none mt-[18px] md:[30px] text-center lg:mt-[65px] h-[40.92px] md:h-[54px] lg:h-[68px]  w-[201px] md:w-[280px] lg:w-[334px] mx-auto rounded-[112px] bg-gradient-to-r from-orange-500 to-yellow-400">
                   <span className="font-semibold lg:text-[28px] text-[#FFFFFF]">
                     View Details
                   </span>{" "}
@@ -63,7 +63,7 @@ const MyComponents4 = () => {
      
 
         <div id="scroll-target">
-          <div className="max-w-[1000px] mx-auto my-[62px]">
+          <div className="max-w-[1000px] mx-auto my-[62px] pointer-events-none select-none">
             <p className="text-[14px] sm:text-[16px] lg:text-[20px] leading-[2rem] tracking-wide">
               Our philosophy involves learning through application. Mock test,
               both sectional and full-length, are important components of the
@@ -87,10 +87,10 @@ const MyComponents4 = () => {
             </p>
           </div>
 
-          <div className="max-w-[540px] mx-auto my-[62px]">
+          <div className="max-w-[540px] mx-auto my-[62px] pointer-events-none select-none">
             <Image src="/mock-test.svg" width={540} height={563} />
           </div>
-          <div className="max-w-[1000px] mx-auto my-[62px]">
+          <div className="max-w-[1000px] mx-auto my-[62px] pointer-events-none select-none">
             <p className="text-[14px] sm:text-[16px] lg:text-[20px] leading-[2rem] tracking-wide">
               MidhaFin offers weekly full-length mock exams that closely
               replicate the structure and intensity of the actual tests. <br />

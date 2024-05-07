@@ -5,7 +5,7 @@ import { IoIosArrowUp } from "react-icons/io";
 export default function FeaturesSection() {
   
   return (
-    <div className='lg:my-[100px] my-[50px] max-w-[1300px] h-auto flex justify-center sm:justify-around flex-wrap mx-auto '>
+    <div className='lg:my-[100px] my-[50px] max-w-[1300px] h-auto flex justify-center sm:justify-around flex-wrap mx-auto select-none'>
       <div className='md:w-[350px] md:h-[350px] w-[310px] h-[310px]  rounded-3xl relative  bg-[#F9F2DF] m-3 flex-shrink-0'>
         <Image src="/ief.svg" alt="img" width={280} height={200} className='mx-auto mt-6' />
         <div className='group md:h-[100px] h-[80px] md:w-[350px] w-[310px] text-center bg-white rounded-3xl  absolute   overflow-hidden  bottom-0 hover:h-[260px]  transition-height duration-500 ease-in-out shadow-xl'>

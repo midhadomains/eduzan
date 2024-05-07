@@ -25,7 +25,7 @@ const RedirectPage = () => {
     }, [router]);
 
     return (
-        <div className='w-[100%]'>
+        <div className='w-[100%] select-none'>
             <div>
                 <div className="text-center text-[1.2rem] my-2 font-semibold p-2 tracking-wide">
                     Redirecting To Homepage in {timer} seconds ...

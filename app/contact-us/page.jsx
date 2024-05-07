@@ -10,7 +10,7 @@ export default function page() {
   return (
     <>
       <Navbar />
-      <div>
+      <div className="select-none">
         <div className="bg-contactbgimage bg-contain bg-no-repeat bg-bottom md:bg-cover">
           <div className="max-w-[1100px] mx-auto flex-wrap-reverse sm:flex-nowrap flex sm:flex-none  sm:justify-around">
             <Image

@@ -1,7 +1,7 @@
 import Image from 'next/image'
 export default function Reviewcard({data}) {
   return (
-    <div className="w-[320px] md:w-[350px] lg:-[400px] mx-auto">
+    <div className="w-[320px] md:w-[350px] lg:-[400px] mx-auto select-none">
           <div
               style={{
                   position: "relative",

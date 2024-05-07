@@ -87,7 +87,7 @@ function ReviewSection() {
         ]
     };
     return (
-        <div className="mx-auto max-w-[1350px] md:px-[25px] px-[10px] overflow-hidden mb-[80px]">
+        <div className="mx-auto max-w-[1350px] md:px-[25px] px-[10px] overflow-hidden mb-[80px] select-none">
             <div className="flex justify-center mx-auto my-2 ">
                 <FaCircle className="m-2 md:w-3  w-2  " style={{ color: colors[colorIndex] }} />
                 <FaCircle className="m-2 md:w-3 w-2" style={{ color: colors[1 - colorIndex] }} />

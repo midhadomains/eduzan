@@ -6,7 +6,7 @@ import Footer from '../../components/SiteFooter';
 const PrivacyPolicy = () => {
 
   return (
-    <>
+    <div className='select-none'>
       <Navbar />
       <div className="h-40 bg-red-950">
         <h1 className="text-4xl font-style:normal font-bold text-white pt-6 pl-4 md:pl-28">Privacy Policy</h1>
@@ -170,7 +170,7 @@ const PrivacyPolicy = () => {
         </div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
 
