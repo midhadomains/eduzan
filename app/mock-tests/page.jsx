@@ -44,8 +44,7 @@ const MyComponents4 = () => {
                 </h1>
                 <p className="lg:text-[20px] sm:text-[16px] text-[14px] ">
                   {" "}
-                  Our mock tests are an integral part of the training package,
-                  provided at no extra cost to ensure seamless preparation.
+                  Access our expertly crafted mock tests for a nominal fee and start preparing with the best.
                 </p>
               </div>
             </div>
