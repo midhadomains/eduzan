@@ -22,9 +22,9 @@ export default function Page() {
         { id: 13, text: 'Are the prices of different packages inclusive of all taxes?', data: 'The prices do not include the taxes (if any) and these are automatically added at the time of checkout.'},
     ];
     return (
-        <>
+        <div className="select-none">
             <Navbar />
-            <div className="h-40 bg-red-950">
+            <div className="h-40 bg-red-950 ">
                 <h1 className="text-4xl font-style:normal font-bold text-white pt-6 pl-28">FAQs</h1>
                 <p className="text-white pt-6 pl-28">
                     <a href="https://www.midhafin.com/courses/FRM-Part-1-Self-Paced-Course-6284dad90cf2f73fd7f6034f">Home</a> /
@@ -45,7 +45,7 @@ export default function Page() {
                 <Accordion buttonsData={buttonsData} />
             </div>
             <Footer />
-        </>
+        </div>
     );
 }
 

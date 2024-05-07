@@ -59,7 +59,7 @@ function PlatformFeatures() {
     ];
 
     return (
-        <div className='max-w-[1250px] m-1 pb-5 text-center mx-auto'>
+        <div className='max-w-[1250px] m-1 pb-5 text-center mx-auto select-none'>
             <div className='mx-auto mb-6 text-center my-1'>
                 <h1 className='lg:text-[3rem] md:text-[2.5rem]  sm:text-[2rem] text-[1.6rem] font-semibold leading-tight mx-3'>Our Platform<span className='text-[#BE4E1E]'> Features</span> </h1>
                 <p className='mt-4 max-w-[650px] mx-auto px-2'>We at MidhaFin, focus on striking a <span className='text-[#BE4E1E]'>careful balance, </span>between Knowledge and Relevance, between theory and analytics & between pure concepts and practical application.</p>

@@ -4,7 +4,7 @@ import Footer from '../../components/SiteFooter';
 import Navbar from '../../components/SiteHeader';
 const MyComponents5 = () => {
   return (
-    <>
+    <div className='select-none'>
       <Navbar />
       <div className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
         <div className="absolute inset-0 -z-10 overflow-hidden">
@@ -52,7 +52,7 @@ const MyComponents5 = () => {
         </div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
 export default MyComponents5;

@@ -11,7 +11,7 @@ export const metadata = {
 export default function Page() {
     return (
         <>
-            <div>
+            <div className="select-none">
                 {/* <Reviews /> */}
                 <Reviews/>
             </div>
