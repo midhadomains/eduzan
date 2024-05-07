@@ -14,7 +14,7 @@ const MyComponents4 = () => {
           Features
         </p>
         <h1 className="font-bold text-[24px]  md:text-[38px] lg:text-[45px] text-[#691D1C] text-center sm:text-left mb-[23px] md:mb-[33px] lg:mb-[46px]">
-          Mock <span className="text-[#BE4E1E]">Test</span>{" "}
+          Mock <span className="text-[#BE4E1E]">Tests</span>{" "}
         </h1>
         <div className="md:flex justify-around  shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-xl">
           <div className="md:w-[50%] bg-[#F9F6EB] flex rounded-t-xl  sm:rounded-none sm:rounded-l-xl  p-5 ">
