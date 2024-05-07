@@ -26,7 +26,7 @@ function Footer() {
                         <h1 className='text-[25px] sm:text-[30px] text-white font-bold'>Download the Mobile App</h1>
                         <p className='text-white mb-5'>MidhaFin is a free to download app</p>
                         <div className='flex'>
-                            <Link href="https://play.google.com/store/search?q=Midhafin&c=apps&hl=en_IN&gl=US" target="_blank" className="mr-5 w-[200px] hover:opacity-[0.75]"><Image width={300} height={100} src="/play-store.webp" alt="google play store" /></Link>
+                            <Link href="https://play.google.com/store/apps/details?id=com.midhafin.learners&hl=en_IN&gl=US" target="_blank" className="mr-5 w-[200px] hover:opacity-[0.75]"><Image width={300} height={100} src="/play-store.webp" alt="google play store" /></Link>
                             <Link href="https://apps.apple.com/in/app/midhafin-cfa-frm-prm/id6463192627" target="_blank" className="mr-5 w-[200px] hover:opacity-[0.75]"><Image width={300} height={100} src="/app-store.webp" alt="app store" /></Link>
                         </div>
                     </div>
