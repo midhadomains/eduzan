@@ -393,7 +393,7 @@ export default  function Reviews() {
                 <div className='bg-grey-900  h-[100%] '>
                   <div className=' items-center flex flex-col justify-between  h-[100%] text-center my-1'>
                     <h1 className='text-[#6A1B1B] text-xl font-semibold m-1 flex'>{capitalizeWords(review.name)} <Link target='_blank' href={review.l_link}><FaLinkedin className='mt-1 ml-1 text-black hover:cursor-pointer' /></Link></h1>
-                    <Image width={120} height={120} src={review.image} alt={review.name} className='w-[100px] absolute  border-[#ffffff] -top-[65px] mx-auto rounded-[50%] border t-[40px] shadow-lg?":' />
+                    <Image width={120} height={120} src={review.image} alt={review.name} priority={true} className='w-[100px] absolute  border-[#ffffff] -top-[65px] mx-auto rounded-[50%] border t-[40px] shadow-lg?":' />
                     <h1 className='text-center'>&quot; {`${review.excerpt}`}...<Link href={review.p_link} className='underline'>Read More</Link> &quot;</h1>
                     <h1 className='text-amber-700 m-2'>{review.job}</h1>
                   </div>
