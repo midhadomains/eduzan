@@ -1,8 +1,6 @@
-"use client"
-import React, { useState } from 'react';
-import Accordion from '../../components/Accordian';
 import Navbar from '../../components/SiteHeader';
 import Footer from '../../components/SiteFooter';
+import Accordion from '../../components/common/Accordian';
 
 
 export default function Page() {

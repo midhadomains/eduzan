@@ -19,10 +19,11 @@ const MyComponents4 = () => {
         <div className="md:flex justify-around  shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-xl">
           <div className="md:w-[50%] bg-[#F9F6EB] flex rounded-t-xl  sm:rounded-none sm:rounded-l-xl  p-5 ">
             <Image
-              src="/mocktest_thumbnail.png"
+              src="/Mock-Tests.png"
               className="m-auto block w-full max-w-[450px] md:max-w-[700px] pointer-events-none select-none"
               width={550}
               height={360}
+              alt='Mock Tests'
             />
           </div>
           <div className="md:w-[50%] p-[16px] sm:p-[25px] md:p-[20px] xl:p-[65px] ">
@@ -88,7 +89,7 @@ const MyComponents4 = () => {
           </div>
 
           <div className="max-w-[540px] mx-auto my-[62px] pointer-events-none select-none">
-            <Image src="/mock-test.svg" width={540} height={563} />
+            <Image src="/mock-test.svg" width={540} height={563} alt='Mock-Tests' priority={true} quality={100}/>
           </div>
           <div className="max-w-[1000px] mx-auto my-[62px] pointer-events-none select-none">
             <p className="text-[14px] sm:text-[16px] lg:text-[20px] leading-[2rem] tracking-wide">

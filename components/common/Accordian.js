@@ -6,6 +6,7 @@ import "aos/dist/aos.css";
 
 const Accordion = ({ buttonsData }) => {
     const [selectedButton, setSelectedButton] = useState(null);
+
     const toggleAccordion = (buttonId) => {
         setSelectedButton(selectedButton === buttonId ? null : buttonId);
     };

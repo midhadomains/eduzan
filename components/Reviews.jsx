@@ -21,7 +21,7 @@ function capitalizeWords(str) {
   return str.replace(/\b\w/g, match => match.toUpperCase());
 }
 
-export default  function Reviews() {
+export default function Reviews() {
   // export default async function Reviews() {
 
   // const data = await getData()
@@ -373,7 +373,200 @@ export default  function Reviews() {
       "v_link": "",
       "course": "FRM part-1",
       "excerpt": "The self-paced course offered for FRM exam preparation by Midha Fin is an excellent choice for individuals who prefer flexibility and autonomy in..."
-    }
+    },
+    {
+      '_id': ' ',
+      'name': 'Chaya Jayasankar',
+      'image': 'https://files.midhafin.com/wp-content/uploads/Chaya-Jayasankar.jpeg',
+      'country': 'India',
+      'job': 'CustomerLabs',
+      'p_link': 'https://www.linkedin.com/posts/activity-6767741889992122368-DpoV?utm_source=share&utm_medium=member_desktop',
+      'l_link': 'https://www.linkedin.com/in/chaya-jayasankar/',
+      'v_link': ' ',
+      'course': 'FRM part-1',
+      'excerpt': 'I managed to secure in the 76th-100th percentile range in Foundations of Risk Management, Quantitative Analysis and Financial Markets and Products.'
+    },
+
+
+    {
+      '_id': ' ',
+      'name': 'Monalisa Prasad',
+      'image': 'https://files.midhafin.com/wp-content/uploads/Monalisa-Prasad.jpeg',
+      'country': 'India',
+      'job': 'JPMC',
+      'p_link': 'https://www.linkedin.com/posts/monalisa-prasad-she-her-hers-974a7a50_financialriskmanagement-frmpart1-garp-activity-6767492591169740800-3JcB?utm_source=share&utm_medium=member_desktop',
+      'l_link': 'https://www.linkedin.com/in/monalisa-prasad-she-her-hers-974a7a50/',
+      'v_link': ' ',
+      'course': 'FRM part-1',
+      'excerpt': 'I am glad to share that I have cleared FRM part1 (first attempt)  Thanks Micky Midha for your guidance and support.'
+    },
+
+
+    {
+      '_id': ' ',
+      'name': 'Karnika',
+      'image': 'https://files.midhafin.com/wp-content/uploads/Karnika.jpeg',
+      'country': 'India',
+      'job': 'Fitch Solutions',
+      'p_link': 'https://www.linkedin.com/posts/karnika-frm%C2%AE-scr%C2%AE-6a4486b8_frm1-financialriskmanagement-garp-activity-6769673084321492992-ST3A?utm_source=share&utm_medium=member_desktop',
+      'l_link': 'https://www.linkedin.com/in/karnika-frm%C2%AE-scr%C2%AE-6a4486b8/',
+      'v_link': ' ',
+      'course': 'FRM part-1',
+      'excerpt': 'would like to take this opportunity to thanks Micky Midha sir, for his guidance and motivation which helped me to clear exam in my first attempt.'
+    },
+
+    {
+      '_id': ' ',
+      'name': 'Karnika',
+      'image': 'https://files.midhafin.com/wp-content/uploads/Karnika.jpeg',
+      'country': 'India',
+      'job': 'Fitch Solutions',
+      'p_link': 'https://www.linkedin.com/posts/karnika-frm%C2%AE-scr%C2%AE-6a4486b8_midhafin-garp-frm-activity-6970053663981461504-NZxg?utm_source=share&utm_medium=member_desktop',
+      'l_link': 'https://www.linkedin.com/in/karnika-frm%C2%AE-scr%C2%AE-6a4486b8/',
+      'v_link': ' ',
+      'course': 'FRM part-2',
+      'excerpt': 'I would like to thank Micky Midha and Vishwanathan Iyer, CPA, FRM® for their guidance, which made me clear both the parts in the first attempt. '
+    },
+
+    {
+      '_id': ' ',
+      'name': 'Dhruv Anand',
+      'image': 'https://files.midhafin.com/wp-content/uploads/Dhruv-Anand.jpeg',
+      'country': 'India',
+      'job': 'Srijan- A Material+ Company',
+      'p_link': 'https://www.linkedin.com/posts/dhruvanand1319_frm-garp-riskmanagement-activity-6771372026818019328-Bq_y?utm_source=share&utm_medium=member_desktop',
+      'l_link': 'https://www.linkedin.com/in/dhruvanand1319/',
+      'v_link': ' ',
+      'course': 'FRM part-1',
+      'excerpt': 'I am glad to share that I have cleared FRM part 1. Thank you Micky Midha for your guidance and support.'
+    },
+
+    {
+      '_id': ' ',
+      'name': 'Kanika Sikka Chandok',
+      'image': 'https://files.midhafin.com/wp-content/uploads/Kanika-Sikka-Chandok.jpeg',
+      'country': 'India',
+      'job': 'Barclays',
+      'p_link': 'https://www.linkedin.com/posts/kanika-sikka-chandok-frm-00584a17_frm-part-1-result-activity-6887714512405860352-m2eR?utm_source=share&utm_medium=member_desktop',
+      'l_link': 'https://www.linkedin.com/in/kanika-sikka-chandok-frm-00584a17/',
+      'v_link': ' ',
+      'course': 'FRM part-1',
+      'excerpt': 'Thank you @Micky Midha for your continuous guidance and support. This learning journey was truly amazing'
+    },
+
+    {
+      '_id': ' ',
+      'name': 'Kanika Sikka Chandok',
+      'image': 'https://files.midhafin.com/wp-content/uploads/Kanika-Sikka-Chandok.jpeg',
+      'country': 'India',
+      'job': 'Barclays',
+      'p_link': 'https://www.linkedin.com/posts/kanika-sikka-chandok-frm-00584a17_i-am-elated-to-announce-that-i-cleared-my-activity-6951564190499172352-dQ7e?utm_source=share&utm_medium=member_desktop',
+      'l_link': 'https://www.linkedin.com/in/kanika-sikka-chandok-frm-00584a17/',
+      'v_link': ' ',
+      'course': 'FRM part-2',
+      'excerpt': 'I would like to extend my gratitude to Micky Midha for his continuous support and encouragement.'
+    },
+
+
+    {
+      '_id': ' ',
+      'name': 'GOURI SINHASANE',
+      'image': 'https://files.midhafin.com/wp-content/uploads/Gouri-Sihasane.jpeg',
+      'country': 'India',
+      'job': 'Bank of India',
+      'p_link': 'https://www.linkedin.com/posts/gouri-sinhasane-frm-442a931b8_share-frm-financialriskmanagement-activity-6886973030225055744-BjVj?utm_source=share&utm_medium=member_desktop',
+      'l_link': 'https://www.linkedin.com/in/gouri-sinhasane-frm-442a931b8/',
+      'v_link': ' ',
+      'course': 'FRM part-1',
+      'excerpt': 'special Thank you to Micky Midha Sir for his Valuable support and patiently resolving each and every query and doubt about the curriculum.'
+    },
+
+
+    {
+      '_id': ' ',
+      'name': 'Kush Maheshwari',
+      'image': 'https://files.midhafin.com/wp-content/uploads/Kush-Maheshwari.jpeg',
+      'country': 'India',
+      'job': 'Bajaj Allianz Life',
+      'p_link': 'https://www.linkedin.com/posts/kush-maheshwari_passing-letter-activity-6887710561392459776-zcDI?utm_source=share&utm_medium=member_desktop',
+      'l_link': 'https://www.linkedin.com/in/kush-maheshwari/',
+      'v_link': ' ',
+      'course': 'FRM part-1',
+      'excerpt': 'Thank you Micky Midha sir and MidhaFin (MF) for the guidance and support.'
+    },
+
+    {
+      '_id': ' ',
+      'name': 'Lubna Khan Pathan',
+      'image': 'https://files.midhafin.com/wp-content/uploads/Lubna-Khan-Pathan.jpeg',
+      'country': 'India',
+      'job': 'HDFC Mutual Fund',
+      'p_link': 'https://www.linkedin.com/posts/lubna-khan-pathan-a43818152_extremely-happy-to-successfully-clear-frm-activity-6887037840081997824-LZcT?utm_source=share&utm_medium=member_desktop',
+      'l_link': 'https://www.linkedin.com/in/lubna-khan-pathan-a43818152/',
+      'v_link': ' ',
+      'course': 'FRM part-1',
+      'excerpt': 'Extremely happy to successfully clear FRM Level 1 exam. Thank you Micky Midha for your guidance and support.'
+    },
+    {
+      '_id': ' ',
+      'name': 'soumyajit saha',
+      'image': 'https://files.midhafin.com/wp-content/uploads/Soumyajit-Saha.jpeg',
+      'country': 'London, England, United Kingdom',
+      'job': 'BDO UK LLP',
+      'p_link': 'https://www.linkedin.com/posts/soumyajit-saha-jit_frm-part-one-result-activity-6887374730307883008-DZGE?utm_source=share&utm_medium=member_desktop',
+      'l_link': 'https://www.linkedin.com/in/soumyajit-saha-jit/',
+      'v_link': ' ',
+      'course': 'FRM part-1',
+      'excerpt': 'Special thanks to Micky Midha Sir and his team at MidhaFin (MF) for their teaching, constant guidance and support.'
+    },
+    {
+      '_id': ' ',
+      'name': 'Kritika Narayan',
+      'image': 'https://files.midhafin.com/wp-content/uploads/Kritika-Narayan.jpeg',
+      'country': 'India',
+      'job': 'Accenture Strategy & Consulting',
+      'p_link': 'https://www.linkedin.com/posts/kritika-narayan-b9b525a0_happy-to-share-that-i-have-cleared-frm-part-activity-6887384907035897856-h-Hk?utm_source=share&utm_medium=member_desktop',
+      'l_link': 'https://www.linkedin.com/in/kritika-narayan-b9b525a0/',
+      'v_link': ' ',
+      'course': 'FRM part-1',
+      'excerpt': 'Thank you Micky Midha for all the guidance and support.'
+    },
+    {
+      '_id': ' ',
+      'name': 'Karan Rahat Singh Manchanda',
+      'image': 'https://files.midhafin.com/wp-content/uploads/Karan-Rahat-Singh-Manchanda.png',
+      'country': 'India',
+      'job': 'Accenture Strategy & Consulting',
+      'p_link': 'https://www.linkedin.com/posts/karanrahatsinghmanchanda_linkedincommunity-frm-financialriskmanager-activity-7098578551825707008-U5b7?utm_source=share&utm_medium=member_desktop',
+      'l_link': 'https://www.linkedin.com/in/karanrahatsinghmanchanda/',
+      'v_link': ' ',
+      'course': 'FRM part-1',
+      'excerpt': 'Thankyou Micky Midha Sir for your guidance and support throughout the journey!'
+    },
+    {
+      '_id': ' ',
+      'name': 'Ramesh Kumar Vadlamani',
+      'image': 'https://files.midhafin.com/wp-content/uploads/Ramesh-Kumar-Vadlamani.jpeg',
+      'country': 'Calgary, Alberta, Canada',
+      'job': 'Eagle suite of Products',
+      'p_link': 'https://www.linkedin.com/posts/ramesh-kumar-vadlamani-1085727_hello-everyone-i-am-extremely-pleased-activity-6844412668821041152-yfwG?utm_source=share&utm_medium=member_desktop',
+      'l_link': 'https://www.linkedin.com/in/ramesh-kumar-vadlamani-1085727/',
+      'v_link': ' ',
+      'course': 'FRM part-1',
+      'excerpt': ' Special thanks to Micky Midha and Midhafin team for their guidance and support.'
+    },
+    {
+      '_id': ' ',
+      'name': 'Tara Sherigar',
+      'image': 'https://files.midhafin.com/wp-content/uploads/Tara-Sherigar.jpeg',
+      'country': 'India',
+      'job': 'RAKBANK',
+      'p_link': 'https://www.linkedin.com/posts/activity-6904411786456756225-VXJl?utm_source=share&utm_medium=member_desktop',
+      'l_link': 'https://www.linkedin.com/in/tara-sherigar-ca-frm-1860a028/',
+      'v_link': ' ',
+      'course': 'FRM part-1',
+      'excerpt': 'Thanks to Micky Midha for the support and guidance for FRM Level 1.'
+    },
   ]
   return (
     <>
@@ -405,7 +598,7 @@ export default  function Reviews() {
           <p className='text-center text-2xl my-3'>Loading...</p>
         )}
       </div>
-      <Footer/>
+      <Footer />
     </>
   )
 }
