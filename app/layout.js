@@ -2,8 +2,8 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 import '../styles/main.css';
 import { GoogleAnalytics } from '@next/third-parties/google'
 import Script from 'next/script'
-import Whatsapp from "../components/Whatsapp";
 import { DiGoogleAnalytics } from "react-icons/di";
+import SocialMedia from "../components/common/SocialMedia";
 
 export const metadata = {
   title: 'MidhaFin',
@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PSL6VDFP"
           height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
         <SpeedInsights />
-        <Whatsapp />
+        <SocialMedia/>
         <GoogleAnalytics gaId="G-ZZCZJ53RDR" />
         {children}
       </body>
