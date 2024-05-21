@@ -1,7 +1,6 @@
 import SiteHeader from "../components/SiteHeader";
 import SiteFooter from "../components/SiteFooter";
 import Link from "next/link";
-import Whatsapp from "../components/Whatsapp";
 import { FaChevronRight } from "react-icons/fa";
 import HeroSection from "../components/home/HeroSection";
 import FeaturesSection from "../components/home/FeaturesSection";
