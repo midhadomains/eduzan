@@ -8,6 +8,7 @@ export const metadata = {
     robots:"index,follow",
     keywords: "midhafin reviews, frm reviews"
   }
+  
 export default function Page() {
     return (
         <>

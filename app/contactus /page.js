@@ -6,6 +6,8 @@ import { IoCallOutline } from "react-icons/io5";
 import { GrContact } from "react-icons/gr";
 import Navbar from '../../components/SiteHeader';
 import Footer from '../../components/SiteFooter';
+
+
 const MyComponent = () => {
   return (
     <>
