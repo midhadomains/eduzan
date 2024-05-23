@@ -35,7 +35,7 @@ const nextConfig = {
       },
       {
         protocol:'https',
-        hostname:'media.licdn.com',
+        hostname:'d502jbuhuh9wk.cloudfront.net',
         port:'',
         pathname:'/**'
       },

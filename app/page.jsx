@@ -1,5 +1,5 @@
-import SiteHeader from "../components/SiteHeader";
-import SiteFooter from "../components/SiteFooter";
+import SiteHeader from "../components/common/SiteHeader";
+import SiteFooter from "../components/common/SiteFooter";
 import Link from "next/link";
 import { FaChevronRight } from "react-icons/fa";
 import HeroSection from "../components/home/HeroSection";
