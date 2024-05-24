@@ -1,17 +1,11 @@
-"use client"
-import React, { useEffect }  from 'react';
-
 import Image from 'next/image'
-import Navbar from '../../components/SiteHeader';
-import Footer from '../../components/SiteFooter';
+import Footer from '../../components/common/SiteFooter';
+import Navbar from '../../components/common/SiteHeader';
 
-
-export default async function Page(){
-  
-
+export default function Page(){
     return (
         <>
-            <Navbar />
+            < Navbar/>
             <div>
 
 
