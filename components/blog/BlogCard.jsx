@@ -1,7 +1,7 @@
-import Image from "next/image"
+"use client";
+import Image from "next/image";
 import Link from "next/link";
 import { GoDotFill } from "react-icons/go";
-
 
 export default function BlogCard({ data }) {
     function excerpt(str) {
@@ -11,7 +11,7 @@ export default function BlogCard({ data }) {
 
         for (let i = 0; i < words.length; i++) {
             const word = words[i];
-            if ((result + word).length <= 120) {
+            if ((result + word).length <= 100) {
                 if (result.length > 0) {
                     result += ' ';
                 }
@@ -21,7 +21,7 @@ export default function BlogCard({ data }) {
                 break;
             }
 
-            if (i >= 25) { // Stop if we've added 20 words
+            if (i >= 19) { // Stop if we've added 20 words
                 break;
             }
         }
@@ -29,29 +29,23 @@ export default function BlogCard({ data }) {
     }
 
     return (
-        <div className="flex flex-wrap justify-around gap-[40px]">
-            {
-                data.map((data) => (
-                    <div key={data._id} className="max-w-[400px] w-[100%] md:w-[50%]  border max-h-[515px]  rounded-2xl shadow-[0px_4px_5px_1px_#00000024] " >
-                        <Link href={`/${data.slug}`}>
-                            <div className="">
-                                <Image src='/textomg.png' width={400} height={300} alt={data.title} className="w-[100%] rounded-2xl" />
-                                <div className="mx-auto flex flex-col tracking-wide justify-between h-[100%] py-1 px-3 max-w-[350px]">
-                                    <p className="uppercase text-[12px] md:text-[16px] my-2 text-[#BE4E1E] font-[500]">{data.category}</p>
-                                    <h1 className="text-[18px] md:text-[22px] font-semibold  ">{data.title}</h1>
-                                    <p className="text-[#5B5B5B] text-[16px] md:text-[20px] font-[300] leading-normal md:leading-[28px] my-2">{excerpt(data.meta_data)}...</p>
-                                    <div className="flex justify-between mb-2 md:mb-4 text-[#50535C] text-[12px]  md:text-[16px] items-center tracking-normal">
-                                        <p>{data.author}</p>
-                                        <GoDotFill cl />
-                                        <p>{data.date_created}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </Link>
-                        {console.log(data)}
+        <div key={data._id} className="max-w-[400px] w-[100%] md:w-[50%]  border max-h-[515px]  rounded-2xl shadow-[0px_4px_5px_1px_#00000024] " >
+            <Link href={`/${data.slug}`}>
+                <div className="">
+                    <Image src='/textomg.png' width={400} height={300} alt={data.title} className="w-[100%] rounded-2xl" />
+                    <div className="mx-auto flex flex-col tracking-wide justify-between h-[100%] py-1 px-3 max-w-[350px]">
+                        <p className="uppercase text-[12px] md:text-[16px] my-2 text-[#BE4E1E] font-[500]">{data.category}</p>
+                        <h1 className="text-[18px] md:text-[22px] font-semibold  ">{data.title}</h1>
+                        <p className="text-[#5B5B5B] text-[16px] md:text-[20px] font-[300] leading-normal md:leading-[28px] my-2">{excerpt(data.meta_data)}...</p>
+                        <div className="flex justify-between mb-2 md:mb-4 text-[#50535C] text-[12px]  md:text-[16px] items-center tracking-normal">
+                            <p>{data.author}</p>
+                            <GoDotFill />
+                            <p>{data.date_created}</p>
+                        </div>
                     </div>
-                ))
-            }
+                </div>
+            </Link>
+            {console.log(data)}
         </div>
-    )
+    );
 }

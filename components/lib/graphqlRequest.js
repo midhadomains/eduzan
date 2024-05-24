@@ -1,4 +1,5 @@
 import { GraphQLClient } from 'graphql-request';
+import { notFound } from 'next/navigation';
 
 const endpoint = 'https://test-backend-pink.vercel.app/';
 
@@ -15,6 +16,6 @@ export const fetchGraphQLData = async (query, variables = {}) => {
         return data;
     } catch (error) {
         console.error('Error fetching GraphQL data:', error);
-        throw new Error('Failed to fetch GraphQL data');
+        notFound(); // Trigger the 404 page
     }
 };

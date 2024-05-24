@@ -1,6 +1,6 @@
 "use client";
-import { useEffect, useState, useCallback, useRef } from 'react';
-import { fetchGraphQLData } from '../../lib/graphqlRequest';
+import { useEffect, useState, useCallback } from 'react';
+import { fetchGraphQLData } from '../lib/graphqlRequest';
 import BlogCard from './BlogCard';
 import { IoIosSearch } from "react-icons/io";
 
@@ -39,8 +39,7 @@ const SEARCH_QUERY = `
     }
   }
 `;
-
-const PostList = () => {
+const HomePage = () => {
     const [data, setData] = useState([]);
     const [endCursor, setEndCursor] = useState(null);
     const [hasNextPage, setHasNextPage] = useState(true);
@@ -49,8 +48,7 @@ const PostList = () => {
     const [category, setCategory] = useState(null);
     const [searchTerm, setSearchTerm] = useState('');
     const [debouncedSearchTerm, setDebouncedSearchTerm] = useState('');
-
-    const debounceTimeout = useRef(null);
+    const [debounceTimeout, setDebounceTimeout] = useState(null);
 
     const fetchData = useCallback(async (afterCursor = null, category = null, searchTerm = '') => {
         setError(null); // Reset the error state before a new fetch
@@ -64,7 +62,7 @@ const PostList = () => {
                 setData(result.searchBlogs || []); // Ensure it's an array
                 setHasNextPage(false); // No pagination for search results
             } else {
-                const variables = { first: 6, after: afterCursor, category };
+                const variables = { first: 9, after: afterCursor, category };
                 result = await fetchGraphQLData(QUERY, variables);
                 setData(prevData => {
                     const newEdges = (result.blogs.edges || []).filter(edge =>
@@ -93,17 +91,20 @@ const PostList = () => {
         const value = event.target.value;
         setSearchTerm(value);
 
-        if (debounceTimeout.current) {
-            clearTimeout(debounceTimeout.current);
+        if (debounceTimeout) {
+            clearTimeout(debounceTimeout);
         }
 
-        debounceTimeout.current = setTimeout(() => {
+        const timeout = setTimeout(() => {
             setDebouncedSearchTerm(value);
             setData([]); // Clear current data
         }, 600); // Adjust the debounce delay as needed
+
+        setDebounceTimeout(timeout);
     };
+
     if (error) return <p>{error}</p>;
-    console.log(data)
+
     return (
         <div className='my-5 max-w-[1400px] px-[20px]  md:px-[50px] mx-auto'>
             <div className='flex flex-wrap-reverse justify-center md:justify-between my-5 gap-[20px] mx-auto items-center'>
@@ -121,10 +122,15 @@ const PostList = () => {
                         onChange={handleSearch}
                         className='p-2 border rounded-full w-[300px] px-5 bg-[#F1F1F1] '
                     />
-                    <IoIosSearch className='text-[35px] -ml-[60px] text-[#9CA3AF]'/>
+                    <IoIosSearch className='text-[35px] -ml-[60px] text-[#9CA3AF]' />
                 </div>
             </div>
-            {data ? <BlogCard data={data} /> : " "}
+            <hr className='my-6 max-w-[1280px] mx-auto border-[1.5px]'/>
+            <div className='flex flex-wrap gap-[20px] justify-around'>
+                {data.map((blog) => (
+                    <BlogCard key={blog._id} data={blog} />
+                ))}
+            </div>
             <div className='w-[100%] flex justify-center items-center h-fit my-9'>
                 {hasNextPage ?
                     <button onClick={() => fetchData(endCursor, category)} disabled={isFetching} className=' p-2 bg-[#E8E6E2] text-[#BE4E1E] rounded-full px-6 mx-auto text-center text-[22px]' >
@@ -137,4 +143,4 @@ const PostList = () => {
     );
 };
 
-export default PostList;
+export default HomePage;
