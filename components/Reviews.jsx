@@ -1,8 +1,9 @@
 import Image from 'next/image'
 import Link from "next/link";
 import { FaLinkedin } from "react-icons/fa";
-import Navbar from './SiteHeader';
-import Footer from './SiteFooter';
+import Navbar from './common/SiteHeader';
+import Footer from './common/SiteFooter';
+
 
 // async function getData() {
 //   const res = await fetch('https://midhareviewapi.vercel.app/reviews')
@@ -252,7 +253,7 @@ export default function Reviews() {
       "l_link": "https://www.linkedin.com/in/viswanath-mekala-b694b976/",
       "v_link": "",
       "course": "FRM part-1",
-      "excerpt": "I’m happy to share that I’ve obtained a new certification: Financial Risk Manager - FRM (Part 1) from Global Association of Risk Professionals (GARP)"
+      "excerpt": "I'm happy to share that I've obtained a new certification: Financial Risk Manager - FRM (Part 1) from Global Association of Risk Professionals (GARP)"
     },
     {
       "_id": "65f1635ab778e21b1aed83e8",
