@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
         <meta name="x:card" content="summary_large_image" />
         <meta name="x:title" content="MidhaFin:-FRM Exam prep provider" />
         <meta name="x:description" content="Boost Your Career In Finance" />
-        <meta name="x:image" content="https://ogcdn.net/c078a98b-9a33-4eaf-a5cf-e5ebf3ea450c/v1/midhafin.com/MidhaFin/Boost%20Your%20Career%20In%20Finance/https%3A%2F%2Fcdn.theopengraph.com%2Fproduction%2Fdocuments%2Fd564a463-1c51-4259-991d-0d17bf3e0391.jpg%3Ftoken%3D-hKrjcO4EFDmPh0lgxSanJdH2MZ9gYnfw4V87WUckbA%26height%3D800%26width%3D1200%26expires%3D33239188519/og.png" />
+        <meta name="x:image" content="https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/Homepage/open-graph-snippet_600*336.png.png" />
       </head>
       </head>
       <body>
