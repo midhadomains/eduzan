@@ -23,8 +23,8 @@ export default function RootLayout({ children }) {
         <meta property="og:site_name" content="Midhafin"/>
         <meta property="og:locale" content="en_US"/>
         <meta property="og:url" content="https://www.midhafin.com/" />
-        <meta property="og:image.url" content="https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/Homepage/open-graph-snippet.png" />
-        <meta property="og:image" content="https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/Homepage/open-graph-snippet.png" />
+        <meta property="og:image.url" content="https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/Homepage/open-graph-snippet_600*336.png.png" />
+        <meta property="og:image" content="https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/Homepage/open-graph-snippet_600*336.png.png" />
         <meta property="og:image:width" content="800"/>
         <meta property="og:image:height" content="600"/>
         <meta property="og:image:alt" content="Midhafin"/>
