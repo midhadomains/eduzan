@@ -10,6 +10,8 @@ function loadYouTubeAPI() {
   if (!isYouTubeAPIReady) {
     const tag = document.createElement('script');
     tag.src = "https://www.youtube.com/iframe_api";
+    tag.async = true;
+    tag.defer = true;
     const firstScriptTag = document.getElementsByTagName('script')[0];
     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
@@ -29,14 +31,14 @@ function onYouTubeAPIReady(callback) {
   }
 }
 
-export default function Reviewcard({ data }) {
+export default function Reviewcard({ data, active }) {
   const playerRef = useRef(null);
 
   useEffect(() => {
     loadYouTubeAPI();
 
     const createPlayer = () => {
-      if (playerRef.current) {
+      if (playerRef.current && active) {
         new YT.Player(playerRef.current, {
           height: '100%',
           width: '100%',
@@ -52,14 +54,14 @@ export default function Reviewcard({ data }) {
         playerRef.current.destroy();
       }
     };
-  }, [data.videoId]);
+  }, [data.videoId, active]);
 
   if (!data || !data.videoId) {
     return <div>Error: videoId is undefined</div>;
   }
 
   return (
-    <div className="w-[320px] md:w-[350px] lg:w-[400px] mx-auto select-none">
+    <div className="w-[310px] md:w-[350px] mx-auto select-none">
       <div
         style={{
           position: "relative",
