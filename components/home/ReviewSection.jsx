@@ -24,32 +24,32 @@ function ReviewSection() {
     const data = [
         {
             titles: 'Angella Arora',
-            images: 'https://media.licdn.com/dms/image/D4D03AQG6SllSmP2sXA/profile-displayphoto-shrink_800_800/0/1685780083008?e=1715817600&v=beta&t=LGPXgxm1D_Frq7xgTwL8lqpMcSwsyRBkg6ELs0R91HA',
+            images: 'https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/Youtube+carasoul/Angella-Arora.jpeg',
             videos: 'https://www.youtube.com/embed/AV-wHboWyHM?si=LL0iP-bSqZfpbNQs',
         },
         {
             titles: 'Sripriya Iyer',
-            images: 'https://media.licdn.com/dms/image/C5103AQHdWGTlHapZyQ/profile-displayphoto-shrink_400_400/0/1551029564102?e=1715817600&v=beta&t=wODqN_KLcNFHen8tNynWc2NEGhWYWIv3atcG-77hbo4',
+            images: 'https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/Youtube+carasoul/Sripriya-Iyer.jpeg',
             videos: 'https://www.youtube.com/embed/ueE9clrM3HU?si=lX3mFVIosywPxjVh',
         },
         {
             titles: 'Aminoritse Adedayo',
-            images: 'https://media.licdn.com/dms/image/C4E03AQFvsW00Hunz8A/profile-displayphoto-shrink_200_200/0/1639501049540?e=2147483647&v=beta&t=2eF_uOPx2JrPGBkiQRahIwKPvT6VE9WF-aoEouwRUDI',
+            images: 'https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/Youtube+carasoul/Aminoritse-Adedayo.png',
             videos: 'https://www.youtube.com/embed/vDCpsAzageA?si=COu-GZEGkIp-6z9b',
         },
         {
             titles: 'Kanika Sikka',
-            images: 'https://media.licdn.com/dms/image/C4D03AQGpBZfOtNAjWg/profile-displayphoto-shrink_200_200/0/1642014785390?e=2147483647&v=beta&t=eT0mMwTRZFAClTBg2tFpyjpsdTHkmwbmL39hEBP8-r0',
+            images: 'https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/Youtube+carasoul/Kanika+Sikka+Chandok.webp',
             videos: 'https://www.youtube.com/embed/0QWffj9FvrE?si=FoZXDm54Qd6Y3pGH',
         },
         {
             titles: 'Savleen Kaur',
-            images: 'https://media.licdn.com/dms/image/D5603AQGCzrGRhM1XmQ/profile-displayphoto-shrink_400_400/0/1706592492700?e=1715817600&v=beta&t=FEwoSIA7kv_rpLrA1h9TqQtjAZf6ndW_U9VttNHvTRg',
+            images: 'https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/Youtube+carasoul/Savleen-Kaur.jpeg',
             videos: 'https://www.youtube.com/embed/5ILRag3jCp8?si=Bt6BlpjJDsv-8JLH',
         },
         {
             titles: 'Namir Younes',
-            images: 'https://media.licdn.com/dms/image/D4D03AQFbDumjKWFn_w/profile-displayphoto-shrink_200_200/0/1710131301464?e=2147483647&v=beta&t=KlcbZabUZZ0C_-Ix6hoBL6LFBWPt1FxBMbyjpV4NidQ',
+            images: 'https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/Youtube+carasoul/Namir+Younes.jpg',
             videos: 'https://www.youtube.com/embed/iJpSH94_Z7Q?si=CRbX0B0pIXNBeHXk'
         }
     ]
