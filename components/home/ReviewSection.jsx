@@ -1,77 +1,15 @@
 "use client";
 
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import './slick.css';
 import './slick-theme.css';
 import Reviewcard from "./Reviewcard";
 import { FaCircle } from "react-icons/fa6";
 
-let players = [];
-
-function initializePlayers(activeIndex, slidesToShow) {
-  players.forEach(player => player.destroy());
-  players = [];
-
-  const playerElements = document.querySelectorAll('[id^="player-"]');
-  playerElements.forEach((element, index) => {
-    if (index >= activeIndex && index < activeIndex + slidesToShow) {
-      const videoId = element.id.replace('player-', '');
-      const player = new YT.Player(element, {
-        height: '100%',
-        width: '100%',
-        videoId,
-      });
-      players.push(player);
-    }
-  });
-}
-
 function ReviewSection() {
   const [colorIndex, setColorIndex] = useState(0);
-  const [currentSlide, setCurrentSlide] = useState(0);
   const colors = ['#BE4E1E', '#C7C7C7'];
-  const sliderRef = useRef(null);
-  
-  const settings = {
-    dots: true,
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    initialSlide: 0,
-    autoplay: true,
-    speed: 3000,
-    autoplaySpeed: 6000,
-    cssEase: "linear",
-    pauseOnHover: true,
-    afterChange: (current) => {
-      setCurrentSlide(current);
-      if (typeof YT !== 'undefined' && YT && YT.Player) {
-        initializePlayers(current, settings.slidesToShow);
-      }
-    },
-    responsive: [
-      {
-        breakpoint: 1130,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
-          speed: 3000,
-          autoplaySpeed: 4000,
-        }
-      },
-      {
-        breakpoint: 720,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          speed: 1000,
-          autoplaySpeed: 3000,
-        }
-      }
-    ]
-  };
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -80,12 +18,6 @@ function ReviewSection() {
 
     return () => clearInterval(interval);
   }, []);
-
-  useEffect(() => {
-    if (typeof YT !== 'undefined' && YT && YT.Player) {
-      initializePlayers(currentSlide, settings.slidesToShow);
-    }
-  }, [currentSlide, settings.slidesToShow]);
 
   const data = [
     {
@@ -120,6 +52,40 @@ function ReviewSection() {
     }
   ];
 
+  var settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    initialSlide: 0,
+    autoplay: true,
+    speed: 3000,
+    autoplaySpeed: 6000,
+    cssEase: "linear",
+    pauseOnHover: true,
+    responsive: [
+      {
+        breakpoint: 1130,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+          speed: 3000,
+          autoplaySpeed: 4000,
+        }
+      },
+      {
+        breakpoint: 720,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          speed: 1000,
+          autoplaySpeed: 3000,
+        }
+      }
+    ]
+  };
+
   return (
     <div className="mx-auto max-w-[1350px] md:px-[25px] px-[10px] overflow-hidden mb-[80px] select-none">
       <div className="flex justify-center mx-auto my-2 ">
@@ -131,9 +97,9 @@ function ReviewSection() {
         <hr className='lg:border-4 border-[3px] rounded-3xl border-[#9A391D] md:w-[150px] w-[100px] my-3 mx-3 mb-7 md:mb-0' />
       </div>
       <div className="slider-container">
-        <Slider ref={sliderRef} {...settings}>
+        <Slider {...settings}>
           {data.map((data, index) => (
-            <Reviewcard data={data} key={index} active={index >= currentSlide && index < currentSlide + settings.slidesToShow} />
+            <Reviewcard data={data} key={index} />
           ))}
         </Slider>
       </div>
