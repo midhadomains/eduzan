@@ -1,8 +1,7 @@
 import React from 'react';
 import Image from 'next/image'
-import Footer from '../../components/SiteFooter';
-import Navbar from '../../components/SiteHeader';
-
+import Footer from '../../components/common/SiteFooter';
+import Navbar from '../../components/common/SiteHeader';
 const MyComponent = () => {
   return (
     <>

@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image'
-import Footer from '../../components/SiteFooter';
-import Navbar from '../../components/SiteHeader';
+import Footer from '../../components/common/SiteFooter';
+import Navbar from '../../components/common/SiteHeader';
 export const metadata = {
     title: 'Study Planner',
     description: "Study plan for FRM PRM and CFA,",

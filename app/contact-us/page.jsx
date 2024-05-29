@@ -3,8 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { CiMail } from "react-icons/ci";
 import { IoCallOutline } from "react-icons/io5";
-import Navbar from "../../components/SiteHeader";
-import Footer from "../../components/SiteFooter";
+import Footer from '../../components/common/SiteFooter';
+import Navbar from '../../components/common/SiteHeader';
 export default function page() {
   //after submitting redirect to "/thankyou"
   return (

@@ -1,9 +1,9 @@
 "use client"
 import styles from "./Course.module.css"
 import React, { useState } from 'react';
-import Footer from "../../components/SiteFooter";
-import Navbar from "../../components/SiteHeader";
-import CourseCard from "../../components/CourseCard";
+import Footer from "../../components/common/SiteFooter";
+import Navbar from "../../components/common/SiteHeader";
+import CourseCard from "../../components/common/CourseCard";
 import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 
