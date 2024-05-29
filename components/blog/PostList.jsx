@@ -110,7 +110,7 @@ const HomePage = () => {
             <div className='flex flex-wrap-reverse justify-center md:justify-between my-5 gap-[20px] mx-auto items-center'>
                 <div>
                     <button onClick={() => { setData([]); setCategory('frm-part-1'); }} className='mr-4 p-2 bg-[#E8E6E2] text-[#BE4E1E] rounded-full text-[14px] md:text-[16px] px-3 md:px-6'>FRM Part-1</button>
-                    <button onClick={() => { setData([]); setCategory('djklfj'); }} className='mr-4 p-2 bg-[#E8E6E2] text-[#BE4E1E] rounded-full text-[14px] md:text-[16px] px-3 md:px-6'>FRM Part-2</button>
+                    <button onClick={() => { setData([]); setCategory('frm-part-2'); }} className='mr-4 p-2 bg-[#E8E6E2] text-[#BE4E1E] rounded-full text-[14px] md:text-[16px] px-3 md:px-6'>FRM Part-2</button>
                     <button onClick={() => { setData([]); setCategory(''); }} className='p-2 bg-[#E8E6E2] text-[#BE4E1E] rounded-full text-[14px] md:text-[16px] px-4 md:px-6'>All</button>
                 </div>
                 <div className='flex items-center pr-7'>

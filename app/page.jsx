@@ -7,23 +7,26 @@ import FeaturesSection from "../components/home/FeaturesSection";
 import PlatformFeatures from "../components/home/PlatformFeatures";
 import ReviewSection from "../components/home/ReviewSection";
 import Accordion from "../components/common/Accordian";
-
 export const metadata = {
     title: "Welcome to MidhaFin",
-    description: "MidhaFin Home , Explore our Wide Range of Courses "
+    description: "MidhaFin Home , Explore our Wide Range of Courses ",
+    keywords: ["best frm courses", " best frm course in india,best frm courses online", "frm certification", "frm exam", "best frm coaching", "best frm coaching online", "best frm coaching in bangalore", "best frm coaching in mumbai", "best frm coaching in india",
+        "best frm coaching in kolkata", "best frm coaching in chennai", "best frm coaching institute in india", "best frm online coaching in india",
+        "best frm coaching in india quora", "best coaching for frm", "best coaching for frm in india", "best online coaching for frm", "Top-rated FRM coaching",
+        "Best FRM coaching institutes with high pass rates", "cfa", "cfa exam", "about cfa course", "best cfa prep course", "best cfa coaching in india", "cfa exam prep", "cfa exam registration", "cfa exam level 1", "best way to prepare for cfa exam", "best ways to study for the cfa exam"]
 }
 
 export default async function Home() {
     const buttonsData = [
-        { id: 1,  text: 'What is the Objective of MidhaFin?', data: 'MidhaFin is a GARP® authorized Training provider for FRM® Part 1 and Part 2 Exams. The objective of MidhaFin is to help candidates build strong foundational and practical understanding of the curriculum of FRM® which would help them to most likely pass the FRM® exam.' },
-        { id: 2,  text: 'What is sample Course?', data: 'Sample course is a free course and contains more than 9 hours 4 min of video covering chapters from all modules, and some samples of study materials.' },
-        { id: 3,  text: 'Are the materials provided by MidhaFin is sufficient to pass FRM® Exam?', data: "Our material is more than enough for passing the exam .. And it's quite detailed .. We have prepared it according to the official GARP curriculum. It highly recommended to use our material as the primary source of preparation." },
-        { id: 4,  text: 'For how long will the candidate have the access to the package?', data: "The candidates will have access to all the resources until they pass the exam, provided they are still preparing for it. The best part is that the candidate will always have access to the updated material and resources. The access will not be limited to the resources that the candidate was provided during the time of enrolment." },
-        { id: 5,  text: 'Is it possible to view the content in the offline mode?', data: 'Yes, candidates can have offline access to all the content through our Android or IOS app. Android app can be downloaded from the google play store and IOS app can be downloaded from the Apple store.' },
-        { id: 6,  text: 'Are the materials updated according to the current FRM® curriculum?', data: 'Our material is up-to-date and in strict accordance with the official curriculum of FRM®.' },
-        { id: 7,  text: 'Will the candidate get hard copy or soft copy of the study materials, question banks, mocks, and periodic tests?', data: 'The candidates will receive only soft copies of all the text materials such as study materials, question banks, mock tests, periodic tests. Apart from study materials, all other contents have a view only access. Candidate can take the print out of only the study materials, all else has to viewed through either the application or the website.' },
-        { id: 8,  text: 'What support candidate can expect from us after enrolling for a course?', data: "We take great pride in our support system and it is our USP. A candidate can ask unlimited doubts (be it academic, general, or technical). All the doubts are answered by a team member having expertise in that domain." },
-        { id: 9,  text: 'What is the procedure to get the refund?', data: 'For information on our refund policy you can refer to the Refund Policy Page' },
+        { id: 1, text: 'What is the Objective of MidhaFin?', data: 'MidhaFin is a GARP® authorized Training provider for FRM® Part 1 and Part 2 Exams. The objective of MidhaFin is to help candidates build strong foundational and practical understanding of the curriculum of FRM® which would help them to most likely pass the FRM® exam.' },
+        { id: 2, text: 'What is sample Course?', data: 'Sample course is a free course and contains more than 9 hours 4 min of video covering chapters from all modules, and some samples of study materials.' },
+        { id: 3, text: 'Are the materials provided by MidhaFin is sufficient to pass FRM® Exam?', data: "Our material is more than enough for passing the exam .. And it's quite detailed .. We have prepared it according to the official GARP curriculum. It highly recommended to use our material as the primary source of preparation." },
+        { id: 4, text: 'For how long will the candidate have the access to the package?', data: "The candidates will have access to all the resources until they pass the exam, provided they are still preparing for it. The best part is that the candidate will always have access to the updated material and resources. The access will not be limited to the resources that the candidate was provided during the time of enrolment." },
+        { id: 5, text: 'Is it possible to view the content in the offline mode?', data: 'Yes, candidates can have offline access to all the content through our Android or IOS app. Android app can be downloaded from the google play store and IOS app can be downloaded from the Apple store.' },
+        { id: 6, text: 'Are the materials updated according to the current FRM® curriculum?', data: 'Our material is up-to-date and in strict accordance with the official curriculum of FRM®.' },
+        { id: 7, text: 'Will the candidate get hard copy or soft copy of the study materials, question banks, mocks, and periodic tests?', data: 'The candidates will receive only soft copies of all the text materials such as study materials, question banks, mock tests, periodic tests. Apart from study materials, all other contents have a view only access. Candidate can take the print out of only the study materials, all else has to viewed through either the application or the website.' },
+        { id: 8, text: 'What support candidate can expect from us after enrolling for a course?', data: "We take great pride in our support system and it is our USP. A candidate can ask unlimited doubts (be it academic, general, or technical). All the doubts are answered by a team member having expertise in that domain." },
+        { id: 9, text: 'What is the procedure to get the refund?', data: 'For information on our refund policy you can refer to the Refund Policy Page' },
         { id: 10, text: 'What is the process for upgradation from self-paced course (TP 1) to live classes (TP 2)?', data: 'In order to upgrade your package you can contact our support team by sending an email to the following email id - midhafin@gmail.com or you can connect with us directly via WhatsApp on +91-91551-99555.' },
         { id: 11, text: 'Where can the candidate find the purchase receipt?', data: 'Once you purchase the course an purchase receipt is automatically sent to the registered e-mail of the candidate.' },
         { id: 12, text: 'What are the discounts available on various packages offered by MidhaFin?', data: 'Generally discounts are automatically applied at the time of checkout. For more information you can contact our support team through e-mail, or WhatsApp' },
@@ -37,29 +40,33 @@ export default async function Home() {
                 <main >
                     {/* Hero section */}
                     <HeroSection />
-                    {/* Reviews section  */}
-                    <ReviewSection/>
+
                     {/* About section */}
-                    <div className="flex flex-wrap justify-start  lg:justify-between max-w-[1250px] h-auto md:h-[300px]  w-[100%] mx-auto mt-9 px-[14px] sm ">
-                        <div className="h-[70px] lg:h-[190px] mb-2 my-auto ">
-                            <h1 className="lg:text-[3rem] md:text-[2.5rem]  sm:text-[2rem] text-[1.6rem] font-semibold lg:h-[130px]  leading-tight max-w-[100%] lg:max-w-[200px]  mx-2 lg:px-0  text-center md:text-left my-auto ">About <span className="text-[#6A1C1A]">MidhaFin</span></h1>
-                            <hr className='block lg:hidden lg:border-4 border-[3px] rounded-3xl border-[#9A391D]  md:w-[150px] w-[100px] my-3  mb-7 md:mb-0 mx-2' />
+                    <div className="flex flex-wrap lg:flex-nowrap  justify-start  lg:justify-between text-left max-w-[1400px] px-[25px] md:px-[50px] gap-[18px] md:gap-[30px]  w-[100%] mx-auto mt-9   ">
+
+                        <div className="my-auto">
+                            <h1 className="lg:text-[3rem]  md:text-[2.5rem]  sm:text-[2rem] text-[1.6rem] font-semibold lg:h-[130px]  leading-tight max-w-[100%]   text-left  text-[#691D1C] tracking-wider lg:max-w-[236px]">About <span className="text-[#BE4E1E]">MidhaFin</span></h1>
+                            <hr className="block lg:hidden lg:border-4 border-t-[4px] rounded-3xl border-[#BE4E1E]  md:w-[150px] w-[100px] mt-[18px]" />
                         </div>
-                        <div className=" hidden lg:block border border-[#BE4E1E] border-t-0 border-l-[8px] border-r-0 border-b-0 mx-4 rounded-3xl my-6"></div>
-                        <div className=" max-w-[700px] my-auto  flex flex-col ny-6 justify-around h-[70%]  mx-2">
-                            <h2 className="md:text-[1.75rem] text-[1.2rem] font-semibold leading-tight	 ">MidhaFin focuses on <span className="text-[#BE4E1E]">Personalized Learning,</span> Expertise and Employability.</h2>
-                            <p className="my-4">In finance, desired skills are rare but not jobs! Become employable by pursuing the most reputed and admired courses in the industry, under the expert guidance of MidhaFin.</p>
-                            <Link href='about-us'><h2 className="md:text-[1.75rem] text-[1.5rem] font-semibold leading-tight	text-[#BE4E1E] flex ">More About Us <FaChevronRight className="my-auto ml-2 " /></h2></Link>
+                        <div className="hidden  lg:block border-[#BE4E1E] h-[218px] border-l-[5px] my-[51px] rounded-3xl gap-[30px]"></div>
+                        <div className=" max-w-[900px]   flex flex-col gap-[16px] lg:my-auto mb-2">
+                            <h2 className="lg:text-[32px] md:text-[22px] text-[16px] font-semibold leading-[24px] lg:leading-[32px]	tracking-wide ">MidhaFin focuses on <span className="text-[#BE4E1E]">Personalized Learning,</span> Expertise and Employability.</h2>
+                            <p className="leading-[24px] tracking-wide  md:leading-[28px] lg:leading-[32.63px] text-[14px] md:text-[16px] lg:text-[20px]">In finance, desired skills are rare but not jobs! Become employable by pursuing the most reputed and admired courses in the industry, under the expert guidance of MidhaFin.</p>
+                            <Link href='about-us'><h2 className="lg:text-[20px] text-[16px]  font-semibold leading-tight	text-[#BE4E1E] flex ">More About Us <FaChevronRight className="my-auto ml-2 " /></h2></Link>
                         </div>
                     </div>
                     {/* Features section */}
                     <FeaturesSection />
+                    {/* Courses Section */}
+                    {/* <CoursesOffered /> */}
                     {/* Platform Features section */}
                     <PlatformFeatures />
+                    {/* Reviews section  */}
+                    <ReviewSection />
                     {/* faqs Section */}
-                    <div className='mx-auto mb-9 text-left my-3 max-w-[1300px] px-2 md:mt-[50px] mt-8'>
-                        <h2 className='lg:text-[3rem] md:text-[2.5rem]  sm:text-[2rem] text-[1.4rem] font-semibold leading-tight mx-3'>Frequently Asked <span className='text-[#BE4E1E]'> Questions</span> </h2>
-                        <hr className='lg:border-4 border-[3px] rounded-3xl border-[#9A391D]  md:w-[150px] w-[100px] sm:my-8 mt-3 mx-3 ' />
+                    <div className='mx-auto mb-9 text-left my-3 max-w-[1400px] md:px-[50px] px-[25px] md:mt-[50px] mt-8'>
+                        <h2 className='lg:text-[3rem] md:text-[2.5rem]  sm:text-[2rem] text-[1.4rem] font-semibold leading-tight mb-[24px] md:mb-[31px] lg:mb-[41px]'>Frequently Asked  Questions </h2>
+                        {/* <hr className='lg:border-4 border-[3px] rounded-3xl border-[#9A391D]  md:w-[150px] w-[100px] sm:my-8 mt-3  ' /> */}
                         <Accordion buttonsData={buttonsData} />
                     </div>
                 </main>

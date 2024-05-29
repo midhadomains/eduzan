@@ -1,7 +1,4 @@
 "use client"
-
-import Head from "next/head";
-import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import './slick.css';
 import './slick-theme.css'
@@ -11,16 +8,6 @@ import { FaCircle } from "react-icons/fa6";
 
 
 function ReviewSection() {
-    const [colorIndex, setColorIndex] =useState(0);
-    const colors = ['#BE4E1E', '#C7C7C7'];
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setColorIndex((prevIndex) => (prevIndex === 0 ? 1 : 0));
-        }, 5500);
-
-        return () => clearInterval(interval);
-    }, []);
     const data = [
         {
             titles: 'Angella Arora',
@@ -87,21 +74,20 @@ function ReviewSection() {
         ]
     };
     return (
-        <div className="mx-auto max-w-[1350px] md:px-[25px] px-[10px] overflow-hidden mb-[80px] select-none">
-            <div className="flex justify-center mx-auto my-2 ">
-                <FaCircle className="m-2 md:w-3  w-2  " style={{ color: colors[colorIndex] }} />
-                <FaCircle className="m-2 md:w-3 w-2" style={{ color: colors[1 - colorIndex] }} />
-            </div>
-            <div className=' md:my-[3rem] mt-8 px-2'>
-                <h2 className='lg:text-[3rem] md:text-[2.5rem]  sm:text-[2rem] text-[1.6rem] font-semibold leading-tight mx-3'>Don&apos;t  Believe <span className='text-[#BE4E1E]'> Us</span>, Hear From Our <span className='text-[#BE4E1E]'>Students</span></h2>
-                <hr className='lg:border-4 border-[3px] rounded-3xl border-[#9A391D]  md:w-[150px] w-[100px] my-3 mx-3 mb-7 md:mb-0' />
-            </div>
-            <div className="slider-container">
-                <Slider {...settings}>
-                    {data.map((data, index) => (
-                        <Reviewcard data={data} key={index} />
-                    ))}
-                </Slider>
+        <div className="bg-[#F9F6F4] py-[40px] ">
+            <div className="mx-auto max-w-[1400px] md:px-[50px] px-[25px] overflow-hidden mb-[80px] select-none">
+
+                <div className=' md:my-[3rem] mt-8 '>
+                    <h2 className='lg:text-[3rem] md:text-[2.5rem]  sm:text-[2rem] text-[1.6rem] font-semibold leading-tight  text-[#691D1C]'>Don&apos;t  believe us, hear from our <span className='text-[#BE4E1E]'>students</span></h2>
+                    <hr className='lg:border-4 border-[3px] rounded-3xl border-[#9A391D]  md:w-[150px] w-[100px] my-3  mb-7 md:mb-0' />
+                </div>
+                <div className="slider-container bg-[#F9F6F4]">
+                    <Slider {...settings}>
+                        {data.map((data, index) => (
+                            <Reviewcard data={data} key={index} />
+                        ))}
+                    </Slider>
+                </div>
             </div>
         </div>
     );
