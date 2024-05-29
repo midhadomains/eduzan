@@ -43,4 +43,4 @@ export default function Reviewcard({ data }) {
             </div>
         </div>
     )
-}
+  }

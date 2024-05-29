@@ -10,6 +10,7 @@ export const metadata = {
     "best frm coaching in kolkata", "best frm coaching in chennai", "best frm coaching institute in india", "best frm online coaching in india",
     "best frm coaching in india quora", "best coaching for frm", "best coaching for frm in india", "best online coaching for frm", "Top-rated FRM coaching",
     "Best FRM coaching institutes with high pass rates", "cfa", "cfa exam", "about cfa course", "best cfa prep course", "best cfa coaching in india", "cfa exam prep", "cfa exam registration", "cfa exam level 1", "best way to prepare for cfa exam", "best ways to study for the cfa exam"]
+
 }
 
 export default function RootLayout({ children }) {
