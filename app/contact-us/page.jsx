@@ -5,6 +5,8 @@ import { CiMail } from "react-icons/ci";
 import { IoCallOutline } from "react-icons/io5";
 import Footer from '../../components/common/SiteFooter';
 import Navbar from '../../components/common/SiteHeader';
+
+
 export default function page() {
   //after submitting redirect to "/thankyou"
   return (
