@@ -50,6 +50,12 @@ const nextConfig = {
         hostname:'files.midhafin.com',
         port:'',
         pathname:'/**'
+      },
+      {
+        protocol:'https',
+        hostname:'midha-images.s3.ap-south-1.amazonaws.com',
+        port:'',
+        pathname:'/**'
       }
     ]
   }

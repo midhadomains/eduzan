@@ -77,10 +77,10 @@ export default function Reviewcard({ data }) {
           height: "100%",
         }}></div>
       </div>
-      <div className='bg-white flex justify-between py-4'>
+      <div className=' flex justify-between py-4'>
         <div className='my-auto py-2'>
           <h2 className="text-xl lg:text-2xl font-semibold my-auto tracking-wide">{data.titles}</h2>
-          <div className='flex justify-between w-[150px] mt-3'>
+          <div className='flex justify-between w-[150px] mt-3 mb-[35px]'>
             <Image src='/star-icon.svg' width={20} height={20} alt='img' />
             <Image src='/star-icon.svg' width={20} height={20} alt='img' />
             <Image src='/star-icon.svg' width={20} height={20} alt='img' />
