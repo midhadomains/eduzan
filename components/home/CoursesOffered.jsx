@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import Image from "next/image";
-import CourseCard from "../CourseCard";
+import CourseCard from "../common/CourseCard";
 
 export default function CoursesOffered() {
   const Popularcourse = [
@@ -179,66 +179,80 @@ export default function CoursesOffered() {
     },
   ];
   const [selectedButton, setSelectedButton] = useState("Popular_Courses");
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const handleButtonClick = (btnIndex) => {
     setSelectedButton(btnIndex);
   };
+  const handleDropdownChange = (event) => {
+    setSelectedButton(event.target.value);
+    setIsModalOpen(false);
+  };
   return (
-    <div className=" bg-[#F9F6F4] z-0">
-      <div className="max-w-[1400px] md:px-[50px] px-[25px] py-[161px]  mx-auto flex flex-col">
+    <div className=" bg-[#F9F6F4] ">
+      <div className="max-w-[1400px] md:px-[50px] px-[25px] pt-[161px] pb-[50px] sm:pb-10  mx-auto flex flex-col">
         <div>
-          <h1 className="font-[600] text-[50px] leading-[60.51px] text-[#BE4E1E]">
+          <h1 className="font-[600] lg:text-[3rem]  md:text-[2.5rem]  sm:text-[2rem] text-[1.6rem]  text-[#BE4E1E]">
             Courses <span className="text-[#691D1C]">Offered</span>
           </h1>
           <hr className="w-[94.51px] border-b-[5px] border-[#BE4E1E] rounded-xl mt-[18px] sm:mt-[22px] md:mt-[26px] lg:mt-[31px]" />
         </div>
-        <div className=" flex gap-[38px] mt-[48px] ">
+        <select name="" id="" className="sm:hidden w-[200px]  rounded-3xl mt-[25px] bg-[#BE4E1E] border-4  border-[#BE4E1E] text-white py-1 px-2 shadow-md   transition duration-300 ease-in-out cursor-pointer text-[14px] lg:text-[18px] "   value={selectedButton} onChange={handleDropdownChange}>
+          <option value="Popular_Courses" className=" cursor-pointer bg-[#BE4E1E]">Popular Courses</option>
+          <option value="FRM_Part-1" className="bg-[#BE4E1E] cursor-pointer;">FRM Part 1</option>
+          <option value="FRM_Part-2" className="bg-[#BE4E1E] cursor-pointer;">FRM Part 2</option>
+        </select>
+        <div className="hidden sm:flex gap-[38px] mt-[48px] ">
           <p
             onClick={() => handleButtonClick("Popular_Courses")}
-            className={`text-[14px] lg:text-[18px] w-[214px] h-[50px] cursor-pointer  rounded-3xl flex justify-around px-[2%] items-center ${selectedButton === "Popular_Courses"
-              ? "bg-[#BE4E1E] text-white"
+            className={`text-[14px] lg:text-[18px] w-[214px] h-[50px] cursor-pointer  rounded-3xl flex justify-around px-[2%] items-center ${
+              selectedButton === "Popular_Courses"
+                ? "bg-[#BE4E1E] text-white"
                 : "bg-[#EDEAE9]"
-              }`}
+            }`}
           >
             Popular Courses
             <IoIosArrowForward />
           </p>
           <p
             onClick={() => handleButtonClick("FRM_Part-1")}
-            className={`text-[14px] lg:text-[18px]  w-[214px]  h-[50px] cursor-pointer rounded-3xl flex justify-around px-[2%] items-center ${selectedButton === "FRM_Part-1"
+            className={`text-[14px] lg:text-[18px]  w-[214px]  h-[50px] cursor-pointer rounded-3xl flex justify-around px-[2%] items-center ${
+              selectedButton === "FRM_Part-1"
                 ? "bg-[#BE4E1E] text-white"
                 : "bg-[#EDEAE9]"
-              }`}
+            }`}
           >
             FRM Part 1<IoIosArrowForward />
           </p>
 
           <p
             onClick={() => handleButtonClick("FRM_Part-2")}
-            className={`text-[12px] md:text-[14px] lg:text-[18px]  w-[214px] h-[50px] cursor-pointer  rounded-3xl flex justify-around px-[2%] items-center ${selectedButton === "FRM_Part-2"
-              ? "bg-[#BE4E1E]  text-white"
+            className={`text-[12px] md:text-[14px] lg:text-[18px]  w-[214px] h-[50px] cursor-pointer  rounded-3xl flex justify-around px-[2%] items-center ${
+              selectedButton === "FRM_Part-2"
+                ? "bg-[#BE4E1E]  text-white"
                 : "bg-[#EDEAE9]"
-              }`}
+            }`}
           >
             FRM Part 2<IoIosArrowForward />
           </p>
         </div>
-        <div className="mt-[55px]  ">
+       
+        <div className="mt-[55px]">
           {selectedButton === "Popular_Courses" && (
-            <div className="justify-center lg:justify-between gap-[20px] mx-auto flex flex-wrap  ">
+            <div className="justify-center lg:justify-around gap-[40px] mx-auto flex flex-wrap  ">
               {Popularcourse.map((a) => (
                 <CourseCard a={a} key={a._id} />
               ))}
             </div>
           )}
           {selectedButton === "FRM_Part-1" && (
-            <div className="justify-center lg:justify-between gap-[20px] mx-auto flex flex-wrap  ">
+            <div className="justify-center lg:justify-around gap-[40px] mx-auto flex flex-wrap  ">
               {Frm_p1.map((a) => (
                 <CourseCard a={a} key={a._id} />
               ))}
             </div>
           )}
           {selectedButton === "FRM_Part-2" && (
-            <div className="justify-left gap-[20px] mx-auto flex flex-wrap ">
+            <div className="justify-center sm:justify-start gap-[50px] mx-auto flex flex-wrap ">
               {Frm_p2.map((a) => (
                 <CourseCard a={a} key={a._id} />
               ))}
