@@ -48,7 +48,7 @@ export default function Page() {
     },
     {
       _id: "65f1635ab778e21b1aed83e1",
-      name: "vivek pradhan",
+      name: "Vivek Pradhan",
       image: "https://files.midhafin.com/wp-content/uploads/Vivek-Pradhan.png",
       country: "India",
       job: "HUDCO Ltd.",
@@ -62,7 +62,7 @@ export default function Page() {
     },
     {
       _id: "65f1635ab778e21b1aed83e3",
-      name: "chetan kumar",
+      name: "Chetan Kumar",
       image: "https://files.midhafin.com/wp-content/uploads/Chetan-Kumar.png",
       country: "India",
       job: "Au Small Finance Bank ",

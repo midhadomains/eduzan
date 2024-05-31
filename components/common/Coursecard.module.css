@@ -112,7 +112,7 @@
 #card__body {
   position: relative;
   /* change to change height of content body  */
-  height: 100px;
+  height: 105px;
   padding: 10px;
   -webkit-transition: height 0.5s;
   transition: height 0.5s;
@@ -120,7 +120,7 @@
 
 #card:hover #card__body {
   /* change to change height of content body when hovered */
-  height: 300px;
+  height: 255px;
 }
 
 #card__category {
@@ -203,7 +203,7 @@
   position: absolute;
   left: 20px;
   right: 20px;
-  top: 100px;
+  top:60px;
   margin: 0;
   padding: 0;
   color: #666C74;
@@ -344,13 +344,13 @@
   #card__body {
     position: relative;
     /* change to change height of content body  */
-    height: 100px;
+    height: 85px;
     padding: 0px;
   }
 
   #card:hover #card__body {
     /* change to change height of content body when hovered */
-    height: 270px;
+    height: 230px;
   }
 
   #card__category {
@@ -362,7 +362,7 @@
 
   #card__description {
     left: 10px;
-    top: 75px;
+    top: 35px;
     line-height: 23px;
   }
 
@@ -405,13 +405,13 @@
   #card__body {
     position: relative;
     /* change to change height of content body  */
-    height: 120px;
+    height: 85px;
     padding: 0px;
   }
 
   #card:hover #card__body {
     /* change to change height of content body when hovered */
-    height: 270px;
+    height: 240px;
   }
 
   #card__category {
@@ -423,7 +423,7 @@
 
   #card__description {
     left: 10px;
-    top: 75px;
+    top: 50px;
     line-height: 23px;
   }
 
@@ -468,13 +468,13 @@
   #card__body {
     position: relative;
     /* change to change height of content body  */
-    height: 120px;
+    height: 80px;
     padding: 0px;
   }
 
   #card:hover #card__body {
     /* change to change height of content body when hovered */
-    height: 270px;
+    height: 230px;
   }
 
   #card__category {
@@ -486,7 +486,7 @@
 
   #card__description {
     left: 10px;
-    top: 75px;
+    top: 40px;
     line-height: 23px;
   }
 
@@ -533,13 +533,13 @@
   #card__body {
     position: relative;
     /* change to change height of content body  */
-    height: 120px;
+    height: 80px;
     padding: 0px;
   }
 
   #card:hover #card__body {
     /* change to change height of content body when hovered */
-    height: 270px;
+    height: 240px;
   }
 
   #card__category {
