@@ -149,9 +149,29 @@ export default function CoursesOffered() {
       ],
       link: "https://edu.midhafin.com/courses/FRM-Part-1-Mock-Tests-6353e9d2e4b0f18ec4f5f154",
       rating: 4.5,
-      tp: "SC-1",
+      tp: "MT-1",
       category: "frm",
       sub_category: "part-1_sample_course",
+    },
+    {
+      "_id": "65df333e12f6553dad52daeb",
+      "name": "FRM® Part-1 One-to-One Classes",
+      "image": "https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/courses/mf_frm_part_1_one_on_one_guidance_720.webp",
+      "price": "",
+      "other": "custom",
+      "instructor": "Shubham Swaraj",
+      "details": [
+        "Customizable",
+        "Available On Web,IOS & Android",
+        "Access Until You Pass",
+        "Complete Study Material",
+        "Quizzes,Question Bank & Mock tests"
+      ],
+      "link": "https://edu.midhafin.com/courses/FRM-Part-1-One-to-One-Classes-64d38882e4b0b649ba69ba2a",
+      "rating": 4.5,
+      "tp": "TP-3",
+      "category": "frm",
+      "sub_category": "part-1_one-to-one_classes"
     },
      {
       _id: "65dee4781c34e4d5d691626d",
@@ -174,6 +194,7 @@ export default function CoursesOffered() {
       category: "frm",
       sub_category: "part-1_sample_course",
     },
+   
   ];
 
   const Frm_p2 = [
