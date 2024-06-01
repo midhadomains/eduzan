@@ -134,29 +134,6 @@ export default function CoursesOffered() {
       sub_category: "part-1_live_online_classes",
     },
     {
-      _id: "65df31c3c5e4ac767387dc92",
-      name: "FRM® Part-1 Live Online Classes",
-      image:
-        "https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/courses/mf_frm_part_1_live_online_class_720.webp",
-      price: "₹ 19,800",
-      other: "₹ 29,700",
-      instructor: "Micky Midha",
-      details: [
-        "90 Hrs Of Live Class & 200+ Hrs Of Videos",
-        "Available On Web,IOS & Android",
-        "Access Until You Pass",
-        "Complete Study Material",
-        "Quizzes,Question Bank & Mock tests",
-      ],
-      link: "https://edu.midhafin.com/courses/FRM-Part-1-Live-Online-Classes-6297a9960cf2923982ee9e72",
-      rating: 4.5,
-      tp: "TP-2",
-      category: "frm",
-      sub_category: "part-1_live_online_classes",
-    },
-
-
-    {
       _id: "65dee4781c34e4d5d691626d",
       name: "FRM® Part-1 Mock Tests",
       image:"/Mock-Tests.png",
@@ -171,6 +148,27 @@ export default function CoursesOffered() {
         "100 Questions in each test",
       ],
       link: "https://edu.midhafin.com/courses/FRM-Part-1-Mock-Tests-6353e9d2e4b0f18ec4f5f154",
+      rating: 4.5,
+      tp: "SC-1",
+      category: "frm",
+      sub_category: "part-1_sample_course",
+    },
+     {
+      _id: "65dee4781c34e4d5d691626d",
+      name: "FRM® Part-1 Sample Course",
+      image:
+        "https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/courses/mf_frm_part_1_sample_course_720.webp",
+      price: "",
+      other: "free",
+      instructor: "Micky Midha",
+      details: [
+        "12 Hrs of Videos",
+        "Available On Web,IOS & Android",
+        "Access Until You Pass",
+        "Lecture PDFs ",
+        "class notes",
+      ],
+      link: "https://edu.midhafin.com/courses/MidhaFin-FRM-Part-1-Sample-Course-6305fc9ae4b05c100c2d3a35",
       rating: 4.5,
       tp: "SC-1",
       category: "frm",
