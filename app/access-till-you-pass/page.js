@@ -3,6 +3,10 @@ import Image from 'next/image'
 import Footer from '../../components/common/SiteFooter';
 import Navbar from '../../components/common/SiteHeader';
 
+export const metadata = {
+  title: "Access Till You Pass",
+};
+
 const MyComponents2 = () => {
   return (
     <>

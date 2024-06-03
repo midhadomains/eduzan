@@ -2,6 +2,10 @@ import Footer from '../../components/common/SiteFooter';
 import Navbar from '../../components/common/SiteHeader';
 import Accordion from '../../components/common/Accordian';
 
+export const metadata = {
+    title: "Faqs",
+  };
+
 
 export default function Page() {
     const buttonsData = [

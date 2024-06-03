@@ -2,6 +2,11 @@ import React from 'react'
 import Footer from '../../components/common/SiteFooter';
 import Navbar from '../../components/common/SiteHeader';
 
+export const metadata = {
+  title: "Privacy Policy",
+};
+
+
 
 const PrivacyPolicy = () => {
 

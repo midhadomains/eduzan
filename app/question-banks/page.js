@@ -2,6 +2,12 @@ import React from 'react';
 import Image from 'next/image'
 import Footer from '../../components/common/SiteFooter';
 import Navbar from '../../components/common/SiteHeader';
+
+export const metadata = {
+    title: "Question Banks",
+  };
+
+
 const MyComponents3 = () => {
     return (
         <div className='select-none'>
