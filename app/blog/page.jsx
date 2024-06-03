@@ -3,6 +3,10 @@ import PostList from '../../components/blog/PostList'
 import Navbar from '../../components/common/SiteHeader'
 import Footer from '../../components/common/SiteFooter'
 
+export const metadata = {
+  title: "Blog",
+};
+
 export default function page() {
   return (
     <div>

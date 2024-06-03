@@ -2,6 +2,10 @@ import React from 'react';
 import Footer from '../../components/common/SiteFooter';
 import Navbar from '../../components/common/SiteHeader';
 
+export const metadata = {
+  title: "Terms Of Use",
+};
+
 function Terms() {
   return (
     <div className='w-[100%] select-none'>
