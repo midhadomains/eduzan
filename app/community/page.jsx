@@ -80,7 +80,7 @@ function page() {
                   className="min-w-[40px] w-[50px]"
                 />
                 <span className="mh:block hidden lg:text-[18px] text-[14px]">
-                  Whatsapp Links
+                  Telegram Links
                 </span>{" "}
               </div>
               <div className="flex lx:flex-row flex-col  gap-[20px] xl:gap-[40px]">
@@ -106,7 +106,7 @@ function page() {
                   className="min-w-[40px] w-[50px]"
                 />
                 <span className="mh:block hidden lg:text-[18px] text-[14px]">
-                  Whatsapp Links
+                  Facebook Links
                 </span>{" "}
               </div>
               <div className="flex  lx:flex-row flex-col gap-[20px] lx:gap-[90.5px] xl:gap-[124px]">
@@ -126,8 +126,8 @@ function page() {
         </div>
       </div>
       <div className="mt-[46.5px] sm:mt-[64px] lx:mt-[111px] bg-[#EEEEEE]">
-        <div className="max-w-[1400px]  md:px-[50px] px-[25px] py-[22px] sm:py-[24px] lx:py-[43px]">
-          <p className="text-[12px] mh:text-[14px] lx:text-[20px]">
+        <div className="max-w-[1400px]  md:px-[50px] px-[25px] py-[22px] sm:py-[24px] mx-auto lx:py-[43px]">
+          <p className="text-[12px] mh:text-[14px] lx:text-[20px] border ">
             While these study groups offer numerous benefits, it’s important to
             manage group dynamics, maintain focus on the study objectives & use
             these platforms in a way that complements your learning style and
