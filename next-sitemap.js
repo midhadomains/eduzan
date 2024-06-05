@@ -4,7 +4,7 @@ module.exports = {
     changefreq: 'weekly',
     priority: 0.7,
     sitemapSize: 5000,
-    exclude: ['/secret-page'], // Exclude specific pages
+    exclude: ['/secret-page',], // Exclude specific pages
     robotsTxtOptions: {
         policies: [
             {
