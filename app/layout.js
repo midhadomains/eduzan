@@ -15,7 +15,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" style={{scrollBehavior:"smooth"}}>
       <head>
         <head>
           <meta name="robots" content="index,follow" />

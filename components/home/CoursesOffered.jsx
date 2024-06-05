@@ -317,23 +317,23 @@ export default function CoursesOffered() {
 
         <div className="mt-[55px]">
           {selectedButton === "Popular_Courses" && (
-            <div className="justify-around gap-[40px] mx-auto flex overflow-scroll">
-              {Popularcourse.map((a) => (
-                <CourseCard a={a} key={a._id} />
+            <div className="justify-around gap-[40px] mx-auto flex overflow-scroll" key={1}>
+              {Popularcourse.map((a,index) => (
+                <CourseCard a={a} key={index} />
               ))}
             </div>
           )}
           {selectedButton === "FRM_Part-1" && (
-            <div className="justify-around gap-[40px] mx-auto flex overflow-scroll">
-              {Frm_p1.map((a) => (
-                <CourseCard a={a} key={a._id} />
+            <div className="justify-around gap-[40px] mx-auto flex overflow-scroll" key={2}>
+              {Frm_p1.map((a, index) => (
+                <CourseCard a={a} key={index} />
               ))}
             </div>
           )}
           {selectedButton === "FRM_Part-2" && (
-            <div className="justify-around gap-[40px] mx-auto flex overflow-scroll">
-              {Frm_p2.map((a) => (
-                <CourseCard a={a} key={a._id} />
+            <div className="justify-around gap-[40px] mx-auto flex overflow-scroll" key={3}>
+              {Frm_p2.map((a, index) => (
+                <CourseCard a={a} key={index} />
               ))}
             </div>
           )}

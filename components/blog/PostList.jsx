@@ -15,6 +15,7 @@ const QUERY = `
           category
           author
           meta_description
+          image
         }
       }
       pageInfo {
@@ -34,6 +35,7 @@ const SEARCH_QUERY = `
       category
       meta_description
       author
+      image
     }
   }
 `;
