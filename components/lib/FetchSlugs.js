@@ -2,7 +2,7 @@ import { fetchGraphQLData } from './graphqlRequest';
 
 const SLUGS_QUERY = `
   query {
-    blogs {
+     blogs(first: 10000) {
       edges {
         node {
           slug
