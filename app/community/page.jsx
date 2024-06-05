@@ -127,7 +127,7 @@ function page() {
       </div>
       <div className="mt-[46.5px] sm:mt-[64px] lx:mt-[111px] bg-[#EEEEEE]">
         <div className="max-w-[1400px]  md:px-[50px] px-[25px] py-[22px] sm:py-[24px] mx-auto lx:py-[43px]">
-          <p className="text-[12px] mh:text-[14px] lx:text-[20px] border ">
+          <p className="text-[12px] mh:text-[14px] lx:text-[20px] ">
             While these study groups offer numerous benefits, it’s important to
             manage group dynamics, maintain focus on the study objectives & use
             these platforms in a way that complements your learning style and
