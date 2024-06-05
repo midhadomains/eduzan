@@ -1,6 +1,6 @@
 "use client";
-import React, { useState } from "react";
-import { IoIosArrowForward } from "react-icons/io";
+import React, { useRef, useState } from "react";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import Image from "next/image";
 import CourseCard from "../common/CourseCard";
 
@@ -88,7 +88,6 @@ export default function CoursesOffered() {
       category: "frm",
       sub_category: "part-2_self_paced_course",
     },
-
   ];
   const Frm_p1 = [
     {
@@ -155,11 +154,10 @@ export default function CoursesOffered() {
       sub_category: "part-1_live_online_classes",
     },
 
-
     {
       _id: "65dee4781c34e4d5d691626d",
       name: "FRM® Part-1 Mock Tests",
-      image:"/Mock-Tests.png",
+      image: "/Mock-Tests.png",
       price: "",
       other: "free",
       instructor: "Micky Midha",
@@ -241,10 +239,21 @@ export default function CoursesOffered() {
       sub_category: "part-2_sample_course",
     },
   ];
+
   const [selectedButton, setSelectedButton] = useState("Popular_Courses");
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const scrollRef = useRef(null);
   const handleButtonClick = (btnIndex) => {
     setSelectedButton(btnIndex);
+  };
+  const handleScroll = (direction) => {
+    if (scrollRef.current) {
+      const { scrollLeft, clientWidth } = scrollRef.current;
+      const scrollTo =
+        direction === "left"
+          ? scrollLeft - clientWidth
+          : scrollLeft + clientWidth;
+      scrollRef.current.scrollTo({ left: scrollTo, behaviour: "smooth" });
+    }
   };
   const handleDropdownChange = (event) => {
     setSelectedButton(event.target.value);
@@ -259,65 +268,140 @@ export default function CoursesOffered() {
           </h1>
           <hr className="w-[94.51px] border-b-[5px] border-[#BE4E1E] rounded-xl mt-[18px] sm:mt-[22px] md:mt-[26px] lg:mt-[31px]" />
         </div>
-        <select name="" id="" className="sm:hidden w-[200px]  rounded-3xl mt-[25px] bg-[#BE4E1E] border-4  border-[#BE4E1E] text-white py-1 px-2 shadow-md   transition duration-300 ease-in-out cursor-pointer text-[14px] lg:text-[18px] " value={selectedButton} onChange={handleDropdownChange}>
-          <option value="Popular_Courses" className=" cursor-pointer bg-[#BE4E1E]">Popular Courses</option>
-          <option value="FRM_Part-1" className="bg-[#BE4E1E] cursor-pointer;">FRM Part 1</option>
-          <option value="FRM_Part-2" className="bg-[#BE4E1E] cursor-pointer;">FRM Part 2</option>
+        <select
+          name=""
+          id=""
+          className="sm:hidden w-[200px]  rounded-3xl mt-[25px] bg-[#BE4E1E] border-4  border-[#BE4E1E] text-white py-1 px-2 shadow-md   transition duration-300 ease-in-out cursor-pointer text-[14px] lg:text-[18px] "
+          value={selectedButton}
+          onChange={handleDropdownChange}
+        >
+          <option
+            value="Popular_Courses"
+            className=" cursor-pointer bg-[#BE4E1E]"
+          >
+            Popular Courses
+          </option>
+          <option value="FRM_Part-1" className="bg-[#BE4E1E] cursor-pointer;">
+            FRM Part 1
+          </option>
+          <option value="FRM_Part-2" className="bg-[#BE4E1E] cursor-pointer;">
+            FRM Part 2
+          </option>
         </select>
         <div className="hidden sm:flex gap-[38px] mt-[48px] ">
           <p
             onClick={() => handleButtonClick("Popular_Courses")}
-            className={`text-[14px] lg:text-[18px] w-[214px] h-[50px] cursor-pointer  rounded-3xl flex justify-around px-[2%] items-center ${selectedButton === "Popular_Courses"
+            className={`text-[14px] lg:text-[18px] w-[214px] h-[50px] cursor-pointer  rounded-3xl flex justify-around px-[2%] items-center ${
+              selectedButton === "Popular_Courses"
                 ? "bg-[#BE4E1E] text-white"
                 : "bg-[#EDEAE9]"
-              }`}
+            }`}
           >
             Popular Courses
             <IoIosArrowForward />
           </p>
           <p
             onClick={() => handleButtonClick("FRM_Part-1")}
-            className={`text-[14px] lg:text-[18px]  w-[214px]  h-[50px] cursor-pointer rounded-3xl flex justify-around px-[2%] items-center ${selectedButton === "FRM_Part-1"
+            className={`text-[14px] lg:text-[18px]  w-[214px]  h-[50px] cursor-pointer rounded-3xl flex justify-around px-[2%] items-center ${
+              selectedButton === "FRM_Part-1"
                 ? "bg-[#BE4E1E] text-white"
                 : "bg-[#EDEAE9]"
-              }`}
+            }`}
           >
             FRM Part 1<IoIosArrowForward />
           </p>
 
           <p
             onClick={() => handleButtonClick("FRM_Part-2")}
-            className={`text-[12px] md:text-[14px] lg:text-[18px]  w-[214px] h-[50px] cursor-pointer  rounded-3xl flex justify-around px-[2%] items-center ${selectedButton === "FRM_Part-2"
+            className={`text-[12px] md:text-[14px] lg:text-[18px]  w-[214px] h-[50px] cursor-pointer  rounded-3xl flex justify-around px-[2%] items-center ${
+              selectedButton === "FRM_Part-2"
                 ? "bg-[#BE4E1E]  text-white"
                 : "bg-[#EDEAE9]"
-              }`}
+            }`}
           >
             FRM Part 2<IoIosArrowForward />
           </p>
         </div>
 
-        <div className="mt-[55px]">
-          {selectedButton === "Popular_Courses" && (
-            <div className="justify-around gap-[40px] mx-auto flex overflow-scroll">
-              {Popularcourse.map((a) => (
-                <CourseCard a={a} key={a._id} />
-              ))}
+        <div className="relative mt-[55px]">
+          <div ref={scrollRef} className="flex overflow-x-scroll no-scrollbar scroll-smooth">
+            <div>
+              {/* 1 */}
+
+              {selectedButton === "Popular_Courses" && (
+                <div className="justify-around gap-[40px] mx-auto flex">
+                  <button
+                    onClick={() => handleScroll("left")}
+                    className="absolute left-[-20px] top-1/2 transform -translate-y-1/2 bg-[#BE4E1E] text-white p-2 rounded-full"
+                    style={{ zIndex: 10 }}
+                  >
+                    <IoIosArrowBack />
+                  </button>
+                  {Popularcourse.map((a) => (
+                    <CourseCard a={a} key={a._id} />
+                  ))}
+                  <button
+                    onClick={() => handleScroll("right")}
+                    className="absolute right-[-20px] top-1/2 transform -translate-y-1/2 bg-[#BE4E1E] text-white p-2 rounded-full"
+                    style={{ zIndex: 10 }}
+                  >
+                    <IoIosArrowForward />
+                  </button>
+                </div>
+              )}
             </div>
-          )}
-          {selectedButton === "FRM_Part-1" && (
-            <div className="justify-around gap-[40px] mx-auto flex overflow-scroll">
-              {Frm_p1.map((a) => (
-                <CourseCard a={a} key={a._id} />
-              ))}
+            <div>
+              {/* 2 */}
+
+              {selectedButton === "FRM_Part-1" && (
+                <div className="justify-around gap-[40px] mx-auto flex ">
+                  <button
+                    onClick={() => handleScroll("left")}
+                    className="absolute left-[-20px] top-1/2 transform -translate-y-1/2 bg-[#BE4E1E] text-white p-2 rounded-full"
+                    style={{ zIndex: 10 }}
+                  >
+                    <IoIosArrowBack />
+                  </button>
+                  {Frm_p1.map((a) => (
+                    <CourseCard a={a} key={a._id} />
+                  ))}
+                  <button
+                    onClick={() => handleScroll("right")}
+                    className="absolute right-[-20px] top-1/2 transform -translate-y-1/2 bg-[#BE4E1E] text-white p-2 rounded-full"
+                    style={{ zIndex: 10 }}
+                  >
+                    <IoIosArrowForward />
+                  </button>
+                </div>
+              )}
             </div>
-          )}
-          {selectedButton === "FRM_Part-2" && (
-            <div className="justify-around gap-[40px] mx-auto flex overflow-scroll">
-              {Frm_p2.map((a) => (
-                <CourseCard a={a} key={a._id} />
-              ))}
+
+            <div>
+              {/* 3 */}
+
+              {selectedButton === "FRM_Part-2" && (
+                <div className="justify-around gap-[40px] mx-auto flex ">
+                  <button
+                    onClick={() => handleScroll("left")}
+                    className="absolute xl:hidden left-[-20px] top-1/2 transform -translate-y-1/2 bg-[#BE4E1E] text-white p-2 rounded-full"
+                    style={{ zIndex: 10 }}
+                  >
+                    <IoIosArrowBack />
+                  </button>
+                  {Frm_p2.map((a) => (
+                    <CourseCard a={a} key={a._id} />
+                  ))}
+                </div>
+              )}
+              <button
+                onClick={() => handleScroll("right")}
+                className="absolute xl:hidden right-[-20px] top-1/2 transform -translate-y-1/2 bg-[#BE4E1E] text-white p-2 rounded-full"
+                style={{ zIndex: 10 }}
+              >
+                <IoIosArrowForward />
+              </button>
             </div>
-          )}
+          </div>
         </div>
       </div>
     </div>
