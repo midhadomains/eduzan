@@ -28,9 +28,11 @@ module.exports = {
 
       'mg': '900px',
       // => @media (min-width: 900px) { ... }
+      'mh' : '850px',
 
       'lg': '1024px',
       // => @media (min-width: 1024px) { ... }
+      'lx': '1052px',
 
       'xl': '1280px',
       // => @media (min-width: 1280px) { ... }
