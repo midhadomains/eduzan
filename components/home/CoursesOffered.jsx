@@ -323,8 +323,8 @@ export default function CoursesOffered() {
           </p>
         </div>
 
-        <div className="relative mt-[55px]">
-          <div ref={scrollRef} className="flex overflow-x-scroll no-scrollbar scroll-smooth">
+        <div className="relative mt-[55px] ">
+          <div ref={scrollRef} className="flex overflow-x-scroll no-scrollbar scroll-smooth"  style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}>
             <div>
               {/* 1 */}
 
