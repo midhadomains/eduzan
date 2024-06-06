@@ -88,6 +88,26 @@ export default function CoursesOffered() {
       category: "frm",
       sub_category: "part-2_self_paced_course",
     },
+    {
+      _id: "65dee4781c34e4d5d691650d",
+      name: "PRM Exam 1",
+      image:"https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/courses/mf_prm_exam_1_self_paced_course_720.webp",
+      price: "",
+      other: "free",
+      instructor: "Shubham Swaraj",
+      details: [
+        "Lecture Videos",
+        "Available On Web,IOS & Android",
+        "Complete Study Material",
+        "Question Bank & Lecture PDFs ",
+        "doubt-solving forum",
+      ],
+      link: "https://edu.midhafin.com/courses/PRM-Exam-1-Self-Paced-Course-62cfb1cf0cf26cb7b9d708cd",
+      rating: 4.5,
+      tp: "PE-1",
+      category: "prm",
+      sub_category: "prm_exam_1_self_paced_course",
+    },
   ];
   const Frm_p1 = [
     {
@@ -135,7 +155,7 @@ export default function CoursesOffered() {
     {
       _id: "65dee4781c34e4d5d691626d",
       name: "FRM® Part-1 Mock Tests",
-      image:"/Mock-Tests.png",
+      image: "/Mock-Tests.png",
       price: "",
       other: "free",
       instructor: "Micky Midha",
@@ -175,10 +195,10 @@ export default function CoursesOffered() {
       "category": "frm",
       "sub_category": "part-1_one-to-one_classes"
     },
-     {
+    {
       _id: "65dee4781c34e4d5d691626d",
       name: "FRM® Part-1 Mock Tests",
-      image: "/Mock-Tests.png",
+      image: "https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/courses/mf_frm_part_1_sample_course_720.webp",
       price: "",
       other: "free",
       instructor: "Micky Midha",
@@ -195,7 +215,7 @@ export default function CoursesOffered() {
       category: "frm",
       sub_category: "part-1_sample_course",
     },
-   
+
   ];
 
   const Frm_p2 = [
@@ -279,7 +299,7 @@ export default function CoursesOffered() {
   };
   const handleDropdownChange = (event) => {
     setSelectedButton(event.target.value);
-    
+
   };
   return (
     <div className=" bg-[#F9F6F4] ">
@@ -315,33 +335,30 @@ export default function CoursesOffered() {
         <div className="hidden sm:flex gap-[38px] mt-[48px] ">
           <p
             onClick={() => handleButtonClick("Popular_Courses")}
-            className={`text-[14px] lg:text-[18px] w-[214px] h-[50px] cursor-pointer  rounded-3xl flex justify-around px-[2%] items-center ${
-              selectedButton === "Popular_Courses"
+            className={`text-[14px] lg:text-[18px] w-[214px] h-[50px] cursor-pointer  rounded-3xl flex justify-around px-[2%] items-center ${selectedButton === "Popular_Courses"
                 ? "bg-[#BE4E1E] text-white"
                 : "bg-[#EDEAE9]"
-            }`}
+              }`}
           >
             Popular Courses
             <IoIosArrowForward />
           </p>
           <p
             onClick={() => handleButtonClick("FRM_Part-1")}
-            className={`text-[14px] lg:text-[18px]  w-[214px]  h-[50px] cursor-pointer rounded-3xl flex justify-around px-[2%] items-center ${
-              selectedButton === "FRM_Part-1"
+            className={`text-[14px] lg:text-[18px]  w-[214px]  h-[50px] cursor-pointer rounded-3xl flex justify-around px-[2%] items-center ${selectedButton === "FRM_Part-1"
                 ? "bg-[#BE4E1E] text-white"
                 : "bg-[#EDEAE9]"
-            }`}
+              }`}
           >
             FRM Part 1<IoIosArrowForward />
           </p>
 
           <p
             onClick={() => handleButtonClick("FRM_Part-2")}
-            className={`text-[12px] md:text-[14px] lg:text-[18px]  w-[214px] h-[50px] cursor-pointer  rounded-3xl flex justify-around px-[2%] items-center ${
-              selectedButton === "FRM_Part-2"
+            className={`text-[12px] md:text-[14px] lg:text-[18px]  w-[214px] h-[50px] cursor-pointer  rounded-3xl flex justify-around px-[2%] items-center ${selectedButton === "FRM_Part-2"
                 ? "bg-[#BE4E1E]  text-white"
                 : "bg-[#EDEAE9]"
-            }`}
+              }`}
           >
             FRM Part 2<IoIosArrowForward />
           </p>
@@ -350,7 +367,7 @@ export default function CoursesOffered() {
 
         {/* Course box section */}
         <div className="relative mt-[55px] ">
-          <div ref={scrollRef} className="flex overflow-x-scroll no-scrollbar scroll-smooth"  style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}>
+          <div ref={scrollRef} className="flex overflow-x-scroll no-scrollbar scroll-smooth" style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}>
             <div>
               {/* 1 */}
 
