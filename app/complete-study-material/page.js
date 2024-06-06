@@ -2,6 +2,11 @@ import React from 'react';
 import Image from 'next/image'
 import Footer from '../../components/common/SiteFooter';
 import Navbar from '../../components/common/SiteHeader';
+
+export const metadata = {
+  title: "Complete Study Material"
+};
+
 const MyComponent = () => {
   return (
     <>

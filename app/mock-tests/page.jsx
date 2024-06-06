@@ -5,6 +5,11 @@ import Navbar from '../../components/common/SiteHeader';
 import Link from "next/link";
 import { RiArrowDownSFill } from "react-icons/ri";
 
+export const metadata = {
+  title: "Mock Tests",
+};
+
+
 const MyComponents4 = () => {
   return (
     <div className="select-none">

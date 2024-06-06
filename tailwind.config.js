@@ -42,5 +42,8 @@ module.exports = {
       'hs' : '1140px',
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+    // ...
+  ],
 }

@@ -2,6 +2,11 @@ import React from 'react';
 import Image from 'next/image'
 import Footer from '../../components/common/SiteFooter';
 import Navbar from '../../components/common/SiteHeader';
+
+export const metadata = {
+  title: "Lecture Videos",
+};
+
 const MyComponents5 = () => {
   return (
     <div className='select-none'>

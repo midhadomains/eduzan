@@ -233,12 +233,15 @@ const RedirectPage = () => {
             width={160}
             height={211}
             className="w-[20%] -mr-[55px] sm:-mr-[100px] z-10"
+            alt="4"
           />
           <Image
             src="/error_msg.gif"
             width={285}
             height={313}
             className="w-[60%] "
+            alt="0"
+            unoptimized
           />
 
           <Image
@@ -246,6 +249,7 @@ const RedirectPage = () => {
             width={160}
             height={211}
             className="w-[20%] -ml-[65px] sm:-ml-[90px]"
+            alt="4"
           />
         </div>
         <div className="text-center text-[14px] md:text-[16px] lg:text-[20px] my-2 p-2 tracking-wide">

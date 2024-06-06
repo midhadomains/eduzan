@@ -13,9 +13,9 @@ const QUERY = `
           title
           slug
           category
-          meta_data
           author
-          date_created
+          meta_description
+          image
         }
       }
       pageInfo {
@@ -33,9 +33,9 @@ const SEARCH_QUERY = `
       title
       slug
       category
-      meta_data
+      meta_description
       author
-      date_created
+      image
     }
   }
 `;

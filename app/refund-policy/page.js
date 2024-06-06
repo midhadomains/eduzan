@@ -2,6 +2,12 @@ import React from 'react';
 import Link from 'next/link'
 import Footer from '../../components/common/SiteFooter';
 import Navbar from '../../components/common/SiteHeader';
+
+export const metadata = {
+  title: "Refund Policy",
+};
+
+
 function Page() {
   return (
     <div className='select-none'>
