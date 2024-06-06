@@ -257,7 +257,7 @@ export default function CoursesOffered() {
   };
   const handleDropdownChange = (event) => {
     setSelectedButton(event.target.value);
-    setIsModalOpen(false);
+    
   };
   return (
     <div className=" bg-[#F9F6F4] ">
@@ -268,6 +268,8 @@ export default function CoursesOffered() {
           </h1>
           <hr className="w-[94.51px] border-b-[5px] border-[#BE4E1E] rounded-xl mt-[18px] sm:mt-[22px] md:mt-[26px] lg:mt-[31px]" />
         </div>
+
+        {/* Courses Option buttons */}
         <select
           name=""
           id=""
@@ -322,7 +324,9 @@ export default function CoursesOffered() {
             FRM Part 2<IoIosArrowForward />
           </p>
         </div>
+        {/* Courses Option buttons end*/}
 
+        {/* Course box section */}
         <div className="relative mt-[55px] ">
           <div ref={scrollRef} className="flex overflow-x-scroll no-scrollbar scroll-smooth"  style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}>
             <div>
@@ -403,6 +407,7 @@ export default function CoursesOffered() {
             </div>
           </div>
         </div>
+        {/* Coursebox section ends */}
       </div>
     </div>
   );
