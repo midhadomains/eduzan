@@ -83,8 +83,7 @@ function PlatformFeatures() {
                 </div>
 
                 {/* Operation going on */}
-                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-auto col-auto  row-[20px] item-center bg-white  z-10  rounded-[25px] shadow-[0px_6px_13.5px_0px_#C4AFA140]
-">
+                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-auto col-auto  row-[20px] item-center bg-white  z-10  rounded-[25px] shadow-[0px_6px_13.5px_0px_#C4AFA140]">
                     {features.map((feature, index) => (
                         <div
                             key={index}
@@ -114,7 +113,7 @@ function PlatformFeatures() {
                                 </Link>
                             </div>
                             {/* Vertical line for grid-cols-2 */}
-                            {(index % 2 === 0 && index !== features.length - 1 && index !== features.length - 1) && (
+                            {(index % 2 !== 1 && index !== features.length - 1 && index !== features.length - 1) && (
                                 <span className="absolute top-0 right-[-10px] max-h-[132px] h-[70%] bottom-0 my-auto w-[1px] bg-[#BE4E1E] block sm:hidden"></span>
                             )}
                             {/* Vertical line for grid-cols-3 */}
