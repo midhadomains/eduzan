@@ -1,8 +1,12 @@
+import { Inter } from "next/font/google";
+
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import '../styles/main.css';
 import { GoogleAnalytics } from '@next/third-parties/google'
 import SocialMedia from "../components/common/SocialMedia";
 import Head from "next/head";
+const inter = Inter({ subsets: ["Inter"] });
+
 
 export const metadata = {
   title: 'MidhaFin',
@@ -38,7 +42,7 @@ export default function RootLayout({ children }) {
           <meta name="x:description" content="Boost Your Career In Finance" />
           <meta name="x:image" content="https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/Homepage/open-graph-snippet_600*336.png.png" />
         </Head>
-      <body>
+      <body className={inter.className}>
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PSL6VDFP"
           height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
         <SpeedInsights />
