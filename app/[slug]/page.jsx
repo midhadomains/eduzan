@@ -2,8 +2,6 @@ import { fetchGraphQLData } from '../../components/lib/graphqlRequest';
 import Image from 'next/image';
 import Head from 'next/head';
 import { notFound } from 'next/navigation';
-import Footer from '../../components/common/SiteFooter';
-import Navbar from '../../components/common/SiteHeader';
 import TableOfContents from '../../components/blog/TableOfContents';
 import parameterize from 'parameterize';
 import rehypeParse from 'rehype-parse';
@@ -58,7 +56,7 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: blogData.title,
       description: blogData.meta_description,
-      url: `https://midhafin.com/${slug}`,
+      url: `https://wwww.midhafin.com/${slug}`,
       images: [
         {
           url: blogData.image,
@@ -127,14 +125,22 @@ export default async function BlogPost({ params }) {
   return (
     <>
       <Head>
+        <title>{blogData.title}</title>
+        <meta name="description" content={blogData.meta_description} />
+        <meta name="keywords" content={blogData.keywords.join(', ')} />
+        <meta property="og:title" content={blogData.title} />
+        <meta property="og:description" content={blogData.meta_description} />
+        <meta property="og:url" content={`https://midhafin.com/${slug}`} />
+        <meta property="og:image" content={blogData.image} />
+        <meta property="og:image:width" content="800" />
+        <meta property="og:image:height" content="600" />
+        <meta property="og:image:alt" content={blogData.title} />
         <script
-          type='application/ld+json'
+          type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
       </Head>
-      <Navbar />
       <TableOfContents TOC={toc} />
-
       <div className='p-5 max-w-[800px] mx-auto'>
         <Image src={blogData.image} width={800} height={600} alt={blogData.title} />
         <h1>{blogData.title}</h1>
@@ -142,7 +148,6 @@ export default async function BlogPost({ params }) {
         <p>{blogData.meta_description}</p>
         <div className='prose' dangerouslySetInnerHTML={{ __html: content }}></div>
       </div>
-      <Footer />
     </>
   );
 }
