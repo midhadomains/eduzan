@@ -1,11 +1,10 @@
 import { Inter } from "next/font/google";
-
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import '../styles/main.css';
 import { GoogleAnalytics } from '@next/third-parties/google'
 import SocialMedia from "../components/common/SocialMedia";
 import Head from "next/head";
-const inter = Inter({ subsets: ["Inter"] });
+const inter = Inter({ subsets: ["latin"] });
 
 
 export const metadata = {
