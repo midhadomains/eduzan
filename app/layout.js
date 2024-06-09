@@ -20,7 +20,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" style={{scrollBehavior:"smooth"}}>
-        <Head>
+        <head>
           <meta name="robots" content="index,follow" />
           <meta name="googlebot" content="index,follow" />
           <meta property="og:title" content="MidhaFin:- FRM Exam prep provider" />
@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
           <meta name="x:title" content="MidhaFin:-FRM Exam prep provider" />
           <meta name="x:description" content="Boost Your Career In Finance" />
           <meta name="x:image" content="https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/Homepage/open-graph-snippet_600*336.png.png" />
-        </Head>
+        </head>
       <body className={inter.className}>
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PSL6VDFP"
           height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
