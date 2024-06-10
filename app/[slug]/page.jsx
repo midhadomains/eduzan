@@ -170,6 +170,7 @@ export default async function BlogPost({ params }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
       </Head>
+      <Navbar/>
       <TableOfContents TOC={toc} />
       <div className='p-5 max-w-[800px] mx-auto'>
         <p className='text-[18px] font-[500] uppercase text-[#BE4E1E] tracking-wider '>{blogData.category}</p>
