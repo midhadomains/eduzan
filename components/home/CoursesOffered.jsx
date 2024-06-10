@@ -1,6 +1,6 @@
 "use client";
-import React, { useState } from "react";
-import { IoIosArrowForward } from "react-icons/io";
+import React, { useRef, useState } from "react";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import Image from "next/image";
 import CourseCard from "../common/CourseCard";
 
@@ -88,7 +88,26 @@ export default function CoursesOffered() {
       category: "frm",
       sub_category: "part-2_self_paced_course",
     },
-
+    {
+      _id: "65dee4781c34e4d5d691650d",
+      name: "PRM Exam 1",
+      image:"https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/courses/mf_prm_exam_1_self_paced_course_720.webp",
+      price: "",
+      other: "free",
+      instructor: "Shubham Swaraj",
+      details: [
+        "Lecture Videos",
+        "Available On Web,IOS & Android",
+        "Complete Study Material",
+        "Question Bank & Lecture PDFs ",
+        "doubt-solving forum",
+      ],
+      link: "https://edu.midhafin.com/courses/PRM-Exam-1-Self-Paced-Course-62cfb1cf0cf26cb7b9d708cd",
+      rating: 4.5,
+      tp: "PE-1",
+      category: "prm",
+      sub_category: "prm_exam_1_self_paced_course",
+    },
   ];
   const Frm_p1 = [
     {
@@ -136,7 +155,7 @@ export default function CoursesOffered() {
     {
       _id: "65dee4781c34e4d5d691626d",
       name: "FRM® Part-1 Mock Tests",
-      image:"/Mock-Tests.png",
+      image: "/Mock-Tests.png",
       price: "",
       other: "free",
       instructor: "Micky Midha",
@@ -153,6 +172,9 @@ export default function CoursesOffered() {
       category: "frm",
       sub_category: "part-1_sample_course",
     },
+
+
+
     {
       "_id": "65df333e12f6553dad52daeb",
       "name": "FRM® Part-1 One-to-One Classes",
@@ -173,11 +195,10 @@ export default function CoursesOffered() {
       "category": "frm",
       "sub_category": "part-1_one-to-one_classes"
     },
-     {
+    {
       _id: "65dee4781c34e4d5d691626d",
-      name: "FRM® Part-1 Sample Course",
-      image:
-        "https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/courses/mf_frm_part_1_sample_course_720.webp",
+      name: "FRM® Part-1 Mock Tests",
+      image: "https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/courses/mf_frm_part_1_sample_course_720.webp",
       price: "",
       other: "free",
       instructor: "Micky Midha",
@@ -194,7 +215,7 @@ export default function CoursesOffered() {
       category: "frm",
       sub_category: "part-1_sample_course",
     },
-   
+
   ];
 
   const Frm_p2 = [
@@ -260,14 +281,25 @@ export default function CoursesOffered() {
       sub_category: "part-2_sample_course",
     },
   ];
+
   const [selectedButton, setSelectedButton] = useState("Popular_Courses");
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const scrollRef = useRef(null);
   const handleButtonClick = (btnIndex) => {
     setSelectedButton(btnIndex);
   };
+  const handleScroll = (direction) => {
+    if (scrollRef.current) {
+      const { scrollLeft, clientWidth } = scrollRef.current;
+      const scrollTo =
+        direction === "left"
+          ? scrollLeft - clientWidth
+          : scrollLeft + clientWidth;
+      scrollRef.current.scrollTo({ left: scrollTo, behaviour: "smooth" });
+    }
+  };
   const handleDropdownChange = (event) => {
     setSelectedButton(event.target.value);
-    setIsModalOpen(false);
+
   };
   return (
     <div className=" bg-[#F9F6F4] ">
@@ -278,10 +310,27 @@ export default function CoursesOffered() {
           </h1>
           <hr className="w-[94.51px] border-b-[5px] border-[#BE4E1E] rounded-xl mt-[18px] sm:mt-[22px] md:mt-[26px] lg:mt-[31px]" />
         </div>
-        <select name="" id="" className="sm:hidden w-[200px]  rounded-3xl mt-[25px] bg-[#BE4E1E] border-4  border-[#BE4E1E] text-white py-1 px-2 shadow-md   transition duration-300 ease-in-out cursor-pointer text-[14px] lg:text-[18px] " value={selectedButton} onChange={handleDropdownChange}>
-          <option value="Popular_Courses" className=" cursor-pointer bg-[#BE4E1E]">Popular Courses</option>
-          <option value="FRM_Part-1" className="bg-[#BE4E1E] cursor-pointer;">FRM Part 1</option>
-          <option value="FRM_Part-2" className="bg-[#BE4E1E] cursor-pointer;">FRM Part 2</option>
+
+        {/* Courses Option buttons */}
+        <select
+          name=""
+          id=""
+          className="sm:hidden w-[200px]  rounded-3xl mt-[25px] bg-[#BE4E1E] border-4  border-[#BE4E1E] text-white py-1 px-2 shadow-md   transition duration-300 ease-in-out cursor-pointer text-[14px] lg:text-[18px] "
+          value={selectedButton}
+          onChange={handleDropdownChange}
+        >
+          <option
+            value="Popular_Courses"
+            className=" cursor-pointer bg-[#BE4E1E]"
+          >
+            Popular Courses
+          </option>
+          <option value="FRM_Part-1" className="bg-[#BE4E1E] cursor-pointer;">
+            FRM Part 1
+          </option>
+          <option value="FRM_Part-2" className="bg-[#BE4E1E] cursor-pointer;">
+            FRM Part 2
+          </option>
         </select>
         <div className="hidden sm:flex gap-[38px] mt-[48px] ">
           <p
@@ -314,30 +363,90 @@ export default function CoursesOffered() {
             FRM Part 2<IoIosArrowForward />
           </p>
         </div>
+        {/* Courses Option buttons end*/}
 
-        <div className="mt-[55px]">
-          {selectedButton === "Popular_Courses" && (
-            <div className="justify-around gap-[40px] mx-auto flex overflow-scroll" key={1}>
-              {Popularcourse.map((a,index) => (
-                <CourseCard a={a} key={index} />
-              ))}
+        {/* Course box section */}
+        <div className="relative mt-[55px] ">
+          <div ref={scrollRef} className="flex overflow-x-scroll no-scrollbar scroll-smooth" style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}>
+            <div>
+              {/* 1 */}
+
+              {selectedButton === "Popular_Courses" && (
+                <div className="justify-around gap-[40px] mx-auto flex">
+                  <button
+                    onClick={() => handleScroll("left")}
+                    className="absolute left-[-20px] top-1/2 transform -translate-y-1/2 bg-[#BE4E1E] text-white p-2 rounded-full"
+                    style={{ zIndex: 10 }}
+                  >
+                    <IoIosArrowBack />
+                  </button>
+                  {Popularcourse.map((a) => (
+                    <CourseCard a={a} key={a._id} />
+                  ))}
+                  <button
+                    onClick={() => handleScroll("right")}
+                    className="absolute right-[-20px] top-1/2 transform -translate-y-1/2 bg-[#BE4E1E] text-white p-2 rounded-full"
+                    style={{ zIndex: 10 }}
+                  >
+                    <IoIosArrowForward />
+                  </button>
+                </div>
+              )}
             </div>
-          )}
-          {selectedButton === "FRM_Part-1" && (
-            <div className="justify-around gap-[40px] mx-auto flex overflow-scroll" key={2}>
-              {Frm_p1.map((a, index) => (
-                <CourseCard a={a} key={index} />
-              ))}
+            <div>
+              {/* 2 */}
+
+              {selectedButton === "FRM_Part-1" && (
+                <div className="justify-around gap-[40px] mx-auto flex ">
+                  <button
+                    onClick={() => handleScroll("left")}
+                    className="absolute left-[-20px] top-1/2 transform -translate-y-1/2 bg-[#BE4E1E] text-white p-2 rounded-full"
+                    style={{ zIndex: 10 }}
+                  >
+                    <IoIosArrowBack />
+                  </button>
+                  {Frm_p1.map((a) => (
+                    <CourseCard a={a} key={a._id} />
+                  ))}
+                  <button
+                    onClick={() => handleScroll("right")}
+                    className="absolute right-[-20px] top-1/2 transform -translate-y-1/2 bg-[#BE4E1E] text-white p-2 rounded-full"
+                    style={{ zIndex: 10 }}
+                  >
+                    <IoIosArrowForward />
+                  </button>
+                </div>
+              )}
             </div>
-          )}
-          {selectedButton === "FRM_Part-2" && (
-            <div className="justify-around gap-[40px] mx-auto flex overflow-scroll" key={3}>
-              {Frm_p2.map((a, index) => (
-                <CourseCard a={a} key={index} />
-              ))}
+
+            <div>
+              {/* 3 */}
+
+              {selectedButton === "FRM_Part-2" && (
+                <div className="justify-around gap-[40px] mx-auto flex ">
+                  <button
+                    onClick={() => handleScroll("left")}
+                    className="absolute xl:hidden left-[-20px] top-1/2 transform -translate-y-1/2 bg-[#BE4E1E] text-white p-2 rounded-full"
+                    style={{ zIndex: 10 }}
+                  >
+                    <IoIosArrowBack />
+                  </button>
+                  {Frm_p2.map((a) => (
+                    <CourseCard a={a} key={a._id} />
+                  ))}
+                </div>
+              )}
+              <button
+                onClick={() => handleScroll("right")}
+                className="absolute xl:hidden right-[-20px] top-1/2 transform -translate-y-1/2 bg-[#BE4E1E] text-white p-2 rounded-full"
+                style={{ zIndex: 10 }}
+              >
+                <IoIosArrowForward />
+              </button>
             </div>
-          )}
+          </div>
         </div>
+        {/* Coursebox section ends */}
       </div>
     </div>
   );

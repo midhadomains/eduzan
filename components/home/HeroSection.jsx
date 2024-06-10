@@ -21,7 +21,7 @@ function HeroSection() {
                 <div key={2} className="h-[100%] flex justify-center  flex-wrap lg:flex-nowrap bg-gradient-to-r from-[#EBD3A3] to-[#F9F2DF] overflow-hidden  md:px-[50px] px-[20px] pt-5 ">
                     <div className='flex justify-center lg:justify-between max-w-[1300px] w-[100%] flex-wrap lg:flex-nowrap '>
                         <div className="max-w-[576px] my-auto flex flex-col justify-around items-center lg:items-start text-center lg:text-left  ">
-                            <h1 className="xl:text-[3rem] md:text-[2.5rem]  sm:text-[2rem] text-[24px] font-semibold leading-tight text-[#6A1C1A]">Find your <span className='text-[#BE4E1E]'>passion , </span><br />find your <span className='text-[#BE4E1E]'>course </span> </h1>
+                            <h1 className="xl:text-[3rem] md:text-[2.5rem]  sm:text-[2rem] text-[24px] font-semibold leading-tight text-[#6A1C1A]">Find your <span className='text-[#BE4E1E]'>passion, </span><br />find your <span className='text-[#BE4E1E]'>course </span> </h1>
                             <p className="lg:text-[20px] md:text-[17px] text-[14px] lg:my-9  my-3 font-[400] tracking-wide max-w-[691px]">Choose from <span className='text-[#BE4E1E]'> GARP-approved courses </span> offered by Midha FIN to chart your path towards a promising career in finance.</p>
                             <Link href='https://edu.midhafin.com/s/authenticate' className='max-w-[395px] min-w-[160px] w-[60%]'><button className="bg-[#6A1C1A] transition-colors duration-150  hover:bg-[#BE4E1E] md:py-4 py-[6px]  max-w-[395px] min-w-[160px] w-[100%] md:text-3xl text-[1.1rem] mt-3 rounded-[54px] font-semibold tracking-wider text-[#F9ECC7] mb-4 ">Signup Now</button></Link>
                         </div >

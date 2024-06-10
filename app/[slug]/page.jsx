@@ -155,12 +155,21 @@ export default async function BlogPost({ params }) {
   return (
     <>
       <Head>
+        <title>{blogData.title}</title>
+        <meta name="description" content={blogData.meta_description} />
+        <meta name="keywords" content={blogData.keywords.join(', ')} />
+        <meta property="og:title" content={blogData.title} />
+        <meta property="og:description" content={blogData.meta_description} />
+        <meta property="og:url" content={`https://midhafin.com/${slug}`} />
+        <meta property="og:image" content={blogData.image} />
+        <meta property="og:image:width" content="800" />
+        <meta property="og:image:height" content="600" />
+        <meta property="og:image:alt" content={blogData.title} />
         <script
-          type='application/ld+json'
+          type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
       </Head>
-      <Navbar />
       <TableOfContents TOC={toc} />
       <div className='p-5 max-w-[800px] mx-auto'>
         <p className='text-[18px] font-[500] uppercase text-[#BE4E1E] tracking-wider '>{blogData.category}</p>
