@@ -2,7 +2,6 @@ import { fetchGraphQLData } from '../../components/lib/graphqlRequest';
 import Image from 'next/image';
 import Head from 'next/head';
 import { notFound } from 'next/navigation';
-import Footer from '../../components/common/SiteFooter';
 import Navbar from '../../components/common/SiteHeader';
 import TableOfContents from '../../components/blog/TableOfContents';
 import parameterize from 'parameterize';
@@ -13,6 +12,7 @@ import { visit } from 'unist-util-visit';
 import { fetchSlugs } from '../../components/lib/FetchSlugs';
 import { GoDotFill } from "react-icons/go";
 import Link from 'next/link';
+import Footer from '../../components/common/SiteFooter';
 
 const BLOG_QUERY = `
   query Node($slug: String!) {
@@ -185,7 +185,7 @@ export default async function BlogPost({ params }) {
           ))}
         </div>
       </div> */}
-      <Footer />
+      <Footer/>
     </>
   );
 }
