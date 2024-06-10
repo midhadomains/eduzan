@@ -72,10 +72,10 @@ function Footer() {
                   </h1>
                   <ul className="flex flex-col gap-[7px]">
                   <Link
-                      href="/"
+                      href="/blog"
                       className="lg:text-[18px] sm:text-[16px] text-[14px] leading-[30px] text-[#626979] transition-colors duration-300 hover:underline hover:text-[#6A1C1A]"
                     >
-                      Home
+                      Blog
                     </Link>
                     <Link
                       href="/about-us"
@@ -158,7 +158,7 @@ function Footer() {
                 </div>
               </div>
 
-              <div className=" flex flex-col gap-[13px] ">
+              <div className=" flex flex-col gap-[13px] mt-5 md:mt-0 ">
                 <h1 className="font-[500] lg:text-[20px] sm:text-[18px] text-[14px] leading-[24.2px]">
                   Contact Us
                 </h1>

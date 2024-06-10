@@ -42,7 +42,7 @@ const Navbar = () => {
                 className={`mx-auto block sticky top-0 z-30 bg-[#FFFDF6] w-full shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] transition-all duration-300 ease-in-out ${visible ? 'transform translate-y-0' : '-translate-y-full'}`}
             >
                 <div className="">
-                    <div className="flex items-center justify-between  w-[100%] h-[55px] md:h-[70px] max-w-[2500px] mx-auto overflow:hidden">
+                    <div className="flex items-center justify-between   w-[100%] h-[55px] md:h-[70px] max-w-[1500px] pl-[20px] lg:pl-[50px] pr-[10px] mx-auto overflow:hidden">
                         <Link href='https://www.midhafin.com'>
                             <Image
                                 width={250}
@@ -70,9 +70,9 @@ const Navbar = () => {
                             )}
                         </div>
 
-                        <ul className="hidden md:flex  justify-around flex-nowrap  max-w-[1000px] w-[100%]">
+                        <ul className="hidden mg:flex  justify-around flex-nowrap  max-w-[900px] w-[100%]">
                             <NavItem to='/' name='Home' />
-                            {/* <NavItem to="/blog" name="Blog" /> */}
+                            <NavItem to="/blog" name="Blog" />
                             {/* <li>
                                 <div className="relative inline-block group py-[0.6rem] text-center">
                                     <button className="text-[1.1rem] font-[500] h-[100%] cursor-pointe  px-1 hover:text-[#BE4E1E] my-auto  transition duration-300 ">
@@ -101,7 +101,8 @@ const Navbar = () => {
                         >
                             <SmNavItem to='/' name='Home' />
                             <hr />
-                            {/* <NavItem to="/blog" name="Blogs" /> */}
+                            <NavItem to="/blog" name="Blog" />
+                            <hr/>
                             <SmNavItem to="https://edu.midhafin.com/s/store" name="Courses" />
                             <hr />
                             <SmNavItem to="https://frm.midhafin.com/reviews" name="Reviews" />
