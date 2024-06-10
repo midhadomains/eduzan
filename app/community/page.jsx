@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { IoIosArrowForward } from "react-icons/io";
@@ -15,7 +14,7 @@ function page() {
       </div>
       <div className="md:px-[50px] px-[25px] mx-auto  max-w-[1400px] sm:mt-[27px] mt-[21px] lg:mt-[34px]">
         <p className="leading-[23.1px] md:leading-[33px] lg:text-[20px] md:text-[16px] text-[14px]">
-          Dear Fellow FRM Candidates,
+          Dear Fellow FRM Candidates,
           <br />
           Are you preparing for the challenging Financial Risk Manager (FRM®)
           exam &{" "}
@@ -37,6 +36,7 @@ function page() {
             width={900}
             height={1000}
             className="w-[100%] max-w-[617px] min-w-[300px]"
+            alt="Community"
           />
         </div>
 
@@ -52,18 +52,19 @@ function page() {
                   width={100}
                   height={100}
                   className="min-w-[45px] w-[50px]"
+                  alt="Community"
                 />
                 <span className="mh:block hidden lg:text-[18px] text-[14px]">
                   Whatsapp Links
                 </span>{" "}
               </div>
               <div className="flex  lx:flex-row flex-col gap-[20px] lx:gap-[47.5px] xl:gap-[73px]">
-                <Link href="" className="hover:text-[#BE4E1E] ">
+                <Link target="_blank" href="https://chat.whatsapp.com/HyO0yKKbdCmBkAW6VmoFfW" className="hover:text-[#BE4E1E] ">
                   <u className="flex items-center gap-2 sm:text-[16px] text-[14px] xl:text-[20px]">
                     FRM Part 1 Forum 2024 <IoIosArrowForward />
                   </u>
                 </Link>
-                <Link href="" className="hover:text-[#BE4E1E]">
+                <Link target="_blank" href="https://chat.whatsapp.com/Fd88tCpmmbqJhuoIjk2qIZ" className="hover:text-[#BE4E1E]">
                   <u className="flex items-center gap-2 hover:text-[#BE4E1] sm:text-[16px] text-[14px] xl:text-[20px]">
                     FRM Part 2 Forum 2024 <IoIosArrowForward />
                   </u>
@@ -78,20 +79,16 @@ function page() {
                   width={100}
                   height={100}
                   className="min-w-[40px] w-[50px]"
+                  alt="community"
                 />
                 <span className="mh:block hidden lg:text-[18px] text-[14px]">
                   Telegram Links
                 </span>{" "}
               </div>
               <div className="flex lx:flex-row flex-col  gap-[20px] xl:gap-[40px]">
-                <Link href="" className="hover:text-[#BE4E1E]">
+                <Link target="_blank" href="https://t.me/midha_fin" className="hover:text-[#BE4E1E]">
                   <u className="flex items-center gap-2 sm:text-[16px] text-[14px] xl:text-[20px]">
-                    FRM Part 1 Forum 2023-24 <IoIosArrowForward />
-                  </u>
-                </Link>
-                <Link href="" className="hover:text-[#BE4E1E]">
-                  <u className="flex items-center gap-2 sm:text-[16px] text-[14px] xl:text-[20px]">
-                    FRM Part 2 Forum 2023-24 <IoIosArrowForward />
+                    MidhaFin Channel<IoIosArrowForward />
                   </u>
                 </Link>
               </div>
@@ -104,18 +101,19 @@ function page() {
                   width={100}
                   height={100}
                   className="min-w-[40px] w-[50px]"
+                  alt="community"
                 />
                 <span className="mh:block hidden lg:text-[18px] text-[14px]">
                   Facebook Links
                 </span>{" "}
               </div>
               <div className="flex  lx:flex-row flex-col gap-[20px] lx:gap-[90.5px] xl:gap-[124px]">
-                <Link href="" className="hover:text-[#BE4E1E] ">
+                <Link target="_blank" href="https://www.facebook.com/groups/FRMPart1" className="hover:text-[#BE4E1E] ">
                   <u className="flex items-center gap-2 sm:text-[16px] text-[14px] xl:text-[20px]">
                     FRM Part 1 Forum <IoIosArrowForward />
                   </u>
                 </Link>
-                <Link href="" className="hover:text-[#BE4E1E]">
+                <Link target="_blank" href="https://www.facebook.com/groups/FRMPart2Forum" className="hover:text-[#BE4E1E]">
                   <u className="flex items-center gap-2 sm:text-[16px] text-[14px] xl:text-[20px]">
                     FRM Part 2 Forum <IoIosArrowForward />
                   </u>
