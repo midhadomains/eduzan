@@ -16,6 +16,9 @@ module.exports = {
         "contactbgimage": "url('/Vector 10.svg')",
         "3500bg":"url('https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/Backgrounds/3500background.svg')",
       },
+      textUnderlineOffset: {
+        3: '3px',
+      }
     },
     screens: {
       'xs': '500px',
