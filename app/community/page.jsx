@@ -3,6 +3,9 @@ import Link from "next/link";
 import { IoIosArrowForward } from "react-icons/io";
 import Navbar from "../../components/common/SiteHeader";
 import Footer from "../../components/common/SiteFooter";
+export const metadata = {
+  title: "Community",
+};
 function page() {
   return (
     <div>
