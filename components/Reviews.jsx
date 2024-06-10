@@ -449,7 +449,7 @@ export default function Page() {
             Student <span className="text-[#BE4E1E]"> Reviews</span>
           </h1>
           <p className="text-[16px] lg:text-[20px] max-w-[800px] lg:leading-[32px]">
-            Discover what our students and educators are saying about our
+            Discover what our students are saying about our
             transformative learning experiences.
           </p>
         </div>

@@ -41,7 +41,7 @@ export default function BlogCard({ data }) {
                         <div className="flex justify-between mb-2 md:mb-4 text-[#50535C] text-[12px]  md:text-[16px] items-center tracking-normal">
                             <p>{data.author}</p>
                             <GoDotFill />
-                            <p>{data.date_created}</p>
+                            {/* <p>{data.date_created}</p> */}
                         </div>
                     </div>
                 </div>
