@@ -26,23 +26,23 @@ export default function BlogCard({ data }) {
         }
         return result;
     }
-    console.log(data.image)
+    // console.log(data.image)
 
+    function formatDateString(dateString) {
+        const date = new Date(dateString);
+        const options = { year: 'numeric', month: 'long', day: '2-digit' };
+        return date.toLocaleDateString('en-US', options);
+    }
     return (
         <div key={data._id} className="max-w-[400px] w-[100%] md:w-[50%]  border max-h-[515px]  rounded-2xl shadow-[0px_4px_5px_1px_#00000024] " >
             <Link href={`/${data.slug}`}>
                 <div className="">
-                    <Image src={data.image} width={400} height={300} alt={data.title} className="w-[100%] rounded-2xl" />
-                    
-                    <div className="mx-auto flex flex-col tracking-wide justify-between h-[100%] py-1 px-3 max-w-[350px]">
-                        <p className="uppercase text-[12px] md:text-[16px] my-2 text-[#BE4E1E] font-[500]">{data.category}</p>
+                    <Image src={data.image} width={400} height={300} alt={data.title} className="w-[100%] rounded-t-2xl" />
+                    <div className="mx-auto flex flex-col tracking-wide justify-between h-[100%] py-4 max-w-[350px]">
+                        <p className="uppercase text-[12px] md:text-[16px] mb-2 text-[#BE4E1E] font-[500]">{data.category}</p>
                         <h1 className="text-[18px] md:text-[22px] font-semibold  " dangerouslySetInnerHTML={{ __html: data.title }}></h1>
-                        <p className="text-[#5B5B5B] text-[16px] md:text-[20px] font-[300] leading-normal md:leading-[28px] my-2">{excerpt(data.meta_description)}...</p>
-                        <div className="flex justify-between mb-2 md:mb-4 text-[#50535C] text-[12px]  md:text-[16px] items-center tracking-normal">
-                            <p>{data.author}</p>
-                            <GoDotFill />
-                            {/* <p>{data.date_created}</p> */}
-                        </div>
+                        <p className="text-[#5B5B5B] text-[14px] md:text-[18px] font-[300] leading-normal md:leading-[24px] my-2">{excerpt(data.meta_description)}...</p>
+                        <p className=" text-[14px] md:text-[16px]   ">{formatDateString(data.createdAt)}</p>
                     </div>
                 </div>
             </Link>

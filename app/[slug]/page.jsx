@@ -13,6 +13,8 @@ import { fetchSlugs } from '../../components/lib/FetchSlugs';
 import { GoDotFill } from "react-icons/go";
 import Link from 'next/link';
 import Footer from '../../components/common/SiteFooter';
+import { FaLinkedin } from "react-icons/fa";
+import ShareButton from '../../components/blog/ShareButton';
 
 const BLOG_QUERY = `
   query Node($slug: String!) {
@@ -152,8 +154,47 @@ export default async function BlogPost({ params }) {
     return date.toLocaleDateString('en-US', options);
   }
 
+  const authorDetails = {
+    "Micky Midha": {
+      qualification: "BE, FRM®, CFA, LLB",
+      linkedin: "https://www.linkedin.com/in/midhamicky/",
+      description: "Micky Midha is a trainer in finance, mathematics, and computer science, with extensive teaching experience.",
+      image: "/blog/mickymidha.png"
+    },
+    "Rahul Kapoor": {
+      qualification: "MBA, FRM®, AI/ML ",
+      linkedin: "https://www.linkedin.com/in/rahul-kapoor-59577a131/",
+      description: "Rahul Kapoor is a content writer, certified in Risk Management from IIM Bangalore, with over a decade of experience.",
+      image: "/blog/rahulkapoor.png"
+    }
+  };
+
+  function AuthorTooltip({ authorName }) {
+    const authorInfo = authorDetails[authorName] || {
+      qualification: "Not Available",
+      linkedin: "#",
+      description: "No description available."
+    };
+    return (
+      <div className="relative group-hover:flex z-20">
+        <div className="absolute left-[20px]  top-2 rounded-xl p-2 md:p-4 bg-white  border-gray-300 shadow-xl w-[200px] sm:w-[250px] md:w-[350px] hidden group-hover:block z-20 before:content-[''] before:absolute before:top-[-10px] after:shadow-2xl before:left-[50%] before:transform before:translate-x-[-50%] before:border-[12px]  before:border-transparent before:border-b-gray-300 before:border-t-0 before:border-l-0 before:border-r-0">
+          <div className="absolute -top-[24px] left-[70px] transform -translate-x-1/2 w-0 h-0 border-[12px] border-transparent border-b-white"></div>
+          <div className=' pt-2'>
+            <div className='flex items-center justify-center'>
+              <Image src={authorInfo.image} width={120} height={120} alt={authorName} className='rounded-full my-auto flex-shrink-0  shadow-xl ml-9  w-[70px] sm:w-[100px] md:w-[120px] max-w-[120px] ' priority={true} />
+              <Link href={authorInfo.linkedin} target="_blank" className='text-[20px] sm:text-[25px] lg:text-[30px] text-[#0A66C2] '><FaLinkedin className='my-auto -mb-[6px] ml-4' /></Link>
+            </div>
+            <p className='text-[14px] mt-2 text-center md:text-[18px] lg:text-[20px] font-semibold tracking-wide  leading-[15px] sm:leading-6'> {authorName}  </p>
+            <p className='text-[12px] text-center md:text-[14px] lg:text-[16px] font-[500] my-1 sm:my-[6px]'> {authorInfo.qualification}</p>
+            <p className='text-center  font-[400] text-[12px] md:text-[14px] lg:text-[17px]'>{authorInfo.description}</p>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
-    <>
+    <div className='bg-gray-100'>
       <Head>
         <title>{blogData.title}</title>
         <meta name="description" content={blogData.meta_description} />
@@ -170,33 +211,34 @@ export default async function BlogPost({ params }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
       </Head>
-      <Navbar/>
+      <Navbar />
       <TableOfContents TOC={toc} />
       <div className='p-5 max-w-[800px] mx-auto'>
-        <p className='text-[18px] font-[500] uppercase text-[#BE4E1E] tracking-wider '>{blogData.category}</p>
-        <h1 className='text-[40px] font-bold leading-[34.8px] my-[26px]'>{blogData.title}</h1>
-        <p className='text-[18px] font-[400] text-[#2E3442]'>Author <span className='underline underline-offset-[3px] '>{blogData.author}</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<GoDotFill className='inline my-auto text-[12px]' />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {formatDateString(blogData.createdAt)}</p>
-        <p className='text-[18px] font-[400] mt-2 mb-4 text-[#2E3442]'>Reviewed by <span className='underline  underline-offset-[3px] '> {blogData.reviewer}</span></p>
+        <p className='text-[14px] sm:text-[16px] lg:text-[18px] font-[500] uppercase text-[#BE4E1E] tracking-wider '>{blogData.category}</p>
+        <h1 className='text-[25px]  md:text[33px] lg:text-[40px] font-bold leading-[34.8px] mt-[15px] md:mt-[26px] mb-1 md:mb-[10px] text-[#1e222b]'>{blogData.title}</h1>
+        <hr className='w-[50px] sm:w-[75px] lg:w-[100px] border-[2px]  sm:border-[3px] rounded-full  mb-[24px] border-[#BE4E1E]' />
+        <div className='text-[14px] md:text-[18px] font-[400] text-[#2E3442] flex flex-wrap  '>
+          <div className='relative group'>
+            Author -&nbsp;
+            <span className='underline underline-offset-[3px] cursor-pointer min-w-[150px] flex-shrink-0 mr-5'>{blogData.author}</span>
+            <AuthorTooltip authorName={blogData.author} />
+          </div>
+          <GoDotFill className='my-auto text-[12px] mr-5' />
+          <span className='min-w-[200px] '>Published On {formatDateString(blogData.createdAt)}</span>
+        </div>
+        <div className='text-[14px]  md:text-[18px] font-[400] text-[#2E3442] flex sm:mt-2'>
+          Reviewed by &nbsp;
+          <div className='relative group'>
+            <span className='underline underline-offset-[3px] cursor-pointer'>{blogData.reviewer}</span>
+            <AuthorTooltip authorName={blogData.reviewer} />
+          </div>
+        </div>
         <Image src={blogData.image} width={800} height={600} alt={blogData.title} className='my-3' />
         <div className='prose text-[14px] sm:text-[17px] lg:text-[20px]' dangerouslySetInnerHTML={{ __html: content }}></div>
       </div>
-      {/* <div className='px-[20px] md:px-[50px] max-w-[1400px] mx-auto'>
-        <h2 className='text-[24px] font-bold mb-4'>Check out other blogs</h2>
-        <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
-          {allBlogs.map(blog => (
-            <Link key={blog._id} href={`/blog/${blog.slug}`}>
-              <a className='block'>
-                <div className='flex flex-col items-center'>
-                  <Image src={blog.image} width={400} height={300} alt={blog.title} className='mb-2' />
-                  <h3 className='text-[20px] font-semibold'>{blog.title}</h3>
-                </div>
-              </a>
-            </Link>
-          ))}
-        </div>
-      </div> */}
-      <Footer/>
-    </>
+      {/* <ShareButton/> */}
+      <Footer />
+    </div>
   );
 }
 

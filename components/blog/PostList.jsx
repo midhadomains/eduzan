@@ -16,6 +16,7 @@ const QUERY = `
           author
           meta_description
           image
+          createdAt
         }
       }
       pageInfo {
