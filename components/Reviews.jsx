@@ -154,7 +154,7 @@ export default function Page() {
                   <h1 className="text-[14px] mg:text-[16px] font-[400] text-[#081A31] my-1 max-w-[210px]">
                     {review.job ? `Financial Risk Manager at ${review.job}` : " "}{" "}
                   </h1>
-                  <p>Passing year:{review.year}</p>
+                  <p>Passing year:&nbsp;{review.year}</p>
                   <p className="text-[#BE4E1E] text-[16px] font-[400] flex text-center">
                     {capitalizeWords(review.country)}{" "}
                     <span className="text-slate-400">&nbsp;|&nbsp;</span>{" "}
