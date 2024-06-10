@@ -25,7 +25,7 @@ function Footer() {
                   width={100}
                   height={100}
                   className="sm:w-[152px] w-[112px] lg:w-[173px] mx-auto "
-                  
+                  alt="MidhaFin"
                 />
                 </Link>
                 
@@ -100,6 +100,12 @@ function Footer() {
                       className="lg:text-[18px] sm:text-[16px] text-[14px] leading-[30px] text-[#626979] transition-colors duration-300 hover:underline hover:text-[#6A1C1A]"
                     >
                       Student Portal
+                    </Link>
+                    <Link
+                      href="/community"
+                      className="lg:text-[18px] sm:text-[16px] text-[14px] leading-[30px] text-[#626979] transition-colors duration-300 hover:underline hover:text-[#6A1C1A]"
+                    >
+                    Community
                     </Link>
                    
                     {/* <Link href='/' className='lg:text-[18px] sm:text-[16px] text-[14px] leading-[30px] text-[#626979]'>Blog</Link > */}
