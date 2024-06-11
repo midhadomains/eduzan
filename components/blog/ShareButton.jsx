@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from 'react';
-import { useRouter, usePathname } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import { FaLinkedin, FaFacebook, FaTwitter, FaCopy, FaWhatsapp } from "react-icons/fa";
 import { FiShare2 } from "react-icons/fi";
 
@@ -9,21 +9,24 @@ const ShareButton = () => {
     const [showCopiedPopup, setShowCopiedPopup] = useState(false);
     const [currentUrl, setCurrentUrl] = useState('');
 
-    const router = useRouter();
     const pathname = usePathname();
 
     useEffect(() => {
-        const baseUrl = window.location.origin; // Get the base URL
-        setCurrentUrl(`${baseUrl}${pathname}`); // Combine base URL with current path
+        if (typeof window !== 'undefined') {
+            const baseUrl = window.location.origin;
+            setCurrentUrl(`${baseUrl}${pathname}`);
+        }
     }, [pathname]);
 
     const handleCopyLink = () => {
-        navigator.clipboard.writeText(currentUrl);
-        setShowCopiedPopup(true);
-        setTimeout(() => {
-            setShowCopiedPopup(false);
-        }, 2000); // Hide the popup after 2 seconds
-        setShowSharePopup(false); // Collapse the share menu
+        if (typeof navigator !== 'undefined') {
+            navigator.clipboard.writeText(currentUrl);
+            setShowCopiedPopup(true);
+            setTimeout(() => {
+                setShowCopiedPopup(false);
+            }, 2000); // Hide the popup after 2 seconds
+            setShowSharePopup(false); // Collapse the share menu
+        }
     };
 
     const handleShareClick = () => {
