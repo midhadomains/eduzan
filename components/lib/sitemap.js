@@ -2,9 +2,9 @@ import cron from 'node-cron';
 import fs from 'fs';
 import path from 'path';
 import { create } from 'xmlbuilder2';
-import { fetchSlugs } from './FetchSlugs';
+import { fetchSlugs } from './fetchSlugs';
 
-const SITEMAP_PATH = path.join(__dirname, 'public', 'sitemap.xml');
+const SITEMAP_PATH = path.join(__dirname, 'sitemap.xml');
 
 // Function to delete the old sitemap
 const deleteOldSitemap = () => {
@@ -17,14 +17,14 @@ const deleteOldSitemap = () => {
 };
 
 // Function to generate the sitemap
-export const generateSitemap = async (excludeSlugs = ['/thank-you', '/_not-found'], excludePages = ['/thank-you', '/_not-found']) => {
+export const generateSitemap = async (excludeSlugs = [], excludePages = ['/thank-you', '/_not-found']) => {
     const posts = await fetchSlugs();
     const root = create({ version: '1.0', encoding: 'UTF-8' }).ele('urlset', {
         xmlns: 'http://www.sitemaps.org/schemas/sitemap/0.9'
     });
 
     posts.forEach((post) => {
-        if (excludeSlugs.includes(post.slug) || excludePages.includes(`/${post.slug}`)) {
+        if (excludeSlugs.includes(post.slug) || excludePages.includes(`/blog/${post.slug}`)) {
             console.warn(`Excluding post: ${post.slug}`);
             return;
         }
@@ -32,13 +32,14 @@ export const generateSitemap = async (excludeSlugs = ['/thank-you', '/_not-found
         if (post.createdAt) {
             const date = new Date(post.createdAt);
             if (!isNaN(date)) {
-                root.ele('url').ele('loc').txt(`https://www.midhafin.com/${post.slug}`).up()
+                root.ele('url').ele('loc').txt(`https://www.midhafin.com/blog/${post.slug}`).up()
                     .ele('lastmod').txt(date.toISOString()).up();
             } else {
                 console.warn(`Invalid date for post: ${post.slug}`);
             }
         } else {
-            console.warn(`Missing createdAt for post: ${post.slug}`);
+            console.warn(`Missing or null createdAt for post: ${post.slug}`);
+            root.ele('url').ele('loc').txt(`https://www.midhafin.com/blog/${post.slug}`).up();
         }
     });
 
