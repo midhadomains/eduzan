@@ -1,30 +1,5 @@
 import { create } from 'xmlbuilder2';
-
-const SLUGS_QUERY = `
-  query {
-     blogs(first: 10000) {
-      edges {
-        node {
-          slug
-          createdAt
-        }
-      }
-    }
-  }
-`;
-
-export const fetchSlugs = async () => {
-    try {
-        const result = await fetchGraphQLData(SLUGS_QUERY);
-        return result.blogs.edges.map(edge => ({
-            slug: edge.node.slug,
-            createdAt: edge.node.createdAt
-        }));
-    } catch (error) {
-        console.error('Error fetching slugs:', error);
-        return [];
-    }
-};
+import { fetchSlugs } from './FetchSlugs';
 
 export const generateSitemap = async (excludeSlugs = [], excludePages = ['/thank-you', '/_not-found']) => {
     const posts = await fetchSlugs();
