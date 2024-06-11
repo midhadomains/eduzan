@@ -1,4 +1,4 @@
-const { fetchGraphQLData } = require('./graphqlRequest');
+const { fetchGraphQLData } = require("./graphqlRequest");
 
 const BLOG_SLUGS_QUERY = `
   query {
