@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { IoIosCall } from "react-icons/io";
 import { IoIosMail } from "react-icons/io";
-import { FaLocationDot } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { CiFacebook } from "react-icons/ci";
 import { FaXTwitter } from "react-icons/fa6";
@@ -13,7 +12,7 @@ import { FaYoutube } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer className="bg-[#F9F6F4] border-t-[#999999] border-[1.5px] z-10">
+    <footer className="bg-[#F9F6F4] border-t-[#999999] border-[1.5px] z-10 mt-8">
       <div className="max-w-[1400px] px-[25px] pt-12 pb-[18px] sm:pb-[29px] md:px-[50px] mx-auto  ">
         <div className=" max-w-[1300px] mx-auto ">
           <div className="flex lg:mx-0  max-w-[370px] mx-auto sm:max-w-none   lg:flex-row flex-col sm:gap-y-10  lg:justify-between gap-[20px]">

@@ -8,6 +8,7 @@ import PlatformFeatures from "../components/home/PlatformFeatures";
 import ReviewSection from "../components/home/ReviewSection";
 import Accordion from "../components/common/Accordian";
 import CoursesOffered from "../components/home/CoursesOffered";
+import SocialMedia from "../components/common/SocialMedia";
 
 export const metadata = {
   title: "Welcome to MidhaFin",
@@ -116,12 +117,32 @@ export default async function Home() {
 
   return (
     <>
+      <head>
+        <meta name="robots" content="index,follow" />
+        <meta name="googlebot" content="index,follow" />
+        <meta property="og:title" content="MidhaFin:- FRM Exam prep provider" />
+        <meta property="og:description" content="Boost Your Career In Finance" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Midhafin" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:url" content="https://www.midhafin.com/" />
+        <meta property="og:image.url" content="https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/Homepage/open-graph-snippet_600*336.png.png" />
+        <meta property="og:image" content="https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/Homepage/open-graph-snippet_600*336.png.png" />
+        <meta property="og:image:width" content="800" />
+        <meta property="og:image:height" content="600" />
+        <meta property="og:image:alt" content="Midhafin" />
+        <meta property="og:image:id" content="10" />
+        <meta name="twitter:handle" />
+        <meta name="x:card" content="summary_large_image" />
+        <meta name="x:title" content="MidhaFin:-FRM Exam prep provider" />
+        <meta name="x:description" content="Boost Your Career In Finance" />
+        <meta name="x:image" content="https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/Homepage/open-graph-snippet_600*336.png.png" />
+      </head>
       <SiteHeader />
       <div className="select-none">
         <main>
           {/* Hero section */}
           <HeroSection />
-    
           {/* About section */}
           <div className="flex flex-wrap lg:flex-nowrap  justify-start  lg:justify-between text-left max-w-[1400px] px-[25px] md:px-[50px] gap-[18px] md:gap-[30px]  w-[100%] mx-auto  sm:mt-[64px] mt-[53px] lg:mt-[74px] ">
             <div className="my-auto">
@@ -164,6 +185,8 @@ export default async function Home() {
             {/* <hr className='lg:border-4 border-[3px] rounded-3xl border-[#9A391D]  md:w-[150px] w-[100px] sm:my-8 mt-3  ' /> */}
             <Accordion buttonsData={buttonsData} />
           </div>
+          <SocialMedia />
+
         </main>
       </div>
       <SiteFooter />

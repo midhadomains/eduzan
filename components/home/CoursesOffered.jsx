@@ -7,7 +7,7 @@ import CourseCard from "../common/CourseCard";
 export default function CoursesOffered() {
   const Popularcourse = [
     {
-      _id: "65dee4781c34e4d5d691626d",
+      _id: 1,
       name: "FRM® Part-1 Sample Course",
       image:
         "https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/courses/mf_frm_part_1_sample_course_720.webp",
@@ -28,6 +28,7 @@ export default function CoursesOffered() {
       sub_category: "part-1_sample_course",
     },
     {
+      _id: 2,
       name: "FRM® Part-2 Sample Course",
       image:
         "https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/courses/mf_frm_part_2_sample_course_720.webp",
@@ -48,7 +49,7 @@ export default function CoursesOffered() {
       sub_category: "part-2_sample_course",
     },
     {
-      _id: "65deec862a8308b4a242d3ce",
+      _id: 3,
       name: "FRM® Part-1 Self Paced Course",
       image:
         "https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/courses/mf_frm_part_1_self-paced_course_720.webp",
@@ -69,6 +70,7 @@ export default function CoursesOffered() {
       sub_category: "part-1_self_paced_course",
     },
     {
+      _id: 4,
       name: "FRM® Part-2 Self Paced Course",
       image:
         "https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/courses/mf_frm_part_2_self-paced_course_720.webp",
@@ -89,7 +91,7 @@ export default function CoursesOffered() {
       sub_category: "part-2_self_paced_course",
     },
     {
-      _id: "65dee4781c34e4d5d691650d",
+      _id: 5,
       name: "PRM Exam 1",
       image:"https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/courses/mf_prm_exam_1_self_paced_course_720.webp",
       price: "",
@@ -111,7 +113,7 @@ export default function CoursesOffered() {
   ];
   const Frm_p1 = [
     {
-      _id: "65deec862a8308b4a242d3ce",
+      _id: 6,
       name: "FRM® Part-1 Self Paced Course",
       image:
         "https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/courses/mf_frm_part_1_self-paced_course_720.webp",
@@ -132,7 +134,7 @@ export default function CoursesOffered() {
       sub_category: "part-1_self_paced_course",
     },
     {
-      _id: "65df31c3c5e4ac767387dc92",
+      _id: 7,
       name: "FRM® Part-1 Live Online Classes",
       image:
         "https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/courses/mf_frm_part_1_live_online_class_720.webp",
@@ -153,7 +155,7 @@ export default function CoursesOffered() {
       sub_category: "part-1_live_online_classes",
     },
     {
-      _id: "65dee4781c34e4d5d691626d",
+      _id: 8,
       name: "FRM® Part-1 Mock Tests",
       image: "/Mock-Tests.png",
       price: "",
@@ -176,27 +178,27 @@ export default function CoursesOffered() {
 
 
     {
-      "_id": "65df333e12f6553dad52daeb",
-      "name": "FRM® Part-1 One-to-One Classes",
-      "image": "https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/courses/mf_frm_part_1_one_on_one_guidance_720.webp",
-      "price": "",
-      "other": "custom",
-      "instructor": "Shubham Swaraj",
-      "details": [
+      _id: 9,
+      name: "FRM® Part-1 One-to-One Classes",
+      image: "https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/courses/mf_frm_part_1_one_on_one_guidance_720.webp",
+      price: "",
+      other: "custom",
+      instructor: "Shubham Swaraj",
+      details: [
         "Customizable",
         "Available On Web,IOS & Android",
         "Access Until You Pass",
         "Complete Study Material",
         "Quizzes,Question Bank & Mock tests"
       ],
-      "link": "https://edu.midhafin.com/courses/FRM-Part-1-One-to-One-Classes-64d38882e4b0b649ba69ba2a",
-      "rating": 4.5,
-      "tp": "TP-3",
-      "category": "frm",
-      "sub_category": "part-1_one-to-one_classes"
+      link: "https://edu.midhafin.com/courses/FRM-Part-1-One-to-One-Classes-64d38882e4b0b649ba69ba2a",
+      rating: 4.5,
+      tp: "TP-3",
+      category: "frm",
+      sub_category: "part-1_one-to-one_classes"
     },
     {
-      _id: "65dee4781c34e4d5d691626d",
+      _id: 10,
       name: "FRM® Part-1 Mock Tests",
       image: "https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/courses/mf_frm_part_1_sample_course_720.webp",
       price: "",
@@ -220,6 +222,7 @@ export default function CoursesOffered() {
 
   const Frm_p2 = [
     {
+      _id: 11,
       name: "FRM® Part-2 Self Paced Course",
       image:
         "https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/courses/mf_frm_part_2_self-paced_course_720.webp",
@@ -240,7 +243,7 @@ export default function CoursesOffered() {
       sub_category: "part-2_self_paced_course",
     },
     {
-      _id: "65df3749d6677fa3f55fbd80",
+      _id: 12,
       name: "FRM® Part-1 and Part-2 Combined Package",
       image:
         "https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/courses/mf_frm_part_1_tp2_plus_frm_part_2_tp1_01_720.webp",
@@ -261,6 +264,7 @@ export default function CoursesOffered() {
       sub_category: "part-1_and_part-2_combined_package",
     },
     {
+      _id: 13,
       name: "FRM® Part-2 Sample Course",
       image:
         "https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/courses/mf_frm_part_2_sample_course_720.webp",
