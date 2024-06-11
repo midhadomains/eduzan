@@ -6,6 +6,7 @@ const SLUGS_QUERY = `
       edges {
         node {
           slug
+          createdAt
         }
       }
     }
