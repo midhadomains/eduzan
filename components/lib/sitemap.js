@@ -17,7 +17,7 @@ const deleteOldSitemap = () => {
 };
 
 // Function to generate the sitemap
-export const generateSitemap = async (excludeSlugs = [], excludePages = ['/thank-you', '/_not-found']) => {
+export const generateSitemap = async (excludeSlugs = ['/api/sitemap', '/api/robots', '/thank-you', '/thank-you', '/_not-found'], excludePages = ['/api/sitemap', '/api/robots', '/thank-you', '/thank-you', '/_not-found']) => {
     const posts = await fetchSlugs();
     const root = create({ version: '1.0', encoding: 'UTF-8' }).ele('urlset', {
         xmlns: 'http://www.sitemaps.org/schemas/sitemap/0.9'
