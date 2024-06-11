@@ -3,7 +3,6 @@ import Image from 'next/image';
 import Head from 'next/head';
 import { notFound } from 'next/navigation';
 import Navbar from '../../components/common/SiteHeader';
-import TableOfContents from '../../components/blog/TableOfContents';
 import parameterize from 'parameterize';
 import rehypeParse from 'rehype-parse';
 import rehypeStringify from 'rehype-stringify';
@@ -17,6 +16,9 @@ import { FaLinkedin } from "react-icons/fa";
 import dynamic from 'next/dynamic';
 
 const ShareButton = dynamic(() => import('../../components/blog/ShareButton'), {
+  ssr: false,
+});
+const TableOfContents = dynamic(() => import('../../components/blog/TableOfContents'), {
   ssr: false,
 });
 
