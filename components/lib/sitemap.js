@@ -2,7 +2,7 @@ import cron from 'node-cron';
 import fs from 'fs';
 import path from 'path';
 import { create } from 'xmlbuilder2';
-import { fetchSlugs } from './fetchSlugs';
+import { fetchSlugs } from './FetchSlugs';
 
 const SITEMAP_PATH = path.join(__dirname, 'public', 'sitemap.xml');
 
