@@ -1,4 +1,4 @@
-const { fetchBlogSlugs } = require('./fetchBlogSlugs');
+const { fetchBlogSlugs } = require('./components/lib/FetchBlogSlugs');
 
 /** @type {import('next-sitemap').IConfig} */
 const config = async () => {
