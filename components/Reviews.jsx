@@ -105,22 +105,22 @@ export default function Page() {
       </div>
 
       <div className="max-w-[1400px] px-[10px] mg:px-[50px] mx-auto mt-[5%]">
-        <div className="flex justify-between mb-8">
-          <select onChange={handleCourseChange} className="p-2 border rounded">
+        <div className="flex justify-between mb-8 ">
+          <select onChange={handleCourseChange} className="p-2 border rounded-3xl bg-[#BF4E1E] text-white px-5 ">
             <option value="">All Courses</option>
             <option value="frm part-1">FRM Part 1</option>
             <option value="frm part-2">FRM Part 2</option>
           </select>
 
           <div className="flex items-center">
-            <label className="mr-2">Sort by rating:</label>
+            <label className="mr-2 font-semibold text-[18px]">Sort By Rating  :</label>
             <label className="mr-2">
               <input
                 type="radio"
                 value="asc"
                 checked={sortOption === 'asc'}
                 onChange={handleSortChange}
-              /> Ascending
+              /> Low to High
             </label>
             <label>
               <input
@@ -128,7 +128,7 @@ export default function Page() {
                 value="desc"
                 checked={sortOption === 'desc'}
                 onChange={handleSortChange}
-              /> Descending
+              /> High to Low
             </label>
           </div>
         </div>
@@ -137,7 +137,7 @@ export default function Page() {
           {filteredData.map((review, index) => (
             <div
               key={index}
-              className="w-[330px] mg:w-[400px] aspect-square text-center justify-between rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] p-2 mg:p-4"
+              className="w-[330px] mg:w-[400px] aspect-square text-center flex flex-col justify-center rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] p-2 mg:p-4"
             >
               <div className="flex text-left items-center justify-start h-[120px]">
                 <Image
@@ -150,9 +150,9 @@ export default function Page() {
                 <div className="pl-[15px] mg:pl-[30px]">
                   <h1 className="text-[18px] mg:text-[24px] font-[500]">
                     {capitalizeWords(formatName(review.name))}
-                  </h1>
+                  </h1>                  
                   <h1 className="text-[14px] mg:text-[16px] font-[400] text-[#081A31] my-1 max-w-[210px]">
-                    {review.job ? `Financial Risk Manager at ${review.job}` : " "}{" "}
+                    {review.job ? `Financial Risk Manager at  ${review.job}` : " "}{" "}
                   </h1>
                   <p>Passing year:&nbsp;{review.year}</p>
                   <p className="text-[#BE4E1E] text-[16px] font-[400] flex text-center">
