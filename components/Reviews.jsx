@@ -137,9 +137,9 @@ export default function Page() {
           {filteredData.map((review, index) => (
             <div
               key={index}
-              className="w-[330px] mg:w-[400px] aspect-square text-center flex flex-col justify-center rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] p-2 mg:p-4"
+              className="w-[330px] mg:w-[400px] aspect-square text-center  rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)]   pt-4 mg:pt-8"
             >
-              <div className="flex text-left items-center justify-start h-[120px]">
+              <div className="flex text-left items-center justify-center h-[120px] ">
                 <Image
                   width={120}
                   height={120}

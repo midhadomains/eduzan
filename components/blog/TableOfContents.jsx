@@ -5,18 +5,20 @@ import { FaListOl } from "react-icons/fa";
 
 const TableOfContents = ({ TOC }) => {
     const [activeSection, setActiveSection] = useState(null);
-    const [isVisible, setIsVisible] = useState(true);
+    const [isVisible, setIsVisible] = useState(window.innerWidth > 1370);
 
     const sections = useMemo(() => TOC || [], [TOC]);
 
     useEffect(() => {
-        if (window.innerWidth !== 0 && window.innerWidth > 800) {
-            setIsVisible(true);
-        } else {
-            setIsVisible(false);
-        }
+        const handleResize = () => {
+            if (window.innerWidth > 1370) {
+                setIsVisible(true);
+            }
+        };
 
         const handleScroll = () => {
+            if (!isVisible) return; // Do nothing if TOC is not visible
+
             const scrollPosition = window.scrollY;
             const sectionOffsets = sections.map(section => {
                 const element = document.getElementById(section.id);
@@ -50,10 +52,6 @@ const TableOfContents = ({ TOC }) => {
             }
         };
 
-        const handleResize = () => {
-            setIsVisible(window.innerWidth > 1300);
-        };
-
         window.addEventListener('scroll', handleScroll);
         window.addEventListener('resize', handleResize);
 
@@ -61,7 +59,7 @@ const TableOfContents = ({ TOC }) => {
             window.removeEventListener('scroll', handleScroll);
             window.removeEventListener('resize', handleResize);
         };
-    }, [sections, activeSection]);
+    }, [sections, activeSection, isVisible]);
 
     const scrollToSection = id => {
         const element = document.getElementById(id);
@@ -83,7 +81,7 @@ const TableOfContents = ({ TOC }) => {
                 {isVisible ? <IoClose /> : <FaListOl />}
             </button>
             <div className={`table-of-contents bg-white shadow-2xl z-20 w-[230px] md:w-[280px] fixed right-1 top-[100px] rounded-t-xl m-5 border-l border-r border-[#BE4E1E42] transition-all ${isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`} style={{ transform: `translateX(${isVisible ? '0%' : '100%'})` }}>
-                <h2 className=" md:text-[20px] font-semibold  text-center bg-[#BE4E1E] rounded-t-xl py-3 text-[16px] text-[#F7F7E0]">Table of Contents</h2>
+                <h2 className="md:text-[20px] font-semibold text-center bg-[#BE4E1E] rounded-t-xl py-3 text-[16px] text-[#F7F7E0]">Table of Contents</h2>
                 <ul className='px-2 z-20'>
                     {sections.map(section => (
                         <React.Fragment key={section.id}>
@@ -106,4 +104,3 @@ const TableOfContents = ({ TOC }) => {
 };
 
 export default TableOfContents;
-

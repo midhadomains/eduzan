@@ -176,7 +176,7 @@ export default async function BlogPost({ params }) {
       description: "No description available."
     };
     return (
-      <div className="relative group-hover:flex z-20">
+      <div className="relative group-hover:flex z-20 ">
         <div className="absolute left-[20px]  top-2 rounded-xl p-2 md:p-4 bg-white  border-gray-300 shadow-xl w-[200px] sm:w-[250px] md:w-[350px] hidden group-hover:block z-20 before:content-[''] before:absolute before:top-[-10px] after:shadow-2xl before:left-[50%] before:transform before:translate-x-[-50%] before:border-[12px]  before:border-transparent before:border-b-gray-300 before:border-t-0 before:border-l-0 before:border-r-0">
           <div className="absolute -top-[24px] left-[70px] transform -translate-x-1/2 w-0 h-0 border-[12px] border-transparent border-b-white"></div>
           <div className=' pt-2'>
@@ -194,7 +194,7 @@ export default async function BlogPost({ params }) {
   }
 
   return (
-    <div className='bg-gray-100'>
+    <div className='bg-slate-100'>
       <Head>
         <title>{blogData.title}</title>
         <meta name="description" content={blogData.meta_description} />
@@ -213,9 +213,12 @@ export default async function BlogPost({ params }) {
       </Head>
       <Navbar />
       <TableOfContents TOC={toc} />
-      <div className='p-5 max-w-[800px] mx-auto'>
+      <div className='p-5 max-w-[800px] mx-auto '>
         <p className='text-[14px] sm:text-[16px] lg:text-[18px] font-[500] uppercase text-[#BE4E1E] tracking-wider '>{blogData.category}</p>
-        <h1 className='text-[25px]  md:text[33px] lg:text-[40px] font-bold leading-[34.8px] mt-[15px] md:mt-[26px] mb-1 md:mb-[10px] text-[#1e222b]'>{blogData.title}</h1>
+        <div className='flex justify-between items-center'>
+          <h1 className='text-[25px]  md:text[33px] lg:text-[40px] font-bold leading-[34.8px] mt-[15px] md:mt-[26px] mb-1 md:mb-[10px] text-[#1e222b]'>{blogData.title}</h1>
+          <ShareButton />
+        </div>
         <hr className='w-[50px] sm:w-[75px] lg:w-[100px] border-[2px]  sm:border-[3px] rounded-full  mb-[24px] border-[#BE4E1E]' />
         <div className='text-[14px] md:text-[18px] font-[400] text-[#2E3442] flex flex-wrap  '>
           <div className='relative group'>
