@@ -14,8 +14,10 @@ import { GoDotFill } from "react-icons/go";
 import Link from 'next/link';
 import Footer from '../../components/common/SiteFooter';
 import { FaLinkedin } from "react-icons/fa";
-import ShareButton from '../../components/blog/ShareButton';
-
+import dynamic from 'next/dynamic';
+const ShareButton = dynamic(() => import('../../components/blog/ShareButton'), {
+  ssr: false,
+});
 const BLOG_QUERY = `
   query Node($slug: String!) {
     searchBlogBySlug(slug: $slug) {
