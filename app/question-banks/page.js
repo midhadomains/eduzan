@@ -14,10 +14,10 @@ const MyComponents3 = () => {
       <Navbar />
       <div className="max-w-[1300px] mx-auto py-4 lg:py-20 px-[20px] lg:px-[40px]">
         <div className=" ">
-          <p className="text-[16px] sm:text-[24px] pl-1 font-semibold leading-7 text-center mg:text-left text-[#842020]">
+          <p className="text-[16px] sm:text-[24px] pl-1 font-semibold leading-7 text-center lg:text-left text-[#842020]">
             Features
           </p>
-          <h1 className="text-4xl font-bold tracking-tight text-center mg:text-left text-gray-900 text-[24px] md:text-[32px] lg:text-[48px]">
+          <h1 className="text-4xl font-bold tracking-tight text-center lg:text-left text-gray-900 text-[24px] md:text-[32px] lg:text-[48px] lg:mt-3">
             {" "}
             <span className="text-[#BE4E1E]"> Question</span>{" "}
             <span style={{ color: "#842021" }}>Banks</span>
