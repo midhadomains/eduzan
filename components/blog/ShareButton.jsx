@@ -4,7 +4,7 @@ import { usePathname } from 'next/navigation';
 import { FaLinkedin, FaFacebook, FaTwitter, FaCopy, FaWhatsapp } from "react-icons/fa";
 import { FiShare2 } from "react-icons/fi";
 
-const ShareButton = () => {
+const ShareButton = ({ baseUrl }) => {
     const [showSharePopup, setShowSharePopup] = useState(false);
     const [showCopiedPopup, setShowCopiedPopup] = useState(false);
     const [currentUrl, setCurrentUrl] = useState('');
@@ -12,11 +12,8 @@ const ShareButton = () => {
     const pathname = usePathname();
 
     useEffect(() => {
-        if (typeof window !== 'undefined') {
-            const baseUrl = window.location.origin;
-            setCurrentUrl(`${baseUrl}${pathname}`);
-        }
-    }, [pathname]);
+        setCurrentUrl(`${baseUrl}${pathname}`);
+    }, [pathname, baseUrl]);
 
     const handleCopyLink = () => {
         if (typeof navigator !== 'undefined') {

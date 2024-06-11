@@ -196,7 +196,7 @@ export default async function BlogPost({ params }) {
       </div>
     );
   }
-
+  const baseUrl = 'https://www.midhafin.com';
   return (
     <div className='bg-slate-100'>
       <Head>
@@ -221,7 +221,7 @@ export default async function BlogPost({ params }) {
         <p className='text-[14px] sm:text-[16px] lg:text-[18px] font-[500] uppercase text-[#BE4E1E] tracking-wider '>{blogData.category}</p>
         <div className='flex justify-between items-center'>
           <h1 className='text-[25px]  md:text[33px] lg:text-[40px] font-bold leading-[34.8px] mt-[15px] md:mt-[26px] mb-1 md:mb-[10px] text-[#1e222b]'>{blogData.title}</h1>
-          <ShareButton />
+          <ShareButton baseUrl={baseUrl} />
         </div>
         <hr className='w-[50px] sm:w-[75px] lg:w-[100px] border-[2px]  sm:border-[3px] rounded-full  mb-[24px] border-[#BE4E1E]' />
         <div className='text-[14px] md:text-[18px] font-[400] text-[#2E3442] flex flex-wrap  '>
