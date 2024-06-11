@@ -23,7 +23,7 @@ const MyComponents3 = () => {
             <span style={{ color: "#842021" }}>Banks</span>
           </h1>
           <div className="flex flex-wrap items-center justify-center lg:items-stretch gap-10 mt-2 sm:mt-8 rounded-2xl shadow-lg ">
-            <div className="bg-[#F9F6EB] w-[400px] sm:w-[660px] h-[200px] md:h-[350px] lg:h-[500px] rounded-2xl flex items-center justify-center">
+            <div className="bg-[#F9F6EB] w-[400px] md:w-[660px] h-[200px] md:h-[350px] lg:h-[500px] rounded-2xl flex items-center justify-center">
               <Image
                 src="https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/Homepage/Our+Platform+Features/Question+Banks/Question+bank+desktop.webp"
                 alt="question-bank"
