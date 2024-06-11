@@ -1,14 +1,21 @@
 "use client";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { FaLinkedin, FaFacebook, FaTwitter, FaCopy, FaWhatsapp } from "react-icons/fa";
 import { FiShare2 } from "react-icons/fi";
 
 const ShareButton = () => {
     const [showSharePopup, setShowSharePopup] = useState(false);
     const [showCopiedPopup, setShowCopiedPopup] = useState(false);
+    const [currentUrl, setCurrentUrl] = useState('');
+
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            setCurrentUrl(window.location.href);
+        }
+    }, []);
 
     const handleCopyLink = () => {
-        navigator.clipboard.writeText(window.location.href);
+        navigator.clipboard.writeText(currentUrl);
         setShowCopiedPopup(true);
         setTimeout(() => {
             setShowCopiedPopup(false);
@@ -30,7 +37,7 @@ const ShareButton = () => {
                 onClick={toggleSharePopup}
                 className="group bg-slate-200 border border-[#9A391D] text-white p-[6px] transition-colors duration-150 rounded-lg hover:bg-[#9A391D] focus:outline-none mx-auto"
             >
-                <FiShare2 className='text-[25px] text-[#9A391D] group-hover:text-white' />
+                <FiShare2 className='sm:text-[25px] text-[#9A391D] group-hover:text-white' />
             </button>
 
             {showSharePopup && (
@@ -38,7 +45,7 @@ const ShareButton = () => {
                     <p className="text-sm mb-2">Share this blog:</p>
                     <div className="flex space-x-3">
                         <a
-                            href={`https://www.linkedin.com/shareArticle?mini=true&url=${window.location.href}`}
+                            href={`https://www.linkedin.com/shareArticle?mini=true&url=${currentUrl}`}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-[#0A66C2] hover:text-[#004182]"
@@ -47,7 +54,7 @@ const ShareButton = () => {
                             <FaLinkedin size={20} />
                         </a>
                         <a
-                            href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}`}
+                            href={`https://www.facebook.com/sharer/sharer.php?u=${currentUrl}`}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-[#1877F2] hover:text-[#1056A1]"
@@ -56,7 +63,7 @@ const ShareButton = () => {
                             <FaFacebook size={20} />
                         </a>
                         <a
-                            href={`https://twitter.com/intent/tweet?url=${window.location.href}`}
+                            href={`https://twitter.com/intent/tweet?url=${currentUrl}`}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-[#1DA1F2] hover:text-[#0A8CD8]"
@@ -65,7 +72,7 @@ const ShareButton = () => {
                             <FaTwitter size={20} />
                         </a>
                         <a
-                            href={`https://api.whatsapp.com/send?text=${window.location.href}`}
+                            href={`https://api.whatsapp.com/send?text=${currentUrl}`}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-[#25D366] hover:text-[#128C7E]"

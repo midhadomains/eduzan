@@ -15,9 +15,11 @@ import Link from 'next/link';
 import Footer from '../../components/common/SiteFooter';
 import { FaLinkedin } from "react-icons/fa";
 import dynamic from 'next/dynamic';
+
 const ShareButton = dynamic(() => import('../../components/blog/ShareButton'), {
   ssr: false,
 });
+
 const BLOG_QUERY = `
   query Node($slug: String!) {
     searchBlogBySlug(slug: $slug) {
@@ -241,7 +243,6 @@ export default async function BlogPost({ params }) {
         <Image src={blogData.image} width={800} height={600} alt={blogData.title} className='my-3' />
         <div className='prose text-[14px] sm:text-[17px] lg:text-[20px]' dangerouslySetInnerHTML={{ __html: content }}></div>
       </div>
-      {/* <ShareButton/> */}
       <Footer />
     </div>
   );
