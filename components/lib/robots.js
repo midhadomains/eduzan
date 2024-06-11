@@ -5,6 +5,6 @@ export const generateRobotsTxt = () => {
     Disallow: /api/
     Allow: /
 
-    Sitemap: https://yourdomain.com/sitemap.xml
+    Sitemap: https://www.midhafin.com/sitemap.xml
   `;
 };
