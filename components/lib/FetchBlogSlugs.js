@@ -1,4 +1,4 @@
-const { fetchGraphQLData } = require("./graphqlRequest");
+import { fetchGraphQLData } from './graphqlRequest';
 
 const BLOG_SLUGS_QUERY = `
   query {
