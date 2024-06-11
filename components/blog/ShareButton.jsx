@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from 'react';
+import { useRouter, usePathname } from 'next/navigation';
 import { FaLinkedin, FaFacebook, FaTwitter, FaCopy, FaWhatsapp } from "react-icons/fa";
 import { FiShare2 } from "react-icons/fi";
 
@@ -8,11 +9,13 @@ const ShareButton = () => {
     const [showCopiedPopup, setShowCopiedPopup] = useState(false);
     const [currentUrl, setCurrentUrl] = useState('');
 
+    const router = useRouter();
+    const pathname = usePathname();
+
     useEffect(() => {
-        if (typeof window !== 'undefined') {
-            setCurrentUrl(window.location.href);
-        }
-    }, []);
+        const baseUrl = window.location.origin; // Get the base URL
+        setCurrentUrl(`${baseUrl}${pathname}`); // Combine base URL with current path
+    }, [pathname]);
 
     const handleCopyLink = () => {
         navigator.clipboard.writeText(currentUrl);
