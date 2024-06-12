@@ -15,7 +15,7 @@ export default function CoursesOffered() {
       other: "free",
       instructor: "Micky Midha",
       details: [
-        "12 Hrs of Videos",
+        "9 Hrs of Videos",
         "Available On Web,IOS & Android",
         "Access Until You Pass",
         "Lecture PDFs ",
@@ -78,7 +78,7 @@ export default function CoursesOffered() {
       other: "₹ 23,364",
       instructor: "Micky Midha",
       details: [
-        "250+ Hrs Of Videos",
+        "240 Hrs Of Videos",
         "Available On Web,IOS & Android",
         "Access Until You Pass",
         "Complete Study Material",
@@ -230,7 +230,7 @@ export default function CoursesOffered() {
       other: "₹ 23,364",
       instructor: "Micky Midha",
       details: [
-        "250+ Hrs Of Videos",
+        "240 Hrs Of Videos",
         "Available On Web,IOS & Android",
         "Access Until You Pass",
         "Complete Study Material",

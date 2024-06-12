@@ -173,7 +173,7 @@ export default function Page() {
               </p>
               <h1 className="text-center mg:text-left mx-auto text-[16px] mg:text-[18px] max-w-[350px] leading-[30px]">
                 &quot; {`${review.excerpt}`}...
-                <Link href={review.p_link} className="underline text-[#BE4E1E]">
+                <Link target='_blank' href={review.p_link} className="underline text-[#BE4E1E]">
                   (Read More)&quot;
                 </Link>{" "}
               </h1>
