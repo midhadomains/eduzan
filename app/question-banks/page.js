@@ -17,13 +17,13 @@ const MyComponents3 = () => {
           <p className="text-[16px] sm:text-[24px] pl-1 font-semibold leading-7 text-center lg:text-left text-[#842020]">
             Features
           </p>
-          <h1 className="text-4xl font-semibold tracking-tight text-center lg:text-left text-gray-900 text-[24px] md:text-[32px] lg:text-[48px] lg:mt-3">
+          <h1 className="text-4xl font-bold tracking-tight text-center lg:text-left text-gray-900 text-[24px] md:text-[32px] lg:text-[48px] lg:mt-3">
             {" "}
             <span className="text-[#BE4E1E]"> Question</span>{" "}
             <span style={{ color: "#842021" }}>Banks</span>
           </h1>
           <div className="flex flex-wrap items-center justify-center lg:items-stretch gap-10 mt-2 sm:mt-8 rounded-2xl shadow-lg ">
-            <div className="bg-[#F9F6EB] w-[400px] md:w-[660px] h-[200px] md:h-[350px] lg:h-[500px] rounded-2xl flex items-center justify-center">
+            <div className="bg-[#F9F6EB] w-[400px] md:w-[680px] h-[200px] md:h-[350px] lg:h-[500px] rounded-2xl flex items-center justify-center">
               <Image
                 src="https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/Homepage/Our+Platform+Features/Question+Banks/Question+bank+desktop.webp"
                 alt="question-bank"
@@ -84,7 +84,7 @@ const MyComponents3 = () => {
             </div>
           </div>
 
-          <div className="mt-12 sm:mt-16 flex justify-center items-center mb-4">
+          <div className="mt-12 sm:mt-16 flex justify-center items-center mb-4  leading-6 sm:leading-[39px]">
             <ul className="list-disc pl-5 text-[14px] sm:text-[20px]">
               <li>
                 Our questions are mapped with the <span className="font-semibold">FRM®/CFA/PRM exam&apos;s
