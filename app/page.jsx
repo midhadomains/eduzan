@@ -1,4 +1,3 @@
-import SiteHeader from "../components/common/SiteHeader";
 import SiteFooter from "../components/common/SiteFooter";
 import Link from "next/link";
 import { FaChevronRight } from "react-icons/fa";
@@ -9,6 +8,7 @@ import ReviewSection from "../components/home/ReviewSection";
 import Accordion from "../components/common/Accordian";
 import CoursesOffered from "../components/home/CoursesOffered";
 import SocialMedia from "../components/common/SocialMedia";
+import Navbar from "../components/common/SiteHeader";
 
 export const metadata = {
   title: "Welcome to MidhaFin",
@@ -138,8 +138,9 @@ export default async function Home() {
         <meta name="x:description" content="Boost Your Career In Finance" />
         <meta name="x:image" content="https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/Homepage/open-graph-snippet_600*336.png.png" />
       </head>
-      <SiteHeader />
+      
       <div className="select-none">
+        <Navbar/>
         <main>
           {/* Hero section */}
           <HeroSection />
