@@ -1,4 +1,3 @@
-
 "use client"
 import { useState, useEffect } from 'react';
 import Image from "next/image";
@@ -19,7 +18,7 @@ export default function Page() {
   const [data, setData] = useState([]);
   const [filteredData, setFilteredData] = useState([]);
   const [course, setCourse] = useState('');
-  const [sortOption, setSortOption] = useState('desc');
+  const [sortOption, setSortOption] = useState('');
 
   useEffect(() => {
     const fetchData = async () => {
@@ -41,7 +40,7 @@ export default function Page() {
 
     if (sortOption === 'asc') {
       filtered = filtered.sort((a, b) => a.rating - b.rating);
-    } else {
+    } else if(sortOption === "desc"){
       filtered = filtered.sort((a, b) => b.rating - a.rating);
     }
 
