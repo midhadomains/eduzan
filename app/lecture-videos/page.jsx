@@ -7,12 +7,7 @@ import Link from "next/link";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { MdOutlineArrowDropDown } from "react-icons/md";
 
-// export const metadata = {
-//     title: 'Study Planner',
-//     description: "Study plan for FRM PRM and CFA,",
-//     robots:"index,follow",
-//     keywords: "FRM Study Plan, Best study plan FRM"
-// }
+
 const MyComponent = () => {
   const handleScroll = () => {
     document
@@ -115,7 +110,7 @@ const MyComponent = () => {
               the number of candidates who clear all the levels of these exams.
               I&apos;ve heard a number of recruiters saying that extremely qualified
               candidates are not able to answer basic interview questions. <span className="font-[600]">From
-              Financial Risk Practitioner's perspective, and FRM® certification
+              Financial Risk Practitioner&apos;s perspective, and FRM® certification
               can add value only if the candidate has followed holistic approach
               to prepare for the exam and crack it.</span> For example, If 1 day 99%
               VaR changed by 10%, then the candidate should not only be able to
