@@ -1,4 +1,3 @@
-import SiteFooter from "../components/common/SiteFooter";
 import Link from "next/link";
 import { FaChevronRight } from "react-icons/fa";
 import HeroSection from "../components/home/HeroSection";
@@ -9,9 +8,10 @@ import Accordion from "../components/common/Accordian";
 import CoursesOffered from "../components/home/CoursesOffered";
 import SocialMedia from "../components/common/SocialMedia";
 import Navbar from "../components/common/SiteHeader";
+import Footer from "../components/common/SiteFooter";
 
 export const metadata = {
-  title: "Welcome to MidhaFin",
+  title: "MidhaFin | Best FRM coaching in India",
   description: "MidhaFin Home , Explore our Wide Range of Courses ",
   keywords: [
     "best frm courses",
@@ -138,9 +138,9 @@ export default async function Home() {
         <meta name="x:description" content="Boost Your Career In Finance" />
         <meta name="x:image" content="https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/Homepage/open-graph-snippet_600*336.png.png" />
       </head>
-      
+
       <div className="select-none">
-        <Navbar/>
+        <Navbar />
         <main>
           {/* Hero section */}
           <HeroSection />
@@ -189,8 +189,11 @@ export default async function Home() {
           <SocialMedia />
 
         </main>
+        <Footer />
       </div>
-      <SiteFooter />
     </>
   );
 }
+
+
+
