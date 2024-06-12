@@ -32,7 +32,7 @@ const MyComponents6 = () => {
             />
           </div>
 
-          <ul className="list-disc pl-5 text-[14px] sm:text-[20px] max-w-[500px] my-5 md:my-14 xl:my-auto px-5">
+          <ul className="list-disc pl-5 text-[14px] sm:text-[20px] max-w-[500px] my-5 md:my-14 xl:my-auto -mt-4 sm:-mt-0 px-5">
             <li>
               We have an active and extremely user-friendly FRM®/CFA/PRM
               doubt-solving forum. <span className="font-bold">Every single doubt which is relevant to the
