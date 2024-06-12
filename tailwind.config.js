@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        custom: '2.4px 2.4px 3.2px rgba(190, 78, 30, 0.15)',
+      },
       aspectRatio: {
         '4/3': '4 / 3',
       },
