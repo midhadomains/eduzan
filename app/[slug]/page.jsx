@@ -248,6 +248,7 @@ export default async function BlogPost({ params }) {
       <Footer />
     </div>
   );
+  
 }
 
 export const revalidate = 604800; // Revalidate every week in seconds
