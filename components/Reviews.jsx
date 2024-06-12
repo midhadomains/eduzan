@@ -30,6 +30,8 @@ export default function Page() {
 
     fetchData();
   }, []);
+  console.log(data)
+
 
   useEffect(() => {
     let filtered = [...data];
