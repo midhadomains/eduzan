@@ -4,7 +4,9 @@ import Footer from '../../components/common/SiteFooter';
 import Navbar from '../../components/common/SiteHeader';
 
 export const metadata = {
-  title: "Access Till You Pass",
+  title: "MidhaFin|Access Till You Pass",
+  description: "You will have access to the MidhaFin course until you pass your exam.",
+  keyword:["How much time you will access of Midhafin courses,MidhaFin course validity"]
 };
 
 const MyComponents2 = () => {

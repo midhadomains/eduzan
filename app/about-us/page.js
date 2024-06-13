@@ -2,7 +2,9 @@ import Image from "next/image";
 import Footer from "../../components/common/SiteFooter";
 import Navbar from "../../components/common/SiteHeader";
 export const metadata = {
-  title: "About Us",
+  title: "MidhaFin|About Us",
+  description:"Learn About MidhaFin - Leading FRM Coaching Provider, Our Mission, and Goals",
+  keyword:["leading FRM coaching ,Best FRM course"]
 };
 
 export default function Page() {
