@@ -62,7 +62,7 @@
 
 #card__thumb {
   /* change to change height of image */
-  height: 250px;
+  height: 200px;
   overflow: hidden;
   -webkit-transition: height 0.5s;
   transition: height 0.5s;
@@ -333,7 +333,7 @@
 
   #card__thumb {
     /* change to change height of image */
-    height: 190px;
+    height: 170px;
   }
 
   #card:hover #card__thumb {
@@ -394,7 +394,7 @@
 
   #card__thumb {
     /* change to change height of image */
-    height: 175px;
+    height: 155px;
   }
 
   #card:hover #card__thumb {
@@ -457,7 +457,7 @@
 
   #card__thumb {
     /* change to change height of image */
-    height: 175px;
+    height: 155px;
   }
 
   #card:hover #card__thumb {
