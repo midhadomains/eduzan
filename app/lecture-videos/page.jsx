@@ -52,7 +52,7 @@ const MyComponent = () => {
               our study planner for FRM®.
             </p>
             <div className="ml-[8.5%] mb-[13%] mt-[5%] flex lg:text-[24px] sm:text-[20px]  text-[16px] sm:gap-[18px] gap-[12px] md:gap-[28px] lg:gap-[36px]">
-              <Link href=" " className="flex gap-6 underline items-center ">
+              <Link target="_blank" href="https://www.youtube.com/@MidhaFin" className="flex gap-6 underline items-center ">
                 <Image
                   src="/ytplay.svg"
                   height={200}
