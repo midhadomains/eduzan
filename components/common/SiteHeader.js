@@ -54,18 +54,18 @@ const Navbar = () => {
                         </Link>
                         <div className='flex'>
                             <Link href="tel:+91 91551 99555" className='m-auto w-fit'>
-                                <MdCall className='block md:hidden m-auto text-[#6A1C1A] text-[25px] ' />
+                                <MdCall className='block mg:hidden m-auto text-[#6A1C1A] text-[25px] ' />
                             </Link>
-                            <Link href='https://edu.midhafin.com/s/authenticate' className='block md:hidden bg-[#6A1C1A] py-1 px-5 rounded-3xl text-[#F9ECC7] mx-4 max-w-[100px] w-fit'>Login</Link>
+                            <Link href='https://edu.midhafin.com/s/authenticate' className='block mg:hidden bg-[#6A1C1A] py-1 px-5 rounded-3xl text-[#F9ECC7] mx-4 max-w-[100px] w-fit'>Login</Link>
                             {toggle ? (
                                 <IoClose
                                     onClick={() => setToggle(!toggle)}
-                                    className="text-3xl md:hidden block mr-2 text-[#9A391D]"
+                                    className="text-3xl mg:hidden block mr-2 text-[#9A391D]"
                                 />
                             ) : (
                                 <CgMenuLeftAlt
                                     onClick={() => setToggle(!toggle)}
-                                    className="text-3xl md:hidden block mr-2 text-[#9A391D]"
+                                    className="text-3xl mg:hidden block mr-2 text-[#9A391D]"
                                 />
                             )}
                         </div>
@@ -96,12 +96,12 @@ const Navbar = () => {
                         </ul>
                         {/* Responsive */}
                         <ul
-                            className={`md:hidden w-[50%] sm:w-[40%] md-[30%] h-auto fixed bg-white top-[60px]  shadow-2xl
+                            className={`mg:hidden w-[50%] sm:w-[40%] md-[30%] h-auto fixed bg-white top-[60px]  shadow-2xl
                      ${toggle ? 'right-[0]' : 'hidden'}`}
                         >
                             <SmNavItem to='/' name='Home' />
                             <hr />
-                            <NavItem to="/blog" name="Blog" />
+                            <SmNavItem to="/blog" name="Blog" />
                             <hr/>
                             <SmNavItem to="https://edu.midhafin.com/s/store" name="Courses" />
                             <hr />
