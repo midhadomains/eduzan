@@ -257,4 +257,4 @@ export default async function BlogPost({ params }) {
   );
 }
 
-export const revalidate = 3600; // Revalidate every week in seconds
+export const revalidate = 600; // Revalidate every week in seconds
