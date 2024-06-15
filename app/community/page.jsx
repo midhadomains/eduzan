@@ -4,7 +4,20 @@ import { IoIosArrowForward } from "react-icons/io";
 import Navbar from "../../components/common/SiteHeader";
 import Footer from "../../components/common/SiteFooter";
 export const metadata = {
-  title: "Community",
+  title: "MidhaFin Study Group | Connect with FRM Aspirants and Experts",
+  description:"Join the MidhaFin Study Group for collaborative learning with FRM aspirants and experts. Share resources, get study tips, and enhance your financial risk management knowledge. Connect with a community dedicated to your success.",
+  keyword:["MidhaFin Study Group","FRM study group","Financial risk management study group","FRM aspirants community","FRM study resources",
+ " FRM study support","FRM group learning","Financial risk management study community","FRM exam preparation group","Study tips for FRM exam",
+ "Join MidhaFin's FRM study group",
+ "Connect with FRM aspirants at MidhaFin",
+ "Best study group for FRM exam preparation",
+ "Collaborative learning for financial risk management",
+ "How to join an FRM study group at MidhaFin",
+ "FRM certification study group",
+ "MidhaFin study community",
+ "FRM exam study help",
+ "Financial risk management exam support",
+ "FRM exam study partners"]
 };
 function page() {
   return (

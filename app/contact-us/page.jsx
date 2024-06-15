@@ -7,7 +7,12 @@ import Footer from '../../components/common/SiteFooter';
 import Navbar from '../../components/common/SiteHeader';
 
 export const metadata = {
-  title: "Contact Us",
+  title: "Contact MidhaFin | Best FRM Coaching Provider",
+  description:"Got questions about our FRM courses or financial risk management training? Contact MidhaFin, your top FRM coaching provider. We're here to help with course details, registration, and career success. Reach us by phone, email, or online form. Let's achieve your certification goals together!",
+  keyword:["Contact MidhaFin","FRM coaching provider","FRM course inquiry","Financial risk management training",
+  "FRM certification contact","FRM course registration","Contact FRM tutors","Best FRM coaching contact","Financial risk management course details","Reach out to FRM experts","How to contact MidhaFin for FRM courses",
+  "Inquire about financial risk management training at MidhaFin","FRM certification course support contact","MidhaFin call support",
+  "FRM coaching center contact","MidhaFin customer support for FRM courses","FRM course help and support","Connect with FRM course advisors"]
 };
 
 export default function page() {

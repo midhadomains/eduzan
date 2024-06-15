@@ -1,10 +1,11 @@
 import Image from "next/image";
 import Footer from "../../components/common/SiteFooter";
 import Navbar from "../../components/common/SiteHeader";
+
 export const metadata = {
-  title: "MidhaFin|About Us",
-  description:"Learn About MidhaFin - Leading FRM Coaching Provider, Our Mission, and Goals",
-  keyword:["leading FRM coaching ,Best FRM course"]
+  title: "About Us - MidhaFin | Your Partner in Financial Success",
+  description:"Know more about MidhaFin, our mission, vision, and the expert team behind our financial education platform. Discover how we help you achieve financial success with top-notch resources and guidance.",
+  keyword:["leading FRM coaching" ,"Best FRM course","MidhaFin", "financial education", "FRM", "CFA", "financial success", "financial guidance", "about MidhaFin", "financial courses", "financial certification"]
 };
 
 export default function Page() {
