@@ -15,7 +15,7 @@ function HeroSection() {
                             <p className="lg:text-[20px] md:text-[17px] text-[14px] lg:my-9  my-3 font-[400] tracking-wide max-w-[691px]">Step up your career by acquiring the desirable skills and <span className='text-[#BE4E1E]'>leading global certifications in Finance.</span></p>
                             <Link href='https://edu.midhafin.com/s/store' className='max-w-[395px] min-w-[160px] w-[60%]'><button className="bg-[#6A1C1A] transition-colors duration-150  hover:bg-[#BE4E1E] md:py-4 py-[6px]  max-w-[395px] min-w-[160px] w-[100%] md:text-3xl text-[1.1rem] mt-3 rounded-[54px] font-semibold tracking-wider text-[#F9ECC7]  mb-4">Explore Courses</button></Link>
                         </div >
-                        <Image src="/Banner4.svg" alt="image" className=" min-w-[300px]  max-w-[500px] lg:w-[50%] px-2 sm:flex-shrink-0 -mb-5 " width={500} height={500} priority={true} />
+                        <Image src="https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/public/Banner4.svg" alt="image" className=" min-w-[300px]  max-w-[500px] lg:w-[50%] px-2 sm:flex-shrink-0 -mb-5 " width={500} height={500} priority={true} />
                     </div>
                 </div>
                 <div key={2} className="h-[100%] flex justify-center  flex-wrap lg:flex-nowrap bg-gradient-to-r from-[#EBD3A3] to-[#F9F2DF] overflow-hidden  md:px-[50px] px-[20px] pt-5 ">
@@ -25,7 +25,7 @@ function HeroSection() {
                             <p className="lg:text-[20px] md:text-[17px] text-[14px] lg:my-9  my-3 font-[400] tracking-wide max-w-[691px]">Choose from <span className='text-[#BE4E1E]'> GARP-approved courses </span> offered by Midha FIN to chart your path towards a promising career in finance.</p>
                             <Link href='https://edu.midhafin.com/s/authenticate' className='max-w-[395px] min-w-[160px] w-[60%]'><button className="bg-[#6A1C1A] transition-colors duration-150  hover:bg-[#BE4E1E] md:py-4 py-[6px]  max-w-[395px] min-w-[160px] w-[100%] md:text-3xl text-[1.1rem] mt-3 rounded-[54px] font-semibold tracking-wider text-[#F9ECC7] mb-4 ">Signup Now</button></Link>
                         </div >
-                        <Image src="/banner2.png" alt="image" className="min-w-[300px] my-auto max-w-[600px] w-[100%] max-h-[450px] aspect-[4/3] " width={500} height={500} />
+                        <Image src="https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/public/banner2.png" alt="image" className="min-w-[300px] my-auto max-w-[600px] w-[100%] max-h-[450px] aspect-[4/3] " width={500} height={500} />
                     </div>
                 </div>
             </Slide>
