@@ -20,7 +20,7 @@ function Footer() {
               <div className="flex flex-col gap-[17px]">
                 <Link href="/">
                 <Image
-                  src="https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/public/midhalogo.svgg"
+                  src="https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/public/midhalogo.svg"
                   width={100}
                   height={100}
                   className="sm:w-[152px] w-[112px] lg:w-[173px] mx-auto "
