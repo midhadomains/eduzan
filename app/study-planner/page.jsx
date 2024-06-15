@@ -1,5 +1,4 @@
-'use client'
-import React from 'react';
+"use client"
 import Image from 'next/image'
 import Footer from '../../components/common/SiteFooter';
 import Navbar from '../../components/common/SiteHeader';
@@ -25,7 +24,7 @@ const MyComponent = () => {
                 <h1 className=' sm:text-[32px] text-[24px] lg:text-[48px] font-[700] text-[#691D1C] tracking-wide sm:text-left text-center'>MidhaFin Study <span className='text-[#BE4E1E]'>Planner</span></h1>
                 <div className=' flex  flex-wrap mt-[4.5%] shadow-[0px_4px_4px_0px_#0000001F] rounded-[10px]'>
                     <div className='max-w-[650px]  sm:w-[50%] min-w-[280px] bg-[#F9F6EB] sm:rounded-[10px_0px_0px_10px] flex justify-center items-center md:py-[49px] sm:py-[35px] py-[21px]'>
-                        <Image src="/mf_planner.webp" width={800} height={800} className='w-[93%]'/>
+                        <Image src="/mf_planner.webp" width={800} height={800} alt="img" className='w-[93%]'/>
                     </div>
                     <div className='max-w-[650px] sm:w-[50%] min-w-[280px] mx-auto   '>
                         <p className=' mt-[13%] ml-[8.5%] mr-[12%]  lg:text-[16px] text-[14px] xl:text-[20px] leading-[22px] md:leading-[36px]'>The study plan has taken care of the sequence in the best possible way, we strongly advice to follow this sequence and the schedule.</p>
@@ -44,10 +43,10 @@ const MyComponent = () => {
                 </div>
                 <p id='more-content' className='mb-[4%] max-w-[1000px] sm:mt-[48px] mt-[26px] md:mt-[68px] leading-[22px] md:leading-[38.8px] lg:text-[16px] text-[14px] xl:text-[20px] mx-auto'>We at MidhaFin are a strong proponent of smart work. Many FRM®, CFA & PRM students whom we have taught over the years have had to juggle their exam preparations with either job or college which brought time management & exam strategy to the forefront of their FRM®/CFA/PRM preparation.</p>
                 <div className='hidden sm:block'>
-                    <Image src="/pf_studyplanner.png" height={700} width={1300} />
+                    <Image src="/pf_studyplanner.png" height={700} width={1300} alt="img" />
                 </div>
                 <div className='sm:hidden '>
-                <Image src="/pf_studyplanner1.png" height={700} width={1300} />
+                <Image src="/pf_studyplanner1.png" height={700} width={1300} alt="img"/>
                 </div>
                 <p className='mb-8  max-w-[1000px] sm:mt-[48px] mt-[4%] md:mt-[68px] leading-[22px] md:leading-[38.8px] lg:text-[16px] text-[14px] xl:text-[20px] mx-auto'>
                 After years of successfully guiding students in their FRM®/CFA/PRM study planning, our team has not only been able to identify certain approaches to the FRM®/CFA/PRM preparation but have also learnt to customize the FRM®/CFA/PRM study plans for individual students, based on their time commitments and goals. <br />The relationship between our instructors and our students is not just that of FRM®/CFA/PRM instruction and teaching but also of mentorship. When a FRM®/CFA/PRM student joins, we have a session with him or her, wherein, our instructors understand the student&apos;s goals and the amount of time they have to prepare for the FRM®/CFA/PRM exam. Based on the student&apos;s prior knowledge, his or her strengths & weaknesses and the amount of time they can commit every week, we prepare a customized FRM®/CFA/PRM study plan for the student.

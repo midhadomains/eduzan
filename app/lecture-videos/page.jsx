@@ -1,5 +1,4 @@
-"use client";
-import React from "react";
+"use client"
 import Image from "next/image";
 import Footer from "../../components/common/SiteFooter";
 import Navbar from "../../components/common/SiteHeader";
@@ -28,6 +27,7 @@ const MyComponent = () => {
           <div className="max-w-[650px]  w-[800px] sm:w-[50%]  min-w-[280px] bg-[#F9F6EB] rounded-[10px_10px_0px_0px] sm:rounded-[10px_0px_0px_10px] flex justify-center items-center md:py-[49px] sm:py-[35px] py-[21px]">
             <Image
               src="/mf_lecvid.svg"
+              alt="img"
               width={800}
               height={800}
               className="w-[93%]"
@@ -55,6 +55,7 @@ const MyComponent = () => {
               <Link target="_blank" href="https://www.youtube.com/@MidhaFin" className="flex gap-6 underline items-center ">
                 <Image
                   src="/ytplay.svg"
+                  alt="img"
                   height={200}
                   width={200}
                   className="w-[47px]"
@@ -121,7 +122,7 @@ const MyComponent = () => {
             </p>
            
             <div className="lg:w-[328px] md:w-[240px] w-[142px] mx-auto">
-            <Image src="/heroImg.png" width={340} height={507} className="  lx:w-[270px] md:w-[240px] sm:w-[200px] w-[152px]"/>
+            <Image src="/heroImg.png" width={340} height={507} alt="img" className="  lx:w-[270px] md:w-[240px] sm:w-[200px] w-[152px]"/>
 
             </div>
           </div>
