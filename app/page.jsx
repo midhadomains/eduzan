@@ -46,6 +46,212 @@ export const metadata = {
   ],
 };
 
+const JsonLD = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Course",
+      "name": "Financial Risk Manager (FRM) Part-1 Self paced Course",
+      "description": "Prepare for the FRM Part-1 exam with this comprehensive course.",
+      "provider": {
+        "@type": "Organization",
+        "name": "MidhaFin",
+        "sameAs": "https://www.midhafin.com/"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.5",
+        "reviewCount": "225"
+      },
+      "hasCourseInstance": {
+        "@type": "CourseInstance",
+        "courseMode": "Online",
+        "duration": "PT257H",
+        "courseWorkload": "PT257H"           
+      },
+      "offers": [{
+        "@type": "Offer",
+        "category": "Paid",
+        "price": 17523, 
+        "priceCurrency": "INR",
+        "url": "https://edu.midhafin.com/courses/FRM-Part-1-Self-Paced-Course"                
+      }]
+    },
+    {
+      "@type": "Course",
+      "name": "Financial Risk Manager (FRM) part-1 Live Online Classes",
+      "description": "Prepare for the FRM Part-1 exam with this advanced course.",
+      "provider": {
+        "@type": "Organization",
+        "name": "MidhaFin",
+        "sameAs": "https://www.midhafin.com/"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.5",
+        "reviewCount": "225"
+      },
+      "hasCourseInstance": {
+        "@type": "CourseInstance",
+        "courseMode": "Online",
+        "duration": "PT290H",
+        "courseWorkload": "PT290H"
+      },
+      "offers": [{
+        "@type": "Offer",
+        "category": "Paid",
+        "price": 23364, 
+        "priceCurrency": "INR",
+        "url": "https://edu.midhafin.com/courses/FRM-Part-1-Live-Online-Classes"
+        
+      }]
+    },
+    {
+      "@type": "Course",
+      "name": "Financial Risk Manager (FRM) part-1 One-on-One Guidance",
+      "description": "Prepare for the FRM Part-1 exam with this advanced course.",
+      "provider": {
+        "@type": "Organization",
+        "name": "MidhaFin",
+        "sameAs": "https://www.midhafin.com/"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.5",
+        "reviewCount": "220"
+      },
+      "hasCourseInstance": {
+        "@type": "CourseInstance",
+        "courseMode": "Online",
+        "courseWorkload": "PT10H"
+      },
+      "offers": [{
+        "@type": "Offer",
+        "category": "free",
+        "price": 0, 
+        "priceCurrency": "INR",
+        "url": "https://edu.midhafin.com/courses/FRM-Part-1-One-to-One-Classes"
+        
+      }]
+      },
+      {
+        "@type": "Course",
+        "name": "Financial Risk Manager (FRM) part-1 Sample Course",
+        "description": "Prepare for the FRM Part-1 exam with this advanced course.",
+        "provider": {
+          "@type": "Organization",
+          "name": "MidhaFin",
+          "sameAs": "https://www.midhafin.com/"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.5",
+          "reviewCount": "220"
+        },
+        "hasCourseInstance": {
+          "@type": "CourseInstance",
+          "courseMode": "Online",
+          "duration": "PT12H",
+          "courseWorkload": "PT12H"
+        },
+        "offers": [{
+          "@type": "Offer",
+          "category": "free",
+          "price": 0, 
+          "priceCurrency": "INR",
+          "url": "https://edu.midhafin.com/courses/FRM-Part-1-Live-Online-Classes"
+          
+        }]
+        },
+        {
+          "@type": "Course",
+          "name": "Financial Risk Manager (FRM) part-2 Self Paced Course",
+          "description": "Prepare for the FRM Part-2 exam with this advanced course.",
+          "provider": {
+            "@type": "Organization",
+            "name": "MidhaFin",
+            "sameAs": "https://www.midhafin.com/"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.5",
+            "reviewCount": "220"
+          },
+          "hasCourseInstance": {
+            "@type": "CourseInstance",
+            "courseMode": "Online",
+            "duration": "PT240H",
+            "courseWorkload": "PT240H"
+          },
+          "offers":[{
+            "@type": "Offer",
+            "category": "Paid",
+            "price": 17523, 
+            "priceCurrency": "INR",
+            "url": "https://edu.midhafin.com/courses/FRM-Part-2-Self-Paced-Course"
+           
+          }]
+          },
+          {
+            "@type": "Course",
+            "name": "Financial Risk Manager (FRM) part 1-2 Combined Self Paced Course",
+            "description": "Prepare for the FRM Part-2 exam with this advanced course.",
+            "provider": {
+              "@type": "Organization",
+              "name": "MidhaFin",
+              "sameAs": "https://www.midhafin.com/"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.5",
+              "reviewCount": "220"
+            },
+            "hasCourseInstance": {
+              "@type": "CourseInstance",
+              "courseMode": "Online",
+              "duration": "PT450H",
+              "courseWorkload": "PT450H"
+            },
+            "offers": [{
+              "@type": "Offer",
+              "category": "Paid",
+              "price": 54693, 
+              "priceCurrency": "INR",
+              "url": "https://edu.midhafin.com/courses/FRM-Part-1-and-Part-2-Combined-Self-Paced-Course"
+              
+            }]
+            },
+            {
+              "@type": "Course",
+              "name": "Financial Risk Manager (FRM) part-2 Sample Course",
+              "description": "Prepare for the FRM Part-2 exam with this advanced course.",
+              "provider": {
+                "@type": "Organization",
+                "name": "MidhaFin",
+                "sameAs": "https://www.midhafin.com/"
+              },
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.5",
+                "reviewCount": "220"
+              },
+              "hasCourseInstance": {
+                "@type": "CourseInstance",
+                "courseMode": "Online",
+                "duration": "PT12H",
+                "courseWorkload": "PT12H"
+              },
+              "offers": [{
+                "@type": "Offer",
+                "category": "free",
+                "price": 0, 
+                "priceCurrency": "INR",
+                "url": "https://edu.midhafin.com/courses/FRM-Part-1-and-Part-2-Combined-Self-Paced-Course"                        
+              }]                   
+    }
+  ]
+}
+
 export default async function Home() {
   const buttonsData = [
     {
@@ -117,6 +323,7 @@ export default async function Home() {
 
   return (
     <>
+     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(JsonLD)}}/>
       <head>
         <meta name="robots" content="index,follow" />
         <meta name="googlebot" content="index,follow" />
