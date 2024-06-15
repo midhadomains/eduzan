@@ -12,7 +12,7 @@ export default function FeaturesSection() {
           {/* box1 */}
           <div className="group   lg:w-[380px] 2xl:mx-0 mx-auto md:w-[350px]  w-[290px] mt-[20px] sm:mt-[25px] xl:mt-[8px] md:h-[300px] lg:h-[350px] h-[225px]    shadow-[0px_2px_6.3px_0px_#0000001C] xl:shadow-none sm:h-[270px]  rounded-3xl relative  flex-shrink-0 z-10 ">
             <Image
-              src="/ief.svg"
+              src="https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/public/ief.svg"
               alt="img"
               width={280}
               height={200}
@@ -41,7 +41,7 @@ export default function FeaturesSection() {
           {/* box2 */}
           <div className="group   lg:w-[380px] 2xl:mx-0 mx-auto md:w-[350px]  w-[290px] mt-[20px] sm:mt-[25px] xl:mt-[8px] md:h-[300px] lg:h-[350px] h-[225px]    shadow-[0px_2px_6.3px_0px_#0000001C] xl:shadow-none sm:h-[270px]  rounded-3xl relative  flex-shrink-0 z-10">
             <Image
-              src="/sds.svg"
+              src="https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/public/sds.svg"
               alt="img"
               width={262}
               height={200}
@@ -70,7 +70,7 @@ export default function FeaturesSection() {
           {/* box3 */}
           <div className="group   lg:w-[380px] 2xl:mx-0 mx-auto md:w-[350px]  w-[290px] my-[20px] sm:mt-[25px] xl:mt-[8px] md:h-[300px] lg:h-[350px] h-[225px]    shadow-[0px_2px_6.3px_0px_#0000001C] xl:shadow-none sm:h-[270px]  rounded-3xl relative  flex-shrink-0 z-10">
             <Image
-              src="/etem.svg"
+              src="https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/public/etem.svg"
               alt="img"
               width={210}
               height={200}

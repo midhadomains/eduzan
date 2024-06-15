@@ -48,7 +48,7 @@ const Navbar = () => {
                                 width={250}
                                 height={40}
                                 className='ml-1 sm:ml-4 md:item-left w-[200px] h-[30px] lg:w-fit lg:h-[40px] '
-                                src="/Logo-with-garp.svg"
+                                src="https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/public/Logo-with-garp.svg"
                                 alt="MidhaFin Logo"
                             />
                         </Link>

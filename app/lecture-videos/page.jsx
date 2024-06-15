@@ -1,18 +1,15 @@
-"use client"
+
 import Image from "next/image";
 import Footer from "../../components/common/SiteFooter";
 import Navbar from "../../components/common/SiteHeader";
 import Link from "next/link";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { MdOutlineArrowDropDown } from "react-icons/md";
+import ScrollButton from "./ScrollButton";
 
 
 const MyComponent = () => {
-  const handleScroll = () => {
-    document
-      .getElementById("more-content")
-      .scrollIntoView({ behavior: "smooth" });
-  };
+  
   return (
     <div className="select-none">
       <Navbar />
@@ -26,7 +23,7 @@ const MyComponent = () => {
         <div className=" flex  flex-wrap mt-[4.5%] shadow-[0px_4px_4px_0px_#0000001F] rounded-[10px]">
           <div className="max-w-[650px]  w-[800px] sm:w-[50%]  min-w-[280px] bg-[#F9F6EB] rounded-[10px_10px_0px_0px] sm:rounded-[10px_0px_0px_10px] flex justify-center items-center md:py-[49px] sm:py-[35px] py-[21px]">
             <Image
-              src="/mf_lecvid.svg"
+              src="https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/public/mf_lecvid.svg"
               alt="img"
               width={800}
               height={800}
@@ -54,7 +51,7 @@ const MyComponent = () => {
             <div className="ml-[8.5%] mb-[13%] mt-[5%] flex lg:text-[24px] sm:text-[20px]  text-[16px] sm:gap-[18px] gap-[12px] md:gap-[28px] lg:gap-[36px]">
               <Link target="_blank" href="https://www.youtube.com/@MidhaFin" className="flex gap-6 underline items-center ">
                 <Image
-                  src="/ytplay.svg"
+                  src="https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/public/ytplay.svg"
                   alt="img"
                   height={200}
                   width={200}
@@ -76,22 +73,15 @@ const MyComponent = () => {
         </div>
 
         {/* <div>Know More</div>    */}
-        <div className=" mt-[20px] ">
-          <button
-            onClick={handleScroll}
-            className="text-[#BE4E1E] mx-auto lg:text-[20px] text-[14px] sm:text-[16px] flex items-center text-center hover:opacity-75"
-          >
-            Know More
-            <MdOutlineArrowDropDown />
-          </button>
-        </div>
+       
+        <ScrollButton/>
         <p
           id="more-content"
           className="mb-[2%] max-w-[1000px]  mt-[5%] leading-[22px] md:leading-[38.8px] lg:text-[16px] text-[14px] xl:text-[20px] mx-auto"
         >
           According to instructor:
         </p>
-        {/* working */}
+        
         <div className="max-w-[1170px] bg-[#F9F8EF] sm:pt-[25px] pt-4 lg:pt-[30px] xl:pt-[40px] mb-5 rounded-[20px] mx-auto shadow-[7px_7px_0px_0px_#BF4E1E] md:shadow-[20px_20px_0px_0px_#BF4E1E] ">
             <p className="xl:max-w-[1000px]  xl:mr-0 md:mr-11 lg:text-[16px]   md:px-0 px-4  md:ml-[50px] xl:ml-[95px] text-[14px] xl:text-[20px] leading-[22px] md:leading-[36px] ">
               &quot;We have not established MidhaFin only for helping the
@@ -123,7 +113,7 @@ const MyComponent = () => {
             </p>
            
             <div className="lg:w-[328px] md:w-[240px] w-[142px] mx-auto">
-            <Image src="/heroImg.png" width={340} height={507} alt="img" className="  lx:w-[270px] md:w-[240px] sm:w-[200px] w-[152px]"/>
+            <Image src="https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/public/heroImg.png" width={340} height={507} alt="img" className="  lx:w-[270px] md:w-[240px] sm:w-[200px] w-[152px]"/>
 
             </div>
           </div>
