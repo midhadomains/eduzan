@@ -4,7 +4,22 @@ import Footer from '../../components/common/SiteFooter';
 import Navbar from '../../components/common/SiteHeader';
 
 export const metadata = {
-  title: "Complete Study Material"
+  title: " MidhaFin - Complete Study Material for Finance Students",
+  description: "Get the best study materials for finance and economics at MidhaFin. Our extensive collection covers all your learning needs. Click to learn more!",
+  keyword:[ "Finance study material",
+  "Economics study guides",
+  "Complete study resources",
+  "Finance notes and guides",
+  "Economics learning material",
+  "Study resources for finance students",
+  "Comprehensive study material",
+  "Academic resources for finance",
+  "Finance and economics study aids",
+  "Best study material for finance",
+  "Best study material for FRM",
+  "Best study material for PRM",
+  "Best study material for CFA"
+  ]
 };
 
 const MyComponent = () => {

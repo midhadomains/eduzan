@@ -24,33 +24,49 @@ export default function Page() {
         { id: 13, text: 'Are the prices of different packages inclusive of all taxes?', data: 'The prices do not include the taxes (if any) and these are automatically added at the time of checkout.'},
     ];
 
+    
+    const JsonLD = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": buttonsData.map(faq => ({
+            "@type": "Question",
+            "name": faq.text,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.data
+            }
+        }))
+    };
+
+
+
     return (
         <>
-
-        <div className="select-none">
-            <Navbar />
-            <div className="h-40 bg-red-950 ">
-                <h1 className="text-4xl font-style:normal font-bold text-white pt-6 pl-28">FAQs</h1>
-                <p className="text-white pt-6 pl-28">
-                    <a href="https://www.midhafin.com/courses/FRM-Part-1-Self-Paced-Course-6284dad90cf2f73fd7f6034f">Home</a> /
-                    <a href="https://www.midhafin.com/faqs">
-                        &nbsp; Frequently Asked Questions
-                    </a>
-                </p>
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(JsonLD) }} />
+            <div className="select-none">
+                <Navbar />
+                <div className="h-40 bg-red-950 ">
+                    <h1 className="text-4xl font-style:normal font-bold text-white pt-6 pl-28">FAQs</h1>
+                    <p className="text-white pt-6 pl-28">
+                        <a href="https://www.midhafin.com/courses/FRM-Part-1-Self-Paced-Course-6284dad90cf2f73fd7f6034f">Home</a> /
+                        <a href="https://www.midhafin.com/faqs">
+                            &nbsp; Frequently Asked Questions
+                        </a>
+                    </p>
+                </div>
+                <div className="center-container">
+                    <h1 className="lg:text-4xl sm:text-3xl font-style:normal text-center font-bold lg:pt-6 sm:pt-4">
+                        Frequently <span style={{ color: '#8B4513' }}>Asked </span> Questions
+                    </h1>
+                    <br />
+                    <p className=" text-lg lg:pl-[30%] lg:pr-[30%] text-center sm:pl-[5%] sm:pr-[5%] ">
+                        We at MidhaFin, focus on striking a careful balance, between Knowledge and Relevance,
+                        between theory and analytics & between pure concepts and practical application.
+                    </p>
+                    <Accordion buttonsData={buttonsData} />
+                </div>
+                <Footer />
             </div>
-            <div className="center-container text-center">
-                <h1 className="lg:text-4xl sm:text-3xl font-style:normal font-bold lg:pt-6 sm:pt-4">
-                    Frequently <span style={{ color: '#8B4513' }}>Asked </span> Questions
-                </h1>
-                <br />
-                <p className=" text-lg lg:pl-[30%] lg:pr-[30%] sm:pl-[5%] sm:pr-[5%] ">
-                    We at MidhaFin, focus on striking a careful balance, between Knowledge and Relevance,
-                    between theory and analytics & between pure concepts and practical application.
-                </p>
-                <Accordion buttonsData={buttonsData} />
-            </div>
-            <Footer />
-        </div>
         </>
     );
 }

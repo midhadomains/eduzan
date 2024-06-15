@@ -21,42 +21,42 @@ function PlatformFeatures() {
     const features = [
         {
             title: "Study Planner",
-            imageSrc: "/Study-planner.svg",
+            imageSrc: "https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/public/Study-planner.svg",
             link: "/study-planner",
         },
         {
             title: "Question Banks",
-            imageSrc: "/question-bank.svg",
+            imageSrc: "https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/public/question-bank.svg",
             link: "/question-banks",
         },
         {
             title: "Mock Tests",
-            imageSrc: "/mock-test.svg",
+            imageSrc: "https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/public/mock-test.svg",
             link: "/mock-tests",
         },
         {
             title: "Lecture Videos",
-            imageSrc: "/lecture-video.svg",
+            imageSrc: "https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/public/lecture-video.svg",
             link: "/lecture-videos",
         },
         {
             title: "Doubt Solving Forum",
-            imageSrc: "/doubt-solving-forum.svg",
+            imageSrc: "https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/public/doubt-solving-forum.svg",
             link: "/doubt-solving-forum",
         },
         {
             title: "Industry Expert Faculty",
-            imageSrc: "/ief.svg",
+            imageSrc: "https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/public/ief.svg",
             link: "/industry-expert-faculty",
         },
         {
             title: "Complete Study Material",
-            imageSrc: "/Complete-study-material.svg",
+            imageSrc: "https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/public/Complete-study-material.svg",
             link: "/complete-study-material",
         },
         {
             title: "Access Till You Pass",
-            imageSrc: "/access-till-you-pass.svg",
+            imageSrc: "https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/public/access-till-you-pass.svg",
             link: "/access-till-you-pass",
         },
     ];

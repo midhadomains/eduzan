@@ -4,7 +4,20 @@ import { IoIosArrowForward } from "react-icons/io";
 import Navbar from "../../components/common/SiteHeader";
 import Footer from "../../components/common/SiteFooter";
 export const metadata = {
-  title: "Community",
+  title: "MidhaFin Study Group | Connect with FRM Aspirants and Experts",
+  description:"Join the MidhaFin Study Group for collaborative learning with FRM aspirants and experts. Share resources, get study tips, and enhance your financial risk management knowledge. Connect with a community dedicated to your success.",
+  keyword:["MidhaFin Study Group","FRM study group","Financial risk management study group","FRM aspirants community","FRM study resources",
+ " FRM study support","FRM group learning","Financial risk management study community","FRM exam preparation group","Study tips for FRM exam",
+ "Join MidhaFin's FRM study group",
+ "Connect with FRM aspirants at MidhaFin",
+ "Best study group for FRM exam preparation",
+ "Collaborative learning for financial risk management",
+ "How to join an FRM study group at MidhaFin",
+ "FRM certification study group",
+ "MidhaFin study community",
+ "FRM exam study help",
+ "Financial risk management exam support",
+ "FRM exam study partners"]
 };
 function page() {
   return (
@@ -35,7 +48,7 @@ function page() {
       <div className="max-w-[1400px]  md:px-[50px] px-[25px] sm:mt-[40px] mt-[22px]  mx-auto flex justify-center mh:justify-between gap-[15px] mh:flex-nowrap flex-wrap ">
         <div className="w-[50%] max-w-[617px] min-w-[300px] mh:mx-0 mx-auto ">
           <Image
-            src="/community.png"
+            src="https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/public/community.png"
             width={900}
             height={1000}
             className="w-[100%] max-w-[617px] min-w-[300px]"
@@ -51,7 +64,7 @@ function page() {
             <div className="flex mh:flex-col gap-[17.13px] lg:gap-[23px] mh:ml-0 ml-[32px]">
               <div className="flex items-center justify-normal gap-[14px]">
                 <Image
-                  src="/community_wa.png"
+                  src="https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/public/community_wa.png"
                   width={100}
                   height={100}
                   className="min-w-[45px] w-[50px]"
@@ -78,7 +91,7 @@ function page() {
             <div className="flex mh:flex-col gap-[17.13px] lg:gap-[23px] mh:ml-0 ml-[32px]">
               <div className="flex items-center justify-normal gap-[14px]">
                 <Image
-                  src="/community_tg.png"
+                  src="https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/public/community_tg.png"
                   width={100}
                   height={100}
                   className="min-w-[40px] w-[50px]"
@@ -100,7 +113,7 @@ function page() {
             <div className="flex mh:flex-col gap-[17.13px] lg:gap-[23px] mh:ml-0 ml-[32px]">
               <div className="flex items-center justify-normal gap-[14px]">
                 <Image
-                  src="/community_fb.png"
+                  src="https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/public/community_fb.png"
                   width={100}
                   height={100}
                   className="min-w-[40px] w-[50px]"
