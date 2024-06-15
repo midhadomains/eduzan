@@ -62,7 +62,8 @@ const MyComponent = () => {
               </Link>{" "}
               <Link
                 className="flex gap-6 underline items-center hover:text-[#BE4E1E]"
-                href=""
+                href="https://www.youtube.com/@MidhaFin"
+                target="_blank"
               >
                 <p className="lg:text-[16px] text-[14px] xl:text-[20px]">
                   Visit our Youtube channel
