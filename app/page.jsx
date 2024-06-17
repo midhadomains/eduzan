@@ -58,8 +58,14 @@ const JsonLD = {
         "name": "MidhaFin",
         "sameAs": "https://www.midhafin.com/"
       },
+      "image": [
+        "https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/SERP+SEO/serp_1_1.webp",
+        "https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/SERP+SEO/serp_4_3.webp",
+        "https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/SERP+SEO/serp_16_9.webp"
+       ],
       "aggregateRating": {
         "@type": "AggregateRating",
+        "bestRating": 5,
         "ratingValue": "4.5",
         "reviewCount": "225"
       },
@@ -86,8 +92,14 @@ const JsonLD = {
         "name": "MidhaFin",
         "sameAs": "https://www.midhafin.com/"
       },
+      "image": [
+        "https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/SERP+SEO/serp_1_1.webp",
+        "https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/SERP+SEO/serp_4_3.webp",
+        "https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/SERP+SEO/serp_16_9.webp"
+       ],
       "aggregateRating": {
         "@type": "AggregateRating",
+        "bestRating": 5,
         "ratingValue": "4.5",
         "reviewCount": "225"
       },
@@ -115,8 +127,14 @@ const JsonLD = {
         "name": "MidhaFin",
         "sameAs": "https://www.midhafin.com/"
       },
+      "image": [
+        "https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/SERP+SEO/serp_1_1.webp",
+        "https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/SERP+SEO/serp_4_3.webp",
+        "https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/SERP+SEO/serp_16_9.webp"
+       ],
       "aggregateRating": {
         "@type": "AggregateRating",
+        "bestRating": 5,
         "ratingValue": "4.5",
         "reviewCount": "220"
       },
@@ -143,8 +161,14 @@ const JsonLD = {
           "name": "MidhaFin",
           "sameAs": "https://www.midhafin.com/"
         },
+        "image": [
+          "https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/SERP+SEO/serp_1_1.webp",
+          "https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/SERP+SEO/serp_4_3.webp",
+          "https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/SERP+SEO/serp_16_9.webp"
+         ],
         "aggregateRating": {
           "@type": "AggregateRating",
+          "bestRating": 5,
           "ratingValue": "4.5",
           "reviewCount": "220"
         },
@@ -172,8 +196,14 @@ const JsonLD = {
             "name": "MidhaFin",
             "sameAs": "https://www.midhafin.com/"
           },
+          "image": [
+            "https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/SERP+SEO/serp_1_1.webp",
+            "https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/SERP+SEO/serp_4_3.webp",
+            "https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/SERP+SEO/serp_16_9.webp"
+           ],
           "aggregateRating": {
             "@type": "AggregateRating",
+            "bestRating": 5,
             "ratingValue": "4.5",
             "reviewCount": "220"
           },
@@ -201,8 +231,14 @@ const JsonLD = {
               "name": "MidhaFin",
               "sameAs": "https://www.midhafin.com/"
             },
+            "image": [
+              "https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/SERP+SEO/serp_1_1.webp",
+              "https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/SERP+SEO/serp_4_3.webp",
+              "https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/SERP+SEO/serp_16_9.webp"
+             ],
             "aggregateRating": {
               "@type": "AggregateRating",
+              "bestRating": 5,
               "ratingValue": "4.5",
               "reviewCount": "220"
             },
@@ -230,8 +266,14 @@ const JsonLD = {
                 "name": "MidhaFin",
                 "sameAs": "https://www.midhafin.com/"
               },
+              "image": [
+                "https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/SERP+SEO/serp_1_1.webp",
+                "https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/SERP+SEO/serp_4_3.webp",
+                "https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/SERP+SEO/serp_16_9.webp"
+               ],
               "aggregateRating": {
                 "@type": "AggregateRating",
+                "bestRating": 5,
                 "ratingValue": "4.5",
                 "reviewCount": "220"
               },
