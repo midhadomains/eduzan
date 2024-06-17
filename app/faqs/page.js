@@ -70,12 +70,3 @@ export default function Page() {
         </>
     );
 }
-
-
-
-
-
-
-
-
-

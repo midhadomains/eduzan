@@ -3,7 +3,20 @@ import Footer from '../../components/common/SiteFooter';
 import Navbar from '../../components/common/SiteHeader';
 
 export const metadata = {
-  title: "Privacy Policy",
+  title: "Privacy Policy - MidhaFin | Your Privacy Matters",
+  description: "Read MidhaFin's Privacy Policy to understand how we collect, use, and protect your personal information. We are committed to safeguarding your privacy and ensuring your data security.",
+  keywords: [
+    "MidhaFin",
+    "Privacy Policy",
+    "Data Protection",
+    "Personal Information",
+    "Data Security",
+    "User Privacy",
+    "Information Collection",
+    "Privacy Practices",
+    "Data Privacy",
+    "FRM Exam"
+  ]
 };
 
 

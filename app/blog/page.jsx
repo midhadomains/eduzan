@@ -4,8 +4,22 @@ import Navbar from '../../components/common/SiteHeader'
 import Footer from '../../components/common/SiteFooter'
 
 export const metadata = {
-  title: "Blog",
+  title: "List of Blogs - MidhaFin | Insights and Updates on Finance and FRM",
+  description: "Explore MidhaFin's extensive collection of blogs covering a wide range of topics in finance and FRM. Stay updated with the latest insights, tips, and news to boost your finance knowledge and career.",
+  keywords: [
+    "MidhaFin",
+    "List of Blogs",
+    "Finance Blogs",
+    "FRM Insights",
+    "Finance Updates",
+    "FRM Tips",
+    "Finance News",
+    "FRM Certification",
+    "Finance Articles",
+    "Financial Risk Management"
+  ]
 };
+
 
 export default function page() {
   return (

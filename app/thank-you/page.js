@@ -3,6 +3,8 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 
+  
+
 const RedirectPage = () => {
     const router = useRouter();
     const [timer, setTimer] = useState(3);
@@ -23,6 +25,8 @@ const RedirectPage = () => {
             clearTimeout(redirectTimeout);
         };
     }, [router]);
+
+   
 
     return (
         <div className='w-[100%] select-none'>

@@ -6,7 +6,11 @@ import Link from "next/link";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { MdOutlineArrowDropDown } from "react-icons/md";
 import ScrollButton from "./ScrollButton";
-
+export const metadata = {
+  title: "Lecture Videos - MidhaFin | Boost Your Career in Finance",
+  description: "Explore MidhaFin's comprehensive lecture videos for FRM Part 1 and Part 2. Get detailed explanations and boost your finance career with our expert-guided video content.",
+  keyword: ["MidhaFin", "Lecture Videos", "FRM Part 1", "FRM Part 2", "Finance Career", "FRM Certification", "Financial Risk Manager", "Online Course", "Video Lectures", "Finance Education"]
+};
 
 const MyComponent = () => {
   
