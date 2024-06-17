@@ -4,7 +4,9 @@ import Footer from "../../components/common/SiteFooter";
 import Navbar from "../../components/common/SiteHeader";
 
 export const metadata = {
-  title: "Industry Expert Faculty",
+  title: "Industry Expert Faculty - MidhaFin | Learn from the Best in Finance",
+  description: "Meet MidhaFin's industry expert faculty. Our seasoned professionals bring years of experience and knowledge to help you excel in FRM exams and finance careers.",
+  keyword: ["MidhaFin", "Industry Expert Faculty"," Finance Education", "FRM Certification", "Financial Risk Manager"," Finance Experts"," Online Learning "," Professional Instructors", "Finance Courses"]
 };
 
 const IndustryExpertFaculty = () => {

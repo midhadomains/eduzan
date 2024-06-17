@@ -4,8 +4,22 @@ import Footer from '../../components/common/SiteFooter';
 import Navbar from '../../components/common/SiteHeader';
 
 export const metadata = {
-  title: "Refund Policy",
+  title: "Refund Policy - MidhaFin | Understanding Our Refund Procedures",
+  description: "Learn about MidhaFin's refund policy. Understand the conditions and procedures for requesting a refund on our courses and services. We aim to provide clarity and transparency in our refund process.",
+  keywords: [
+    "MidhaFin",
+    "Refund Policy",
+    "Course Refund",
+    "Service Refund",
+    "Refund Procedures",
+    "Refund Conditions",
+    "FRM Course Refund",
+    "Finance Course Refund",
+    "Refund Process",
+    "Customer Service"
+  ]
 };
+
 
 
 function Page() {

@@ -6,7 +6,19 @@ import Link from "next/link";
 import { RiArrowDownSFill } from "react-icons/ri";
 
 export const metadata = {
-  title: "Mock Tests",
+  title: "Mock Tests - MidhaFin | Ace Your FRM Exams with Practice",
+  description: "Prepare for your FRM exams with MidhaFin's comprehensive mock tests. Practice with real exam scenarios and improve your chances of success with our expertly crafted test series.",
+  keyword: [
+    "MidhaFin",
+    "Mock Tests",
+    "FRM Exam Preparation",
+    "Practice Tests",
+    "Financial Risk Manager",
+    "Test Series",
+    "FRM Certification",
+    "Finance Practice Exams",
+    "Online Mock Tests"
+  ]
 };
 
 

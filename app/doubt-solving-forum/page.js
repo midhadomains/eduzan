@@ -3,8 +3,22 @@ import Footer from "../../components/common/SiteFooter";
 import Navbar from "../../components/common/SiteHeader";
 
 export const metadata = {
-  title: "Doubt Solving Forum",
+  title: "Doubt Solving Forum - MidhaFin | Get Expert Answers to Your Questions",
+  description: "Join MidhaFin's Doubt Solving Forum to get answers to all your FRM-related questions. Our experts are here to help you with detailed explanations and solutions to ensure your success in the FRM exams.",
+  keywords: [
+    "MidhaFin",
+    "Doubt Solving Forum",
+    "FRM Questions",
+    "Expert Answers",
+    "Student Forum",
+    "FRM Doubts",
+    "Exam Help",
+    "Finance Education",
+    "FRM Certification",
+    "Study Support"
+  ]
 };
+
 
 const MyComponents6 = () => {
   return (

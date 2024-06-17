@@ -3,8 +3,22 @@ import Footer from '../../components/common/SiteFooter';
 import Navbar from '../../components/common/SiteHeader';
 
 export const metadata = {
-  title: "Terms Of Use",
+  title: "Terms of Use - MidhaFin | Understand Our Usage Policies",
+  description: "Read MidhaFin's Terms of Use to understand the rules and guidelines for using our website and services. Ensure compliance with our policies to make the most of your experience with us.",
+  keywords: [
+    "MidhaFin",
+    "Terms of Use",
+    "Usage Policies",
+    "Website Terms",
+    "Service Terms",
+    "User Agreement",
+    "Compliance",
+    "Legal Terms",
+    "FRM Course Policies",
+    "Finance Education Policies"
+  ]
 };
+
 
 function Terms() {
   return (

@@ -5,8 +5,22 @@ import Navbar from "../../components/common/SiteHeader";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Question Banks",
+  title: "Question Banks - MidhaFin | Master Your FRM Exam Preparation",
+  description: "Enhance your FRM exam preparation with MidhaFin's comprehensive question banks. Practice with a wide range of questions and improve your chances of success in the FRM exams.",
+  keywords: [
+    "MidhaFin",
+    "Question Banks",
+    "FRM Exam Preparation",
+    "Practice Questions",
+    "Financial Risk Manager",
+    "Exam Questions",
+    "FRM Certification",
+    "Finance Question Banks",
+    "FRM Practice Tests",
+    "FRM Study Material"
+  ]
 };
+
 
 const MyComponents3 = () => {
   return (

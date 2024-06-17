@@ -2,12 +2,24 @@ import React from 'react';
 import Image from 'next/image'
 import Footer from '../../components/common/SiteFooter';
 import Navbar from '../../components/common/SiteHeader';
+
 export const metadata = {
-    title: 'Study Planner',
-    description: "Study plan for FRM PRM and CFA,",
-    robots:"index,follow",
-    keywords: "FRM Study Plan, Best study plan FRM"
-}
+    title: "Student Reviews - MidhaFin | Hear from Our Successful Students",
+    description: "Discover what our students are saying about their experiences with MidhaFin. Read reviews and testimonials from successful FRM candidates who have benefited from our expert guidance and comprehensive resources.",
+    keywords: [
+      "MidhaFin",
+      "Student Reviews",
+      "Testimonials",
+      "FRM Exam Success",
+      "Student Feedback",
+      "Finance Education Reviews",
+      "FRM Certification Reviews",
+      "Course Reviews",
+      "Student Experiences",
+      "Success Stories"
+    ]
+  };
+  
 const MyComponent = () => {
     return (
         <div className='select-none'>
