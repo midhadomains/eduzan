@@ -27,7 +27,7 @@ export default function page() {
               height={400}
               width={400}
               className="mx-auto"
-              src="/Group 161.svg"
+              src="https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/public/Group+161.svg"
               alt="MidhaFin Image"
             />
             <div className="min-w-[100px] max-w-[400px] text-center leading-[35px] sm:text-left mx-auto my-[30px] sm:my-[50px] text-[20px] px-7 sm:px-0 ">

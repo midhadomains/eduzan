@@ -48,7 +48,7 @@ function page() {
       <div className="max-w-[1400px]  md:px-[50px] px-[25px] sm:mt-[40px] mt-[22px]  mx-auto flex justify-center mh:justify-between gap-[15px] mh:flex-nowrap flex-wrap ">
         <div className="w-[50%] max-w-[617px] min-w-[300px] mh:mx-0 mx-auto ">
           <Image
-            src="/community.png"
+            src="https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/public/community.png"
             width={900}
             height={1000}
             className="w-[100%] max-w-[617px] min-w-[300px]"
@@ -64,7 +64,7 @@ function page() {
             <div className="flex mh:flex-col gap-[17.13px] lg:gap-[23px] mh:ml-0 ml-[32px]">
               <div className="flex items-center justify-normal gap-[14px]">
                 <Image
-                  src="/community_wa.png"
+                  src="https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/public/community_wa.png"
                   width={100}
                   height={100}
                   className="min-w-[45px] w-[50px]"
@@ -91,7 +91,7 @@ function page() {
             <div className="flex mh:flex-col gap-[17.13px] lg:gap-[23px] mh:ml-0 ml-[32px]">
               <div className="flex items-center justify-normal gap-[14px]">
                 <Image
-                  src="/community_tg.png"
+                  src="https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/public/community_tg.png"
                   width={100}
                   height={100}
                   className="min-w-[40px] w-[50px]"
@@ -113,7 +113,7 @@ function page() {
             <div className="flex mh:flex-col gap-[17.13px] lg:gap-[23px] mh:ml-0 ml-[32px]">
               <div className="flex items-center justify-normal gap-[14px]">
                 <Image
-                  src="/community_fb.png"
+                  src="https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/public/community_fb.png"
                   width={100}
                   height={100}
                   className="min-w-[40px] w-[50px]"

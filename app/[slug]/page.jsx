@@ -14,6 +14,8 @@ import Link from 'next/link';
 import Footer from '../../components/common/SiteFooter';
 import { FaLinkedin } from "react-icons/fa";
 import dynamic from 'next/dynamic';
+import { MdOutlinePendingActions } from "react-icons/md";
+
 
 const ShareButton = dynamic(() => import('../../components/blog/ShareButton'), {
   ssr: false,
@@ -235,12 +237,17 @@ export default async function BlogPost({ params }) {
           <GoDotFill className='my-auto text-[12px] mr-5' />
           <span className='min-w-[200px] '>Published On {formatDateString(blogData.createdAt)}</span>
         </div>
-        <div className='text-[14px]  md:text-[18px] font-[400] text-[#2E3442] flex sm:mt-2'>
-          Reviewed by &nbsp;
-          <div className='relative group'>
-            <span className='underline underline-offset-[3px] cursor-pointer'>{blogData.reviewer}</span>
-            <AuthorTooltip authorName={blogData.reviewer} />
-          </div>
+        <div className='text-[14px]  md:text-[18px] font-[400] text-[#2E3442] sm:mt-2'>
+          {blogData.reviewer == "Pending" ? 
+          <p className='flex items-center'> Review Pending <MdOutlinePendingActions  className='ml-2'/></p> :
+            <div className='flex'>
+              Reviewed by &nbsp;
+              <div className='relative group'>
+                <span className='underline underline-offset-[3px] cursor-pointer'>{blogData.reviewer}</span>
+                <AuthorTooltip authorName={blogData.reviewer} />
+              </div>
+            </div>
+          }
         </div>
         <Image src={blogData.image} width={800} height={600} alt={blogData.title} className='my-3' />
         <div className='prose text-[14px] sm:text-[17px] lg:text-[20px]' dangerouslySetInnerHTML={{ __html: content }}></div>

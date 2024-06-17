@@ -20,7 +20,7 @@ function Footer() {
               <div className="flex flex-col gap-[17px]">
                 <Link href="/">
                 <Image
-                  src="/midhalogo.svg"
+                  src="https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/public/midhalogo.svg"
                   width={100}
                   height={100}
                   className="sm:w-[152px] w-[112px] lg:w-[173px] mx-auto "
@@ -42,7 +42,7 @@ function Footer() {
                   <Image
                     width={300}
                     height={100}
-                    src="/play-store.webp"
+                    src="https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/public/play-store.webp"
                     alt="google play store"
                   />
                 </Link>
@@ -54,7 +54,7 @@ function Footer() {
                   <Image
                     width={300}
                     height={100}
-                    src="/app-store.webp"
+                    src="https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/public/app-store.webp"
                     alt="app store"
                   />
                 </Link>
