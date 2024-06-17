@@ -5,7 +5,7 @@ import Navbar from "../../components/common/SiteHeader";
 import Link from "next/link";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { MdOutlineArrowDropDown } from "react-icons/md";
-import ScrollButton from "./ScrollButton";
+
 export const metadata = {
   title: "Lecture Videos - MidhaFin | Boost Your Career in Finance",
   description: "Explore MidhaFin's comprehensive lecture videos for FRM Part 1 and Part 2. Get detailed explanations and boost your finance career with our expert-guided video content.",
@@ -77,10 +77,12 @@ const MyComponent = () => {
         </div>
 
         {/* <div>Know More</div>    */}
-       
-        <ScrollButton/>
+       <Link href="#knowmore" className="text-[#BE4E1E]  mx-auto lg:text-[20px] text-[14px] sm:text-[16px] flex items-center justify-center pt-[20px] hover:opacity-75"
+>Know More <MdOutlineArrowDropDown />
+</Link>
+        {/* <ScrollButton/> */}
         <p
-          id="more-content"
+          id="knowmore"
           className="mb-[2%] max-w-[1000px]  mt-[5%] leading-[22px] md:leading-[38.8px] lg:text-[16px] text-[14px] xl:text-[20px] mx-auto"
         >
           According to instructor:
