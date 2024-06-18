@@ -2,6 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
+    domains: ['midhafin.com', 'edubing.com','secure.gravatar.com'],
     remotePatterns: [
       {
         protocol: 'https',
@@ -11,66 +12,31 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'learn.midhajee.com',
+        hostname: 'edubing.com',
         port: '',
-        pathname: '/**'
+        pathname: '/**',
       },
       {
         protocol: 'https',
         hostname: 'secure.gravatar.com',
         port: '',
-        pathname: '/**'
+        pathname: '/**',
       },
       {
         protocol: 'https',
-        hostname: 'api.eduzan.com',
+        hostname: 'www.midhafin.com',
         port: '',
-        pathname: '/**'
-      },
-      {
-        protocol: 'https',
-        hostname: 'home.midhafin.com',
-        port: '',
-        pathname: '/**'
-      },
-      {
-        protocol: 'https',
-        hostname: 'd502jbuhuh9wk.cloudfront.net',
-        port: '',
-        pathname: '/**'
-      },
-      {
-        protocol: 'https',
-        hostname: 'i0.wp.com',
-        port: '',
-        pathname: '/**'
-      },
-      {
-        protocol: 'https',
-        hostname: 'files.midhafin.com',
-        port: '',
-        pathname: '/**'
+        pathname: '/**',
       },
       {
         protocol: 'https',
         hostname: 'midha-images.s3.ap-south-1.amazonaws.com',
         port: '',
-        pathname: '/**'
-      }
+        pathname: '/**',
+      }, 
+
     ]
-  },
-  async rewrites() {
-    return [
-      {
-        source: '/sitemap.xml',
-        destination: '/api/sitemap',
-      },
-      {
-        source: '/robots.txt',
-        destination: '/api/robots',
-      },
-    ];
-  },
+  }
 }
 
-module.exports = nextConfig;
+module.exports = nextConfig

@@ -1,25 +1,33 @@
-import { NextResponse } from 'next/server';
-import { revalidatePath } from 'next/cache';
+import { NextResponse } from "next/server";
+import { revalidatePath } from "next/cache";
 
-export async function GET(req) {
-    const { searchParams } = new URL(req.url);
-    const secret = searchParams.get('secret');
-    const slug = searchParams.get('slug');
+export async function GET (request) {
 
-    console.log('Received revalidation request:', { secret, slug });
+    let type = request.nextUrl.searchParams.get('type');
+    let path = '';
 
-    if (secret !== process.env.MY_SECRET_TOKEN) {
-        console.error('Invalid token');
-        return NextResponse.json({ message: 'Invalid token' }, { status: 401 });
+    switch(type) {
+        case 'post':
+            path = '/[postSlug]';
+            break;
+        case 'page':
+            path = '/[pageSlug]';
+            break;
+        case 'home':
+            path = '/blog';
+            break;
+    }
+
+    if(request.nextUrl.searchParams.get('secret') !== process.env.REVALIDATION_SECRET) {
+        return NextResponse.json({ message: "Invalid token" }, { status: 400 });
     }
 
     try {
-        console.log(`Revalidating path: /${slug}`);
-        // Revalidate the specified path at the root
-        await revalidatePath(`/${slug}`);
-        return NextResponse.json({ revalidated: true });
-    } catch (err) {
-        console.error('Error revalidating:', err);
-        return NextResponse.json({ message: 'Error revalidating' }, { status: 500 });
+        revalidatePath(path);
+        return NextResponse.json({ revalidated: true, path: path, time: Date.now() });
     }
+    catch (error) {
+        return NextResponse.json({ revalidated: false, message: err.message }, { status: 400 });
+    }
+
 }
