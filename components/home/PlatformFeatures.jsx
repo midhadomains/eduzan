@@ -1,21 +1,21 @@
-"use client";
-import React, { useEffect } from "react";
+// "use client";
+// import React, { useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import AOS from "aos";
-import "aos/dist/aos.css";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
 import { FaChevronRight } from "react-icons/fa";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import ReviewSection from "./ReviewSection";
 
 function PlatformFeatures() {
-    useEffect(() => {
-        AOS.init({
-            disable: "phone",
-            duration: 500,
-            easing: "ease-out-cubic",
-        });
-    }, []);
+    // useEffect(() => {
+    //     AOS.init({
+    //         disable: "phone",
+    //         duration: 500,
+    //         easing: "ease-out-cubic",
+    //     });
+    // }, []);
 
     // Array of platform features
     const features = [
@@ -87,7 +87,7 @@ function PlatformFeatures() {
                     {features.map((feature, index) => (
                         <div
                             key={index}
-                            data-aos="fade-up"
+                            // data-aos="fade-up"
                             className="relative h-[153px] sm:h-[220px] lg:h-[290px] transition items-center group flex flex-col justify-end mx-[10px] my-[20px]"
                         >
 
