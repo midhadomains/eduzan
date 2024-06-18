@@ -4,7 +4,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import Navbar from "../../components/common/SiteHeader";
 import Footer from "../../components/common/SiteFooter";
 export const metadata = {
-  title: "MidhaFin Study Group | Connect with FRM Aspirants and Experts",
+  title: "MidhaFin Study Groups | Connect with FRM Aspirants and Experts",
   description:"Join the MidhaFin Study Group for collaborative learning with FRM aspirants and experts. Share resources, get study tips, and enhance your financial risk management knowledge. Connect with a community dedicated to your success.",
   keyword:["MidhaFin Study Group","FRM study group","Financial risk management study group","FRM aspirants community","FRM study resources",
  " FRM study support","FRM group learning","Financial risk management study community","FRM exam preparation group","Study tips for FRM exam",
@@ -25,7 +25,7 @@ function page() {
       <Navbar />
       <div className="bg-[url('https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/Backgrounds/3500background.svg')] md:py-[28px] py-[22px] lg:py-[43px]">
         <h1 className="text-[#6A1C1A] md:text-[35px] sm:text-[24px] text-[20px] mx-auto lg:text-[50px] font-[600]  text-center   max-w-[1400px] px-[25px] md:px-[50px]">
-          MidhaFin <span className="text-[#BE4E1E]">Community</span>
+          MidhaFin <span className="text-[#BE4E1E]">Study Groups</span>
         </h1>
       </div>
       <div className="md:px-[50px] px-[25px] mx-auto  max-w-[1400px] sm:mt-[27px] mt-[21px] lg:mt-[34px]">
@@ -101,10 +101,15 @@ function page() {
                   Telegram Links
                 </span>{" "}
               </div>
-              <div className="flex lx:flex-row flex-col  gap-[20px] xl:gap-[40px]">
-                <Link target="_blank" href="https://t.me/midha_fin" className="hover:text-[#BE4E1E]">
+              <div className="flex  lx:flex-row flex-col gap-[20px] lx:gap-[47.5px] xl:gap-[73px]">
+                <Link target="_blank" href="https://t.me/frm_1_forum" className="hover:text-[#BE4E1E] ">
                   <u className="flex items-center gap-2 sm:text-[16px] text-[14px] xl:text-[20px]">
-                    MidhaFin Channel<IoIosArrowForward />
+                    FRM Part 1 Forum 2024 <IoIosArrowForward />
+                  </u>
+                </Link>
+                <Link target="_blank" href="https://t.me/frm_2_forum" className="hover:text-[#BE4E1E]">
+                  <u className="flex items-center gap-2 hover:text-[#BE4E1] sm:text-[16px] text-[14px] xl:text-[20px]">
+                    FRM Part 2 Forum 2024 <IoIosArrowForward />
                   </u>
                 </Link>
               </div>
@@ -142,7 +147,7 @@ function page() {
       <div className="mt-[46.5px] sm:mt-[64px] lx:mt-[111px] bg-[#EEEEEE]">
         <div className="max-w-[1400px]  md:px-[50px] px-[25px] py-[22px] sm:py-[24px] mx-auto lx:py-[43px]">
           <p className="text-[12px] mh:text-[14px] lx:text-[20px] ">
-            While these study groups offer numerous benefits, it’s important to
+            While these study groups offer numerous benefits, it&apos;s important to
             manage group dynamics, maintain focus on the study objectives & use
             these platforms in a way that complements your learning style and
             preferences. Additionally, respecting the rules and guidelines set

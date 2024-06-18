@@ -101,10 +101,10 @@ function Footer() {
                       Student Portal
                     </Link>
                     <Link
-                      href="/community"
+                      href="/study-groups"
                       className="lg:text-[18px] sm:text-[16px] text-[14px] leading-[30px] text-[#626979] transition-colors duration-300 hover:underline hover:text-[#6A1C1A]"
                     >
-                    Community
+                    Study Groups
                     </Link>
                    
                     {/* <Link href='/' className='lg:text-[18px] sm:text-[16px] text-[14px] leading-[30px] text-[#626979]'>Blog</Link > */}

@@ -9,12 +9,12 @@ import rehypeStringify from 'rehype-stringify';
 import { unified } from 'unified';
 import { visit } from 'unist-util-visit';
 import { fetchSlugs } from '../../components/lib/FetchSlugs';
-import { GoDotFill } from "react-icons/go";
 import Link from 'next/link';
 import Footer from '../../components/common/SiteFooter';
+import { GoDotFill } from "react-icons/go";
 import { FaLinkedin } from "react-icons/fa";
-import dynamic from 'next/dynamic';
 import { MdOutlinePendingActions } from "react-icons/md";
+import dynamic from 'next/dynamic';
 
 
 const ShareButton = dynamic(() => import('../../components/blog/ShareButton'), {
@@ -257,4 +257,4 @@ export default async function BlogPost({ params }) {
   );
 }
 
-export const revalidate = 600; // Revalidate every week in seconds
+export const revalidate = 600; // Revalidate every 10 Mins in seconds
