@@ -12,7 +12,7 @@ import Footer from "../components/common/SiteFooter";
 
 export const metadata = {
   title: "MidhaFin | Best FRM coaching in India",
-  description: "MidhaFin Home , Explore our Wide Range of Courses ",
+  description: "Explore our Wide Range of Courses,The Best FRM,CFA, and PRM coaching in India - MidhaFin,Boost your finance career with expert guidance and comprehensive study materials ",
   keywords: [
     "best frm courses",
     " best frm course in india,best frm courses online",
