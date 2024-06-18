@@ -25,24 +25,12 @@ export default function Page() {
     ];
 
     
-    const JsonLD = {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": buttonsData.map(faq => ({
-            "@type": "Question",
-            "name": faq.text,
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": faq.data
-            }
-        }))
-    };
+  
 
 
 
     return (
         <>
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(JsonLD) }} />
             <div className="select-none">
                 <Navbar />
                 <div className="h-40 bg-red-950 ">
