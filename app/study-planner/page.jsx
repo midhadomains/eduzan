@@ -5,7 +5,7 @@ import Navbar from '../../components/common/SiteHeader';
 import Link from 'next/link';
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { MdOutlineArrowDropDown } from "react-icons/md";
-import ScrollButton from './ScrollButton';
+
 
 export const metadata = {
     title: "Student Reviews - MidhaFin | Hear from Our Successful Students",
@@ -49,8 +49,10 @@ const MyComponent = () => {
                     
                 </div>
                 {/* <div>Know More</div>    */}
-               <ScrollButton/>
-                <p id='more-content' className='mb-[4%] max-w-[1000px] sm:mt-[48px] mt-[26px] md:mt-[68px] leading-[22px] md:leading-[38.8px] lg:text-[16px] text-[14px] xl:text-[20px] mx-auto'>We at MidhaFin are a strong proponent of smart work. Many FRM®, CFA & PRM students whom we have taught over the years have had to juggle their exam preparations with either job or college which brought time management & exam strategy to the forefront of their FRM®/CFA/PRM preparation.</p>
+                <Link href="#knowmore" className="text-[#BE4E1E]  mx-auto lg:text-[20px] text-[14px] sm:text-[16px] flex items-center justify-center pt-[20px] hover:opacity-75"
+>Know More <MdOutlineArrowDropDown />
+</Link>
+                <p id='knowmore' className='mb-[4%] max-w-[1000px] sm:mt-[48px] mt-[26px] md:mt-[68px] leading-[22px] md:leading-[38.8px] lg:text-[16px] text-[14px] xl:text-[20px] mx-auto'>We at MidhaFin are a strong proponent of smart work. Many FRM®, CFA & PRM students whom we have taught over the years have had to juggle their exam preparations with either job or college which brought time management & exam strategy to the forefront of their FRM®/CFA/PRM preparation.</p>
                 <div className='hidden sm:block'>
                     <Image src="https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/public/pf_studyplanner.png" height={700} width={1300} alt="img" />
                 </div>
