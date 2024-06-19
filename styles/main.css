@@ -40,7 +40,7 @@
     }
 
     .contact-form button {
-        @apply inline-block bg-green-500 focus:outline-none focus:ring focus:ring-yellow-300 focus:ring-offset-2 focus:ring-opacity-50 mb-4 px-3 py-2 text-slate-100 text-xl hover:bg-green-600 active:bg-green-700 rounded;
+    @apply inline-block bg- focus:outline-none focus:ring focus:ring-yellow-300 focus:ring-offset-2 focus:ring-opacity-50 mb-4 px-3 py-2 text-slate-100 text-xl hover:bg-green-600 active:bg-green-700 rounded;
     }
 
     .comment-form label {
@@ -53,6 +53,6 @@
     }
 
     .comment-form button {
-        @apply inline-block bg-green-500 focus:outline-none focus:ring focus:ring-yellow-300 focus:ring-offset-2 focus:ring-opacity-50 mb-4 px-3 py-2 text-slate-100 text-xl hover:bg-green-600 active:bg-green-700 rounded;
+        @apply inline-block bg-[#6A1C1A] focus:outline-none focus:ring focus:ring-yellow-300 focus:ring-offset-2 focus:ring-opacity-50 mb-4 px-3 py-2 text-slate-100 text-xl hover:bg-[#BF4E1E] active:bg-[#BF4E1E] rounded;
     }
 }

@@ -125,7 +125,7 @@ export default async function Post({ params }) {
                 return max;
             }, { width: 0 });
             featuredImageUrl = maxSize.sourceUrl;
-            console.log(featuredImageUrl);
+            // console.log(featuredImageUrl);
         }
     } catch (error) {
         console.error('Error fetching post data:', error);
@@ -225,7 +225,7 @@ export default async function Post({ params }) {
                     </section>
                 </article>
                 <div className="container mx-auto lg:max-w-4xl px-[20px] md:px-[50px]">
-                    <h3 className="text-xl py-2 my-4 border-l-4 border-l-lime-300 pl-4">{comments.length ? comments.length : 'No'} comments on this post so far:</h3>
+                    <h3 className="text-xl py-2 my-4 border-l-4 border-l-[#BF4E1E] pl-4">{comments.length ? comments.length : 'No'} comments on this post so far :</h3>
                     <CommentForm postId={postData.databaseId} />
                 </div>
 
