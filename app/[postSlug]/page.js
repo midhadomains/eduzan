@@ -190,8 +190,8 @@ export default async function Post({ params }) {
                     <section>
                         <div className='p-5 max-w-[800px] mx-auto '>
                             <p className='text-[14px] sm:text-[16px] lg:text-[18px] font-[500] uppercase text-[#BE4E1E] tracking-wider '>{postData.category}</p>
-                            <div className='flex justify-between items-center'>
-                                <h1 className='text-[25px]  md:text[33px] lg:text-[40px] font-bold leading-[34.8px] mt-[15px] md:mt-[26px] mb-1 md:mb-[10px] text-[#1e222b]'>{postData.title}</h1>
+                            <div className='flex justify-between items-center gap-5'>
+                                <h1 className='text-[25px]  md:text[33px] lg:text-[40px] font-bold leading-[30px] md:leading-[40px] lg:leading-[50px] mt-[15px] md:mt-[26px] mb-1 md:mb-[10px] text-[#1e222b] '>{postData.title}</h1>
                                 <ShareButton baseUrl={baseUrl} />
                             </div>
                             <hr className='w-[50px] sm:w-[75px] lg:w-[100px] border-[2px]  sm:border-[3px] rounded-full  mb-[24px] border-[#BE4E1E]' />
