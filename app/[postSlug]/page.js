@@ -39,6 +39,12 @@ const authorDetails = {
         linkedin: "https://www.linkedin.com/in/rahul-kapoor-59577a131/",
         description: "Rahul Kapoor is a content writer, certified in Risk Management from IIM Bangalore, with over a decade of experience.",
         image: "/blog/rahulkapoor.png"
+    },
+    "Rajesh Yadav": {
+        qualification: "MCA",
+        linkedin: "https://www.linkedin.com/in/rajesh-kumar-yadav-70978a207/",
+        description: "Rajesh Yadav is a content writer,Web Developer and Digital Marketer.",
+        image: "/blog/rajesh-yadav.png"
     }
 };
 
