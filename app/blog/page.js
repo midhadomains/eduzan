@@ -1,7 +1,7 @@
 import { getPostList } from "../../lib/posts";
 import Navbar from '../../components/common/SiteHeader'
 import Footer from '../../components/common/SiteFooter'
-import PostList from "../../components/Blog/PostList";
+import PostList from "../../components/blog/PostList";
 export const metadata = {
     title: "List of Blogs - MidhaFin | Insights and Updates on Finance and FRM",
     description: "Explore MidhaFin's extensive collection of blogs covering a wide range of topics in finance and FRM. Stay updated with the latest insights, tips, and news to boost your finance knowledge and career.",
@@ -21,7 +21,7 @@ export const metadata = {
 
 export default async function BlogHome({ params }) {
     const initialPosts = await getPostList();
-    
+
     return (
         <>
             <Navbar />

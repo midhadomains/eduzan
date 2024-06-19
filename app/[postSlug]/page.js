@@ -16,12 +16,12 @@ import { GoDotFill } from "react-icons/go";
 import { FaLinkedin } from "react-icons/fa";
 import { MdOutlinePendingActions } from "react-icons/md";
 import Link from "next/link";
-import CommentForm from "../../components/Blog/CommentForm";
-import Date from "../../components/Blog/Date";
-const TableOfContents = dynamic(() => import('../../components/Blog/TableOfContents'), {
+import CommentForm from "../../components/blog/CommentForm";
+import Date from "../../components/blog/Date";
+const TableOfContents = dynamic(() => import('../../components/blog/TableOfContents'), {
     ssr: false,
 });
-const ShareButton = dynamic(() => import('../../components/Blog/ShareButton'), {
+const ShareButton = dynamic(() => import('../../components/blog/ShareButton'), {
     ssr: false,
 });
 
