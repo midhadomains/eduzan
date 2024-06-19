@@ -72,7 +72,7 @@ const Navbar = () => {
 
                         <ul className="hidden mg:flex  justify-around flex-nowrap  max-w-[900px] w-[100%]">
                             <NavItem to='/' name='Home' />
-                            <NavItem to="/blog" name="Blog" />
+                            // <NavItem to="/blog" name="Blog" />
                             {/* <li>
                                 <div className="relative inline-block group py-[0.6rem] text-center">
                                     <button className="text-[1.1rem] font-[500] h-[100%] cursor-pointe  px-1 hover:text-[#BE4E1E] my-auto  transition duration-300 ">
@@ -101,7 +101,7 @@ const Navbar = () => {
                         >
                             <SmNavItem to='/' name='Home' />
                             <hr />
-                            <SmNavItem to="/blog" name="Blog" />
+                            // <SmNavItem to="/blog" name="Blog" />
                             <hr/>
                             <SmNavItem to="https://edu.midhafin.com/s/store" name="Courses" />
                             <hr />
