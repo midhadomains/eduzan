@@ -124,8 +124,8 @@ export default async function Post({ params }) {
                 }
                 return max;
             }, { width: 0 });
-            const featuredImageUrl = maxSize.sourceUrl;
-            // console.log(featuredImageUrl);
+            featuredImageUrl = maxSize.sourceUrl;
+            console.log(featuredImageUrl);
         }
     } catch (error) {
         console.error('Error fetching post data:', error);
