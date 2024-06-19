@@ -118,13 +118,14 @@ export default async function Post({ params }) {
         if (postData?.featuredImage) {
             const sizes = postData.featuredImage.node.mediaDetails.sizes;
             const maxSize = sizes.reduce((max, size) => {
-                if (size.width <= 2200 && size.width > max.width) {
-                    return size;
+                const width = parseInt(size.width, 10);
+                if (width <= 2200 && width > max.width) {
+                    return { ...size, width };
                 }
                 return max;
             }, { width: 0 });
-
-            featuredImageUrl = postData.featuredImage.node.mediaDetails.sizes[4].sourceUrl;
+            const featuredImageUrl = maxSize.sourceUrl;
+            // console.log(featuredImageUrl);
         }
     } catch (error) {
         console.error('Error fetching post data:', error);
@@ -171,8 +172,8 @@ export default async function Post({ params }) {
                 "logo": {
                     "@type": "ImageObject",
                     "url": "https://midhafin.com/logo.png",
-                    "width": 600,
-                    "height": 60
+                    "width": 120,
+                    "height": 20
                 }
             }
         });
