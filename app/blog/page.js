@@ -20,16 +20,11 @@ export const metadata = {
     ]
 };
 
-export async function getServerSideProps() {
-    const initialPosts = await getPostList();
-    return {
-        props: {
-            initialPosts,
-        },
-    };
-}
+export const revalidate = 0; // Always fetch fresh data
 
-export default function BlogHome({ initialPosts }) {
+export default async function BlogHome() {
+    const initialPosts = await getPostList();
+
     return (
         <>
             <Navbar />
