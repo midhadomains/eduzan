@@ -1,6 +1,5 @@
-// app/api/sitemap/route.js
-
 import { generateSitemap } from "../../../lib/sitemap";
+
 
 export async function GET(req) {
     const sitemap = await generateSitemap();
