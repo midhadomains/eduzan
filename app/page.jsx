@@ -379,7 +379,7 @@ export default async function Home() {
   return (
     <>
       <head>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(JsonLD) }} />
+        {/* <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(JsonLD) }} /> */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(JsonLDCourse) }} />
         <meta name="robots" content="index,follow" />
         <meta name="googlebot" content="index,follow" />
