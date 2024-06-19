@@ -363,19 +363,19 @@ export default async function Home() {
     },
   ];
 
-  const JsonLD = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": buttonsData.map(faq => ({
-      "@type": "Question",
-      "name": faq.text,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": faq.data
-      }
-    }))
-  };
-
+  // const JsonLD = {
+  //   "@context": "https://schema.org",
+  //   "@type": "FAQPage",
+  //   "mainEntity": buttonsData.map(faq => ({
+  //     "@type": "Question",
+  //     "name": faq.text,
+  //     "acceptedAnswer": {
+  //       "@type": "Answer",
+  //       "text": faq.data
+  //     }
+  //   }))
+  // };
+//           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(JsonLD) }} />
   return (
     <>
       <head>
@@ -403,7 +403,6 @@ export default async function Home() {
       <div className="select-none">
         <Navbar />
         <main>
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(JsonLD) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(JsonLDCourse) }} />
           {/* Hero section */}
           <HeroSection />
