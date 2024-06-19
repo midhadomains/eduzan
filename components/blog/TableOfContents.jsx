@@ -4,6 +4,7 @@ import { IoClose } from 'react-icons/io5';
 import { FaListOl } from "react-icons/fa";
 
 const TableOfContents = ({ TOC }) => {
+    
     const [activeSection, setActiveSection] = useState(null);
     const [isVisible, setIsVisible] = useState(window.innerWidth > 1370);
 

@@ -1,6 +1,6 @@
 // app/api/robots/route.js
 
-import { generateRobotsTxt } from "../../../components/lib/robots";
+import { generateRobotsTxt } from "../../../lib/robots";
 
 
 export function GET(req) {

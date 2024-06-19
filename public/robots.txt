@@ -1,4 +1,9 @@
+# *
 User-agent: *
 Allow: /
 
+# Host
+Host: https://www.midhafin.com
+
+# Sitemaps
 Sitemap: https://www.midhafin.com/sitemap.xml
