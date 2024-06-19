@@ -2,7 +2,6 @@
 import { useState } from "react";
 
 export default function CommentForm({ postId }) {
-
     const [submitStatus, setSubmitStatus] = useState(false);
     const [responseMessage, setResponseMessage] = useState('');
     const [alertColor, setAlertColor] = useState('');

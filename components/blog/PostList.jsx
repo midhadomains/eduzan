@@ -18,10 +18,12 @@ export default function PostList({ initialPosts }) {
                         ))
                     }
                 </div>
+                
                 <div className="py-4 text-center">
                     <LoadMore posts={posts} setPosts={setPosts} />
                 </div>
             </section>
+
         </main>
     )
 

@@ -16,6 +16,7 @@ const ShareButton = ({ baseUrl }) => {
     }, [pathname, baseUrl]);
 
     const handleCopyLink = () => {
+        
         if (typeof navigator !== 'undefined') {
             navigator.clipboard.writeText(currentUrl);
             setShowCopiedPopup(true);

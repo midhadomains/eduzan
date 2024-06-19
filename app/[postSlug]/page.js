@@ -1,7 +1,6 @@
-import CommentForm from "../../components/Blog/CommentForm";
+
 import { getPostSlugs, getSinglePost } from "../../lib/posts";
 import { getComments } from "../../lib/comments";
-import Date from "../../components/Blog/Date";
 import { Inter } from "next/font/google";
 import { getSeo } from "../../lib/seo";
 import Image from "next/image";
@@ -17,13 +16,15 @@ import { GoDotFill } from "react-icons/go";
 import { FaLinkedin } from "react-icons/fa";
 import { MdOutlinePendingActions } from "react-icons/md";
 import Link from "next/link";
-
+import CommentForm from "../../components/Blog/CommentForm";
+import Date from "../../components/Blog/Date";
 const TableOfContents = dynamic(() => import('../../components/Blog/TableOfContents'), {
     ssr: false,
 });
 const ShareButton = dynamic(() => import('../../components/Blog/ShareButton'), {
     ssr: false,
 });
+
 
 var tagNames = null
 const authorDetails = {
