@@ -10,10 +10,10 @@ const inter = Inter({ subsets: ["latin"] });
 export default function RootLayout({ children }) {
   return (
     <html lang="en" style={{ scrollBehavior: "smooth", userSelect: "none" }} className=" select-none ">
-      <Head>
+      <head>
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PSL6VDFP"
           height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
-      </Head>
+      </head>
       <body className={inter.className}>
         <SpeedInsights />
         <GoogleAnalytics gaId="G-ZZCZJ53RDR" />
