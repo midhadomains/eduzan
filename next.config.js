@@ -34,6 +34,12 @@ const nextConfig = {
         port: '',
         pathname: '/**',
       }, 
+      {
+        protocol: 'https',
+        hostname: 'files.midhafin.com',
+        port: '',
+        pathname: '/**',
+      }, 
 
     ]
   }
