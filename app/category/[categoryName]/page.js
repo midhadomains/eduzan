@@ -1,6 +1,6 @@
 
 import { getCategoryDetails, getCategorySlugs, getPostList } from "../../../lib/posts";
-import PostList from "../../../components/Blog/PostList";
+import PostList from "../../../components/blog/PostList";
 import Navbar from "../../../components/common/SiteHeader";
 import Footer from "../../../components/common/SiteFooter";
 
