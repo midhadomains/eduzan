@@ -363,18 +363,18 @@ export default async function Home() {
     },
   ];
 
-  const JsonLD = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": buttonsData.map(faq => ({
-      "@type": "Question",
-      "name": faq.text,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": faq.data
-      }
-    }))
-  };
+  // const JsonLD = {
+  //   "@context": "https://schema.org",
+  //   "@type": "FAQPage",
+  //   "mainEntity": buttonsData.map(faq => ({
+  //     "@type": "Question",
+  //     "name": faq.text,
+  //     "acceptedAnswer": {
+  //       "@type": "Answer",
+  //       "text": faq.data
+  //     }
+  //   }))
+  // };
 
   return (
     <>
