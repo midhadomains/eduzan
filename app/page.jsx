@@ -379,8 +379,6 @@ export default async function Home() {
   return (
     <>
       <head>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(JsonLD) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(JsonLDCourse) }} />
         <meta name="robots" content="index,follow" />
         <meta name="googlebot" content="index,follow" />
         <meta property="og:title" content="MidhaFin:- FRM Exam prep provider" />
@@ -405,6 +403,8 @@ export default async function Home() {
       <div className="select-none">
         <Navbar />
         <main>
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(JsonLD) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(JsonLDCourse) }} />
           {/* Hero section */}
           <HeroSection />
           {/* About section */}
