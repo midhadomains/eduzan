@@ -9,7 +9,7 @@ export default function BlogCard({ post }) {
         <div key={post.slug} className="max-w-[400px] relative w-[100%] md:w-[50%] max-h-[515px] mb-3 md:mb-7" >
             <div className="">
                 <FeaturedImage post={post} />
-                <div className=" flex flex-col justify-between h-[100%] pt-2 pb-3 max-w-[350px]">
+                <div className=" flex flex-col justify-between h-[100%] pt-2 pb-4 max-w-[400px]">
                     <p className=" text-[14px] md:text-[18px] mb-2 "><span className='uppercase text-[#BE4E1E]'>{
                         post.categories.nodes.map((category) => (
                             <Link className="uppercase text-[14px] md:text-[16px] underline underline-offset-[3px] mb-2 text-[#BE4E1E] font-[500]" href={`/category/${category.slug}`} key={category.slug}>
