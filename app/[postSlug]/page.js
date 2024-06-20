@@ -45,6 +45,12 @@ const authorDetails = {
         linkedin: "https://www.linkedin.com/in/rajesh-kumar-yadav-70978a207/",
         description: "Rajesh Yadav is a content writer,Web Developer and Digital Marketer.",
         image: "/blog/rajesh-yadav.png"
+    },
+    "Malobika Mukherjee": {
+        qualification: "Bachelor in Design",
+        linkedin: "https://www.linkedin.com/in/malobika-mukherjee-b041ba1b6/",
+        description: "Malobika Mukhergee is a content writer,Graphic Designer and UI/UX designer.",
+        image: "/blog/malobika-mukherjee.png"
     }
 };
 
