@@ -29,7 +29,7 @@ const RedirectPage = () => {
    
 
     return (
-        <div className='w-[100%] select-none'>
+        <>
             <div>
                 <div className="text-center text-[1.2rem] my-2 font-semibold p-2 tracking-wide">
                     Redirecting To Homepage in {timer} seconds ...
@@ -42,7 +42,7 @@ const RedirectPage = () => {
                 <Image className='mx-auto mt-[30px]' alt="check" width={200} height={300} src='/MidhaFin-logo.webp' />
                 <hr className='w-[20%] mx-auto my-2'/>
             </div>
-        </div>
+        </>
     );
 };
 

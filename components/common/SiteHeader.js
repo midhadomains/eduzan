@@ -36,7 +36,6 @@ const Navbar = () => {
         };
     }, [prevScrollPos]);
     return (
-        <>
             <nav
                 ref={navbarRef}
                 className={`mx-auto block sticky top-0 z-30 bg-[#FFFDF6] w-full shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] transition-all duration-300 ease-in-out ${visible ? 'transform translate-y-0' : '-translate-y-full'}`}
@@ -112,7 +111,6 @@ const Navbar = () => {
                     </div>
                 </div>
             </nav>
-        </>
     );
 };
 

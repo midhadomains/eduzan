@@ -8,7 +8,7 @@ export default function PostList({ initialPosts }) {
     const [posts, setPosts] = useState(initialPosts);
 
     return (
-        <main>
+        <>
             <section className="mx-auto lg:max-w-[1400px] px-[20px] md:px-[50px] my-[50px] ">
                 <div className="flex flex-wrap gap-[20px] justify-around">
                     {posts.nodes.map((post) => (
@@ -19,6 +19,6 @@ export default function PostList({ initialPosts }) {
                     <LoadMore posts={posts} setPosts={setPosts} />
                 </div>
             </section>
-        </main>
+        </>
     );
 }

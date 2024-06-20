@@ -15,7 +15,7 @@ export const metadata = {
 const MyComponent = () => {
   
   return (
-    <div className="select-none">
+    <>
       <Navbar />
       <div className="max-w-[1400px] md:px-[50px] px-[25px] mx-auto">
         <p className="lg:mt-[63px] md:mt-[43px] sm:mt-[28px] mt-[16px] sm:text-left text-center text-[#50535C] sm:text-[20px] text-[16px] md:text-[24px] ">
@@ -130,7 +130,7 @@ const MyComponent = () => {
         </p>
       </div>
       <Footer />
-    </div>
+    </>
   );
 };
 export default MyComponent;

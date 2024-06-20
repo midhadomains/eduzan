@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Footer from "../../components/common/SiteFooter";
 import Navbar from "../../components/common/SiteHeader";
+import Link from "next/link";
 
 export const metadata = {
   title: "About Us - MidhaFin | Your Partner in Financial Success",
-  description:"Know more about MidhaFin, our mission, vision, and the expert team behind our financial education platform. Discover how we help you achieve financial success with top-notch resources and guidance.",
-  keyword:["leading FRM coaching" ,"Best FRM course","MidhaFin", "financial education", "FRM", "CFA", "financial success", "financial guidance", "about MidhaFin", "financial courses", "financial certification"]
+  description: "Know more about MidhaFin, our mission, vision, and the expert team behind our financial education platform. Discover how we help you achieve financial success with top-notch resources and guidance.",
+  keyword: ["leading FRM coaching", "Best FRM course", "MidhaFin", "financial education", "FRM", "CFA", "financial success", "financial guidance", "about MidhaFin", "financial courses", "financial certification"]
 };
 
 export default function Page() {
@@ -18,10 +19,10 @@ export default function Page() {
             About Us
           </h1>
           <p className="text-white pt-6 pl-4 md:pl-28 select-none">
-            <a href="https://www.midhafin.com/courses/FRM-Part-1-Self-Paced-Course-6284dad90cf2f73fd7f6034f">
+            <Link href="https://www.midhafin.com/courses/FRM-Part-1-Self-Paced-Course-6284dad90cf2f73fd7f6034f">
               Home
-            </a>{" "}
-            /<a href="https://www.midhafin.com/aboutus"> About Us</a>
+            </Link>{" "}
+            <Link href="https://www.midhafin.com/aboutus"> About Us</Link>
           </p>
 
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10 px-4">

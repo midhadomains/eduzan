@@ -1,6 +1,7 @@
 import Footer from '../../components/common/SiteFooter';
 import Navbar from '../../components/common/SiteHeader';
 import Accordion from '../../components/common/Accordian';
+import Link from 'next/link';
 
 export const metadata = {
     title: "FAQs- MidhaFin | Get Answers to Your Questions",
@@ -60,10 +61,10 @@ export default function Page() {
                 <div className="h-40 bg-red-950 ">
                     <h1 className="text-4xl font-style:normal font-bold text-white pt-6 pl-28">FAQs</h1>
                     <p className="text-white pt-6 pl-28">
-                        <a href="https://www.midhafin.com/courses/FRM-Part-1-Self-Paced-Course-6284dad90cf2f73fd7f6034f">Home</a> /
-                        <a href="https://www.midhafin.com/faqs">
+                        <Link href="https://www.midhafin.com/courses/FRM-Part-1-Self-Paced-Course-6284dad90cf2f73fd7f6034f">Home</Link> /
+                        <Link href="https://www.midhafin.com/faqs">
                             &nbsp; Frequently Asked Questions
-                        </a>
+                        </Link>
                     </p>
                 </div>
                 <div className="center-container">

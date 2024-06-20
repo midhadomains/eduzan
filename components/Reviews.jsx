@@ -92,7 +92,7 @@ export default function Page() {
   };
 
   return (
-    <>
+    <div>
       <Navbar />
       <div className="bg-[url('https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/Backgrounds/3500background.svg')] max-h-[300px] h-[100%] shadow-xl">
         <div className="max-w-[1200px] px-[20px] mg:px-[50px] mx-auto py-4 mg:py-9">
@@ -183,6 +183,6 @@ export default function Page() {
         </div>
       </div>
       <Footer />
-    </>
+</div>
   );
 }

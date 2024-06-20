@@ -1,6 +1,7 @@
 import React from 'react';
 import Footer from '../../components/common/SiteFooter';
 import Navbar from '../../components/common/SiteHeader';
+import Link from 'next/link';
 
 export const metadata = {
   title: "Terms of Use - MidhaFin | Understand Our Usage Policies",
@@ -22,13 +23,13 @@ export const metadata = {
 
 function Terms() {
   return (
-    <div className='w-[100%] select-none'>
+    <>
       <Navbar />
       <div className="h-40 bg-red-950 px-4 text-align-left ">
         <h1 className="text-4xl font-bold text-white pt-6 pl-4 md:pl-28">Terms of Use</h1>
         <p className='text-white pt-6 pl-4 md:pl-28'>
-          <a href="#">Home</a> /
-          <a href="#">Terms of Use</a>
+          <Link href="#">Home</Link> /
+          <Link href="#">Terms of Use</Link>
         </p>
       </div>
       <div className='align-left'>
@@ -362,7 +363,7 @@ function Terms() {
 
       <hr className="border-b my-6 w-100" />
       <Footer />
-    </div>
+    </>
   );
 }
 

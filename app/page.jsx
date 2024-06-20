@@ -9,10 +9,13 @@ import CoursesOffered from "../components/home/CoursesOffered";
 import SocialMedia from "../components/common/SocialMedia";
 import Navbar from "../components/common/SiteHeader";
 import Footer from "../components/common/SiteFooter";
+import Head from "next/head";
+import React from "react";
 
 export const metadata = {
   title: "MidhaFin | Best FRM coaching in India",
   description: "Choose GARP approved Best FRM coaching, The Best FRM,CFA, and PRM coaching in India - MidhaFin, Boost your finance career with expert guidance and comprehensive study materials ",
+  robots: "index,follow",
   keywords: [
     "best frm courses",
     " best frm course in india,best frm courses online",
@@ -44,7 +47,33 @@ export const metadata = {
     "best way to prepare for cfa exam",
     "best ways to study for the cfa exam",
   ],
+  googlebot: "index,follow",
+  openGraph: {
+    title: "MidhaFin:- FRM Exam prep provider",
+    description: "Boost Your Career In Finance",
+    type: "website",
+    site_name: "Midhafin",
+    locale: "en_US",
+    url: "https://www.midhafin.com/",
+    images: [
+      {
+        url: "https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/Homepage/open-graph-snippet_600*336.png.png",
+        width: 800,
+        height: 600,
+        alt: "Midhafin",
+        id: "10",
+      },
+    ],
+  },
+  twitter: {
+    handle: "Midhafin",
+    card: "summary_large_image",
+    title: "MidhaFin:-FRM Exam prep provider",
+    description: "Boost Your Career In Finance",
+    image: "https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/Homepage/open-graph-snippet_600*336.png.png",
+  },
 };
+
 
 const JsonLDCourse = {
   "@context": "https://schema.org",
@@ -376,29 +405,39 @@ export default async function Home() {
   //   }))
   // };
 //           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(JsonLD) }} />
+
   return (
+    
     <>
-      <head>
-        <meta name="robots" content="index,follow" />
-        <meta name="googlebot" content="index,follow" />
-        <meta property="og:title" content="MidhaFin:- FRM Exam prep provider" />
-        <meta property="og:description" content="Boost Your Career In Finance" />
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Midhafin" />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:url" content="https://www.midhafin.com/" />
-        <meta property="og:image.url" content="https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/Homepage/open-graph-snippet_600*336.png.png" />
-        <meta property="og:image" content="https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/Homepage/open-graph-snippet_600*336.png.png" />
-        <meta property="og:image:width" content="800" />
-        <meta property="og:image:height" content="600" />
-        <meta property="og:image:alt" content="Midhafin" />
-        <meta property="og:image:id" content="10" />
-        <meta name="twitter:handle" />
-        <meta name="x:card" content="summary_large_image" />
-        <meta name="x:title" content="MidhaFin:-FRM Exam prep provider" />
-        <meta name="x:description" content="Boost Your Career In Finance" />
-        <meta name="x:image" content="https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/Homepage/open-graph-snippet_600*336.png.png" />
-      </head>
+      <Head>
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+        <meta name="robots" content={metadata.robots} />
+        <meta name="googlebot" content={metadata.googlebot} />
+        <meta name="keywords" content={metadata.keywords.join(", ")} />
+        <meta property="og:title" content={metadata.openGraph.title} />
+        <meta property="og:description" content={metadata.openGraph.description} />
+        <meta property="og:type" content={metadata.openGraph.type} />
+        <meta property="og:site_name" content={metadata.openGraph.site_name} />
+        <meta property="og:locale" content={metadata.openGraph.locale} />
+        <meta property="og:url" content={metadata.openGraph.url} />
+        {metadata.openGraph.images.map((image, index) => (
+          <React.Fragment key={index}>
+            <meta property="og:image" content={image.url} />
+            <meta property="og:image:url" content={image.url} />
+            <meta property="og:image:width" content={image.width} />
+            <meta property="og:image:height" content={image.height} />
+            <meta property="og:image:alt" content={image.alt} />
+            <meta property="og:image:id" content={image.id} />
+          </React.Fragment>
+        ))}
+        <meta name="twitter:card" content={metadata.twitter.card} />
+        <meta name="twitter:title" content={metadata.twitter.title} />
+        <meta name="twitter:description" content={metadata.twitter.description} />
+        <meta name="twitter:image" content={metadata.twitter.image} />
+        <meta name="twitter:site" content={metadata.twitter.handle} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(JsonLDCourse) }} />
+      </Head>
 
       <div className="select-none">
         <Navbar />
@@ -435,11 +474,8 @@ export default async function Home() {
           </div>
           {/* Features section */}
           <FeaturesSection />
-          {/* Courses Section */}
           {/* Platform Features section */}
           <PlatformFeatures />
-          {/* Reviews section  */}
-          {/* <ReviewSection /> */}
           {/* faqs Section */}
           <div className="mx-auto mb-9 text-left my-3 max-w-[1400px] md:px-[50px] px-[25px] md:mt-[50px] mt-8">
             <h2 className="lg:text-[3rem] md:text-[2.5rem]  sm:text-[2rem] text-[1.4rem] font-semibold leading-tight mb-[24px] md:mb-[31px] lg:mb-[41px]">
@@ -456,6 +492,5 @@ export default async function Home() {
     </>
   );
 }
-
 
 

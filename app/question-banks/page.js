@@ -23,7 +23,7 @@ export const metadata = {
 
 const MyComponents3 = () => {
   return (
-    <div className="select-none">
+    <>
       <Navbar />
       <div className="max-w-[1300px] mx-auto py-4 lg:py-20 px-[20px] lg:px-[40px]">
         <div className=" ">
@@ -116,7 +116,7 @@ const MyComponents3 = () => {
       </div>
 
       <Footer />
-    </div>
+    </>
   );
 };
 export default MyComponents3;

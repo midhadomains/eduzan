@@ -24,7 +24,7 @@ export const metadata = {
 
 function Page() {
   return (
-    <div className='select-none'>
+    <>
       <Navbar />
       <div>
         <div className="h-40 bg-red-950 text-left">
@@ -60,7 +60,7 @@ function Page() {
       </div>
 
       <Footer />
-    </div>
+    </>
   );
 }
 export default Page;

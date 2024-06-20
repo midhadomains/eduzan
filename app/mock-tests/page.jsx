@@ -24,7 +24,7 @@ export const metadata = {
 
 const MyComponents4 = () => {
   return (
-    <div className="select-none">
+    <>
       <Navbar />
       <div className="max-w-[1400px] px-[25px] lg:px-[50px] mx-auto ">
         <p className=" font-medium text-[16px] md:text-[20px] lg:text-[24px] text-center sm:text-left mt-[16px] sm:mt-[40px] ">
@@ -138,7 +138,7 @@ const MyComponents4 = () => {
         </div>
       </div>
       <Footer />
-    </div>
+    </>
   );
 };
 export default MyComponents4;
