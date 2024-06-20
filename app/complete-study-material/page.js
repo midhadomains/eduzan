@@ -4,7 +4,7 @@ import Footer from '../../components/common/SiteFooter';
 import Navbar from '../../components/common/SiteHeader';
 
 export const metadata = {
-  title: " MidhaFin - Complete Study Material for Finance Students",
+  title: "Complete Study Material for Finance Students | MidhaFin",
   description: "Get the best study materials for finance and economics at MidhaFin. Our extensive collection covers all your learning needs. Click to learn more!",
   keyword:[ "Finance study material",
   "Economics study guides",

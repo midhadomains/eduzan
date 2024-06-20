@@ -3,7 +3,21 @@ import Navbar from '../../components/common/SiteHeader';
 import Accordion from '../../components/common/Accordian';
 
 export const metadata = {
-    title: "Faqs",
+    title: "FAQs- MidhaFin | Get Answers to Your Questions",
+    description: "Get answers to all your FRM-related questions. Our experts are here to help you with detailed explanations and solutions to ensure your success in the FRM exams.",
+    keywords: [
+        "MidhaFin",
+        "Doubt Solving Forum",
+        "faq",
+        "FRM Questions",
+        "Expert Answers",
+        "Student Forum",
+        "FRM Doubts",
+        "Exam Help",
+        "Finance Education",
+        "FRM Certification",
+        "Study Support"
+    ]
 };
 
 

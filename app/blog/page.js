@@ -13,6 +13,8 @@ export const metadata = {
         "FRM Insights",
         "Finance Updates",
         "FRM Tips",
+        "FRM",
+        "GARP",
         "Finance News",
         "FRM Certification",
         "Finance Articles",
