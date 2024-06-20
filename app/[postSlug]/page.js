@@ -114,11 +114,11 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function Post({ params }) {
-    let postData, comments, seoData, featuredImageUrl = "https://www.midhafin.com/_next/image?url=https%3A%2F%2Fmidha-images.s3.ap-south-1.amazonaws.com%2FMidhafin%2FBlog%2FR-Squared.webp&w=1920&q=75";
+    let postData, comments, commentCount , seoData, featuredImageUrl = "https://www.midhafin.com/_next/image?url=https%3A%2F%2Fmidha-images.s3.ap-south-1.amazonaws.com%2FMidhafin%2FBlog%2FR-Squared.webp&w=1920&q=75";
 
     try {
         postData = await getSinglePost(params.postSlug);
-        ({ comments } = await getComments(params.postSlug));
+        ({ comments, commentCount } = await getComments(params.postSlug));
         seoData = await getSeo('post', params.postSlug);
         tagNames = postData.tags?.nodes?.map(tag => tag.name) || [];
         if (postData?.featuredImage) {
@@ -231,7 +231,7 @@ export default async function Post({ params }) {
                     </section>
                 </article>
                 <div className="container mx-auto lg:max-w-4xl px-[20px] md:px-[50px]">
-                    <h3 className="text-xl py-2 my-4 border-l-4 border-l-[#BF4E1E] pl-4">{comments.length ? comments.length : 'No'} comments on this post so far :</h3>
+                    <h3 className="text-xl py-2 my-4 border-l-4 border-l-[#BF4E1E] pl-4">{commentCount ? commentCount : 'No' } comments on this post so far :</h3>
                     <CommentForm postId={postData.databaseId} />
                 </div>
 
