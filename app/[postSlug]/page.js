@@ -49,7 +49,7 @@ const authorDetails = {
     "Malobika Mukherjee": {
         qualification: "Bachelor in Design",
         linkedin: "https://www.linkedin.com/in/malobika-mukherjee-b041ba1b6/",
-        description: "Malobika Mukhergee is a content writer,Graphic Designer and UI/UX designer.",
+        description: "Malobika Mukhergee is a content writer, Graphic Designer and UI/UX designer.",
         image: "/blog/malobika-mukherjee.png"
     }
 };
