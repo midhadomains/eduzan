@@ -18,6 +18,8 @@ import { MdOutlinePendingActions } from "react-icons/md";
 import Link from "next/link";
 import CommentForm from "../../components/blog/CommentForm";
 import Date from "../../components/blog/Date";
+import { notFound } from 'next/navigation';
+
 const TableOfContents = dynamic(() => import('../../components/blog/TableOfContents'), {
     ssr: false,
 });
@@ -91,7 +93,6 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }) {
     try {
         const seoData = await getSeo('post', params.postSlug);
-
         return {
             title: seoData.title,
             description: seoData.metaDesc,
@@ -108,6 +109,7 @@ export async function generateMetadata({ params }) {
 
         };
     } catch (error) {
+        notFound()
         console.error('Error fetching SEO data:', error);
         return { title: 'Page Not Found' };
     }
