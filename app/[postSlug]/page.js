@@ -222,7 +222,7 @@ export default async function Post({ params }) {
                                     </div>
                                 </div>
                             } */}
-                                <p className='flex items-center'> Review Pending <MdOutlinePendingActions className='ml-2' /></p>
+                                {/* <p className='flex items-center'> Review Pending <MdOutlinePendingActions className='ml-2' /></p> */}
 
                             </div>
                             <Image src={featuredImageUrl} width={800} height={600} alt={postData.title} className='my-3' />
