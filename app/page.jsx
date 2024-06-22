@@ -431,11 +431,11 @@ export default async function Home() {
             <meta property="og:image:id" content={image.id} />
           </React.Fragment>
         ))}
-        <meta name="twitter:card" content={metadata.twitter.card} />
-        <meta name="twitter:title" content={metadata.twitter.title} />
-        <meta name="twitter:description" content={metadata.twitter.description} />
-        <meta name="twitter:image" content={metadata.twitter.image} />
-        <meta name="twitter:site" content={metadata.twitter.handle} />
+        <meta name="x:card" content={metadata.twitter.card} />
+        <meta name="x:title" content={metadata.twitter.title} />
+        <meta name="x:description" content={metadata.twitter.description} />
+        <meta name="x:image" content={metadata.twitter.image} />
+        <meta name="x:site" content={metadata.twitter.handle} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(JsonLDCourse) }} />
       </Head>
 
