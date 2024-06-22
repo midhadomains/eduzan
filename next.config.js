@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['midhafin.com', 'edubing.com','secure.gravatar.com'],
+    domains: ['midhafin.com', 'edubing.com','cms.midhafin.com','secure.gravatar.com'],
     remotePatterns: [
       {
         protocol: 'https',
@@ -12,7 +12,7 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'edubing.com',
+        hostname: 'cms.midhafin.com',
         port: '',
         pathname: '/**',
       },

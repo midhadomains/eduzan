@@ -164,7 +164,7 @@ export default async function Post({ params }) {
 
     let jsonSchema;
     try {
-        jsonSchema = seoData.schema.raw.replace(/https:\/\/edubing.com\/\d{4}\/\d{2}\/\d{2}\/([^/#]+)(#[^/]*)?/g, 'https://midhafin.com/$1');
+        jsonSchema = seoData.schema.raw.replace(/https:\/\/cms.midhafin.com\/\d{4}\/\d{2}\/\d{2}\/([^/#]+)(#[^/]*)?/g, 'https://www.midhafin.com/$1');
 
     } catch (error) {
         console.error('Error processing SEO schema:', error);
