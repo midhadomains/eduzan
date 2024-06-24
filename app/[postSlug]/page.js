@@ -19,6 +19,7 @@ import Link from "next/link";
 import CommentForm from "../../components/blog/CommentForm";
 import Date from "../../components/blog/Date";
 import { notFound } from 'next/navigation';
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 const TableOfContents = dynamic(() => import('../../components/blog/TableOfContents'), {
     ssr: false,
@@ -116,7 +117,7 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function Post({ params }) {
-    let postData, comments, commentCount , seoData, featuredImageUrl = "https://www.midhafin.com/_next/image?url=https%3A%2F%2Fmidha-images.s3.ap-south-1.amazonaws.com%2FMidhafin%2FBlog%2FR-Squared.webp&w=1920&q=75";
+    let postData, comments, commentCount, seoData, featuredImageUrl = "https://www.midhafin.com/_next/image?url=https%3A%2F%2Fmidha-images.s3.ap-south-1.amazonaws.com%2FMidhafin%2FBlog%2FR-Squared.webp&w=1920&q=75";
 
     try {
         postData = await getSinglePost(params.postSlug);
@@ -139,7 +140,7 @@ export default async function Post({ params }) {
         console.error('Error fetching post data:', error);
         return null;
     }
-
+    console.log(postData.categories)
     const toc = [];
     const content = unified()
         .use(rehypeParse, { fragment: true })
@@ -198,9 +199,20 @@ export default async function Post({ params }) {
                     <TableOfContents TOC={toc} />
                     <section>
                         <div className='p-5 max-w-[800px] mx-auto '>
-                            <p className='text-[14px] sm:text-[16px] lg:text-[18px] font-[500] uppercase text-[#BE4E1E] tracking-wider '>{postData.category}</p>
+                            <h2 className='text-[14px] sm:text-[16px] lg:text-[18px] font-[500] uppercase flex items-center text-[#BE4E1E] tracking-wider '>
+                                {
+                                    postData.categories.nodes.map((data, key) => (
+                                        <Link key={key} href={`/category/${data.slug}`}>
+                                            <p className=''>
+                                                <span className="underline underline-offset-[3px]">{data.name}</span>
+                                                {key < postData.categories.nodes.length - 1 && <span>&nbsp;&nbsp;&#10095;&nbsp;&nbsp;</span>}
+                                            </p>
+                                        </Link>
+                                    ))
+                                }
+                            </h2>
                             <div className='flex justify-between items-center gap-5'>
-                                <h1 className='text-[25px]  md:text[33px] lg:text-[40px] font-bold leading-[30px] md:leading-[40px] lg:leading-[50px] mt-[15px] md:mt-[26px] mb-1 md:mb-[10px] text-[#1e222b] '>{postData.title}</h1>
+                                <h1 className='text-[25px]  md:text[33px] lg:text-[40px] font-bold leading-[30px] md:leading-[40px] lg:leading-[50px] mt-2 md:mt-4 mb-1 md:mb-[10px] text-[#1e222b] '>{postData.title}</h1>
                                 <ShareButton baseUrl={baseUrl} />
                             </div>
                             <hr className='w-[50px] sm:w-[75px] lg:w-[100px] border-[2px]  sm:border-[3px] rounded-full  mb-[24px] border-[#BE4E1E]' />
@@ -233,7 +245,7 @@ export default async function Post({ params }) {
                     </section>
                 </article>
                 <div className="container mx-auto lg:max-w-4xl px-[20px] md:px-[50px]">
-                    <h3 className="text-xl py-2 my-4 border-l-4 border-l-[#BF4E1E] pl-4">{commentCount ? commentCount : 'No' } comments on this post so far :</h3>
+                    <h3 className="text-xl py-2 my-4 border-l-4 border-l-[#BF4E1E] pl-4">{commentCount ? commentCount : 'No'} comments on this post so far :</h3>
                     <CommentForm postId={postData.databaseId} />
                 </div>
 
