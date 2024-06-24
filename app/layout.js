@@ -4,7 +4,10 @@ import '../styles/main.css';
 import { GoogleAnalytics } from '@next/third-parties/google';
 import SocialMedia from "../components/common/SocialMedia";
 import Head from "next/head";
-import ContextMenuDisabler from "../components/common/RightClickDisabler";
+import dynamic from "next/dynamic";
+const ContextMenuDisabler = dynamic(() => import('../components/common/RightClickDisabler'), {
+  ssr: false,
+});
 
 const inter = Inter({ subsets: ["latin"] });
 
