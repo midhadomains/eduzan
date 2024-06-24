@@ -4,6 +4,7 @@ import '../styles/main.css';
 import { GoogleAnalytics } from '@next/third-parties/google';
 import SocialMedia from "../components/common/SocialMedia";
 import Head from "next/head";
+import ContextMenuDisabler from "../components/common/RightClickDisabler";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className={inter.className}>
         <SpeedInsights />
+        <ContextMenuDisabler/>
         <GoogleAnalytics gaId="G-ZZCZJ53RDR" />
         {children}
       </body>
