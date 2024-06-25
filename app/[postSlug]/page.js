@@ -140,7 +140,6 @@ export default async function Post({ params }) {
         console.error('Error fetching post data:', error);
         return null;
     }
-    console.log(postData.categories)
     const toc = [];
     const content = unified()
         .use(rehypeParse, { fragment: true })
@@ -187,7 +186,7 @@ export default async function Post({ params }) {
             }
         });
     }
-
+    console.log(postData)
     const baseUrl = 'https://midhafin.com';
 
     return (
