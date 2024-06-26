@@ -13,7 +13,7 @@ import Head from "next/head";
 import React from "react";
 
 export const metadata = {
-  title: "MidhaFin | Best FRM Coaching | Best FRM Coaching in India",
+  title: "MidhaFin | Best FRM Coaching in India",
   description: "Choose GARP approved Best FRM coaching, The Best FRM,CFA, and PRM coaching in India - MidhaFin, Boost your finance career with expert guidance and comprehensive study materials ",
   robots: "index,follow",
   keywords: [
