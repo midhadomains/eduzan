@@ -19,6 +19,7 @@ import CommentForm from "../../components/blog/CommentForm";
 import Date from "../../components/blog/Date";
 import { notFound } from 'next/navigation';
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import RightBanners from "../../components/blog/RightBanners";
 
 const TableOfContents = dynamic(() => import('../../components/blog/TableOfContents'), {
     ssr: false,
@@ -189,9 +190,9 @@ export default async function Post({ params }) {
     const baseUrl = 'https://midhafin.com';
 
     return (
-        <>
+        <div className="bg-[#e7e8e962]">
             <Navbar />
-            <div className=" xl:flex  max-w-[1400px] mx-auto">
+            <div className=" xl:flex  justify-between  max-w-[1400px] mx-auto">
                 <TableOfContents TOC={toc} />
                 <div >
                     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonSchema }}></script>
@@ -276,9 +277,12 @@ export default async function Post({ params }) {
                         </section>
                     </div>
                 </div>
+                <div >
+                    <RightBanners />
+                </div>
             </div>
             <Footer />
-        </>
+        </div>
 
     );
 }
