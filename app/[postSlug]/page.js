@@ -1,4 +1,3 @@
-
 import { getPostSlugs, getSinglePost } from "../../lib/posts";
 import { getComments } from "../../lib/comments";
 import { Inter } from "next/font/google";
@@ -20,6 +19,7 @@ import CommentForm from "../../components/blog/CommentForm";
 import Date from "../../components/blog/Date";
 import { notFound } from 'next/navigation';
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import RightBanners from "../../components/blog/RightBanners";
 
 const TableOfContents = dynamic(() => import('../../components/blog/TableOfContents'), {
     ssr: false,
@@ -190,42 +190,44 @@ export default async function Post({ params }) {
     const baseUrl = 'https://midhafin.com';
 
     return (
-        <>
-            <div className="bg-[#f1f1f189]">
-                <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonSchema }}></script>
-                <Navbar />
-                <article className={`font-light`}>
-                    <TableOfContents TOC={toc} />
-                    <section>
-                        <div className='p-5 max-w-[800px] mx-auto '>
-                            <h2 className='text-[14px] sm:text-[16px] lg:text-[18px] font-[500] uppercase flex items-center text-[#BE4E1E] tracking-wider '>
-                                {
-                                    postData.categories.nodes.map((data, key) => (
-                                        <Link key={key} href={`/category/${data.slug}`}>
-                                            <p className=''>
-                                                <span className="underline underline-offset-[3px]">{data.name}</span>
-                                                {key < postData.categories.nodes.length - 1 && <span>&nbsp;&nbsp;&#10095;&nbsp;&nbsp;</span>}
-                                            </p>
-                                        </Link>
-                                    ))
-                                }
-                            </h2>
-                            <div className='flex justify-between items-center gap-5'>
-                                <h1 className='text-[25px]  md:text[33px] lg:text-[40px] font-bold leading-[30px] md:leading-[40px] lg:leading-[50px] mt-2 md:mt-4 mb-1 md:mb-[10px] text-[#1e222b] '>{postData.title}</h1>
-                                <ShareButton baseUrl={baseUrl} />
-                            </div>
-                            <hr className='w-[50px] sm:w-[75px] lg:w-[100px] border-[2px]  sm:border-[3px] rounded-full  mb-[24px] border-[#BE4E1E]' />
-                            <div className='text-[14px] md:text-[18px] font-[400] text-[#2E3442] flex flex-wrap  '>
-                                <div className='relative group'>
-                                    By &nbsp;
-                                    <span className='underline underline-offset-[3px] cursor-pointer min-w-[150px] flex-shrink-0 mr-5'>{postData.author.node.name}</span>
-                                    <AuthorTooltip authorName={postData.author.node.name} />
+        <div className="bg-[#e7e8e962]">
+            <Navbar />
+            <div className=" xl:flex  justify-between  max-w-[1400px] mx-auto">
+                <TableOfContents TOC={toc} />
+                <div >
+                    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonSchema }}></script>
+                    <article className={`font-light`}>
+                        <section>
+                            <div className='p-5 max-w-[800px] mx-auto '>
+
+                                <h2 className='text-[14px] sm:text-[16px] lg:text-[18px] font-[500] uppercase flex items-center text-[#BE4E1E] tracking-wider '>
+                                    {
+                                        postData.categories.nodes.map((data, key) => (
+                                            <Link key={key} href={`/category/${data.slug}`}>
+                                                <p className=''>
+                                                    <span className="underline underline-offset-[3px]">{data.name}</span>
+                                                    {key < postData.categories.nodes.length - 1 && <span>&nbsp;&nbsp;&#10095;&nbsp;&nbsp;</span>}
+                                                </p>
+                                            </Link>
+                                        ))
+                                    }
+                                </h2>
+                                <div className='flex justify-between items-center gap-5'>
+                                    <h1 className='text-[25px]  md:text[33px] lg:text-[40px] font-bold leading-[30px] md:leading-[40px] lg:leading-[50px] mt-2 md:mt-4 mb-1 md:mb-[10px] text-[#1e222b] '>{postData.title}</h1>
+                                    <ShareButton baseUrl={baseUrl} />
                                 </div>
-                                <GoDotFill className='my-auto text-[12px] mr-5' />
-                                <span className='min-w-[200px] '>Updated On <Date dateString={postData.modified} /></span>
-                            </div>
-                            <div className='text-[14px]  md:text-[18px] font-[400] text-[#2E3442] sm:mt-2'>
-                                {/* {postData.reviewer == "Pending" ?
+                                <hr className='w-[50px] sm:w-[75px] lg:w-[100px] border-[2px]  sm:border-[3px] rounded-full  mb-[24px] border-[#BE4E1E]' />
+                                <div className='text-[14px] md:text-[18px] font-[400] text-[#2E3442] flex flex-wrap  '>
+                                    <div className='relative group'>
+                                        By &nbsp;
+                                        <span className='underline underline-offset-[3px] cursor-pointer min-w-[150px] flex-shrink-0 mr-5'>{postData.author.node.name}</span>
+                                        <AuthorTooltip authorName={postData.author.node.name} />
+                                    </div>
+                                    <GoDotFill className='my-auto text-[12px] mr-5' />
+                                    <span className='min-w-[200px] '>Updated On <Date dateString={postData.modified} /></span>
+                                </div>
+                                <div className='text-[14px]  md:text-[18px] font-[400] text-[#2E3442] sm:mt-2'>
+                                    {/* {postData.reviewer == "Pending" ?
                                 <p className='flex items-center'> Review Pending <MdOutlinePendingActions className='ml-2' /></p> :
                                 <div className='flex'>
                                     Reviewed by &nbsp;
@@ -235,48 +237,52 @@ export default async function Post({ params }) {
                                     </div>
                                 </div>
                             } */}
-                                {/* <p className='flex items-center'> Review Pending <MdOutlinePendingActions className='ml-2' /></p> */}
+                                    {/* <p className='flex items-center'> Review Pending <MdOutlinePendingActions className='ml-2' /></p> */}
 
+                                </div>
+                                <Image src={featuredImageUrl} width={800} height={600} alt={postData.title} className='my-3' />
+                                <div className='prose text-[14px] sm:text-[17px] lg:text-[20px]' dangerouslySetInnerHTML={{ __html: content }}></div>
                             </div>
-                            <Image src={featuredImageUrl} width={800} height={600} alt={postData.title} className='my-3' />
-                            <div className='prose text-[14px] sm:text-[17px] lg:text-[20px]' dangerouslySetInnerHTML={{ __html: content }}></div>
-                        </div>
-                    </section>
-                </article>
-                <div className="container mx-auto lg:max-w-4xl px-[20px] md:px-[50px]">
-                    <h3 className="text-xl py-2 my-4 border-l-4 border-l-[#BF4E1E] pl-4">{commentCount ? commentCount : 'No'} comments on this post so far :</h3>
-                    <CommentForm postId={postData.databaseId} />
-                </div>
+                        </section>
+                    </article>
+                    <div className="container mx-auto lg:max-w-4xl px-[20px] md:px-[50px]">
+                        <h3 className="text-xl py-2 my-4 border-l-4 border-l-[#BF4E1E] pl-4">{commentCount ? commentCount : 'No'} comments on this post so far :</h3>
+                        <CommentForm postId={postData.databaseId} />
+                    </div>
 
-                <div className="container mx-auto lg:max-w-4xl px-[20px] md:px-[50px] ">
-                    <section>
-                        <ul>
-                            {comments.nodes.map((comment) => (
-                                <li key={comment.id} className="pb-4 border-b">
-                                    <div className="comment-header flex justify-start items-center">
-                                        <div className="py-4">
-                                            <Image alt="image" src={comment.author.node.avatar.url} width={comment.author.node.avatar.width} height={comment.author.node.avatar.height} className="rounded-full max-w-[50px] mr-4" />
-                                        </div>
-                                        <div>
-                                            <div className="font-bold">
-                                                {comment.author.node.name}
+                    <div className="container mx-auto lg:max-w-4xl px-[20px] md:px-[50px] ">
+                        <section>
+                            <ul>
+                                {comments.nodes.map((comment) => (
+                                    <li key={comment.id} className="pb-4 border-b">
+                                        <div className="comment-header flex justify-start items-center">
+                                            <div className="py-4">
+                                                <Image alt="image" src={comment.author.node.avatar.url} width={comment.author.node.avatar.width} height={comment.author.node.avatar.height} className="rounded-full max-w-[50px] mr-4" />
                                             </div>
-                                            <div className="text-sm">
-                                                <Date dateString={comment.date} />
+                                            <div>
+                                                <div className="font-bold">
+                                                    {comment.author.node.name}
+                                                </div>
+                                                <div className="text-sm">
+                                                    <Date dateString={comment.date} />
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div className="comment-body pl-[66px]">
-                                        <div dangerouslySetInnerHTML={{ __html: comment.content }}></div>
-                                    </div>
-                                </li>
-                            ))}
-                        </ul>
-                    </section>
+                                        <div className="comment-body pl-[66px]">
+                                            <div dangerouslySetInnerHTML={{ __html: comment.content }}></div>
+                                        </div>
+                                    </li>
+                                ))}
+                            </ul>
+                        </section>
+                    </div>
                 </div>
-                <Footer />
+                <div >
+                    <RightBanners />
+                </div>
             </div>
-        </>
+            <Footer />
+        </div>
 
     );
 }

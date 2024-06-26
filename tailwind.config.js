@@ -40,7 +40,7 @@ module.exports = {
       // => @media (min-width: 1024px) { ... }
       'lx': '1052px',
 
-      'xl': '1280px',
+      'xl': '1370px',
       // => @media (min-width: 1280px) { ... }
 
       '2xl': '1536px',
