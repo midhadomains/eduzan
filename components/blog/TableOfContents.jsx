@@ -64,6 +64,9 @@ const TableOfContents = ({ TOC }) => {
 
     const scrollToSection = id => {
         const element = document.getElementById(id);
+        if(window.innerWidth<1370){
+            setIsVisible(prevState => !prevState);
+        }
         if (element) {
             window.scrollTo({
                 top: element.offsetTop,
@@ -78,10 +81,10 @@ const TableOfContents = ({ TOC }) => {
 
     return (
         <div>
-            <button onClick={toggleVisibility} className="fixed top-[65px] md:top-[70px] right-4 md:right-1 sm:right-[20px] z-30 bg-[#F6F2E9] text-black md:text-[25px] p-3 rounded-xl shadow-xl ">
+            <button onClick={toggleVisibility} className=" fixed xl:sticky  top-[65px] md:top-[73px] xl:top-[80px] right-4 mg:left-1  z-30 bg-[#F6F2E9] text-black md:text-[25px] p-3 rounded-xl shadow-xl max-h-[100svh] overflow-y-scroll max-w-[50px]">
                 {isVisible ? <IoClose /> : <FaListOl />}
             </button>
-            <div className={`table-of-contents bg-white shadow-2xl z-20 w-[230px] md:w-[280px] fixed right-1 top-[100px] rounded-t-xl m-5 border-l border-r border-[#BE4E1E42] transition-all ${isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`} style={{ transform: `translateX(${isVisible ? '0%' : '100%'})` }}>
+            <div className={`table-of-contents bg-white shadow-2xl z-20 w-[230px] md:w-[280px] fixed xl:sticky mg:left-2 right-1 top-[100px] rounded-t-xl m-5 border-l border-r border-[#BE4E1E42] transition-all ${isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`} style={{ transform: `translateX(${isVisible ? '0%' : '100%'})` }}>
                 <h2 className="md:text-[20px] font-semibold text-center bg-[#BE4E1E] rounded-t-xl py-3 text-[16px] text-[#F7F7E0]">Table of Contents</h2>
                 <ul className='px-2 z-20'>
                     {sections.map(section => (
