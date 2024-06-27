@@ -186,7 +186,7 @@ export default async function Post({ params }) {
             }
         });
     }
-    console.log(postData)
+    // console.log(postData)
     const baseUrl = 'https://midhafin.com';
 
     return (
