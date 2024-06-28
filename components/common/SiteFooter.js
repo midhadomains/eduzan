@@ -192,12 +192,14 @@ function Footer() {
                 <div className="flex gap-[14px] justify-between">
                   <Link
                     href="https://www.instagram.com/midhafin/"
+                    target="_blank"
                     className="lg:text-[30px] text-[25px] bg-[#ECECEC] rounded-full h-[27px] flex justify-center items-center"
                   >
                     <FaInstagram />
                   </Link>
                   <Link
                     href="https://www.facebook.com/MidhaFin"
+                    target="_blank"
                     className="lg:text-[30px] text-[25px] bg-[#ECECEC] rounded-full h-[27px] flex justify-center items-center"
                   >
                     {" "}
@@ -205,18 +207,21 @@ function Footer() {
                   </Link>
                   <Link
                     href="https://twitter.com/midhafin"
+                    target="_blank"
                     className="lg:text-[30px] text-[25px] bg-[#ECECEC] rounded-full h-[27px] flex justify-center items-center"
                   >
                     <FaXTwitter />
                   </Link>
                   <Link
                     href="https://www.linkedin.com/company/midhafin/"
+                    target="_blank"
                     className="lg:text-[30px] text-[25px] bg-[#ECECEC] rounded-full h-[27px] flex justify-center items-center"
                   >
                     <CiLinkedin />
                   </Link>
                   <Link
                     href="https://www.youtube.com/@MidhaFin"
+                    target="_blank"
                     className="lg:text-[30px] text-[25px] bg-[#ECECEC] rounded-full h-[27px] flex justify-center items-center"
                   >
                     <FaYoutube />
