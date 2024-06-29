@@ -106,7 +106,14 @@ export async function generateMetadata({ params }) {
                 locale: 'en_IN',
                 type: seoData.opengraphType,
                 siteName: seoData.opengraphSiteName,
-            }
+            },
+            twitter: {
+                handle: "Midhafin",
+                card: "app",
+                title: seoData.opengraphTitle,
+                description: seoData.metaDesc,
+                image: [seoData.opengraphImage.mediaItemUrl],
+            },
 
         };
     } catch (error) {
