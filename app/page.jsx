@@ -70,10 +70,10 @@ export const metadata = {
     card: "summary_large_image",
     creator: '@midhafin',
     title: "MidhaFin: FRM Exam prep provider",
-    site:"www.midhafin.com",
+    site:"midhafin.com",
     siteId: 'd24x59642cdhrl',
     description: "Boost Your Career In Finance With MidhaFin ",
-    image: "https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/Homepage/open-graph-snippet_600*336.png.png",
+    images: ["https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/Homepage/open-graph-snippet_600*336.png.png"],
   },
 };
 
