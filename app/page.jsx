@@ -68,6 +68,7 @@ export const metadata = {
   twitter: {
     handle: "Midhafin",
     card: "summary_large_image",
+    site:"www.midhafin.com"
     title: "MidhaFin:-FRM Exam prep provider",
     description: "Boost Your Career In Finance",
     image: "https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/Homepage/open-graph-snippet_600*336.png.png",
@@ -433,6 +434,7 @@ export default async function Home() {
         ))}
         <meta name="twitter:card" content={metadata.twitter.card} />
         <meta name="twitter:title" content={metadata.twitter.title} />
+       <meta name="twitter:site" content={metadata.twitter.site} />
         <meta name="twitter:description" content={metadata.twitter.description} />
         <meta name="twitter:image" content={metadata.twitter.image} />
         <meta name="twitter:site" content={metadata.twitter.handle} />
