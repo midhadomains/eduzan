@@ -69,6 +69,7 @@ export const metadata = {
     handle: "Midhafin",
     card: "summary_large_image",
     title: "MidhaFin: FRM Exam prep provider",
+    site:"www.midhafin.com",
     description: "Boost Your Career In Finance",
     image: "https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/Homepage/open-graph-snippet_600*336.png.png",
   },
@@ -431,11 +432,12 @@ export default async function Home() {
             <meta property="og:image:id" content={image.id} />
           </React.Fragment>
         ))}
-        <meta name="x:card" content={metadata.twitter.card} />
-        <meta name="x:title" content={metadata.twitter.title} />
-        <meta name="x:description" content={metadata.twitter.description} />
-        <meta name="x:image" content={metadata.twitter.image} />
-        <meta name="x:site" content={metadata.twitter.handle} />
+        <meta name="twitter:card" content={metadata.twitter.card} />
+        <meta name="twitter:title" content={metadata.twitter.title} />
+       <meta name="twitter:site" content={metadata.twitter.site} />
+        <meta name="twitter:description" content={metadata.twitter.description} />
+        <meta name="twitter:image" content={metadata.twitter.image} />
+        <meta name="twitter:site" content={metadata.twitter.handle} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(JsonLDCourse) }} />
       </Head>
 
