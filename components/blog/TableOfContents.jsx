@@ -87,7 +87,7 @@ const TableOfContents = ({ TOC }) => {
         <div>
             <button onClick={toggleVisibility} className="fixed xl:sticky  top-[65px] md:top-[73px] xl:top-[100px] xl:-ml-3 right-4 mg:left-2  z-30 bg-[#F6F2E9] text-black lg:text-[25px] p-3 rounded-xl shadow-sm max-w-[40px] lg:max-w-[50px]">
                 {isVisible ? <IoClose /> : <FaListOl />}
-            </button>
+            </button> 
             <div className={`table-of-contents bg-white shadow-lg z-20 w-[230px] md:w-[260px] fixed xl:sticky mg:left-2 right-1 top-[100px] rounded-t-xl border-l border-r border-[#BE4E1E42] transition-all ${isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`} style={{ transform: `translateX(${isVisible ? '0%' : '100%'})` }}>
                 <h2 className="md:text-[20px] font-semibold text-center bg-[#BE4E1E] rounded-t-xl py-3 text-[16px] text-[#F7F7E0]">Table of Contents</h2>
                 <ul className='px-2 z-20'>

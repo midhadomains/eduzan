@@ -2,6 +2,7 @@ import { getPostList } from "../../lib/posts";
 import Navbar from '../../components/common/SiteHeader'
 import Footer from '../../components/common/SiteFooter'
 import PostList from "../../components/blog/PostList";
+import CategoryMenu from "../../components/blog/CategoryMenu";
 
 export const metadata = {
     title: "List of Blogs - MidhaFin | Insights and Updates on Finance and FRM",
@@ -35,6 +36,7 @@ export default async function BlogHome({ params }) {
                         <p className='text-[#2D303B] max-w-[800px] text-[16px] md:text-[20px] mt-3 md:leading-[32px] '>Unlock the power of knowledge with our comprehensive educational resources tailored to your learning journey.</p>
                     </div>
                 </div>
+                <CategoryMenu/>
                 <PostList initialPosts={initialPosts} />
                 <Footer />
             </>
