@@ -103,7 +103,7 @@ export async function generateMetadata({ params }) {
                 title: seoData.opengraphTitle,
                 description: seoData.metaDesc,
                 images: [seoData.opengraphImage.mediaItemUrl],
-                url: `https://midhafin.com/${params.postSlug}`,
+                url: `https://www.midhafin.com/${params.postSlug}`,
                 locale: 'en_IN',
                 type: seoData.opengraphType,
                 siteName: "MidhaFin",
@@ -196,7 +196,7 @@ export default async function Post({ params }) {
         });
     }
     // console.log(postData)
-    const baseUrl = 'https://midhafin.com';
+    const baseUrl = 'https://www.midhafin.com';
 
     return (
         <div className="bg-[#e7e8e962]">
