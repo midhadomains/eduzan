@@ -65,7 +65,7 @@ export const metadata = {
       },
     ],
   },
-  twitter: {
+  x: {
     handle: "Midhafin",
     card: "summary_large_image",
     title: "MidhaFin:-FRM Exam prep provider",
