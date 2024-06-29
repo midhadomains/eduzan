@@ -113,7 +113,8 @@ export async function generateMetadata({ params }) {
                 title: seoData.opengraphTitle,
                 creator: '@midhafin',
                 description: seoData.metaDesc,
-                image: [seoData.opengraphImage.mediaItemUrl],
+                siteId: 'd24x59642cdhrl',
+                images: [seoData.opengraphImage.mediaItemUrl],
             },
 
         };

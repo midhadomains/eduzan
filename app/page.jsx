@@ -68,8 +68,8 @@ export const metadata = {
   twitter: {
     handle: "Midhafin",
     card: "summary_large_image",
+    title: "MidhaFin: FRM Exam prep provider",
     site:"www.midhafin.com",
-    title: "MidhaFin:-FRM Exam prep provider",
     description: "Boost Your Career In Finance",
     image: "https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/Homepage/open-graph-snippet_600*336.png.png",
   },
