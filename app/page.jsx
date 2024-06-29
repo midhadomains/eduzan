@@ -68,9 +68,11 @@ export const metadata = {
   twitter: {
     handle: "Midhafin",
     card: "summary_large_image",
+    creator: '@midhafin',
     title: "MidhaFin: FRM Exam prep provider",
     site:"www.midhafin.com",
-    description: "Boost Your Career In Finance",
+    siteId: 'd24x59642cdhrl',
+    description: "Boost Your Career In Finance With MidhaFin ",
     image: "https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/Homepage/open-graph-snippet_600*336.png.png",
   },
 };
@@ -407,37 +409,41 @@ export default async function Home() {
   // };
 //           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(JsonLD) }} />
 
+  //   <title>{metadata.title}</title>
+  //       <meta name="description" content={metadata.description} />
+  //       <meta name="robots" content={metadata.robots} />
+  //       <meta name="googlebot" content={metadata.googlebot} />
+  //       <meta name="keywords" content={metadata.keywords.join(", ")} />
+  //       <meta property="og:title" content={metadata.openGraph.title} />
+  //       <meta property="og:description" content={metadata.openGraph.description} />
+  //       <meta property="og:type" content={metadata.openGraph.type} />
+  //       <meta property="og:site_name" content={metadata.openGraph.site_name} />
+  //       <meta property="og:locale" content={metadata.openGraph.locale} />
+  //       <meta property="og:url" content={metadata.openGraph.url} />
+  // {
+  //   metadata.openGraph.images.map((image, index) => (
+  //     <React.Fragment key={index}>
+  //       <meta property="og:image" content={image.url} />
+  //       <meta property="og:image:url" content={image.url} />
+  //       <meta property="og:image:width" content={image.width} />
+  //       <meta property="og:image:height" content={image.height} />
+  //       <meta property="og:image:alt" content={image.alt} />
+  //       <meta property="og:image:id" content={image.id} />
+  //     </React.Fragment>
+  //   ))
+  // }
+  //       <meta name="twitter:card" content={metadata.twitter.card} />
+  //       <meta name="twitter:title" content={metadata.twitter.title} />
+  //      <meta name="twitter:site" content={metadata.twitter.site} />
+  //       <meta name="twitter:description" content={metadata.twitter.description} />
+  //       <meta name="twitter:image" content={metadata.twitter.image} />
+  //       <meta name="twitter:site" content={metadata.twitter.handle} />
+
   return (
     
     <>
       <Head>
-        <title>{metadata.title}</title>
-        <meta name="description" content={metadata.description} />
-        <meta name="robots" content={metadata.robots} />
-        <meta name="googlebot" content={metadata.googlebot} />
-        <meta name="keywords" content={metadata.keywords.join(", ")} />
-        <meta property="og:title" content={metadata.openGraph.title} />
-        <meta property="og:description" content={metadata.openGraph.description} />
-        <meta property="og:type" content={metadata.openGraph.type} />
-        <meta property="og:site_name" content={metadata.openGraph.site_name} />
-        <meta property="og:locale" content={metadata.openGraph.locale} />
-        <meta property="og:url" content={metadata.openGraph.url} />
-        {metadata.openGraph.images.map((image, index) => (
-          <React.Fragment key={index}>
-            <meta property="og:image" content={image.url} />
-            <meta property="og:image:url" content={image.url} />
-            <meta property="og:image:width" content={image.width} />
-            <meta property="og:image:height" content={image.height} />
-            <meta property="og:image:alt" content={image.alt} />
-            <meta property="og:image:id" content={image.id} />
-          </React.Fragment>
-        ))}
-        <meta name="twitter:card" content={metadata.twitter.card} />
-        <meta name="twitter:title" content={metadata.twitter.title} />
-       <meta name="twitter:site" content={metadata.twitter.site} />
-        <meta name="twitter:description" content={metadata.twitter.description} />
-        <meta name="twitter:image" content={metadata.twitter.image} />
-        <meta name="twitter:site" content={metadata.twitter.handle} />
+    
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(JsonLDCourse) }} />
       </Head>
 
