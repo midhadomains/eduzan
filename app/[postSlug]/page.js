@@ -99,16 +99,27 @@ export async function generateMetadata({ params }) {
             title: seoData.title,
             description: seoData.metaDesc,
             keywords: tagNames,
+            robots: "index,follow",
+            googlebot: "index,follow",
             openGraph: {
                 title: seoData.opengraphTitle,
                 description: seoData.metaDesc,
-                images: [seoData.opengraphImage.mediaItemUrl],
+                images: [
+                    {
+                        url: seoData.opengraphImage.mediaItemUrl,
+                        width: 800,
+                        height: 600,
+                    },
+                ],
                 url: `https://www.midhafin.com/${params.postSlug}`,
                 locale: 'en_IN',
                 type: seoData.opengraphType,
                 siteName: "MidhaFin",
+                locale: "en_US",
+
             },
             twitter: {
+                handle: "Midhafin",
                 card: "summary_large_image",
                 title: seoData.opengraphTitle,
                 creator: '@midhafin',
