@@ -54,7 +54,7 @@ export const metadata = {
     type: "website",
     site_name: "Midhafin",
     locale: "en_US",
-    url: "https://www.midhafin.com/",
+    url: "https://midhafin.com/",
     images: [
       {
         url: "https://midha-images.s3.ap-south-1.amazonaws.com/Midhafin/Homepage/open-graph-snippet_600*336.png.png",
