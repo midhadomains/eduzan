@@ -109,7 +109,7 @@ export async function generateMetadata({ params }) {
             },
             twitter: {
                 handle: "Midhafin",
-                card: "app",
+                card: "summary_large_image",
                 title: seoData.opengraphTitle,
                 description: seoData.metaDesc,
                 image: [seoData.opengraphImage.mediaItemUrl],
