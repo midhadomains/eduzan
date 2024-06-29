@@ -94,6 +94,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }) {
     try {
         const seoData = await getSeo('post', params.postSlug);
+        console.log(seoData)
         return {
             title: seoData.title,
             description: seoData.metaDesc,
@@ -102,15 +103,15 @@ export async function generateMetadata({ params }) {
                 title: seoData.opengraphTitle,
                 description: seoData.metaDesc,
                 images: [seoData.opengraphImage.mediaItemUrl],
-                url: seoData.opengraphImage.mediaItemUrl,
+                url: `https://midhafin.com/${params.postSlug}`,
                 locale: 'en_IN',
                 type: seoData.opengraphType,
-                siteName: seoData.opengraphSiteName,
+                siteName: "MidhaFin",
             },
             twitter: {
-                handle: "Midhafin",
                 card: "summary_large_image",
                 title: seoData.opengraphTitle,
+                creator: '@midhafin',
                 description: seoData.metaDesc,
                 image: [seoData.opengraphImage.mediaItemUrl],
             },
