@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function RightBanners() {
   return (
-    <div className='w-[100%] max-w-[315px] pl-[15px] sticky top-[120px] left-3  hidden xl:block'>
+    <div className='w-[100%] max-w-[315px] sticky top-[120px] left-3  hidden xl:block'>
       <div className='bg-[#f6f0da] rounded-xl flex flex-col items-center justify-center py-5'>
         <h1 className='font-[500] text-[20px] text-center text-[#6A1C1A] ' >Need help with <span className='font-bold'> <br /> FRM preparation ?</span></h1>
         <Link href='/contact-us' className='p-2 text-[20px] font-semibold text-white mt-7 px-8 rounded-full  mx-auto bg-[#BE4E1E]'>Contact Us</Link>

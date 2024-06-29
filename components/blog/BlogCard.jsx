@@ -15,7 +15,7 @@ export default function BlogCard({ post }) {
                             <Link key={key} href={`/category/${data.slug}`} className="uppercase text-[11px] sm:text-[12px] lg:text-[15px]  mb-2 text-[#BE4E1E] font-[500]">
                                 <p className=''>
                                     <span className="underline underline-offset-[3px]">{data.name}</span>
-                                    {key < post.categories.nodes.length - 1 && <span>&nbsp;&nbsp;&#10095;&nbsp;&nbsp;</span>}
+                                    {key < post.categories.nodes.length - 1 && <span>&nbsp;&nbsp;&#124;&nbsp;&nbsp;</span>}
                                 </p>
                             </Link>
                         ))}

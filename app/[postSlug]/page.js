@@ -94,7 +94,6 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }) {
     try {
         const seoData = await getSeo('post', params.postSlug);
-        console.log(seoData)
         return {
             title: seoData.title,
             description: seoData.metaDesc,
@@ -212,13 +211,13 @@ export default async function Post({ params }) {
     return (
         <div className="bg-[#e7e8e962]">
             <Navbar />
-            <div className=" xl:flex  justify-between  max-w-[1400px] mx-auto">
+            <div className=" xl:flex justify-between gap-[30px] max-w-[1400px] mx-auto px-5 md:px-[50px]">
                 <TableOfContents TOC={toc} />
                 <div >
                     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonSchema }}></script>
                     <article className={`font-light`}>
                         <section>
-                            <div className='p-5 max-w-[800px] mx-auto '>
+                            <div className=' max-w-[800px] py-5 mx-auto '>
 
                                 <h2 className='text-[14px] sm:text-[16px] lg:text-[18px] font-[500] uppercase flex items-center text-[#BE4E1E] tracking-wider '>
                                     {
@@ -226,7 +225,7 @@ export default async function Post({ params }) {
                                             <Link key={key} href={`/category/${data.slug}`}>
                                                 <p className=''>
                                                     <span className="underline underline-offset-[3px]">{data.name}</span>
-                                                    {key < postData.categories.nodes.length - 1 && <span>&nbsp;&nbsp;&#10095;&nbsp;&nbsp;</span>}
+                                                    {key < postData.categories.nodes.length - 1 && <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>}
                                                 </p>
                                             </Link>
                                         ))
